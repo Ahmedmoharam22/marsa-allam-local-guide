@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "tours": "Tauchausflüge",
+    "liveaboards": "Tauchsafari",
+    "courses": "PADI Kurse",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "welcome": "Willkommen bei",
+    "title_main": "Marsa Allam",
+    "title_sub": "Local Guide",
+    "tagline": "Delfin-Morgen, ruhige Riffe, Wüstenhimmel.",
+    "description": "Wählen Sie den perfekten Tag für das Meer, finden Sie die ruhigsten Riffe und erleben Sie Marsa Alam mit einem Einheimischen.",
+    "cta_whatsapp": "Über WhatsApp buchen",
+    "cta_explore": "Abenteuer entdecken",
+    "features": {
+      "experience_title": "100% Lokale Erfahrung",
+      "experience_desc": "Von einem echten Guide vor Ort",
+      "groups_title": "Kleine Gruppen",
+      "groups_desc": "& Private Ausflüge",
+      "safety_title": "Sicherheit &",
+      "safety_desc": "Professioneller Service",
+      "care_title": "5-Sterne Betreuung",
+      "care_desc": "Für Meeresliebhaber"
+    }
+  },
+  "seo": {
+    "site_name": "Marsa Alam Local Guide",
+    "title": "Tauchen in Marsa Alam | Ausflüge & Tauchkurse",
+    "description": "Buchen Sie erstklassige Schnorchelausflüge, Sataya Delfinsafaris und PADI-Tauchkurse in Marsa Alam."
+  }
+}

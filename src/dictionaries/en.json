@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "home": "Home",
+    "tours": "Diving Trips",
+    "liveaboards": "Safari Yachts",
+    "courses": "PADI Courses",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "welcome": "Welcome to",
+    "title_main": "Marsa Allam",
+    "title_sub": "Local Guide",
+    "tagline": "Dolphin mornings, quiet reefs, desert skies.",
+    "description": "Choose the right sea day, find the calmest reef, and see Marsa Alam with a guide who knows the local rhythm.",
+    "cta_whatsapp": "Book on WhatsApp",
+    "cta_explore": "Explore Adventures",
+    "features": {
+      "experience_title": "100% Local Experience",
+      "experience_desc": "From a real local guide",
+      "groups_title": "Small Groups",
+      "groups_desc": "& Private Trips",
+      "safety_title": "Safety &",
+      "safety_desc": "Professional Service",
+      "care_title": "5-Star Care",
+      "care_desc": "Made for sea lovers"
+    }
+  },
+  "seo": {
+    "site_name": "Marsa Alam Local Guide",
+    "title": "Best Scuba Diving & Sea Safaris in Marsa Alam",
+    "description": "Book top-rated snorkeling trips, Sataya dolphin safaris, and PADI diving courses in Marsa Alam."
+  }
+}

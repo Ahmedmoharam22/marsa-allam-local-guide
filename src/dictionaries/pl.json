@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "tours": "Wycieczki nurkowe",
+    "liveaboards": "Safari nurkowe",
+    "courses": "Kursy PADI",
+    "about": "O nas",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "welcome": "Witamy w",
+    "title_main": "Marsa Allam",
+    "title_sub": "Local Guide",
+    "tagline": "Poranki z delfinami, spokojne rafy, pustynne niebo.",
+    "description": "Wybierz idealny dzień na morzu, znajdź najspokojniejszą rafę i poznaj Marsa Alam z lokalnym przewodnikiem.",
+    "cta_whatsapp": "Zarezerwuj na WhatsApp",
+    "cta_explore": "Odkryj przygody",
+    "features": {
+      "experience_title": "100% Lokalne doświadczenie",
+      "experience_desc": "Od prawdziwego lokalnego przewodnika",
+      "groups_title": "Małe grupy",
+      "groups_desc": "& Prywatne wycieczki",
+      "safety_title": "Bezpieczeństwo &",
+      "safety_desc": "Profesjonalna obsługa",
+      "care_title": "Opieka 5-gwiazdkowa",
+      "care_desc": "Stworzone dla miłośników morza"
+    }
+  },
+  "seo": {
+    "site_name": "Marsa Alam Local Guide",
+    "title": "Nurkowanie w Marsa Alam | Wycieczki i kursy",
+    "description": "Zarezerwuj najlepsze wycieczki do snorkelingu, safari z delfinami i kursy PADI w Marsa Alam."
+  }
+}

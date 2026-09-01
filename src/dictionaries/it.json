@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "home": "Home",
+    "tours": "Escursioni Sub",
+    "liveaboards": "Crociere Safari",
+    "courses": "Corsi PADI",
+    "about": "Chi Siamo",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "welcome": "Benvenuto su",
+    "title_main": "Marsa Allam",
+    "title_sub": "Local Guide",
+    "tagline": "Mattinate con i delfini, barriere tranquille, cieli del deserto.",
+    "description": "Scegli il giorno di mare perfetto, trova la barriera più tranquilla e vivi Marsa Alam con una guida locale.",
+    "cta_whatsapp": "Prenota su WhatsApp",
+    "cta_explore": "Esplora le avventure",
+    "features": {
+      "experience_title": "Esperienza Locale 100%",
+      "experience_desc": "Con una vera guida locale",
+      "groups_title": "Piccoli Gruppi",
+      "groups_desc": "e Tour Privati",
+      "safety_title": "Sicurezza e",
+      "safety_desc": "Servizio Professionale",
+      "care_title": "Cura a 5 Stelle",
+      "care_desc": "Fatto per chi ama il mare"
+    }
+  },
+  "seo": {
+    "site_name": "Marsa Alam Local Guide",
+    "title": "Immersioni a Marsa Alam | Escursioni e Corsi PADI",
+    "description": "Prenota i migliori tour di snorkeling, safari con i delfini e corsi di immersione a Marsa Alam."
+  }
+}

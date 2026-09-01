@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "home": "Hlavní strana",
+    "tours": "Potápěčské výlety",
+    "liveaboards": "Potápěčské safari",
+    "courses": "Kurzy PADI",
+    "about": "O nás",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "welcome": "Vítejte v",
+    "title_main": "Marsa Allam",
+    "title_sub": "Local Guide",
+    "tagline": "Rána s delfíny, klidné útesy, pouštní obloha.",
+    "description": "Vyberte si ideální den na moři, najděte nejklidnější útes a poznejte Marsa Alam s místním průvodcem.",
+    "cta_whatsapp": "Rezervovat přes WhatsApp",
+    "cta_explore": "Prozkoumat zážitky",
+    "features": {
+      "experience_title": "100% Místní zážitek",
+      "experience_desc": "Od skutečného místního průvodce",
+      "groups_title": "Malé skupiny",
+      "groups_desc": "& Soukromé výlety",
+      "safety_title": "Bezpečnost &",
+      "safety_desc": "Profesionální služby",
+      "care_title": "Péče 5 hvězdiček",
+      "care_desc": "Vytvořeno pro milovníky moře"
+    }
+  },
+  "seo": {
+    "site_name": "Marsa Alam Local Guide",
+    "title": "Potápění v Marsa Alam | Výlety a Kurzy PADI",
+    "description": "Rezervujte si nejlepší šnorchlovací výlety, safari s delfíny a potápěčské kurzy PADI v Marsa Alam."
+  }
+}
