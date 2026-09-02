@@ -1,56 +1,105 @@
-import Link from 'next/link';
-import type { Locale } from '@/lib/i18n-config';
+import Link from "next/link";
+import { Language } from "@/types/tour";
+import { footerData } from "@/data/footer";
+import { FaFacebookF, FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
+import Logo from "../common/Logo";
 
 interface FooterProps {
-  lang: Locale;
-  dict: {
-    nav: {
-      home: string;
-      tours: string;
-      liveaboards: string;
-      courses: string;
-      about: string;
-      contact: string;
-    };
-    seo: {
-      site_name: string;
-    };
-  };
+  lang: Language;
 }
 
-export default function Footer({ lang, dict }: FooterProps) {
+export default function Footer({ lang }: FooterProps) {
+  const t = footerData[lang] || footerData.en;
+
   return (
-    <footer className="border-t border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-950">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-          <div className="flex items-center gap-2">
-            <span className="text-lg font-bold text-blue-600 dark:text-blue-400">
-              {dict.seo.site_name}
-            </span>
+    <footer className="bg-slate-950 text-slate-300 pt-16 pb-8 border-t border-slate-800/80 transition-colors">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* شبكة الأعمدة الأربعة */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800/60">
+          
+          {/* العمود الأول: الشعار ونبذة مختصرة والسوشيال (4 أعمدة) */}
+          <div className="lg:col-span-4 space-y-5">
+           <Logo lang={lang} textColor="text-white" isScrolled={false} />
+            <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
+              {t.description}
+            </p>
+            
+            <div className="flex items-center gap-3 pt-2">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:bg-cyan-600 hover:text-white hover:border-cyan-600 transition-all">
+                <FaFacebookF className="w-4 h-4" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:bg-pink-600 hover:text-white hover:border-pink-600 transition-all">
+                <FaInstagram className="w-4 h-4" />
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:bg-red-600 hover:text-white hover:border-red-600 transition-all">
+                <FaYoutube className="w-4 h-4" />
+              </a>
+              <a href="https://wa.me/201001188941" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition-all">
+                <FaWhatsapp className="w-4 h-4" />
+              </a>
+            </div>
           </div>
 
-          <nav className="flex flex-wrap justify-center gap-6 text-sm text-gray-600 dark:text-gray-400">
-            <Link href={`/${lang}`} className="hover:text-blue-600 dark:hover:text-blue-400">
-              {dict.nav.home}
-            </Link>
-            <Link href={`/${lang}/tours`} className="hover:text-blue-600 dark:hover:text-blue-400">
-              {dict.nav.tours}
-            </Link>
-            <Link href={`/${lang}/liveaboards`} className="hover:text-blue-600 dark:hover:text-blue-400">
-              {dict.nav.liveaboards}
-            </Link>
-            <Link href={`/${lang}/courses`} className="hover:text-blue-600 dark:hover:text-blue-400">
-              {dict.nav.courses}
-            </Link>
-            <Link href={`/${lang}/about`} className="hover:text-blue-600 dark:hover:text-blue-400">
-              {dict.nav.about}
-            </Link>
-          </nav>
+          {/* العمود الثاني: الكورسات (3 أعمدة) */}
+          <div className="lg:col-span-3 space-y-4">
+            <h3 className="text-white font-bold text-base tracking-wide border-l-2 border-cyan-500 pl-3">
+              {t.coursesTitle}
+            </h3>
+            <ul className="space-y-2.5 text-sm">
+              {t.courses.map((course, idx) => (
+                <li key={idx}>
+                  <Link href={course.href} className="text-slate-400 hover:text-cyan-400 transition-colors">
+                    {course.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-          <p className="text-xs text-gray-500 dark:text-gray-400">
-            © {new Date().getFullYear()} {dict.seo.site_name}. All rights reserved.
-          </p>
+          {/* العمود الثالث: الرحلات (2.5 عمود) */}
+          <div className="lg:col-span-2 space-y-4">
+            <h3 className="text-white font-bold text-base tracking-wide border-l-2 border-cyan-500 pl-3">
+              {t.tripsTitle}
+            </h3>
+            <ul className="space-y-2.5 text-sm">
+              {t.trips.map((trip, idx) => (
+                <li key={idx}>
+                  <Link href={trip.href} className="text-slate-400 hover:text-cyan-400 transition-colors">
+                    {trip.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* العمود الرابع: المدونة (2.5 عمود) */}
+          <div className="lg:col-span-3 space-y-4">
+            <h3 className="text-white font-bold text-base tracking-wide border-l-2 border-cyan-500 pl-3">
+              {t.blogTitle}
+            </h3>
+            <ul className="space-y-2.5 text-sm">
+              {t.blogs.map((blog, idx) => (
+                <li key={idx}>
+                  <Link href={blog.href} className="text-slate-400 hover:text-cyan-400 transition-colors">
+                    {blog.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
         </div>
+
+        {/* حقوق النشر السفلية */}
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+          <p>© {new Date().getFullYear()} Marsa Alam Local Guide. {t.allRights}</p>
+          <div className="flex items-center gap-6">
+            <Link href="/privacy" className="hover:text-slate-400 transition-colors">{t.privacy}</Link>
+            <Link href="/terms" className="hover:text-slate-400 transition-colors">{t.terms}</Link>
+          </div>
+        </div>
+
       </div>
     </footer>
   );
