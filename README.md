@@ -135,15 +135,14 @@ Example routes:
 ### Home & Hero Section
 
 <!-- Replace the path below with your actual screenshot -->
+<img width="1672" height="941" alt="gallery-2" src="https://github.com/user-attachments/assets/29f141b9-e0b4-4bfd-b29c-67fb80afd30e" />
 
-![Home & Hero Section](./screenshots/home.png)
+
 
 ### Footer & Floating Widgets
 
 <!-- Replace the path below with your actual screenshot -->
-
-![Footer & Floating Widgets](./screenshots/footer.png)
-
+<img width="1672" height="941" alt="gallery-1" src="https://github.com/user-attachments/assets/87080336-6a9c-459a-8084-dc37708a9a73" />
 ---
 
 ## ☁️ Deployment
