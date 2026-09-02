@@ -3,9 +3,11 @@ import { Inter, Noto_Sans, Playfair_Display } from 'next/font/google';
 import '@/app/globals.css';
 import { cn } from '@/lib/utils';
 import Navbar from '@/components/layouts/Navbar';
-// import Footer from '@/components/layouts/Footer';
+import Footer from '@/components/layouts/Footer';
 import { getDictionary } from '@/lib/dictionary';
 import type { Locale } from '@/lib/i18n-config';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import ScrollToTop from '@/components/ScrollToTop';
 
 // Font Setup with CSS Variables & swap display for 0 CLS
 const notoSans = Noto_Sans({
@@ -110,8 +112,10 @@ export default async function RootLayout({
       <body className="font-body bg-background text-foreground flex min-h-screen flex-col antialiased selection:bg-secondary selection:text-white">
         <Navbar lang={currentLang} dict={dict} />
         <main className="flex-1">{children}</main>
-        {/* <Footer lang={currentLang} dict={dict} /> */}
+        <Footer lang={currentLang} />
+        <ScrollToTop lang={lang} tooltipText={dict.scrollToTop} />
+        <FloatingWhatsApp lang={lang} tooltipText={dict.whatsappTooltip} />
       </body>
     </html>
-  );
+  );  
 }
