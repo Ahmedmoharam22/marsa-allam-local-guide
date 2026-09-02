@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import type { Locale } from '@/lib/i18n-config';
-import { Compass } from 'lucide-react';
 
 interface LogoProps {
   lang: Locale;
@@ -23,13 +22,13 @@ export default function Logo({
   return (
     <Link
       href={`/${lang}`}
-      className={cn('group inline-flex items-center gap-3 transition-opacity hover:opacity-90', className)}
+      className={cn('group inline-flex items-center gap-3', className)}
       aria-label={siteName}
     >
       {/* Icon in bg-teal-500/20 rounded container */}
       <div
         className={cn(
-          'flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl border backdrop-blur-sm transition-all duration-300',
+          'flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl',
           isScrolled
             ? 'bg-teal-500/15 text-teal-600 border-teal-500/30 group-hover:bg-teal-500/25'
             : 'bg-teal-500/20 text-teal-300 border-teal-500/30 group-hover:bg-teal-500/30'
@@ -55,10 +54,10 @@ export default function Logo({
       {/* Compact 2-line Brand Text */}
       {showText && (
         <div className="flex flex-col leading-tight text-left rtl:text-right">
-          <span className={cn('font-serif text-base font-bold uppercase tracking-wider transition-colors duration-300', textColor)}>
-            MARSA
+          <span className={cn('font-serif text-base font-bold uppercase tracking-wider', textColor)}>
+            MARSA ALAM
           </span>
-          <span className={cn('text-[10px] font-semibold uppercase tracking-[0.2em] transition-colors duration-300', isScrolled ? 'text-teal-600' : 'text-teal-300')}>
+          <span className={cn('text-[10px] font-semibold uppercase tracking-[0.2em]', isScrolled ? 'text-teal-600' : 'text-teal-300')}>
             LOCAL GUIDE
           </span>
         </div>

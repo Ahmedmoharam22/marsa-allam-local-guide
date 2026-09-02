@@ -50,7 +50,7 @@ export default async function TourDetailPage({ params }: TourPageProps) {
         {/* Back to Tours Button */}
         <div className="mb-6">
           <Link
-            href={`/${lang}/tours`}
+            href={`/${lang}/#tours`}
             className="group inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs font-bold text-slate-700 shadow-sm transition-all hover:border-cyan-500 hover:bg-slate-50 hover:text-cyan-600 active:scale-95 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-cyan-500 dark:hover:bg-slate-800 dark:hover:text-cyan-400"
           >
             <ArrowLeftIcon className="h-4 w-4 transition-transform group-hover:-translate-x-1 rtl:rotate-180 rtl:group-hover:translate-x-1" />

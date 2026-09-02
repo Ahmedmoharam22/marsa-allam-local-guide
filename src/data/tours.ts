@@ -1803,5 +1803,424 @@ export const tours: Tour[] = [
       "/images/tours/speed-3.webp"
     ]
   }
+},
+{
+  id: "hamata-islands",
+  slug: "hamata-islands",
+  title: {
+    en: "Hamata Islands",
+    de: "Hamata Inseln",
+    it: "Isole Hamata",
+    ru: "Острова Хамата",
+    pl: "Wyspy Hamata",
+    cz: "Ostrovy Hamata"
+  },
+  subtitle: {
+    en: "Snorkeling & Island Experience",
+    de: "Schnorchel- & Inselerlebnis",
+    it: "Esperienza di snorkeling e isole",
+    ru: "Сноркелинг и поездка на острова",
+    pl: "Snorkeling i wyprawa na wyspy",
+    cz: "Šnorchlování a výlet na ostrovy"
+  },
+  category: {
+    en: "Island Trip",
+    de: "Inselausflug",
+    it: "Escursione alle isole",
+    ru: "Поездка на острова",
+    pl: "Wycieczka na wyspy",
+    cz: "Výlet na ostrovy"
+  },
+  price: {
+    amount: 70,
+    currency: "€",
+    unit: {
+      en: "per person",
+      de: "pro Person",
+      it: "a persona",
+      ru: "за человека",
+      pl: "za osobę",
+      cz: "za osobu"
+    }
+  },
+  duration: {
+    en: "8 hours",
+    de: "8 Stunden",
+    it: "8 ore",
+    ru: "8 часов",
+    pl: "8 godzin",
+    cz: "8 hodin"
+  },
+  departure: {
+    en: "Hamata Marina",
+    de: "Hamata Yachthafen",
+    it: "Marina di Hamata",
+    ru: "Марина Хамата",
+    pl: "Przystań Hamata",
+    cz: "Přístav Hamata"
+  },
+  schedule: {
+    departureTime: "08:30 AM",
+    returnTime: "04:00 PM"
+  },
+  overview: {
+    en: "Discover the beauty of the Hamata Islands, south of Marsa Alam, on a full-day Red Sea adventure. Cruise through crystal-clear waters, explore beautiful islands, and enjoy snorkeling among colorful coral reefs.",
+    de: "Entdecken Sie die Schönheit der Hamata-Inseln südlich von Marsa Alam bei einem ganztägigen Abenteuer im Roten Meer. Fahren Sie durch kristallklares Wasser und schnorcheln Sie an bunten Korallenriffen.",
+    it: "Scopri la bellezza delle isole Hamata, a sud di Marsa Alam, in un'avventura di un'intera giornata nel Mar Rosso. Naviga in acque cristalline e fai snorkeling tra barriere coralline colorate.",
+    ru: "Откройте для себя красоту островов Хамата к югу от Марса-Алама во время однодневного приключения в Красном море. Наслаждайтесь сноркелингом среди коралловых рифов.",
+    pl: "Odkryj piękno wysp Hamata na południe od Marsa Alam podczas całodniowej przygody na Morzu Czerwonym. Ciesz się snurkowaniem wśród raf koralowych.",
+    cz: "Objevte krásu ostrovů Hamata jižně od Marsa Alam během celodenního dobrodružství v Rudém moři. Užijte si šnorchlování u barevným korálových útesů."
+  },
+  highlights: {
+    en: [
+      "Explore the beautiful Hamata Islands",
+      "Visit multiple islands",
+      "Snorkeling in crystal-clear Red Sea water",
+      "Colorful coral reefs & marine life",
+      "Swimming & island exploration",
+      "Fresh buffet lunch onboard",
+      "Water, tea, coffee & soft drinks"
+    ],
+    de: [
+      "Erkunden Sie die schönen Hamata-Inseln",
+      "Besuchen Sie mehrere Inseln",
+      "Schnorcheln im kristallklaren Wasser des Roten Meeres",
+      "Bunte Korallenriffe & Meereslebewesen",
+      "Schwimmen & Erkundung der Inseln",
+      "Frisches Mittagsbuffet an Bord",
+      "Wasser, Tee, Kaffee & Erfrischungsgetränke"
+    ],
+    it: [
+      "Esplora le bellissime isole Hamata",
+      "Visita più isole",
+      "Snorkeling nelle acque cristalline del Mar Rosso",
+      "Barriere coralline colorate e vita marina",
+      "Nuoto ed esplorazione delle isole",
+      "Pranzo a buffet fresco a bordo",
+      "Acqua, tè, caffè e bevande analcoliche"
+    ],
+    ru: [
+      "Исследуйте прекрасные острова Хамата",
+      "Посетите несколько островов",
+      "Сноркелинг в кристально чистой воде Красного моря",
+      "Красочные коралловые рифы и морская жизнь",
+      "Плавание и исследование островов",
+      "Свежий обед «шведский стол» на борту",
+      "Вода, чай, кофе и безалкогольные напитки"
+    ],
+    pl: [
+      "Odkryj piękne wyspy Hamata",
+      "Odwiedź wiele wysp",
+      "Snurkowanie w krystalicznie czystej wodzie",
+      "Kolorowe rafy koralowe i życie morskie",
+      "Pływanie i zwiedzanie wysp",
+      "Świeży lunch w formie bufetu na pokładzie",
+      "Woda, herbata, kawa i napoje bezalkoholowe"
+    ],
+    cz: [
+      "Prozkoumejte krásné ostrovy Hamata",
+      "Navštivte několik ostrovů",
+      "Šnorchlování v křišťálově čisté vodě Rudého moře",
+      "Barevné korálové útesy a mořský život",
+      "Plavání a průzkum ostrovů",
+      "Čerstvý bufetový oběd na palubě",
+      "Voda, čaj, káva a nealkoholické nápoje"
+    ]
+  },
+  included: {
+    en: [
+      "Hotel pickup & drop-off",
+      "Transportation to and from Hamata Marina",
+      "Boat trip",
+      "Professional multilingual snorkeling guide",
+      "Full snorkeling equipment",
+      "Fresh buffet lunch onboard",
+      "Water, tea, coffee & soft drinks"
+    ],
+    de: [
+      "Abholung und Rücktransfer zum Hotel",
+      "Transfer zum und vom Yachthafen Hamata",
+      "Bootsfahrt",
+      "Professioneller, mehrsprachiger Schnorchelführer",
+      "Vollständige Schnorchelausrüstung",
+      "Frisches Mittagsbuffet an Bord",
+      "Wasser, Tee, Kaffee & Erfrischungsgetränke"
+    ],
+    it: [
+      "Prelievo e rientro in hotel",
+      "Trasporto da e per la Marina di Hamata",
+      "Gita in barca",
+      "Guida di snorkeling multilingue professionale",
+      "Attrezzatura completa per lo snorkeling",
+      "Pranzo a buffet fresco a bordo",
+      "Acqua, tè, caffè e bevande analcoliche"
+    ],
+    ru: [
+      "Трансфер из отеля и обратно",
+      "Трансфер до марины Хамата и обратно",
+      "Поездка на лодке",
+      "Профессиональный многоязычный гид по сноркелингу",
+      "Полный комплект оборудования для сноркелинга",
+      "Свежий обед «шведский стол» на борту",
+      "Вода, чай, кофе и безалкогольные напитки"
+    ],
+    pl: [
+      "Odbiór i dowóz do hotelu",
+      "Transport do i z przystani Hamata",
+      "Wycieczka łodzią",
+      "Profesjonalny wielojęzyczny przewodnik",
+      "Kompletny sprzęt do snurkowania",
+      "Świeży lunch w formie bufetu na pokładzie",
+      "Woda, herbata, kawa i napoje bezalkoholowe"
+    ],
+    cz: [
+      "Vyzvednutí a odvoz v hotelu",
+      "Doprava do přístavu Hamata a zpět",
+      "Výlet lodí",
+      "Profesionální vícejazyčný průvodce",
+      "Kompletní vybavení na šnorchlování",
+      "Čerstvý bufetový oběd na palubě",
+      "Voda, čaj, káva a nealkoholické nápoje"
+    ]
+  },
+  notIncluded: {
+    en: ["Personal expenses", "Any additional services not mentioned above"],
+    de: ["Persönliche Ausgaben", "Zusätzliche Leistungen, die nicht oben genannt wurden"],
+    it: ["Spese personali", "Eventuali servizi aggiuntivi non menzionati sopra"],
+    ru: ["Личные расходы", "Любые дополнительные услуги, не указанные выше"],
+    pl: ["Wydatki osobizte", "Wszelkie dodatkowe usługi niewymienione powyżej"],
+    cz: ["Osobní výdaje", "Jakékoliv další služby neuvedené výše"]
+  },
+  whatToBring: {
+    en: ["Swimwear", "Towel", "Sunscreen", "Sunglasses", "Hat", "Comfortable clothes", "Camera / phone"],
+    de: ["Badebekleidung", "Handtuch", "Sonnencreme", "Sonnenbrille", "Hut", "Bequeme Kleidung", "Kamera / Handy"],
+    it: ["Costume da bagno", "Asciugamano", "Crema solare", "Occhiali da sole", "Cappello", "Abiti comodi", "Fotocamera / telefono"],
+    ru: ["Купальник", "Полотенце", "Солнцезащитный крем", "Солнцезащитные очки", "Головной убор", "Удобная одежда", "Камера / телефон"],
+    pl: ["Strój kąpielowy", "Ręcznik", "Krem z filtrem", "Okulary przeciwsłoneczne", "Czapka", "Wygodne ubrania", "Aparat / telefon"],
+    cz: ["Plavky", "Ručník", "Opalovací krém", "Sluneční brýle", "Klobouk", "Pohodlné oblečení", "Fotoaparát / telefon"]
+  },
+  childrenPolicy: {
+    under5: {
+      en: "Free",
+      de: "Kostenlos",
+      it: "Gratuito",
+      ru: "Бесплатно",
+      pl: "Bezpłatnie",
+      cz: "Zdarma"
+    },
+    from5to10: {
+      en: "50% of adult price",
+      de: "50% des Erwachsenenpreises",
+      it: "50% del prezzo per adulti",
+      ru: "50% от стоимости для взрослых",
+      pl: "50% ceny dla dorosłych",
+      cz: "50 % z ceny pro dospělé"
+    },
+    over10: {
+      en: "Full adult price",
+      de: "Voller Erwachsenenpreis",
+      it: "Prezzo intero per adulti",
+      ru: "Полная стоимость для взрослых",
+      pl: "Pełna cena dla dorosłych",
+      cz: "Plná cena pro dospělé"
+    }
+  },
+  itinerary: [
+    {
+      step: "01",
+      title: {
+        en: "Hotel Pickup",
+        de: "Hotelabholung",
+        it: "Prelievo in hotel",
+        ru: "Трансфер из отеля",
+        pl: "Odbiór z hotelu",
+        cz: "Vyzvednutí v hotelu"
+      },
+      description: {
+        en: "Morning pickup from your hotel and transfer to Hamata Marina.",
+        de: "Morgendliche Abholung von Ihrem Hotel und Transfer zum Yachthafen Hamata.",
+        it: "Prelievo mattutino dal vostro hotel e trasferimento alla Marina di Hamata.",
+        ru: "Утренний трансфер из вашего отеля в марину Хамата.",
+        pl: "Poranny odbiór z hotelu i transfer do przystani Hamata.",
+        cz: "Ranní vyzvednutí z hotelu a transfer do přístavu Hamata."
+      }
+    },
+    {
+      step: "02",
+      title: {
+        en: "Hamata Marina",
+        de: "Hamata Yachthafen",
+        it: "Marina di Hamata",
+        ru: "Марина Хамата",
+        pl: "Przystań Hamata",
+        cz: "Přístav Hamata"
+      },
+      description: {
+        en: "Arrive at the marina and board the boat.",
+        de: "Ankunft im Yachthafen und Einschiffung.",
+        it: "Arrivo al porto turistico e imbarco.",
+        ru: "Прибытие в марину и посадка на лодку.",
+        pl: "Przybycie do przystani i wejście na pokład łodzi.",
+        cz: "Příjezd do přístavu a nástup na lod."
+      }
+    },
+    {
+      step: "03",
+      title: {
+        en: "Boat Trip",
+        de: "Bootsfahrt",
+        it: "Gita in barca",
+        ru: "Поездка на лодке",
+        pl: "Wycieczka łodzią",
+        cz: "Výlet lodí"
+      },
+      description: {
+        en: "Cruise through the beautiful southern Red Sea toward the Hamata Islands.",
+        de: "Fahrt durch das wunderschöne südliche Rote Meer zu den Hamata-Inseln.",
+        it: "Navigazione attraverso lo splendido Mar Rosso meridionale verso le isole Hamata.",
+        ru: "Круиз по прекрасному южному Красному морю к островам Хамата.",
+        pl: "Rejs przez piękne południowe Morze Czerwone w kierunku wysp Hamata.",
+        cz: "Plavba jižním Rudým mořem směrem k ostrovům Hamata."
+      }
+    },
+    {
+      step: "04",
+      title: {
+        en: "1st Snorkeling Stop",
+        de: "1. Schnorchelstopp",
+        it: "1ª sosta per lo snorkeling",
+        ru: "1-я остановка для сноркелинга",
+        pl: "1. Przystanek na snurkowanie",
+        cz: "1. Zastávka na šnorchlování"
+      },
+      description: {
+        en: "Explore the colorful coral reefs and discover the rich marine life.",
+        de: "Erkunden Sie die bunten Korallenriffe und entdecken Sie die reiche Unterwasserwelt.",
+        it: "Esplora le barriere coralline colorate e scopri la ricca vita marina.",
+        ru: "Исследуйте красочные коралловые рифы и богатую морскую жизнь.",
+        pl: "Odkryj kolorowe rafy koralowe i bogate życie morskie.",
+        cz: "Prozkoumejte barevné korálové útesy a bohatý mořský život."
+      }
+    },
+    {
+      step: "05",
+      title: {
+        en: "Island Visit",
+        de: "Inselbesuch",
+        it: "Visita all'isola",
+        ru: "Посещение острова",
+        pl: "Wizyta na wyspie",
+        cz: "Návštěva ostrova"
+      },
+      description: {
+        en: "Explore one of the beautiful Hamata Islands and enjoy the natural surroundings.",
+        de: "Erkunden Sie eine der schönen Hamata-Inseln und genießen Sie die Natur.",
+        it: "Esplora una delle bellissime isole Hamata e goditi l'ambiente naturale.",
+        ru: "Исследуйте один из красивых островов Хамата и насладитесь природой.",
+        pl: "Odkryj jedną z pięknych wysp Hamata i podziwiaj otaczającą przyrodę.",
+        cz: "Prozkoumejte jeden z krásných ostrovů Hamata a užijte si přírodu."
+      }
+    },
+    {
+      step: "06",
+      title: {
+        en: "2nd Snorkeling Stop",
+        de: "2. Schnorchelstopp",
+        it: "2ª sosta per lo snorkeling",
+        ru: "2-я остановка для сноркелинга",
+        pl: "2. Przystanek na snurkowanie",
+        cz: "2. Zastávka na šnorchlování"
+      },
+      description: {
+        en: "Enjoy another snorkeling experience in the crystal-clear waters.",
+        de: "Genießen Sie ein weiteres Schnorchelerlebnis im kristallklaren Wasser.",
+        it: "Goditi un'altra esperienza di snorkeling nelle acque cristalline.",
+        ru: "Насладитесь еще одним сноркелингом в кристально чистой воде.",
+        pl: "Ciesz się kolejnym snurkowaniem w krystalicznie czystej wodzie.",
+        cz: "Užijte si další šnorchlování v křišťálově čisté vodě."
+      }
+    },
+    {
+      step: "07",
+      title: {
+        en: "Lunch",
+        de: "Mittagessen",
+        it: "Pranzo",
+        ru: "Обед",
+        pl: "Lunch",
+        cz: "Oběd"
+      },
+      description: {
+        en: "Enjoy a fresh buffet lunch onboard.",
+        de: "Genießen Sie ein frisches Mittagsbuffet an Bord.",
+        it: "Goditi un fresco pranzo a buffet a bordo.",
+        ru: "Насладитесь свежим обедом «шведский стол» на борту.",
+        pl: "Zjedz świeży lunch w formie bufetu na pokładzie.",
+        cz: "Vychutnejte si čerstvý oběd formou bufetu na palubě."
+      }
+    },
+    {
+      step: "08",
+      title: {
+        en: "Return to Marina",
+        de: "Rückkehr zum Yachthafen",
+        it: "Ritorno al porto",
+        ru: "Возвращение в марину",
+        pl: "Powrót do przystani",
+        cz: "Návrat do přístavu"
+      },
+      description: {
+        en: "Relax onboard during the journey back to the marina.",
+        de: "Entspannen Sie sich an Bord während der Rückfahrt zum Yachthafen.",
+        it: "Rilassati a bordo durante il viaggio di ritorno.",
+        ru: "Отдыхайте на борту во время обратного пути в марину.",
+        pl: "Zrelaksuj się na pokładzie podczas rejsu powrotnego.",
+        cz: "Odpočiňte si na palubě během zpáteční cesty."
+      }
+    },
+    {
+      step: "09",
+      title: {
+        en: "Hotel Transfer",
+        de: "Hoteltransfer",
+        it: "Trasferimento in hotel",
+        ru: "Трансфер в отель",
+        pl: "Transfer do hotelu",
+        cz: "Transfer do hotelu"
+      },
+      description: {
+        en: "Transfer back to your hotel around 4:00 PM.",
+        de: "Rücktransfer zu Ihrem Hotel gegen 16:00 Uhr.",
+        it: "Rientro in hotel intorno alle 16:00.",
+        ru: "Трансфер обратно в отель около 16:00.",
+        pl: "Powrót do hotelu około godziny 16:00.",
+        cz: "Návrat do hotelu kolem 16:00."
+      }
+    }
+  ],
+  paymentNote: {
+    en: "Pay after the trip — no online payment required.",
+    de: "Bezahlen Sie nach der Reise — keine Online-Zahlung erforderlich.",
+    it: "Paga dopo il viaggio — nessun pagamento online richiesto.",
+    ru: "Оплата после поездки — онлайн-оплата не требуется.",
+    pl: "Zapłać po wycieczce — płatność online nie jest wymagana.",
+    cz: "Platba až po výletu — není vyžadována žádná platba online."
+  },
+  disclaimer: {
+    en: "The Hamata Islands are part of a protected natural environment. We always respect the islands, coral reefs, marine life and natural surroundings.",
+    de: "Die Hamata-Inseln sind Teil einer geschützten Umwelt. Wir respektieren stets die Inseln, Korallenriffe und die Meereswelt.",
+    it: "Le isole Hamata fanno parte di un ambiente naturale protetto. Rispettiamo sempre le isole, le barriere coralline e la vita marina.",
+    ru: "Острова Хамата являются частью охраняемой природной среды. Мы всегда уважаем острова, коралловые рифы и морскую жизнь.",
+    pl: "Wyspy Hamata są częścią chronionego środowiska naturalnego. Zawsze szanujemy wyspy, rafy koralowe i życie morskie.",
+    cz: "Ostrovy Hamata jsou součástí chráněného přírodního prostředí. Vždy respektujeme ostrovy, korálové útesy a mořský život."
+  },
+  images: {
+    featured: "/images/tours/hamata-card.webp",
+    gallery: [
+      "/images/tours/hamata-1.webp",
+      "/images/tours/hamata-2.webp",
+      "/images/tours/hamata-3.webp"
+    ]
+  }
 }
 ];

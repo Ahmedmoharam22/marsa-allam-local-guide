@@ -1,7 +1,12 @@
+import CTASection from '@/components/home/CTASection';
+import FAQSection from '@/components/home/FAQSection';
 import { FeaturesBar } from '@/components/home/FeaturesBar';
+import GallerySection from '@/components/home/GallerySection';
+import GetInTouchSection from '@/components/home/GetInTouchSection';
 import { Hero } from '@/components/home/HeroSection';
-import { TourCard } from '@/components/tours/TourCard';
-import { tours } from '@/data/tours';
+import Testimonials from '@/components/home/Testimonials';
+import ToursSection from '@/components/home/ToursSection';
+import WhyChooseUs from '@/components/home/WhyChooseUs';
 import { getDictionary } from '@/lib/dictionary';
 import type { Locale } from '@/lib/i18n-config';
 
@@ -17,18 +22,13 @@ export default async function HomePage({
     <main className="min-h-screen">
       <Hero lang={lang} dict={dict} />
       <FeaturesBar lang={lang} dict={dict} />
-
-      {/* Featured Tours Section */}
-      <section className="mx-auto max-w-7xl px-4 py-16">
-        <h2 className="mb-8 text-center text-3xl font-extrabold text-slate-900 dark:text-white">
-          Our Tours
-        </h2>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {tours.map((tour) => (
-            <TourCard key={tour.id} tour={tour} lang={lang} />
-          ))}
-        </div>
-      </section>
+      <ToursSection lang={lang} dict={dict} />
+      <WhyChooseUs lang={lang} />
+      <GallerySection lang={lang} />
+      <Testimonials lang={lang} />
+      <FAQSection lang={lang} />
+      <CTASection lang={lang}/>
+      <GetInTouchSection lang={lang}/>
     </main>
   );
 }

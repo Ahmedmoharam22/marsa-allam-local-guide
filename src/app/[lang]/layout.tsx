@@ -113,8 +113,8 @@ export default async function RootLayout({
         <Navbar lang={currentLang} dict={dict} />
         <main className="flex-1">{children}</main>
         <Footer lang={currentLang} />
-        <ScrollToTop lang={lang} tooltipText={dict.scrollToTop} />
-        <FloatingWhatsApp lang={lang} tooltipText={dict.whatsappTooltip} />
+        <ScrollToTop lang={currentLang} />
+        <FloatingWhatsApp lang={currentLang} tooltipText={dict.whatsappTooltip} />
       </body>
     </html>
   );  

@@ -10,7 +10,6 @@ interface ScrollToTopProps {
 }
 
 const defaultTranslations: Record<Language, string> = {
-  ar: "الرجوع إلى الأعلى",
   en: "Scroll to top",
   de: "Nach oben scrollen",
   ru: "Наверх",
