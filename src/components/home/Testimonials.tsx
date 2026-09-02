@@ -1,6 +1,7 @@
 import { Language } from "@/types/tour";
 import { testimonialsData } from "@/data/testimonials";
 import { StarIcon } from "lucide-react";
+import SectionTitle from "../common/SectionTitle";
 
 interface TestimonialsProps {
   lang: Language;
@@ -12,15 +13,11 @@ export default function Testimonials({ lang }: TestimonialsProps) {
   return (
     <section className="py-20 bg-white dark:bg-slate-900 transition-colors relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block py-1 px-3 rounded-full text-xs font-semibold uppercase tracking-wider bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 mb-4">
-            {t.badge}
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
-            {t.title}
-          </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-400">{t.subtitle}</p>
-        </div>
+        <SectionTitle
+          title={t.title}
+          subtitle={t.subtitle}
+          align="center"
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {t.reviews.map((review, index) => (

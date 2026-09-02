@@ -31,5 +31,13 @@
     "title": "Potápění v Marsa Alam | Výlety a Kurzy PADI",
     "description": "Rezervujte si nejlepší šnorchlovací výlety, safari s delfíny a potápěčské kurzy PADI v Marsa Alam."
   },
-"whatsappTooltip": "Napište nám na WhatsApp"
+  "tours": {
+  "badge": "Objevte dobrodružství",
+  "title": "Prozkoumejte naše výlety v Marsa Alam",
+  "subtitle": "Objevte nejlepší mořská dobrodružství a pouštní safari a užijte si kouzlo přírody s námi."
+},
+"toursTitle": "Prozkoumejte naše výlety v Marsa Alam",
+  "toursSubtitle": "Objevte nejlepší mořská dobrodružství a pouštní safari a užijte si kouzlo přírody s námi.",
+  "scrollToTop": "Přejít nahoru",
+  "whatsappTooltip": "Chatujte s námi na WhatsApp"
 }

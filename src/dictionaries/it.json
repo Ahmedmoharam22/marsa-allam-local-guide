@@ -31,5 +31,13 @@
     "title": "Immersioni a Marsa Alam | Escursioni e Corsi PADI",
     "description": "Prenota i migliori tour di snorkeling, safari con i delfini e corsi di immersione a Marsa Alam."
   },
+  "tours": {
+  "badge": "Scopri l'avventura",
+  "title": "Esplora i nostri tour a Marsa Alam",
+  "subtitle": "Scopri le migliori avventure marine e safari nel deserto e goditi la magia della natura."
+},
+"toursTitle": "Esplora i nostri tour a Marsa Alam",
+  "toursSubtitle": "Scopri le migliori avventure marine e safari nel deserto e goditi la magia della natura.",
+  "scrollToTop": "Torna su",
   "whatsappTooltip": "Chatta con noi su WhatsApp"
 }

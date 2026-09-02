@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Language } from "@/types/tour";
 import { faqData } from "@/data/faq";
 import { ChevronDownIcon } from "lucide-react";
+import SectionTitle from "../common/SectionTitle";
 
 interface FAQSectionProps {
   lang: Language;
@@ -20,15 +21,11 @@ export default function FAQSection({ lang }: FAQSectionProps) {
   return (
     <section className="py-20 bg-slate-50 dark:bg-slate-950 transition-colors relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <span className="inline-block py-1 px-3 rounded-full text-xs font-semibold uppercase tracking-wider bg-cyan-100 dark:bg-cyan-950/60 text-cyan-700 dark:text-cyan-400 mb-4">
-            {t.badge}
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
-            {t.title}
-          </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-400">{t.subtitle}</p>
-        </div>
+        <SectionTitle
+          title={t.title}
+          subtitle={t.subtitle}
+          align="center"
+        />
 
         <div className="space-y-4">
           {t.items.map((item, index) => {

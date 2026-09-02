@@ -7,7 +7,7 @@ const nextconfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**', // أو الدومين الخاص بالصور لو هترفع على CDN
+        hostname: 'marsa-alam-local-guide-six.vercel.app', 
       },
     ],
   },

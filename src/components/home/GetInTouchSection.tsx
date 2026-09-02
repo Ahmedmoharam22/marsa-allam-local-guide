@@ -1,6 +1,7 @@
 import { Language } from "@/types/tour";
 import { getInTouchData } from "@/data/getInTouch";
 import { FaWhatsapp, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import SectionTitle from "../common/SectionTitle";
 
 interface GetInTouchProps {
   lang: Language;
@@ -13,18 +14,11 @@ export default function GetInTouchSection({ lang }: GetInTouchProps) {
     <section className="py-20 bg-slate-100 dark:bg-slate-900 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* عنوان السكشن */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="inline-block py-1 px-4 rounded-full text-xs font-semibold uppercase tracking-wider bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/20">
-            {t.badge}
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            {t.title}
-          </h2>
-          <p className="text-slate-600 dark:text-slate-400 text-base sm:text-lg">
-            {t.subtitle}
-          </p>
-        </div>
+        <SectionTitle
+          title={t.title}
+          subtitle={t.subtitle}
+          align="center"
+        />
 
         {/* المحتوى الرئيسي */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">

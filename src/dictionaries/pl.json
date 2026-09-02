@@ -31,5 +31,13 @@
     "title": "Nurkowanie w Marsa Alam | Wycieczki i kursy",
     "description": "Zarezerwuj najlepsze wycieczki do snorkelingu, safari z delfinami i kursy PADI w Marsa Alam."
   },
+  "tours": {
+  "badge": "Odkryj przygodę",
+  "title": "Odkryj nasze wycieczki po Marsa Alam",
+  "subtitle": "Odkryj najlepsze przygody morskie i safari na pustyni oraz ciesz się magią natury."
+},
+"toursTitle": "Odkryj nasze wycieczki po Marsa Alam",
+  "toursSubtitle": "Odkryj najlepsze przygody morskie i safari na pustyni oraz ciesz się magią natury.",
+  "scrollToTop": "Przewiń do góry",
   "whatsappTooltip": "Napisz do nas na WhatsApp"
 }

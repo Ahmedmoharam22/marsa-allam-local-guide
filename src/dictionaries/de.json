@@ -31,5 +31,13 @@
     "title": "Tauchen in Marsa Alam | Ausflüge & Tauchkurse",
     "description": "Buchen Sie erstklassige Schnorchelausflüge, Sataya Delfinsafaris und PADI-Tauchkurse in Marsa Alam."
   },
+  "tours": {
+  "badge": "Abenteuer Entdecken",
+  "title": "Entdecken Sie unsere Marsa Alam Touren",
+  "subtitle": "Entdecken Sie die besten Meeresabenteuer und Wüstensafaris und genießen Sie die Magie der Natur."
+},
+  "toursTitle": "Entdecken Sie unsere Marsa Alam Touren",
+  "toursSubtitle": "Entdecken Sie die besten Meeresabenteuer und Wüstensafaris und genießen Sie die Magie der Natur.",
+  "scrollToTop": "Nach oben scrollen",
   "whatsappTooltip": "Chatten Sie mit uns auf WhatsApp"
 }

@@ -31,5 +31,13 @@
     "title": "Best Scuba Diving & Sea Safaris in Marsa Alam",
     "description": "Book top-rated snorkeling trips, Sataya dolphin safaris, and PADI diving courses in Marsa Alam."
   },
+  "tours": {
+  "badge": "Discover Adventure",
+  "title": "Explore Our Marsa Alam Tours",
+  "subtitle": "Discover the best marine adventures and desert safaris, and enjoy the magic of nature with us."
+},
+  "toursTitle": "Explore Our Marsa Alam Tours",
+  "toursSubtitle": "Discover the best marine adventures and desert safaris, and enjoy the magic of nature with us.",
+  "scrollToTop": "Scroll to top",
   "whatsappTooltip": "Chat with us on WhatsApp"
 }
