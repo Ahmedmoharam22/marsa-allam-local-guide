@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { i18n } from '@/lib/i18n-config';
 import { tours } from '@/data/tours';
 
-export default async function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://marsa-alam-local-guide-six.vercel.app';
   const staticPages = ['', '/tours', '/liveaboards', '/courses', '/about', '/contact'];
 
