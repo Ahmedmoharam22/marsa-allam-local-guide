@@ -25,7 +25,7 @@ export default function WhyChooseUs({ lang }: WhyChooseUsProps) {
   const t = whyChooseUsData[lang] || whyChooseUsData.en;
 
   return (
-    <section className="py-20 bg-slate-50 dark:bg-slate-900/50 transition-colors relative overflow-hidden">
+    <section id="about" className="py-20 bg-slate-50 dark:bg-slate-900/50 transition-colors relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title={t.title}

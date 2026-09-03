@@ -160,10 +160,10 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
       <div className="mt-12 flex justify-center">
         <Link
           href={`/${lang}/tours`}
-          className="group inline-flex items-center gap-3 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg transition-all duration-300 hover:bg-primary/90 hover:shadow-primary/25 hover:scale-105 active:scale-95"
+          className="group inline-flex items-center gap-3 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg transition-all duration-300 hover:bg-primary/90 hover:shadow-primary/25 "
         >
           <span>{t.viewAll}</span>
-          <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
+          <ArrowRight className="h-5 w-5 transition-transform duration-300 rtl:rotate-180" />
         </Link>
       </div>
     </section>

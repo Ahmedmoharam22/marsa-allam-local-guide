@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import type { Locale } from '@/lib/i18n-config';
 import LanguageSwitcher from '../LanguageSwitcher';
 import Logo from '../common/Logo';
@@ -18,6 +18,7 @@ interface NavbarProps {
       courses: string;
       about: string;
       contact: string;
+      blogs?: string;
       whatsappCta?: string;
     };
     seo: {
@@ -39,11 +40,9 @@ export default function Navbar({ lang, dict }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
-  // Check if current page is the homepage
   const isHome = pathname === `/${lang}` || pathname === `/${lang}/`;
-
-  // Show solid/frosted navbar background on inner pages or when scrolled > 20px
   const showSolidNav = isScrolled || !isHome;
 
   useEffect(() => {
@@ -59,14 +58,43 @@ export default function Navbar({ lang, dict }: NavbarProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [pathname]);
 
+  // دالة للتعامل مع الضغط على اللينكات (لو في الهوم بعمل سكرول، لو بره الهوم بيحولني للهوم مع الـ Hash)
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string, isPageRoute: boolean = false) => {
+    setMobileMenuOpen(false);
+
+    if (isPageRoute) {
+      // لو صفحة منفصلة مثل tours أو blogs
+      return;
+    }
+
+    e.preventDefault();
+    if (isHome) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      router.push(`/${lang}#${targetId}`);
+    }
+  };
+
   const whatsappText = dict?.nav?.whatsappCta || 'Book on WhatsApp';
   const inquiryText = whatsappInquiryMessages[lang] || whatsappInquiryMessages.en;
   const whatsappUrl = `https://wa.me/201001188941?text=${encodeURIComponent(inquiryText)}`;
+
+  const navLinks = [
+    { key: 'home', label: dict.nav.home, href: `/${lang}`, target: 'hero', isPage: false },
+    { key: 'tours', label: dict.nav.tours, href: `/${lang}/tours`, target: 'tours', isPage: true }, // بتودي صفحة الرحلات
+    { key: 'liveaboards', label: dict.nav.liveaboards, href: `/${lang}#liveaboards`, target: 'liveaboards', isPage: false },
+    { key: 'courses', label: dict.nav.courses, href: `/${lang}/tours`, target: 'tours', isPage:   true },
+    { key: 'about', label: dict.nav.about, href: `/${lang}#about`, target: 'about', isPage: false },
+    { key: 'blogs', label: dict.nav.blogs || 'Blogs', href: `/${lang}/blogs`, target: 'blogs', isPage: true }, // صفحة البلوجز الجديدة
+    { key: 'contact', label: dict.nav.contact, href: `/${lang}#contact`, target: 'contact', isPage: false },
+  ];
 
   return (
     <header
@@ -87,55 +115,19 @@ export default function Navbar({ lang, dict }: NavbarProps) {
         />
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-          <Link
-            href={`/${lang}`}
-            className={`transition-colors duration-300 ${
-              showSolidNav ? 'text-slate-700 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400' : 'text-white/90 hover:text-teal-300'
-            }`}
-          >
-            {dict.nav.home}
-          </Link>
-          <Link
-            href={`/${lang}/tours`}
-            className={`transition-colors duration-300 ${
-              showSolidNav ? 'text-slate-700 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400' : 'text-white/90 hover:text-teal-300'
-            }`}
-          >
-            {dict.nav.tours}
-          </Link>
-          <Link
-            href={`/${lang}/liveaboards`}
-            className={`transition-colors duration-300 ${
-              showSolidNav ? 'text-slate-700 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400' : 'text-white/90 hover:text-teal-300'
-            }`}
-          >
-            {dict.nav.liveaboards}
-          </Link>
-          <Link
-            href={`/${lang}/courses`}
-            className={`transition-colors duration-300 ${
-              showSolidNav ? 'text-slate-700 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400' : 'text-white/90 hover:text-teal-300'
-            }`}
-          >
-            {dict.nav.courses}
-          </Link>
-          <Link
-            href={`/${lang}/about`}
-            className={`transition-colors duration-300 ${
-              showSolidNav ? 'text-slate-700 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400' : 'text-white/90 hover:text-teal-300'
-            }`}
-          >
-            {dict.nav.about}
-          </Link>
-          <Link
-            href={`/${lang}/contact`}
-            className={`transition-colors duration-300 ${
-              showSolidNav ? 'text-slate-700 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400' : 'text-white/90 hover:text-teal-300'
-            }`}
-          >
-            {dict.nav.contact}
-          </Link>
+        <nav className="hidden md:flex items-center gap-5 text-sm font-medium">
+          {navLinks.map((link) => (
+            <Link
+              key={link.key}
+              href={link.href}
+              onClick={(e) => handleNavClick(e, link.target, link.isPage)}
+              className={`transition-colors duration-300 ${
+                showSolidNav ? 'text-slate-700 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400' : 'text-white/90 hover:text-teal-300'
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
 
         {/* Language Switcher & WhatsApp CTA (Desktop) */}
@@ -178,42 +170,16 @@ export default function Navbar({ lang, dict }: NavbarProps) {
       {mobileMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800 shadow-xl px-6 py-6 md:hidden transition-all animate-in slide-in-from-top duration-300">
           <nav className="flex flex-col gap-4 text-base font-medium">
-            <Link
-              href={`/${lang}`}
-              className="text-slate-800 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400 py-1 transition-colors"
-            >
-              {dict.nav.home}
-            </Link>
-            <Link
-              href={`/${lang}/tours`}
-              className="text-slate-800 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400 py-1 transition-colors"
-            >
-              {dict.nav.tours}
-            </Link>
-            <Link
-              href={`/${lang}/liveaboards`}
-              className="text-slate-800 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400 py-1 transition-colors"
-            >
-              {dict.nav.liveaboards}
-            </Link>
-            <Link
-              href={`/${lang}/courses`}
-              className="text-slate-800 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400 py-1 transition-colors"
-            >
-              {dict.nav.courses}
-            </Link>
-            <Link
-              href={`/${lang}/about`}
-              className="text-slate-800 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400 py-1 transition-colors"
-            >
-              {dict.nav.about}
-            </Link>
-            <Link
-              href={`/${lang}/contact`}
-              className="text-slate-800 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400 py-1 transition-colors"
-            >
-              {dict.nav.contact}
-            </Link>
+            {navLinks.map((link) => (
+              <Link
+                key={link.key}
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.target, link.isPage)}
+                className="text-slate-800 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400 py-1 transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
 
             {/* WhatsApp CTA inside Mobile Menu */}
             <div className="pt-4 border-t border-slate-200 dark:border-slate-800 mt-2">

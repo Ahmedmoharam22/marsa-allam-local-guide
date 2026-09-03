@@ -1,13 +1,13 @@
 {
-  "nav": {
-    "home": "Home",
-    "tours": "Diving Trips",
-    "liveaboards": "Safari Yachts",
-    "courses": "PADI Courses",
-    "about": "About Us",
-    "contact": "Contact",
-    "whatsappCta": "Book on WhatsApp"
-  },
+"nav": {
+  "home": "Home",
+  "tours": "Diving Trips",
+  "liveaboards": "Safari Yachts",
+  "courses": "PADI Courses",
+  "about": "About Us",
+  "blogs": "Blogs",
+  "contact": "Contact"
+},
   "hero": {
     "welcome": "Welcome to",
     "title_main": "Marsa Allam",

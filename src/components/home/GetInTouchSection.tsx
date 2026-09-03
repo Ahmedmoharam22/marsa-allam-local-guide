@@ -11,7 +11,7 @@ export default function GetInTouchSection({ lang }: GetInTouchProps) {
   const t = getInTouchData[lang] || getInTouchData.en;
 
   return (
-    <section className="py-20 bg-slate-100 dark:bg-slate-900 transition-colors">
+    <section id="contact" className="py-20 bg-slate-100 dark:bg-slate-900 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <SectionTitle
