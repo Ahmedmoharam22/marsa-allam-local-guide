@@ -11,6 +11,13 @@ interface FooterProps {
 export default function Footer({ lang }: FooterProps) {
   const t = footerData[lang] || footerData.en;
 
+  // دالة مساعدة لتأكيد إضافة لغة الـ prefix للرابط لو مش موجودة
+  const getLocalizedHref = (href: string) => {
+    if (!href) return `/${lang}`;
+    if (href.startsWith(`/${lang}`)) return href;
+    return `/${lang}${href.startsWith('/') ? href : `/${href}`}`;
+  };
+
   return (
     <footer className="bg-slate-950 text-slate-300 pt-16 pb-8 border-t border-slate-800/80 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,7 +48,7 @@ export default function Footer({ lang }: FooterProps) {
             </div>
           </div>
 
-          {/* العمود الثاني: الكورسات (3 أعمدة) */}
+          {/* العمود الثاني: الكورسات (3 أعمدة) - Coming Soon لو لسه مش صفحات فعلية */}
           <div className="lg:col-span-3 space-y-4">
             <h3 className="text-white font-bold text-base tracking-wide border-l-2 border-cyan-500 pl-3">
               {t.coursesTitle}
@@ -49,9 +56,15 @@ export default function Footer({ lang }: FooterProps) {
             <ul className="space-y-2.5 text-sm">
               {t.courses.map((course, idx) => (
                 <li key={idx}>
-                  <Link href={course.href} className="text-slate-400 hover:text-cyan-400 transition-colors">
-                    {course.name}
-                  </Link>
+                  {course.href ? (
+                    <Link href={getLocalizedHref(course.href)} className="text-slate-400 hover:text-cyan-400 transition-colors">
+                      {course.name}
+                    </Link>
+                  ) : (
+                    <span className="text-slate-600 cursor-not-allowed">
+                      {course.name} <span className="text-[10px] text-slate-600">(Soon)</span>
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>
@@ -65,7 +78,7 @@ export default function Footer({ lang }: FooterProps) {
             <ul className="space-y-2.5 text-sm">
               {t.trips.map((trip, idx) => (
                 <li key={idx}>
-                  <Link href={trip.href} className="text-slate-400 hover:text-cyan-400 transition-colors">
+                  <Link href={getLocalizedHref(trip.href)} className="text-slate-400 hover:text-cyan-400 transition-colors">
                     {trip.name}
                   </Link>
                 </li>
@@ -81,9 +94,15 @@ export default function Footer({ lang }: FooterProps) {
             <ul className="space-y-2.5 text-sm">
               {t.blogs.map((blog, idx) => (
                 <li key={idx}>
-                  <Link href={blog.href} className="text-slate-400 hover:text-cyan-400 transition-colors">
-                    {blog.name}
-                  </Link>
+                  {blog.href ? (
+                    <Link href={getLocalizedHref(blog.href)} className="text-slate-400 hover:text-cyan-400 transition-colors">
+                      {blog.name}
+                    </Link>
+                  ) : (
+                    <span className="text-slate-600 cursor-not-allowed">
+                      {blog.name} <span className="text-[10px] text-slate-600">(Soon)</span>
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>
@@ -91,12 +110,12 @@ export default function Footer({ lang }: FooterProps) {
 
         </div>
 
-        {/* حقوق النشر السفلية */}
+        {/* حقوق النشر السفلية والسياسات */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>© {new Date().getFullYear()} Marsa Alam Local Guide. {t.allRights}</p>
           <div className="flex items-center gap-6">
-            <Link href="/privacy" className="hover:text-slate-400 transition-colors">{t.privacy}</Link>
-            <Link href="/terms" className="hover:text-slate-400 transition-colors">{t.terms}</Link>
+            <Link href={`/${lang}/privacy`} className="hover:text-slate-400 transition-colors">{t.privacy}</Link>
+            <Link href={`/${lang}/terms`} className="hover:text-slate-400 transition-colors">{t.terms}</Link>
           </div>
         </div>
 

@@ -26,6 +26,15 @@ interface NavbarProps {
   };
 }
 
+const whatsappInquiryMessages: Record<Locale, string> = {
+  en: 'Hello! I would like to inquire about tours and bookings in Marsa Alam.',
+  de: 'Hallo! Ich möchte mich über Touren und Buchungen in Marsa Alam informieren.',
+  it: 'Ciao! Vorrei informazioni sui tour e sulle prenotazioni a Marsa Alam.',
+  ru: 'Здравствуйте! Я хотел бы узнать о турах и бронировании в Марса-Аламе.',
+  pl: 'Cześć! Chciałbym zapytać o wycieczki i rezerwacje w Marsa Alam.',
+  cz: 'Dobrý den! Rád bych se zeptal na výlety a rezervace v Marsa Alam.',
+};
+
 export default function Navbar({ lang, dict }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -55,8 +64,9 @@ export default function Navbar({ lang, dict }: NavbarProps) {
     setMobileMenuOpen(false);
   }, [pathname]);
 
-  const whatsappText = dict.nav.whatsappCta || "Book on WhatsApp";
-  const whatsappUrl = "https://wa.me/201001188941";
+  const whatsappText = dict?.nav?.whatsappCta || 'Book on WhatsApp';
+  const inquiryText = whatsappInquiryMessages[lang] || whatsappInquiryMessages.en;
+  const whatsappUrl = `https://wa.me/201001188941?text=${encodeURIComponent(inquiryText)}`;
 
   return (
     <header

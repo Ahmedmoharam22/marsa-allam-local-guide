@@ -23,7 +23,7 @@ export function FeaturesBar({ dict }: FeaturesBarProps) {
   const f = dict.hero.features;
 
   return (
-    <section className="relative z-20 -mt-10 pb-6 sm:-mt-12">
+    <section className="relative py-8 bg-slate-50 dark:bg-slate-900/50">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="grid grid-cols-2 gap-4 rounded-2xl bg-white/95 px-6 py-5 shadow-2xl backdrop-blur-md md:grid-cols-4 md:divide-x md:divide-gray-200/60 rtl:md:divide-x-reverse">
           
