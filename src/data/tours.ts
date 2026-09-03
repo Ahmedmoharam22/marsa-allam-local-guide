@@ -2222,5 +2222,885 @@ export const tours: Tour[] = [
       "/images/tours/hamata-3.webp"
     ]
   }
-}
+},
+{
+    id: "wadi-el-gemal-islands",
+    slug: "wadi-el-gemal-islands",
+    title: {
+      en: "Wadi El Gemal Islands",
+      de: "Wadi El Gemal Inseln",
+      it: "Isole Wadi El Gemal",
+      ru: "Острова Вади-эль-Хемаль",
+      pl: "Wyspy Wadi El Gemal",
+      cz: "Ostrovy Wadi El Gemal"
+    },
+    subtitle: {
+      en: "Egyptian Maldives",
+      de: "Ägyptische Malediven",
+      it: "Maldive Egiziane",
+      ru: "Египетские Мальдивы",
+      pl: "Egipskie Malediwy",
+      cz: "Egyptské Maledivy"
+    },
+    category: {
+      en: "Water Adventure",
+      de: "Wasserabenteuer",
+      it: "Avventura Acquatica",
+      ru: "Водное приключение",
+      pl: "Przygoda Wodna",
+      cz: "Vodní dobrodružství"
+    },
+    price: {
+      amount: 75,
+      currency: "€",
+      unit: {
+        en: "per person",
+        de: "pro Person",
+        it: "a persona",
+        ru: "с человека",
+        pl: "za osobę",
+        cz: "za osobu"
+      }
+    },
+    duration: {
+      en: "4 hours",
+      de: "4 Stunden",
+      it: "4 ore",
+      ru: "4 часа",
+      pl: "4 godziny",
+      cz: "4 hodiny"
+    },
+    departure: {
+      en: "Wadi El Gemal Marina",
+      de: "Wadi El Gemal Yachthafen",
+      it: "Marina di Wadi El Gemal",
+      ru: "Марина Вади-эль-Хемаль",
+      pl: "Przystań Wadi El Gemal",
+      cz: "Přístav Wadi El Gemal"
+    },
+    overview: {
+      en: "Enjoy a beautiful speedboat adventure through the islands and crystal-clear waters of Wadi El Gemal, south of Marsa Alam. Visit more than one island, enjoy around 45 minutes of island and beach time, and experience 2 snorkeling sessions — approximately 45 minutes each.",
+      de: "Genießen Sie ein wunderschönes Schnellboot-Abenteuer durch die Inseln und das kristallklare Wasser von Wadi El Gemal südlich von Marsa Alam. Besuchen Sie mehr als eine Insel, genießen Sie ca. 45 Minuten Insel- und Strandzeit und erleben Sie 2 Schnorchelgänge von jeweils ca. 45 Minuten.",
+      it: "Goditi una splendida avventura in motoscafo tra le isole e le acque cristalline di Wadi El Gemal, a sud di Marsa Alam. Visita più di un'isola, goditi circa 45 minuti di tempo sull'isola e in spiaggia e sperimenta 2 sessioni di snorkeling di circa 45 minuti ciascuna.",
+      ru: "Насладитесь прекрасным приключением на скоростном катере по островам и кристально чистым водам Вади-эль-Хемаль к югу от Марса-Алама. Посетите более одного острова, насладитесь примерно 45 минутами отдыха на острове и пляже, а также совершите 2 сеанса сноркелинга продолжительностью около 45 минут каждый.",
+      pl: "Ciesz się wspaniałą przygodą motorówką po wyspach i krystalicznie czystych wodach Wadi El Gemal na południe od Marsa Alam. Odwiedź więcej niż jedną wyspę, ciesz się około 45 minutami czasu na wyspie i plaży oraz weź udział w 2 sesjach snorkellingu trwających po około 45 minut.",
+      cz: "Užijte si nádherné dobrodružství na rychlém člunu mezi ostrovy a křišťálově čistou vodou Wadi El Gemal jižně od Marsa Alam. Navštivte více než jeden ostrov, užijte si přibližně 45 minut času na ostrově a pláži a zažijte 2 šnorchlovací relace trvající přibližně 45 minut."
+    },
+    highlights: {
+      en: [
+        "Explore more than one Wadi El Gemal island",
+        "Speedboat adventure",
+        "1 dolphin-area snorkeling session — approximately 45 minutes",
+        "1 coral reef snorkeling session — approximately 45 minutes",
+        "Chance to see dolphins",
+        "45 minutes of island and beach time",
+        "Colorful coral reefs & marine life",
+        "Crystal-clear Red Sea water",
+        "Beautiful natural scenery",
+        "Local guide"
+      ],
+      de: [
+        "Erkunden Sie mehr als eine Wadi El Gemal Insel",
+        "Schnellboot-Abenteuer",
+        "1 Schnorchelgang im Delfinbereich — ca. 45 Minuten",
+        "1 Schnorchelgang am Korallenriff — ca. 45 Minuten",
+        "Chance, Delfine zu sehen",
+        "45 Minuten Insel- und Strandzeit",
+        "Farbenfrohe Korallenriffe & Meereslebewesen",
+        "Kristallklares Rotmeerwasser",
+        "Wunderschöne Naturlandschaft",
+        "Lokaler Guide"
+      ],
+      it: [
+        "Esplora più di un'isola di Wadi El Gemal",
+        "Avventura in motoscafo",
+        "1 sessione di snorkeling nell'area dei delfini — circa 45 minuti",
+        "1 sessione di snorkeling nella barriera corallina — circa 45 minuti",
+        "Possibilità di vedere i delfini",
+        "45 minuti di tempo sull'isola e in spiaggia",
+        "Barriere coralline colorate e vita marina",
+        "Acqua cristallina del Mar Rosso",
+        "Splendido scenario naturale",
+        "Guida locale"
+      ],
+      ru: [
+        "Исследуйте несколько островов Вади-эль-Хемаль",
+        "Приключение на скоростном катере",
+        "1 сеанс сноркелинга в районе дельфинов — около 45 минут",
+        "1 сеанс сноркелинга у кораллового рифа — около 45 минут",
+        "Шанс увидеть дельфинов",
+        "45 минут отдыха на острове и пляже",
+        "Красочные коралловые рифы и морская фауна",
+        "Кристально чистая вода Красного моря",
+        "Красивые природные пейзажи",
+        "Местный гид"
+      ],
+      pl: [
+        "Odkryj więcej niż jedną wyspę Wadi El Gemal",
+        "Przygoda motorówką",
+        "1 sesja snorkellingu w obszarze delfinów — ok. 45 minut",
+        "1 sesja snorkellingu przy rafie koralowej — ok. 45 minut",
+        "Szansa na zobaczenie delfinów",
+        "45 minut czasu na wyspie i plaży",
+        "Kolorowe rafy koralowe i życie morskie",
+        "Krystalicznie czysta woda Morza Czerwonego",
+        "Piękna przyroda",
+        "Lokalny przewodnik"
+      ],
+      cz: [
+        "Prozkoumejte více než jeden ostrov Wadi El Gemal",
+        "Dobrodružství na rychlém člunu",
+        "1 šnorchlování v oblasti delfínů — cca 45 minut",
+        "1 šnorchlování u korálového útesu — cca 45 minut",
+        "Šance vidět delfíny",
+        "45 minut času na ostrově a pláži",
+        "Pestrobarevné korálové útesy a mořský život",
+        "Křišťálově čistá voda Rudého moře",
+        "Krásná přírodní scenérie",
+        "Místní průvodce"
+      ]
+    },
+    included: {
+      en: [
+        "Hotel pickup & drop-off from Marsa Alam",
+        "Transportation to and from Wadi El Gemal Marina",
+        "Speedboat trip",
+        "1 dolphin-area snorkeling session",
+        "1 coral reef snorkeling session",
+        "Island visit & beach time",
+        "Snorkeling equipment",
+        "Soft drinks",
+        "Mineral water",
+        "Local guide"
+      ],
+      de: [
+        "Hotelabholung & -rückgabe ab Marsa Alam",
+        "Transport zum und vom Yachthafen Wadi El Gemal",
+        "Schnellbootfahrt",
+        "1 Schnorchelgang im Delfinbereich",
+        "1 Schnorchelgang am Korallenriff",
+        "Inselbesuch & Strandzeit",
+        "Schnorchelausrüstung",
+        "Alkoholfreie Getränke",
+        "Mineralwasser",
+        "Lokaler Guide"
+      ],
+      it: [
+        "Prelievo e rientro in hotel da Marsa Alam",
+        "Trasporto da e per il Marina di Wadi El Gemal",
+        "Viaggio in motoscafo",
+        "1 sessione di snorkeling nell'area dei delfini",
+        "1 sessione di snorkeling nella barriera corallina",
+        "Visita dell'isola e tempo in spiaggia",
+        "Attrezzatura da snorkeling",
+        "Bevande analcoliche",
+        "Acqua minerale",
+        "Guida locale"
+      ],
+      ru: [
+        "Трансфер из отеля и обратно из Марса-Алама",
+        "Транспорт в марину Вади-эль-Хемаль и обратно",
+        "Поездка на скоростном катере",
+        "1 сеанс сноркелинга в районе дельфинов",
+        "1 сеанс сноркелинга у кораллового рифа",
+        "Посещение острова и время на пляже",
+        "Оборудование для сноркелинга",
+        "Безалкогольные напитки",
+        "Минеральная вода",
+        "Местный гид"
+      ],
+      pl: [
+        "Odbiór i dowóz do hotelu z Marsa Alam",
+        "Transport do i z przystani Wadi El Gemal",
+        "Rejs motorówką",
+        "1 sesja snorkellingu w obszarze delfinów",
+        "1 sesja snorkellingu przy rafie koralowej",
+        "Wizyta na wyspie i czas na plaży",
+        "Sprzęt do snorkellingu",
+        "Napoje bezalkoholowe",
+        "Woda mineralna",
+        "Lokalny przewodnik"
+      ],
+      cz: [
+        "Vyzvednutí a odvoz v hotelu z Marsa Alam",
+        "Doprava do a z přístavu Wadi El Gemal",
+        "Výlet rychlým člunem",
+        "1 šnorchlování v oblasti delfínů",
+        "1 šnorchlování u korálového útesu",
+        "Návštěva ostrova a čas na pláži",
+        "Šnorchlovací vybavení",
+        "Nealkoholické nápoje",
+        "Minerální voda",
+        "Místní průvodce"
+      ]
+    },
+    notIncluded: {
+      en: [
+        "Personal expenses",
+        "Optional activities or services not mentioned above",
+        "Underwater photos & videos"
+      ],
+      de: [
+        "Persönliche Ausgaben",
+        "Optionale Aktivitäten oder Services, die oben nicht erwähnt wurden",
+        "Unterwasserfotos & -videos"
+      ],
+      it: [
+        "Spese personali",
+        "Attività o servizi facoltativi non menzionati sopra",
+        "Foto e video subacquei"
+      ],
+      ru: [
+        "Личные расходы",
+        "Дополнительные мероприятия или услуги, не упомянутые выше",
+        "Подводные фото и видео"
+      ],
+      pl: [
+        "Wydatki osobiste",
+        "Opcjonalne aktywności lub usługi niewymienione powyżej",
+        "Zdjęcia i filmy pod wodą"
+      ],
+      cz: [
+        "Osobní výdaje",
+        "Volitelné aktivity nebo služby, které nejsou uvedeny výše",
+        "Podvodní fotky a videa"
+      ]
+    },
+    whatToBring: {
+      en: ["Swimwear", "Towel", "Sunscreen", "Sunglasses", "Hat", "Waterproof camera (optional)"],
+      de: ["Badebekleidung", "Handtuch", "Sonnencreme", "Sonnenbrille", "Hut", "Wasserdichte Kamera (optional)"],
+      it: ["Costume da bagno", "Asciugamano", "Crema solare", "Occhiali da sole", "Cappello", "Fotocamera subacquea (opzionale)"],
+      ru: ["Купальник", "Полотенце", "Солнцезащитный крем", "Солнцезащитные очки", "Головной убор", "Водонепроницаемая камера (по желанию)"],
+      pl: ["Strój kąpielowy", "Ręcznik", "Krem z filtrem", "Okulary przeciwsłoneczne", "Czapka", "Wodoodporny aparat (opcjonalnie)"],
+      cz: ["Plavky", "Ručník", "Opalovací krém", "Sluneční brýle", "Klobouk", "Vodotěsný fotoaparát (volitelně)"]
+    },
+    childrenPolicy: {
+      under5: {
+        en: "Under 5 years: Free",
+        de: "Unter 5 Jahren: Kostenlos",
+        it: "Sotto i 5 anni: Gratuito",
+        ru: "До 5 лет: Бесплатно",
+        pl: "Poniżej 5 lat: Bezpłatnie",
+        cz: "Do 5 let: Zdarma"
+      },
+      from5to10: {
+        en: "5–10 years: 50% of adult price",
+        de: "5–10 Jahre: 50% des Erwachsenenpreises",
+        it: "5–10 anni: 50% del prezzo adulto",
+        ru: "5–10 лет: 50% от стоимости для взрослых",
+        pl: "5–10 lat: 50% ceny dla dorosłych",
+        cz: "5–10 let: 50 % dospělé ceny"
+      },
+      over10: {
+        en: "Over 10 years: Full adult price",
+        de: "Über 10 Jahre: Voller Erwachsenenpreis",
+        it: "Oltre i 10 anni: Prezzo intero adulto",
+        ru: "Старше 10 лет: Полная стоимость для взрослых",
+        pl: "Powyżej 10 lat: Pełna cena dla dorosłych",
+        cz: "Nad 10 let: Plná dospělá cena"
+      }
+    },
+    itinerary: [
+      {
+        step: "01",
+        title: {
+          en: "Wadi El Gemal Marina",
+          de: "Wadi El Gemal Yachthafen",
+          it: "Marina di Wadi El Gemal",
+          ru: "Марина Вади-эль-Хемаль",
+          pl: "Przystań Wadi El Gemal",
+          cz: "Přístav Wadi El Gemal"
+        },
+        description: {
+          en: "Departure from the marina.",
+          de: "Abfahrt vom Yachthafen.",
+          it: "Partenza dal porto turistico.",
+          ru: "Отправление из марины.",
+          pl: "Wypłynięcie z przystani.",
+          cz: "Odjezd z přístavu."
+        }
+      },
+      {
+        step: "02",
+        title: {
+          en: "Speedboat Adventure",
+          de: "Schnellboot-Abenteuer",
+          it: "Avventura in Motoscafo",
+          ru: "Приключение на скоростном катере",
+          pl: "Przygoda motorówką",
+          cz: "Dobrodružství na rychlém člunu"
+        },
+        description: {
+          en: "Cruise through the beautiful waters of Wadi El Gemal.",
+          de: "Fahrt durch das wunderschöne Wasser von Wadi El Gemal.",
+          it: "Navigazione attraverso le splendide acque di Wadi El Gemal.",
+          ru: "Круиз по прекрасным водам Вади-эль-Хемаль.",
+          pl: "Rejs przez piękne wody Wadi El Gemal.",
+          cz: "Plavba nádhernými vodami Wadi El Gemal."
+        }
+      },
+      {
+        step: "03",
+        title: {
+          en: "1st Snorkeling Session — Dolphin Area",
+          de: "1. Schnorchelgang — Delfinbereich",
+          it: "1ª Sessione di Snorkeling — Area Delfini",
+          ru: "1-й сеанс сноркелинга — район дельфинов",
+          pl: "1. sesja snorkellingu — Obszar Delfinów",
+          cz: "1. šnorchlování — Oblast delfínů"
+        },
+        description: {
+          en: "Snorkel in the dolphin area and search for dolphins in their natural environment.",
+          de: "Schnorcheln im Delfinbereich und Suche nach Delfinen in ihrer natürlichen Umgebung.",
+          it: "Snorkeling nell'area dei delfini e ricerca dei delfini nel loro ambiente naturale.",
+          ru: "Сноркелинг в районе дельфинов и поиски дельфинов в их естественной среде.",
+          pl: "Snorkelling w obszarze delfinów i poszukiwanie delfinów w ich naturalnym środowisku.",
+          cz: "Šnorchlování v oblasti delfínů a hledání delfínů v jejich přirozeném prostředí."
+        }
+      },
+      {
+        step: "04",
+        title: {
+          en: "Island Exploration & Dolphin Search",
+          de: "Inselerkundung & Delfinsuche",
+          it: "Esplorazione dell'isola e ricerca dei delfini",
+          ru: "Исследование островов и поиск дельфинов",
+          pl: "Eksploracja wysp i poszukiwanie delfinów",
+          cz: "Průzkum ostrovů a hledání delfínů"
+        },
+        description: {
+          en: "Visit more than one island and continue searching for dolphins during the trip.",
+          de: "Besuchen Sie mehr als eine Insel und suchen Sie während der Fahrt weiter nach Delfinen.",
+          it: "Visita più di un'isola e continua a cercare i delfini durante il viaggio.",
+          ru: "Посетите более одного острова и продолжайте искать дельфинов во время поездки.",
+          pl: "Odwiedź więcej niż jedną wyspę i kontynuuj poszukiwania delfinów podczas wycieczki.",
+          cz: "Navštivte více než jeden ostrov a během výletu pokračujte v hledání delfínů."
+        }
+      },
+      {
+        step: "05",
+        title: {
+          en: "Island & Beach Time",
+          de: "Insel- & Strandzeit",
+          it: "Tempo sull'isola e in spiaggia",
+          ru: "Время на острове и пляже",
+          pl: "Czas na wyspie i plaży",
+          cz: "Čas na ostrově a pláži"
+        },
+        description: {
+          en: "Relax, swim and enjoy the beautiful natural surroundings.",
+          de: "Entspannen Sie sich, schwimmen Sie und genießen Sie die wunderschöne natürliche Umgebung.",
+          it: "Rilassati, nuota e goditi la splendida cornice naturale.",
+          ru: "Расслабьтесь, поплавайте и насладитесь прекрасной природой.",
+          pl: "Zrelaksuj się, pływaj i ciesz się pięknym otoczeniem przyrody.",
+          cz: "Relaxujte, plavte a užívejte si krásné přírodní prostředí."
+        }
+      },
+      {
+        step: "06",
+        title: {
+          en: "2nd Snorkeling Session — Coral Reef",
+          de: "2. Schnorchelgang — Korallenriff",
+          it: "2ª Sessione di Snorkeling — Barriera Corallina",
+          ru: "2-й сеанс сноркелинга — коралловый риф",
+          pl: "2. sesja snorkellingu — Rafa Koralowa",
+          cz: "2. šnorchlování — Korálový útes"
+        },
+        description: {
+          en: "Explore colorful coral reefs and discover the rich marine life of the Red Sea.",
+          de: "Erkunden Sie farbenfrohe Korallenriffe und entdecken Sie die reiche Unterwasserwelt des Roten Meeres.",
+          it: "Esplora le barriere coralline colorate e scopri la ricca vita marina del Mar Rosso.",
+          ru: "Исследуйте красочные коралловые рифы и откройте для себя богатую морскую фауну Красного моря.",
+          pl: "Odkryj kolorowe rafy koralowe i bogate życie morskie Morza Czerwonego.",
+          cz: "Prozkoumejte pestrobarevné korálové útesy a objevte bohatý mořský život Rudého moře."
+        }
+      },
+      {
+        step: "07",
+        title: {
+          en: "Return to Wadi El Gemal Marina",
+          de: "Rückkehr zum Wadi El Gemal Yachthafen",
+          it: "Ritorno al Marina di Wadi El Gemal",
+          ru: "Возвращение в марину Вади-эль-Хемаль",
+          pl: "Powrót do przystani Wadi El Gemal",
+          cz: "Návrat do přístavu Wadi El Gemal"
+        },
+        description: {
+          en: "Around 11:30 AM – 12:00 PM.",
+          de: "Gegen 11:30 Uhr – 12:00 Uhr.",
+          it: "Intorno alle 11:30 – 12:00.",
+          ru: "Около 11:30 – 12:00.",
+          pl: "Około 11:30 – 12:00.",
+          cz: "Kolem 11:30 – 12:00."
+        }
+      }
+    ],
+    paymentNote: {
+      en: "Pay after the trip — no online payment required.",
+      de: "Zahlung nach dem Ausflug — keine Online-Zahlung erforderlich.",
+      it: "Paga dopo il viaggio — nessun pagamento online richiesto.",
+      ru: "Оплата после поездки — онлайн-оплата не требуется.",
+      pl: "Płatność po wycieczce — płatność online nie jest wymagana.",
+      cz: "Platba až po výletě — není vyžadována žádná platba předem."
+    },
+    disclaimer: {
+      en: "Dolphins are wild animals, so sightings cannot be guaranteed. We search for them as much as possible during the trip while respecting their natural environment. Wadi El Gemal is a protected natural area, and we always respect the islands, marine life and local environment.",
+      de: "Delfine sind Wildtiere, daher kann eine Sichtung nicht garantiert werden. Wir suchen während des Ausflugs so gut wie möglich nach ihnen und respektieren dabei ihren natürlichen Lebensraum. Wadi El Gemal ist ein geschütztes Naturgebiet, und wir respektieren stets die Inseln, das Meeresleben und die lokale Umwelt.",
+      it: "I delfini sono animali selvatici, quindi gli avvistamenti non possono essere garantiti. Li cerchiamo il più possibile durante il viaggio rispettando il loro ambiente naturale. Wadi El Gemal è un'area naturale protetta e rispettiamo sempre le isole, la vita marina e l'ambiente locale.",
+      ru: "Дельфины — дикие животные, поэтому их появление не может быть гарантировано. Мы ищем их как можно тщанее во время поездки, уважая их естественную среду обитания. Вади-эль-Хемаль — охраняемая природная зона, и мы всегда уважаем острова, морскую жизнь и местную экологию.",
+      pl: "Delfiny to dzikie zwierzęta, więc ich widok nie może być zagwarantowany. Szukamy ich tak bardzo, jak to możliwe podczas wycieczki, szanując ich naturalne środowisko. Wadi El Gemal to chroniony obszar przyrodniczy, a my zawsze szanujemy wyspy, życie morskie i lokalne środowisko.",
+      cz: "Delfíni jsou divoká zvířata, takže jejich spatření nelze zaručit. Během výletu je hledáme co nejvíce a zároveň respektujeme jejich přirozené prostředí. Wadi El Gemal je chráněná přírodní oblast a vždy respektujeme ostrovy, mořský život a místní prostředí."
+    },
+    images: {
+      featured: "/images/tours/wadi-el-gemal-card.webp",
+      gallery: [
+        "/images/tours/wadi-el-gemal-1.webp",
+        "/images/tours/wadi-el-gemal-2.webp",
+        "/images/tours/wadi-el-gemal-3.webp"
+      ]
+    }
+  },
+  {
+    id: "qulaan-mangroves-sharm-el-luli",
+    slug: "qulaan-mangroves-sharm-el-luli",
+    title: {
+      en: "Qulaan Mangroves & Sharm El Luli",
+      de: "Qulaan Mangroven & Sharm El Luli",
+      it: "Mangrovie di Qulaan & Sharm El Luli",
+      ru: "Мангры Кулаан и Шарм-эль-Лули",
+      pl: "Mangrowie Qulaan i Sharm El Luli",
+      cz: "Mangrovy Qulaan a Sharm El Luli"
+    },
+    subtitle: {
+      en: "Beach & Mangrove Experience",
+      de: "Strand- & Mangroven-Erlebnis",
+      it: "Esperienza Spiaggia e Mangrovie",
+      ru: "Пляж и мангровые заросли",
+      pl: "Przygoda na plaży i wśród mangrowców",
+      cz: "Zážitek na pláži a v mangrovech"
+    },
+    category: {
+      en: "Water Adventures",
+      de: "Wasserabenteuer",
+      it: "Avventure in Acqua",
+      ru: "Морские приключения",
+      pl: "Przygody Wodne",
+      cz: "Vodní dobrodružství"
+    },
+    price: {
+      amount: 80,
+      currency: "€",
+      unit: {
+        en: "per person",
+        de: "pro Person",
+        it: "per persona",
+        ru: "за человека",
+        pl: "za osobę",
+        cz: "za osobu"
+      }
+    },
+    duration: {
+      en: "To be confirmed",
+      de: "Wird noch bestätigt",
+      it: "Da confermare",
+      ru: "Уточняется",
+      pl: "Do potwierdzenia",
+      cz: "Bude potvrzeno"
+    },
+    departure: {
+      en: "Time to be confirmed",
+      de: "Uhrzeit wird noch bestätigt",
+      it: "Orario da confermare",
+      ru: "Время уточняется",
+      pl: "Godzina do potwierdzenia",
+      cz: "Čas bude potvrzen"
+    },
+    overview: {
+      en: "Enjoy a coastal adventure combining the crystal-clear Red Sea and white sandy beach of Sharm El Luli with the peaceful mangrove islands, calm waters and untouched natural scenery of Qulaan.",
+      de: "Genießen Sie ein Küstenabenteuer, das das kristallklare Rote Meer und den weißen Sandstrand von Sharm El Luli mit den friedlichen Mangroveninseln, ruhigen Gewässern und der unberührten Naturlandschaft von Qulaan verbindet.",
+      it: "Goditi un'avventura costiera che combina il Mar Rosso cristallino e la spiaggia di sabbia bianca di Sharm El Luli con le tranquille isole di mangrovie, le acque calme e lo scenario naturale incontaminato di Qulaan.",
+      ru: "Насладитесь прибрежным приключением, сочетающим кристально чистое Красное море и белый песчаный пляж Шарм-эль-Лули с умиротворенными мангровыми островами, спокойными водами и нетронутыми природными пейзажами Кулаана.",
+      pl: "Ciesz się przybrzeżną przygodą łączącą krystalicznie czyste Morze Czerwone i białą piaszczystą plażę Sharm El Luli z spokojnymi wyspami mangrowymi, spokojnymi wodami i nienaruszoną przyrodą Qulaan.",
+      cz: "Užijte si pobřežní dobrodružství spojující křišťálově čisté Rudé moře a bílou písečnou pláž Sharm El Luli s klidnými mangrovovými ostrovy, klidnou vodou a nedotčenou přírodní scenérií Qulaan."
+    },
+    highlights: {
+      en: [
+        "Visit Sharm El Luli Beach",
+        "Around 3 hours of beach time",
+        "Swim in crystal-clear Red Sea water",
+        "Relax on the white sandy beach",
+        "Explore Qulaan Mangrove Islands",
+        "Discover unique mangrove trees",
+        "Snorkeling opportunity",
+        "Snacks",
+        "Beautiful natural scenery",
+        "Great photo opportunities",
+        "Suitable for families, couples and beginners"
+      ],
+      de: [
+        "Besuch des Strandes von Sharm El Luli",
+        "Etwa 3 Stunden Strandzeit",
+        "Schwimmen im kristallklaren Wasser des Roten Meeres",
+        "Entspannen am weißen Sandstrand",
+        "Erkundung der Qulaan-Mangroveninseln",
+        "Entdeckung einzigartiger Mangrovenbäume",
+        "Schnorchelgelegenheit",
+        "Snacks",
+        "Wunderschöne Naturlandschaft",
+        "Tolles Fotomotiv",
+        "Geeignet für Familien, Paare und Anfänger"
+      ],
+      it: [
+        "Visita alla spiaggia di Sharm El Luli",
+        "Circa 3 ore di tempo in spiaggia",
+        "Nuoto nelle acque cristalline del Mar Rosso",
+        "Relax sulla spiaggia di sabbia bianca",
+        "Esplorazione delle isole di mangrovie di Qulaan",
+        "Scoperta di alberi di mangrovie unici",
+        "Opportunità di snorkeling",
+        "Snack",
+        "Splendido scenario naturale",
+        "Ottime opportunità fotografiche",
+        "Adatto a famiglie, coppie e principianti"
+      ],
+      ru: [
+        "Посещение пляжа Шарм-эль-Лули",
+        "Около 3 часов пляжного отдыха",
+        "Плавание в кристально чистой воде Красного моря",
+        "Отдых на белом песчаном пляже",
+        "Исследование мангровых островов Кулаан",
+        "Знакомство с уникальными мангровыми деревьями",
+        "Возможность заняться сноркелингом",
+        "Закуски",
+        "Красивые природные пейзажи",
+        "Отличные возможности для фото",
+        "Подходит для семей, пар и новичков"
+      ],
+      pl: [
+        "Wizyta na plaży Sharm El Luli",
+        "Około 3 godziny czasu na plaży",
+        "Pływanie w krystalicznie czystej wodzie Morza Czerwonego",
+        "Relaks na białej piaszczystej plaży",
+        "Odkrywanie wysp mangrowych Qulaan",
+        "Odkrywanie unikalnych drzew mangrowych",
+        "Możliwość snorkelingu",
+        "Przekąski",
+        "Piękna przyroda",
+        "Świetne miejsca do robienia zdjęć",
+        "Odpowiednie dla rodzin, par i początkujących"
+      ],
+      cz: [
+        "Návštěva pláže Sharm El Luli",
+        "Asi 3 hodiny času na pláži",
+        "Plavání v křišťálově čisté vodě Rudého moře",
+        "Relaxace na bílé písečné pláži",
+        "Prozkoumání mangrovových ostrovů Qulaan",
+        "Objevování unikátních mangrovových stromů",
+        "Možnost šnorchlování",
+        "Svačiny",
+        "Krásná přírodní scenérie",
+        "Skvělé příležitosti k focení",
+        "Vhodné pro rodiny, páry a začátečníky"
+      ]
+    },
+    included: {
+      en: [
+        "Hotel pickup & drop-off",
+        "Sharm El Luli Beach visit",
+        "Around 3 hours of swimming & relaxing at the beach",
+        "Qulaan Mangrove Islands visit",
+        "Mangrove trees experience",
+        "Snorkeling equipment",
+        "Entrance tickets to both Sharm El Luli & Qulaan Mangroves",
+        "Snacks",
+        "Mineral water",
+        "Soft drinks",
+        "Local guide"
+      ],
+      de: [
+        "Abholung und Rückbringung zum Hotel",
+        "Besuch des Strandes von Sharm El Luli",
+        "Etwa 3 Stunden Schwimmen und Entspannen am Strand",
+        "Besuch der Qulaan-Mangroveninseln",
+        "Mangroven-Erlebnis",
+        "Schnorchelausrüstung",
+        "Eintrittskarten für Sharm El Luli und die Qulaan-Mangroven",
+        "Snacks",
+        "Mineralwasser",
+        "Alkoholfreie Getränke",
+        "Lokaler Guide"
+      ],
+      it: [
+        "Prelievo e rientro in hotel",
+        "Visita alla spiaggia di Sharm El Luli",
+        "Circa 3 ore di nuoto e relax in spiaggia",
+        "Visita alle isole di mangrovie di Qulaan",
+        "Esperienza tra le mangrovie",
+        "Attrezzatura da snorkeling",
+        "Biglietti d'ingresso per Sharm El Luli e le mangrovie di Qulaan",
+        "Snack",
+        "Acqua minerale",
+        "Bevande analcoliche",
+        "Guida locale"
+      ],
+      ru: [
+        "Трансфер из отеля и обратно",
+        "Посещение пляжа Шарм-эль-Лули",
+        "Около 3 часов плавания и отдыха на пляже",
+        "Посещение мангровых островов Кулаан",
+        "Экскурсия по мангровым зарослям",
+        "Оборудование для сноркелинга",
+        "Входные билеты в Шарм-эль-Лули и на мангры Кулаан",
+        "Закуски",
+        "Минеральная вода",
+        "Безалкогольные напитки",
+        "Местный гид"
+      ],
+      pl: [
+        "Odbiór i powrót do hotelu",
+        "Wizyta na plaży Sharm El Luli",
+        "Około 3 godziny pływania i relaksu na plaży",
+        "Wizyta na wyspach mangrowych Qulaan",
+        "Doświadczenie z drzewami mangrowymi",
+        "Sprzęt do snorkelingu",
+        "Bilety wstępu do Sharm El Luli i na mangrowce Qulaan",
+        "Przekąski",
+        "Woda mineralna",
+        "Napoje bezalkoholowe",
+        "Lokalny przewodnik"
+      ],
+      cz: [
+        "Vyzvednutí a návrat do hotelu",
+        "Návštěva pláže Sharm El Luli",
+        "Asi 3 hodiny plavání a relaxace na pláži",
+        "Návštěva mangrovových ostrovů Qulaan",
+        "Zážitek s mangrovovými stromy",
+        "Vybavení na šnorchlování",
+        "Vstupenky do Sharm El Luli a mangrovů Qulaan",
+        "Svačiny",
+        "Minerální voda",
+        "Nealkoholické nápoje",
+        "Místní průvodce"
+      ]
+    },
+    notIncluded: {
+      en: [
+        "Personal expenses",
+        "Additional services or activities not mentioned above"
+      ],
+      de: [
+        "Persönliche Ausgaben",
+        "Zusätzliche Services oder Aktivitäten, die oben nicht erwähnt wurden"
+      ],
+      it: [
+        "Spese personali",
+        "Servizi o attività aggiuntivi non menzionati sopra"
+      ],
+      ru: [
+        "Личные расходы",
+        "Дополнительные услуги или мероприятия, не упомянутые выше"
+      ],
+      pl: [
+        "Wydatki osobiste",
+        "Dodatkowe usługi lub aktywności niewymienione powyżej"
+      ],
+      cz: [
+        "Osobní výdaje",
+        "Další služby nebo aktivity neuvedené výše"
+      ]
+    },
+    whatToBring: {
+      en: ["Swimwear", "Towel", "Sunscreen", "Sunglasses", "Hat", "Comfortable clothes", "Camera or phone for photos"],
+      de: ["Badebekleidung", "Handtuch", "Sonnencreme", "Sonnenbrille", "Hut", "Bequeme Kleidung", "Kamera oder Handy für Fotos"],
+      it: ["Costume da bagno", "Asciugamano", "Crema solare", "Occhiali da sole", "Cappello", "Vestiti comodi", "Fotocamera o telefono per foto"],
+      ru: ["Купальник", "Полотенце", "Солнцезащитный крем", "Солнцезащитные очки", "Головной убор", "Удобная одежда", "Камера или телефон для фото"],
+      pl: ["Strój kąpielowy", "Ręcznik", "Krem z filtrem", "Okulary przeciwsłoneczne", "Czapka", "Wygodne ubrania", "Aparat lub telefon do zdjęć"],
+      cz: ["Plavky", "Ručník", "Opalovací krém", "Sluneční brýle", "Klobouk", "Pohodlné oblečení", "Fotoaparát nebo telefon na fotky"]
+    },
+    childrenPolicy: {
+      under5: {
+        en: "Under 5 years: Free",
+        de: "Unter 5 Jahren: Kostenlos",
+        it: "Sotto i 5 anni: Gratuito",
+        ru: "До 5 лет: Бесплатно",
+        pl: "Poniżej 5 lat: Bezpłatnie",
+        cz: "Do 5 let: Zdarma"
+      },
+      from5to10: {
+        en: "5–10 years: 50% of adult price",
+        de: "5–10 Jahre: 50% des Erwachsenenpreises",
+        it: "5–10 anni: 50% del prezzo adulto",
+        ru: "5–10 лет: 50% от стоимости для взрослых",
+        pl: "5–10 lat: 50% ceny dla dorosłych",
+        cz: "5–10 let: 50 % dospělé ceny"
+      },
+      over10: {
+        en: "Over 10 years: Full adult price",
+        de: "Über 10 Jahre: Voller Erwachsenenpreis",
+        it: "Oltre i 10 anni: Prezzo intero adulto",
+        ru: "Старше 10 лет: Полная стоимость для взрослых",
+        pl: "Powyżej 10 lat: Pełna cena dla dorosłych",
+        cz: "Nad 10 let: Plná dospělá cena"
+      }
+    },
+    itinerary: [
+      {
+        step: "01",
+        title: {
+          en: "Hotel Pickup",
+          de: "Hotelabholung",
+          it: "Prelievo in hotel",
+          ru: "Трансфер из отеля",
+          pl: "Odbiór z hotelu",
+          cz: "Vyzvednutí v hotelu"
+        },
+        description: {
+          en: "Pickup from your hotel.",
+          de: "Abholung von Ihrem Hotel.",
+          it: "Prelievo dal tuo hotel.",
+          ru: "Трансфер из вашего отеля.",
+          pl: "Odbiór z Twojego hotelu.",
+          cz: "Vyzvednutí z vašeho hotelu."
+        }
+      },
+      {
+        step: "02",
+        title: {
+          en: "Drive to Sharm El Luli",
+          de: "Fahrt nach Sharm El Luli",
+          it: "Viaggio verso Sharm El Luli",
+          ru: "Поездка в Шарм-эль-Лули",
+          pl: "Przejazd do Sharm El Luli",
+          cz: "Cesta do Sharm El Luli"
+        },
+        description: {
+          en: "Travel south to the beautiful Sharm El Luli Beach.",
+          de: "Fahrt nach Süden zum wunderschönen Strand von Sharm El Luli.",
+          it: "Viaggio verso sud alla splendida spiaggia di Sharm El Luli.",
+          ru: "Поездка на юг к живописному пляжу Шарм-эль-Лули.",
+          pl: "Podróż na południe na piękną plażę Sharm El Luli.",
+          cz: "Cesta na jih na krásnou pláž Sharm El Luli."
+        }
+      },
+      {
+        step: "03",
+        title: {
+          en: "Beach Time — Around 3 Hours",
+          de: "Strandzeit — Ca. 3 Stunden",
+          it: "Tempo in Spiaggia — Circa 3 ore",
+          ru: "Пляжный отдых — около 3 часов",
+          pl: "Czas na plaży — Około 3 godzin",
+          cz: "Čas na pláži — Asi 3 hodiny"
+        },
+        description: {
+          en: "Enjoy swimming, relaxing and the crystal-clear Red Sea.",
+          de: "Genießen Sie das Schwimmen, Entspannen und das kristallklare Rote Meer.",
+          it: "Goditi il nuoto, il relax e il Mar Rosso cristallino.",
+          ru: "Наслаждайтесь плаванием, отдыхом и кристально чистым Красным морем.",
+          pl: "Ciesz się pływaniem, relaksem i krystalicznie czystym Morzem Czerwonym.",
+          cz: "Užijte si plavání, relaxaci a křišťálově čisté Rudé moře."
+        }
+      },
+      {
+        step: "04",
+        title: {
+          en: "Continue to Qulaan Mangroves",
+          de: "Weiterfahrt zu den Qulaan-Mangroven",
+          it: "Proseguimento verso le mangrovie di Qulaan",
+          ru: "Переезд к мангровым зарослям Кулаан",
+          pl: "Przejazd do mangrowców Qulaan",
+          cz: "Pokračování k mangrovům Qulaan"
+        },
+        description: {
+          en: "Continue to the peaceful Qulaan Mangrove area.",
+          de: "Weiterfahrt in das friedliche Qulaan-Mangrovengebiet.",
+          it: "Proseguimento verso la tranquilla zona delle mangrovie di Qulaan.",
+          ru: "Переезд в спокойный район мангровых зарослей Кулаан.",
+          pl: "Przejazd do spokojnego obszaru mangrowców Qulaan.",
+          cz: "Pokračování do klidné oblasti mangrovů Qulaan."
+        }
+      },
+      {
+        step: "05",
+        title: {
+          en: "Explore Qulaan Mangroves",
+          de: "Erkundung der Qulaan-Mangroven",
+          it: "Esplorazione delle mangrovie di Qulaan",
+          ru: "Исследование мангровых зарослей Кулаан",
+          pl: "Eksploracja mangrowców Qulaan",
+          cz: "Prozkoumání mangrovů Qulaan"
+        },
+        description: {
+          en: "Discover the mangrove islands and natural surroundings.",
+          de: "Entdecken Sie die Mangroveninseln und die natürliche Umgebung.",
+          it: "Scopri le isole di mangrovie e i dintorni naturali.",
+          ru: "Откройте для себя мангровые острова и окружающую природу.",
+          pl: "Odkryj wyspy mangrowe i otaczającą przyrodę.",
+          cz: "Objevte mangrovové ostrovy a přírodní okolí."
+        }
+      },
+      {
+        step: "06",
+        title: {
+          en: "Snorkeling & Free Time",
+          de: "Schnorcheln & Freizeit",
+          it: "Snorkeling e Tempo Libero",
+          ru: "Сноркелинг и свободное время",
+          pl: "Snorkeling i czas wolny",
+          cz: "Šnorchlování a volný čas"
+        },
+        description: {
+          en: "Enjoy snorkeling and relaxing in the beautiful natural environment, with snacks.",
+          de: "Genießen Sie Schnorcheln und Entspannung in der wunderschönen natürlichen Umgebung, inklusive Snacks.",
+          it: "Goditi lo snorkeling e il relax nella splendida cornice naturale, con snack.",
+          ru: "Наслаждайтесь сноркелингом и отдыхом в прекрасной природной среде, с закусками.",
+          pl: "Ciesz się snorkelingiem i relaksem w pięknej przyrodzie wraz z przekąskami.",
+          cz: "Užijte si šnorchlování a relaxaci v krásném přírodním prostředí se svačinou."
+        }
+      },
+      {
+        step: "07",
+        title: {
+          en: "Return to Your Hotel",
+          de: "Rückkehr zu Ihrem Hotel",
+          it: "Ritorno in hotel",
+          ru: "Возвращение в отель",
+          pl: "Powrót do hotelu",
+          cz: "Návrat do vašeho hotelu"
+        },
+        description: {
+          en: "Return transfer to your hotel.",
+          de: "Rücktransfer zu Ihrem Hotel.",
+          it: "Trasferimento di ritorno al tuo hotel.",
+          ru: "Обратный трансфер в ваш отель.",
+          pl: "Transfer powrotny do hotelu.",
+          cz: "Zpáteční transfer do vašeho hotelu."
+        }
+      }
+    ],
+    paymentNote: {
+      en: "Pay after the trip — no online payment required.",
+      de: "Bezahlung nach dem Ausflug — keine Online-Zahlung erforderlich.",
+      it: "Paga dopo il viaggio — nessun pagamento online richiesto.",
+      ru: "Оплата после поездки — онлайн-оплата не требуется.",
+      pl: "Płatność po wycieczce — płatność online nie jest wymagana.",
+      cz: "Platba až po výletě — není vyžadována platba předem online."
+    },
+    disclaimer: {
+      en: "Sharm El Luli and Qulaan are protected natural areas. We always respect the beaches, mangroves, marine life and natural environment during the experience.",
+      de: "Sharm El Luli und Qulaan sind geschützte Naturgebiete. Wir respektieren während des Erlebnisses stets die Strände, Mangroven, Meereslebewesen und die natürliche Umwelt.",
+      it: "Sharm El Luli e Qulaan sono aree naturali protette. Rispettiamo sempre le spiagge, le mangrovie, la vita marina e l'ambiente naturale durante l'esperienza.",
+      ru: "Шарм-эль-Лули и Кулаан являются охраняемыми природными территориями. Во время поездки мы всегда с уважением относимся к пляжам, манграм, морской фауне и окружающей среде.",
+      pl: "Sharm El Luli i Qulaan to chronione obszary przyrodnicze. Zawsze szanujemy plaże, mangrowce, życie morskie i środowisko naturalne podczas wycieczki.",
+      cz: "Sharm El Luli a Qulaan jsou chráněné přírodní oblasti. Během zážitku vždy respektujeme pláže, mangrovy, mořský život a přírodní prostředí."
+    },
+    images: {
+      featured: "/images/tours/quleen-card.webp",
+      gallery: [
+        "/images/tours/quleen-1.webp",
+        "/images/tours/quleen-2.webp",
+        "/images/tours/quleen-3.webp"
+      ]
+    }
+  }
 ];

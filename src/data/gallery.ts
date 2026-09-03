@@ -29,7 +29,7 @@ export const galleryImages: GalleryImage[] = [
     }
   },
   {
-    src: "/images/brand/gallery-3.webp",
+    src: "/images/brand/gallery-33.webp",
     alt: {
       en: "Abu Dabbab Turtle Bay",
       de: "Abu Dabbab Schildkrötenbucht",
@@ -49,7 +49,62 @@ export const galleryImages: GalleryImage[] = [
       pl: "Marsa Mubarak Diugoń i żółwie",
       cz: "Marsa Mubarak Dugong a želvy"
     }
-  }
+  },
+  {
+    src: "/images/brand/gallery-5.webp",
+    alt: {
+      en: "Marsa Mubarak Dugong & Turtles",
+      de: "Marsa Mubarak Dugong & Schildkröten",
+      it: "Marsa Mubarak Dugongo e Tartarughe",
+      ru: "Марса Мубарак Дюгонь и черепахи",
+      pl: "Marsa Mubarak Diugoń i żółwie",
+      cz: "Marsa Mubarak Dugong a želvy"
+    }
+  },
+  {
+    src: "/images/brand/gallery-6.webp",
+    alt: {
+      en: "Marsa Mubarak Dugong & Turtles",
+      de: "Marsa Mubarak Dugong & Schildkröten",
+      it: "Marsa Mubarak Dugongo e Tartarughe",
+      ru: "Марса Мубарак Дюгонь и черепахи",
+      pl: "Marsa Mubarak Diugoń i żółwie",
+      cz: "Marsa Mubarak Dugong a želvy"
+    }
+  },
+  {
+    src: "/images/brand/gallery-7.webp",
+    alt: {
+      en: "Marsa Mubarak Dugong & Turtles",
+      de: "Marsa Mubarak Dugong & Schildkröten",
+      it: "Marsa Mubarak Dugongo e Tartarughe",
+      ru: "Марса Мубарак Дюгонь и черепахи",
+      pl: "Marsa Mubarak Diugoń i żółwie",
+      cz: "Marsa Mubarak Dugong a želvy"
+    }
+  },
+  {
+    src: "/images/brand/gallery-8.webp",
+    alt: {
+      en: "Marsa Mubarak Dugong & Turtles",
+      de: "Marsa Mubarak Dugong & Schildkröten",
+      it: "Marsa Mubarak Dugongo e Tartarughe",
+      ru: "Марса Мубарак Дюгонь и черепахи",
+      pl: "Marsa Mubarak Diugoń i żółwie",
+      cz: "Marsa Mubarak Dugong a želvy"
+    }
+  },
+  {
+    src: "/images/brand/gallery-9.webp",
+    alt: {
+      en: "Marsa Mubarak Dugong & Turtles",
+      de: "Marsa Mubarak Dugong & Schildkröten",
+      it: "Marsa Mubarak Dugongo e Tartarughe",
+      ru: "Марса Мубарак Дюгонь и черепахи",
+      pl: "Marsa Mubarak Diugoń i żółwie",
+      cz: "Marsa Mubarak Dugong a želvy"
+    }
+  },
 ];
 
 export const galleryContent: Record<Language, { badge: string; title: string; subtitle: string }> = {

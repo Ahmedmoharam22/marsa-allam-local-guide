@@ -32,7 +32,7 @@ export function Hero({ lang, dict }: HeroProps) {
   const t = dict.hero;
 
   return (
-    <section className="relative flex h-screen w-full flex-col justify-between overflow-hidden bg-slate-950 pt-28">
+   <section className="relative flex h-screen w-full flex-col justify-between overflow-hidden bg-slate-950 pt-28">
       
       {/* Background Image - Full Viewport */}
       <div className="absolute inset-0 z-0">
@@ -58,39 +58,39 @@ export function Hero({ lang, dict }: HeroProps) {
           </span>
 
           {/* Headline - Serif Font */}
-          <h1 className="mt-2 font-serif text-5xl font-normal leading-[1.15] text-white sm:text-6xl lg:text-7xl">
+          <h1 className="mt-2 font-serif text-4xl font-normal leading-[1.15] text-white sm:text-6xl lg:text-7xl">
             {t.title_main} <br />
             {t.title_sub}
           </h1>
 
           {/* Subtitle Accent */}
-          <p className="mt-6 font-sans text-xl font-bold tracking-tight text-white sm:text-2xl">
+          <p className="mt-4 font-sans text-lg font-bold tracking-tight text-white sm:text-2xl">
             {t.tagline}
           </p>
 
           {/* Description */}
-          <p className="mt-3 max-w-lg font-sans text-sm font-normal leading-relaxed text-slate-200 sm:text-base">
+          <p className="mt-2 max-w-lg font-sans text-xs font-normal leading-relaxed text-slate-200 sm:text-base">
             {t.description}
           </p>
 
-          {/* CTAs */}
-          <div className="mt-8 flex items-center gap-4">
+          {/* CTAs - تعديل الزراير لتكون تحت بعض في الموبايل وجنب بعض في الشاشات الكبيرة */}
+          <div className="mt-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
             <a
               href="https://wa.me/201000000000"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-400"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 px-6 py-3.5 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-400 active:scale-95 text-center"
             >
-              <MessageCircle className="h-4 w-4 fill-current" />
+              <MessageCircle className="h-4 w-4 fill-current shrink-0" />
               <span>{t.cta_whatsapp}</span>
             </a>
 
             <Link
               href={`/${lang}/tours`}
-              className="inline-flex items-center gap-2 rounded-full border border-white/60 bg-slate-900/30 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/60 bg-slate-900/40 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20 active:scale-95 text-center"
             >
               <span>{t.cta_explore}</span>
-              <ArrowRight className="h-4 w-4 rtl:rotate-180" />
+              <ArrowRight className="h-4 w-4 rtl:rotate-180 shrink-0" />
             </Link>
           </div>
 
