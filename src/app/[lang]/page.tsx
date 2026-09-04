@@ -1,14 +1,17 @@
-import CTASection from '@/components/home/CTASection';
-import FAQSection from '@/components/home/FAQSection';
+import dynamic from 'next/dynamic';
 import { FeaturesBar } from '@/components/home/FeaturesBar';
-import GallerySection from '@/components/home/GallerySection';
-import GetInTouchSection from '@/components/home/GetInTouchSection';
 import { Hero } from '@/components/home/HeroSection';
-import Testimonials from '@/components/home/Testimonials';
-import ToursSection from '@/components/home/ToursSection';
-import WhyChooseUs from '@/components/home/WhyChooseUs';
 import { getDictionary } from '@/lib/dictionary';
 import type { Locale } from '@/lib/i18n-config';
+
+// Below-the-fold sections: code-split to reduce initial JS bundle
+const ToursSection    = dynamic(() => import('@/components/home/ToursSection'));
+const WhyChooseUs     = dynamic(() => import('@/components/home/WhyChooseUs'));
+const GallerySection  = dynamic(() => import('@/components/home/GallerySection'));
+const Testimonials    = dynamic(() => import('@/components/home/Testimonials'));
+const FAQSection      = dynamic(() => import('@/components/home/FAQSection'));
+const CTASection      = dynamic(() => import('@/components/home/CTASection'));
+const GetInTouchSection = dynamic(() => import('@/components/home/GetInTouchSection'));
 
 export default async function HomePage({
   params,

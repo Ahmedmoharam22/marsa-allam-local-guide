@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaCompass, FaHome } from 'react-icons/fa';
+import { Compass, Home } from 'lucide-react';
 import type { Language } from '@/types/tour';
 
 interface CatchAllNotFoundProps {
@@ -23,7 +23,7 @@ export default async function CatchAllNotFound({ params }: CatchAllNotFoundProps
             404
           </h1>
           <div className="absolute inset-0 flex items-center justify-center">
-            <FaCompass className="w-20 h-20 text-cyan-500/20 animate-spin-slow" />
+            <Compass className="w-20 h-20 text-cyan-500/20 animate-spin-slow" />
           </div>
         </div>
 
@@ -41,7 +41,7 @@ export default async function CatchAllNotFound({ params }: CatchAllNotFoundProps
             href={`/${lang}`}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-slate-950 font-semibold hover:from-cyan-400 hover:to-teal-400 transition-all shadow-lg shadow-cyan-500/20"
           >
-            <FaHome className="w-4 h-4" />
+            <Home className="w-4 h-4" />
             Back to Home
           </Link>
           <Link

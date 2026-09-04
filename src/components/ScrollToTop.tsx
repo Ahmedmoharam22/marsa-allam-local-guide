@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Language } from '@/types/tour';
-import { FaArrowUp } from 'react-icons/fa';
+import { ArrowUp } from 'lucide-react';
 
 interface ScrollToTopProps {
   lang: Language;
@@ -56,7 +56,7 @@ export default function ScrollToTop({ lang, tooltipText }: ScrollToTopProps) {
       aria-label={label}
       className="fixed cursor-pointer bottom-6 right-6 z-50 flex items-center justify-center w-12 h-12 bg-slate-900 text-white border border-slate-800 rounded-full shadow-2xl hover:bg-teal-600 hover:border-teal-500 hover:scale-110 transition-all duration-300 group focus:outline-none focus:ring-4 focus:ring-teal-500/40 animate-in fade-in zoom-in duration-300"
     >
-      <FaArrowUp className="w-5 h-5 transition-transform group-hover:-translate-y-1" />
+      <ArrowUp className="w-5 h-5 transition-transform group-hover:-translate-y-1" />
       
       {/* Tooltip */}
       <span className="absolute right-14 bg-slate-900 text-white text-xs px-3 py-1.5 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none border border-slate-800">

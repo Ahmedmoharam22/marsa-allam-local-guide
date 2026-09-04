@@ -1,6 +1,6 @@
 import { Language } from "@/types/tour";
 import { getInTouchData } from "@/data/getInTouch";
-import { FaWhatsapp, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import { MessageCircle, Phone, Mail, MapPin, Clock } from "lucide-react";
 import SectionTitle from "../common/SectionTitle";
 
 interface GetInTouchProps {
@@ -36,7 +36,7 @@ export default function GetInTouchSection({ lang }: GetInTouchProps) {
               <ul className="space-y-3 text-sm">
                 <li>
                   <a href="https://wa.me/201080268114" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                    <span className="p-2 rounded-lg bg-emerald-500/10 text-emerald-600"><FaWhatsapp className="w-4 h-4" /></span>
+                     <span className="p-2 rounded-lg bg-emerald-500/10 text-emerald-600"><MessageCircle className="w-4 h-4" /></span>
                     <div>
                       <span className="block text-xs text-slate-400">{t.whatsappLabel}</span>
                       <span className="font-semibold" dir="ltr">+20 10 80268114</span>
@@ -46,7 +46,7 @@ export default function GetInTouchSection({ lang }: GetInTouchProps) {
                 
                 <li>
                   <a href="tel:+201080268114" className="flex items-center gap-3 text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                    <span className="p-2 rounded-lg bg-cyan-500/10 text-cyan-600"><FaPhoneAlt className="w-4 h-4" /></span>
+                     <span className="p-2 rounded-lg bg-cyan-500/10 text-cyan-600"><Phone className="w-4 h-4" /></span>
                     <div>
                       <span className="block text-xs text-slate-400">{t.phoneLabel}</span>
                       <span className="font-semibold" dir="ltr">+20 10 80268114</span>
@@ -56,7 +56,7 @@ export default function GetInTouchSection({ lang }: GetInTouchProps) {
 
                 <li>
                   <a href="mailto:info@marsaalamlocalguide.com" className="flex items-center gap-3 text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-                    <span className="p-2 rounded-lg bg-blue-500/10 text-blue-600"><FaEnvelope className="w-4 h-4" /></span>
+                     <span className="p-2 rounded-lg bg-blue-500/10 text-blue-600"><Mail className="w-4 h-4" /></span>
                     <div>
                       <span className="block text-xs text-slate-400">{t.emailLabel}</span>
                       <span className="font-semibold truncate max-w-[180px] sm:max-w-[200px] block">info@marsaalamlocalguide.com</span>
@@ -75,7 +75,7 @@ export default function GetInTouchSection({ lang }: GetInTouchProps) {
 
               <div className="space-y-3 text-sm">
                 <div className="flex items-start gap-3 text-slate-600 dark:text-slate-300">
-                  <span className="p-2 rounded-lg bg-cyan-500/10 text-cyan-600 mt-0.5"><FaMapMarkerAlt className="w-4 h-4" /></span>
+                  <span className="p-2 rounded-lg bg-cyan-500/10 text-cyan-600 mt-0.5"><MapPin className="w-4 h-4" /></span>
                   <div>
                     <span className="block text-xs font-bold text-slate-900 dark:text-white">{t.headOfficeLabel}</span>
                     <span className="text-xs text-slate-500 dark:text-slate-400">{t.headOfficeAddress}</span>
@@ -83,7 +83,7 @@ export default function GetInTouchSection({ lang }: GetInTouchProps) {
                 </div>
 
                 <div className="flex items-start gap-3 text-slate-600 dark:text-slate-300">
-                  <span className="p-2 rounded-lg bg-teal-500/10 text-teal-600 mt-0.5"><FaClock className="w-4 h-4" /></span>
+                  <span className="p-2 rounded-lg bg-teal-500/10 text-teal-600 mt-0.5"><Clock className="w-4 h-4" /></span>
                   <div>
                     <span className="block text-xs font-bold text-slate-900 dark:text-white">{t.hoursLabel}</span>
                     <span className="text-xs text-slate-500 dark:text-slate-400">{t.hoursValue}</span>
