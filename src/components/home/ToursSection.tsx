@@ -4,7 +4,6 @@ import { useState, useMemo } from "react";
 import { tours } from "@/data/tours";
 import { TourCard } from "../tours/TourCard";
 import { Locale } from "@/lib/i18n-config";
-import SectionTitle from "../common/SectionTitle";
 import Link from "next/link";
 import { ArrowRight, Search, X } from "lucide-react";
 
@@ -63,16 +62,9 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
   const displayedTours = filteredTours.slice(0, 6);
 
   return (
-    <section id="tours" className="mx-auto max-w-7xl px-4 py-16">
-      <SectionTitle
-        title={title}
-        subtitle={subtitle}
-        align="center"
-        className="text-foreground"
-      />
-
+    <section id="tours" className="mx-auto max-w-7xl px-4 pt-6 pb-16 sm:pt-8 sm:pb-20">
       {/* Control Bar: Search on extreme Left, Sort buttons on extreme Right */}
-      <div className="mx-auto mb-10 mt-8 flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mx-auto mb-8 mt-4 flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
         
         {/* Sort & Filter Buttons (Right side) */}
         <div className="flex flex-wrap items-center gap-2">

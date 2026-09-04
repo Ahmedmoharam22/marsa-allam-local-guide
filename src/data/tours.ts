@@ -353,7 +353,7 @@ export const tours: Tour[] = [
       gallery: [
         "/images/tours/tour-3.webp",
         "/images/tours/tour-4.webp",
-        "/images/tours/tour-5.webp"
+        "/images/tours/tour-2.webp"
       ]
     }
   },
@@ -1491,12 +1491,12 @@ export const tours: Tour[] = [
     cz: "3 hodiny"
   },
   departure: {
-    en: "Hermes Marina (30 km south of Marsa Alam Airport)",
-    de: "Hermes Marina (30 km südlich vom Flughafen Marsa Alam)",
-    it: "Hermes Marina (30 km a sud dell'aeroporto di Marsa Alam)",
-    ru: "Марина Гермес (30 км к югу от аэропорта Марса-Алам)",
-    pl: "Hermes Marina (30 km na południe od lotniska Marsa Alam)",
-    cz: "Hermes Marina (30 km jižně od letiště Marsa Alam)"
+    en: "Hermes Marina",
+    de: "Hermes Marina",
+    it: "Hermes Marina",
+    ru: "Марина Гермес",
+    pl: "Hermes Marina ",
+    cz: "Hermes Marina"
   },
   schedule: {
     departureTime: "Flexible (8:00 AM – 2:00 PM)",
@@ -3102,5 +3102,836 @@ export const tours: Tour[] = [
         "/images/tours/quleen-3.webp"
       ]
     }
+  },
+  {
+  id: "super-safari",
+  slug: "super-safari-desert-bedouin-experience",
+  title: {
+    en: "Super Safari",
+    de: "Super-Safari",
+    it: "Super Safari",
+    ru: "Супер Сафари",
+    pl: "Super Safari",
+    cz: "Super Safari"
+  },
+  subtitle: {
+    en: "Desert & Bedouin Experience",
+    de: "Wüsten- & Beduinen-Erlebnis",
+    it: "Esperienza nel Deserto e Beduina",
+    ru: "Пустыня и традиции бедуинов",
+    pl: "Przygoda na pustyni i wieś Beduinów",
+    cz: "Pouštní a beduínský zážitek"
+  },
+  category: {
+    en: "Desert Adventures",
+    de: "Wüstenabenteuer",
+    it: "Avventure nel Deserto",
+    ru: "Пустынные приключения",
+    pl: "Przygody na Pustyni",
+    cz: "Pouštní dobrodružství"
+  },
+  price: {
+    amount: 55,
+    currency: "€",
+    unit: {
+      en: "per person",
+      de: "pro Person",
+      it: "per persona",
+      ru: "за человека",
+      pl: "za osobę",
+      cz: "za osobu"
+    }
+  },
+  duration: {
+    en: "6.5 Hours",
+    de: "6.5 Stunden",
+    it: "6.5 Ore",
+    ru: "6.5 Часов",
+    pl: "6.5 Godziny",
+    cz: "6.5 Hodin"
+  },
+  departure: {
+    en: "Hotel Pickup (2:30 PM)",
+    de: "Hotelabholung (14:30 Uhr)",
+    it: "Transfer dall'hotel (14:30)",
+    ru: "Трансфер из отеля (14:30)",
+    pl: "Odbiór z hotelu (14:30)",
+    cz: "Vyzvednutí v hotelu (14:30)"
+  },
+  overview: {
+    en: "Experience the desert, Bedouin culture and an unforgettable sunset. Your Super Safari begins with a 4WD Toyota Land Cruiser pickup from your hotel. Travel deep into the desert, enjoy a quad bike adventure, visit a traditional Bedouin village, ride a camel, watch the sunset in the heart of the desert, and finish the evening with a BBQ dinner, traditional music and a Bedouin show.",
+    de: "Erleben Sie die Wüste, die Beduinenkultur und einen unvergesslichen Sonnenuntergang. Ihre Super-Safari beginnt mit der Abholung im Geländewagen direkt vom Hotel. Fahren Sie tief in die Wüste, genießen Sie ein Quad-Abenteuer, besuchen Sie ein Beduinendorf, reiten Sie auf einem Kamel und genießen Sie ein BBQ-Abendessen mit Beduinenshow.",
+    it: "Vivi il deserto, la cultura beduina e un tramonto indimenticabile. Il tuo Super Safari inizia con il transfer in 4WD Toyota Land Cruiser dal tuo hotel. Avventurati nel deserto, divertiti in quad, visita un villaggio beduino, cavalca un cammello e concludi la serata con una cena BBQ e uno spettacolo tradizionale.",
+    ru: "Ощутите магию пустыни, культуру бедуинов и незабываемый закат. Ваше Супер Сафари начинается с трансфера на джипе Toyota Land Cruiser из отеля. Покатайтесь на квадроциклах, посетите бедуинскую деревню, покатайтесь на верблюдах и завершите вечер ужином барбекю с традиционным шоу.",
+    pl: "Poznaj pustynię, kulturę Beduinów i niezapomniany zachód słońca. Twoje Super Safari rozpoczyna się odbiorem z hotelu samochodem 4x4. Jedź w głąb pustyni, jeździj na kładach, odwiedź wioskę Beduinów, przejedź się na wielbłądzie i zakończ wieczór kolacją BBQ oraz pokazem.",
+    cz: "Zažijte poušť, beduínskou kulturu a nezapomenutelný západ slunce. Vaše Super Safari začíná vyzvednutím v hotelu terénním vozem 4x4. Projeďte se na čtyřkolkách, navštivte beduínskou vesnici, projeďte se na velbloudu a zakončete večer BBQ večeří a show."
+  },
+  highlights: {
+    en: [
+      "4WD Toyota Land Cruiser desert adventure",
+      "Quad bike experience (around 22 km)",
+      "Stop to learn about the famous Akassia Tree",
+      "Visit a traditional Bedouin village & water well",
+      "Traditional camel ride & bread making demonstration",
+      "Beautiful sunset in the heart of the desert",
+      "Traditional Bedouin tea & BBQ open buffet dinner",
+      "Bedouin party, Egyptian music & Star show under the night sky"
+    ],
+    de: [
+      "Wüstenabenteuer im 4WD Toyota Land Cruiser",
+      "Quad-Bike-Erlebnis (ca. 22 km Fahrt)",
+      "Stopp beim berühmten Akassia-Baum",
+      "Besuch eines traditionellen Beduinendorfs und des Brunnen",
+      "Traditionelles Kamelreiten & Beduinenbrot-Zubereitung",
+      "Wunderschöner Sonnenuntergang im Herzen der Wüste",
+      "Beduinentee & Open-Buffet-BBQ-Abendessen",
+      "Beduinen-Show, ägyptische Musik & Sternenbeobachtung"
+    ],
+    it: [
+      "Avventura nel deserto in 4WD Toyota Land Cruiser",
+      "Esperienza in quad (circa 22 km)",
+      "Sosta per scoprire il famoso albero Akassia",
+      "Visita a un villaggio beduino e al pozzo d'acqua",
+      "Giro in cammello e dimostrazione del pane beduino",
+      "Splendido tramonto nel cuore del deserto",
+      "Tè beduino e cena BBQ a buffet",
+      "Festa beduina, musica egiziana e spettacolo delle stelle"
+    ],
+    ru: [
+      "Приключение в пустыне на джипе Toyota Land Cruiser 4WD",
+      "Поездка на квадроциклах (около 22 км)",
+      "Остановка у знаменитого дерева Акассия",
+      "Посещение бедуинской деревни и колодца",
+      "Катание на верблюдах и выпечка бедуинского хлеба",
+      "Красивый закат в самом сердце пустыни",
+      "Традиционный бедуинский чай и BBQ обед (шведский стол)",
+      "Шоу бедуинов, египетская музыка и наблюдение за звездами"
+    ],
+    pl: [
+      "Przygoda na pustyni samochodem 4x4 Toyota Land Cruiser",
+      "Jazda na kładach (ok. 22 km)",
+      "Przystanek przy słynnym drzewie Akassia",
+      "Wizyta w tradycyjnej wiosce Beduinów i przy studni",
+      "Przejażdżka na wielbłądzie i wypiek chleba",
+      "Piękny zachód słońca w sercu pustyni",
+      "Beduińska herbata i kolacja BBQ w formie bufet",
+      "Pokaz beduiński, egipska muzyka i obserwacja gwiazd"
+    ],
+    cz: [
+      "Pouštní dobrodružství v 4WD Toyota Land Cruiser",
+      "Jízda na čtyřkolkách (cca 22 km)",
+      "Zastávka u slavného stromu Akassia",
+      "Návštěva tradiční beduínské vesnice a studny",
+      "Jízda na velbloudu a ukázka pečení chleba",
+      "Krásný západ slunce v srdci pouště",
+      "Beduínský čaj a BBQ večeře formou bufetu",
+      "Beduínská show, egyptská hudba a pozorování hvězd"
+    ]
+  },
+  included: {
+    en: [
+      "Hotel pickup & drop-off by 4WD Toyota Land Cruiser",
+      "Quad bike experience",
+      "Bedouin village tour & camel ride",
+      "Akassia Tree stop",
+      "Traditional Bedouin tea & fresh bread",
+      "Sunset viewing experience",
+      "BBQ open buffet dinner",
+      "Soft drinks & mineral water",
+      "Bedouin party, music & star show"
+    ],
+    de: [
+      "Abholung & Rückbringung zum Hotel im 4WD Toyota Land Cruiser",
+      "Quad-Bike-Erlebnis",
+      "Führung durch das Beduinendorf & Kamelreiten",
+      "Stopp am Akassia-Baum",
+      "Traditioneller Beduinentee & frisches Brot",
+      "Sonnenuntergangs-Erlebnis",
+      "BBQ-Abendessen (Open Buffet)",
+      "Softdrinks & Mineralwasser",
+      "Beduinenshow, Musik & Sternen-Show"
+    ],
+    it: [
+      "Transfer da e per l'hotel in 4WD Toyota Land Cruiser",
+      "Esperienza in quad",
+      "Tour del villaggio beduino e giro in cammello",
+      "Sosta all'albero Akassia",
+      "Tè beduino e pane fresco tradizionale",
+      "Esperienza del tramonto",
+      "Cena BBQ a buffet",
+      "Bevande analcoliche e acqua minerale",
+      "Spettacolo beduino, musica e osservazione delle stelle"
+    ],
+    ru: [
+      "Трансфер из отеля и обратно на джипе Toyota Land Cruiser 4WD",
+      "Поездка на квадроциклах",
+      "Экскурсия по деревне бедуинов и катание на верблюдах",
+      "Остановка у дерева Акассия",
+      "Бедуинский чай и свежий традиционный хлеб",
+      "Встреча заката в пустыне",
+      "Ужин BBQ (шведский стол)",
+      "Безалкогольные напитки и минеральная вода",
+      "Шоу-программа, музыка и звездное шоу"
+    ],
+    pl: [
+      "Odbiór i powrót do hotelu 4x4 Toyota Land Cruiser",
+      "Jazda na kładach",
+      "Zwiedzanie wioski Beduinów i przejażdżka na wielbłądzie",
+      "Przystanek przy drzewie Akassia",
+      "Tradycyjna herbata i świeży chleb beduiński",
+      "Oglądanie zachodu słońca",
+      "Kolacja BBQ w formie bufetu",
+      "Napoje bezalkoholowe i вода mineralna",
+      "Pokaz beduiński, muzyka i obserwacja gwiazd"
+    ],
+    cz: [
+      "Vyzvednutí a návrat do hotelu vozem 4x4 Toyota Land Cruiser",
+      "Jízda na čtyřkolkách",
+      "Prohlídka beduínské vesnice a jízda na velbloudu",
+      "Zastávka u stromu Akassia",
+      "Tradiční beduínský čaj a čerstvý chléb",
+      "Zážitek při západu slunce",
+      "BBQ večeře formou bufetu",
+      "Nealkoholické nápoje a minerální voda",
+      "Beduínská show, hudba a pozorování hvězd"
+    ]
+  },
+  whatToBring: {
+    en: ["Comfortable clothes & shoes", "Sunglasses", "Sun protection", "Camera or phone", "Light jacket for the evening"],
+    de: ["Bequeme Kleidung & Schuhe", "Sonnenbrille", "Sonnenschutz", "Kamera oder Smartphone", "Leichte Jacke für den Abend"],
+    it: ["Abbigliamento e scarpe comode", "Occhiali da sole", "Protezione solare", "Fotocamera o telefono", "Giacca leggera per la sera"],
+    ru: ["Удобная одежда и обувь", "Солнцезащитные очки", "Солнцезащитный крем", "Камера или телефон", "Легкая куртка на вечер"],
+    pl: ["Wygodne ubranie i buty", "Okulary przeciwsłoneczne", "Ochrona przeciwsłoneczna", "Aparat lub telefon", "Lekka kurtka na wieczór"],
+    cz: ["Pohodlné oblečení a obuv", "Sluneční brýle", "Ochrana proti slunci", "Fotoaparát nebo telefon", "Lehká bunda na večer"]
+  },
+  childrenPolicy: {
+    under5: {
+      en: "Under 5 years: Free",
+      de: "Unter 5 Jahren: Kostenlos",
+      it: "Sotto i 5 anni: Gratuito",
+      ru: "До 5 лет: Бесплатно",
+      pl: "Poniżej 5 lat: Bezpłatnie",
+      cz: "Pod 5 let: Zdarma"
+    },
+    from5to10: {
+      en: "5–10 years: 20 € / USD per child",
+      de: "5–10 Jahre: 20 € / USD pro Kind",
+      it: "5–10 anni: 20 € / USD per bambino",
+      ru: "5–10 лет: 20 € / USD за ребенка",
+      pl: "5–10 lat: 20 € / USD za dziecko",
+      cz: "5–10 let: 20 € / USD za dítě"
+    },
+    over10: {
+      en: "Over 10 years: Full adult price (55 €)",
+      de: "Über 10 Jahre: Voller Erwachsenenpreis (55 €)",
+      it: "Oltre i 10 anni: Prezzo intero adulto (55 €)",
+      ru: "Старше 10 лет: Полная стоимость (55 €)",
+      pl: "Powyżej 10 lat: Pełna cena (55 €)",
+      cz: "Nad 10 let: Plná cena (55 €)"
+    }
+  },
+  itinerary: [
+    {
+      step: "01",
+      title: {
+        en: "Hotel Pickup",
+        de: "Hotelabholung",
+        it: "Transfer dall'hotel",
+        ru: "Трансфер из отеля",
+        pl: "Odbiór z hotelu",
+        cz: "Vyzvednutí v hotelu"
+      },
+      description: {
+        en: "14:30 — Pickup from your hotel in a 4WD Toyota Land Cruiser.",
+        de: "14:30 Uhr — Abholung von Ihrem Hotel im 4WD Toyota Land Cruiser.",
+        it: "14:30 — Pickup dal tuo hotel in 4WD Toyota Land Cruiser.",
+        ru: "14:30 — Трансфер из отеля на джипе Toyota Land Cruiser.",
+        pl: "14:30 — Odbiór z hotelu samochodem 4x4 Toyota Land Cruiser.",
+        cz: "14:30 — Vyzvednutí v hotelu vozem 4WD Toyota Land Cruiser."
+      }
+    },
+    {
+      step: "02",
+      title: {
+        en: "Desert Safari & Quad Bike",
+        de: "Wüstensafari & Quad-Fahrt",
+        it: "Safari nel deserto & Quad",
+        ru: "Сафари в пустыне и квадроциклы",
+        pl: "Safari na pustyni i kłady",
+        cz: "Pouštní safari a čtyřkolky"
+      },
+      description: {
+        en: "Drive around 22 km into the desert and start your quad bike adventure.",
+        de: "Fahrt ca. 22 km in die Wüste und Start des Quad-Abenteuers.",
+        it: "Guida di circa 22 km nel deserto e inizio dell'avventura in quad.",
+        ru: "Поездка около 22 км вглубь пустыни и старт на квадроциклах.",
+        pl: "Przejazd ok. 22 km na pustynię i rozpoczęcie jazdy na kładach.",
+        cz: "Jízda cca 22 km do pouště a začátek dobrodružství na čtyřkolkách."
+      }
+    },
+    {
+      step: "03",
+      title: {
+        en: "Akassia Tree Stop",
+        de: "Stopp am Akassia-Baum",
+        it: "Sosta all'albero Akassia",
+        ru: "Остановка у дерева Акассия",
+        pl: "Przystanek przy drzewie Akassia",
+        cz: "Zastávka u stromu Akassia"
+      },
+      description: {
+        en: "Stop to take photos and learn about the iconic desert Akassia Tree.",
+        de: "Fotostopp und Informationen über den berühmten Akassia-Baum.",
+        it: "Sosta fotografica e informazioni sul famoso albero del deserto.",
+        ru: "Остановка для фото и история знаменитого пустынного дерева.",
+        pl: "Przystanek na zdjęcia i poznanie historii słynnego drzewa.",
+        cz: "Zastávka na fotky a informace o slavném pouštním stromu."
+      }
+    },
+    {
+      step: "04",
+      title: {
+        en: "Bedouin Village Tour",
+        de: "Beduinendorf-Tour",
+        it: "Tour del villaggio beduino",
+        ru: "Экскурсия по деревне бедуинов",
+        pl: "Zwiedzanie wioski Beduinów",
+        cz: "Prohlídka beduínské vesnice"
+      },
+      description: {
+        en: "Enjoy welcome Bedouin tea, ride a camel, visit the water well, and see bread making.",
+        de: "Genießen Sie Beduinentee, Kamelreiten, Brunnenbesuch und Brotzubereitung.",
+        it: "Gusta il tè di benvenuto, cavalca un cammello e osserva la preparazione del pane.",
+        ru: "Традиционный чай, катание на верблюдах, визит к колодцу и выпечка хлеба.",
+        pl: "Picie herbaty, przejażdżka na wielbłądzie, zwiedzanie studni i pieczenie chleba.",
+        cz: "Beduínský čaj, jízda na velbloudu, návštěva studny a pečení chleba."
+      }
+    },
+    {
+      step: "05",
+      title: {
+        en: "Desert Sunset",
+        de: "Sonnenuntergang in der Wüste",
+        it: "Tramonto nel deserto",
+        ru: "Закат в пустыне",
+        pl: "Zachód słońca na pustyni",
+        cz: "Západ slunce v poušti"
+      },
+      description: {
+        en: "Watch the breathtaking sunset from the heart of the Red Sea desert.",
+        de: "Beobachten Sie den atemberaubenden Sonnenuntergang mitten in der Wüste.",
+        it: "Ammira un incantevole tramonto dal cuore del deserto del Mar Rosso.",
+        ru: "Насладитесь потрясающим закатом в самом сердце пустыни.",
+        pl: "Oglądaj zachwycający zachód słońca z samego serca pustyni.",
+        cz: "Sledujte úchvatný západ slunce z přímého srdce pouště."
+      }
+    },
+    {
+      step: "06",
+      title: {
+        en: "BBQ Dinner & Bedouin Show",
+        de: "BBQ-Abendessen & Beduinen-Show",
+        it: "Cena BBQ & Spettacolo Beduino",
+        ru: "Ужин BBQ и бедуинское шоу",
+        pl: "Kolacja BBQ i pokaz beduiński",
+        cz: "BBQ večeře a beduínská show"
+      },
+      description: {
+        en: "Enjoy an open buffet BBQ dinner, Egyptian music, oriental show, and stargazing.",
+        de: "Genießen Sie das BBQ-Buffet, ägyptische Musik, Beduinenshow und Sternenbeobachtung.",
+        it: "Cena BBQ a buffet, musica egiziana, spettacolo orientale e osservazione delle stelle.",
+        ru: "Ужин «шведский стол», египетская музыка, шоу-программа и наблюдение за звездами.",
+        pl: "Kolacja BBQ, egipska muzyka, pokazy beduińskie i oglądanie gwiazd.",
+        cz: "BBQ večeře formou bufetu, egyptská hudba, orientalní show a pozorování hvězd."
+      }
+    },
+    {
+      step: "07",
+      title: {
+        en: "Return to Hotel",
+        de: "Rückkehr zum Hotel",
+        it: "Ritorno in Hotel",
+        ru: "Возвращение в отель",
+        pl: "Powrót do hotelu",
+        cz: "Návrat do hotelu"
+      },
+      description: {
+        en: "Around 21:00 — Transfer back to your hotel in Marsa Alam.",
+        de: "Ca. 21:00 Uhr — Rücktransfer zu Ihrem Hotel in Marsa Alam.",
+        it: "Circa 21:00 — Rientro presso il tuo hotel a Marsa Alam.",
+        ru: "Около 21:00 — Трансфер обратно в ваш отель в Марса-Аламе.",
+        pl: "Około 21:00 — Powrót do hotelu w Marsa Alam.",
+        cz: "Kolem 21:00 — Návrat do vašeho hotelu v Marsa Alam."
+      }
+    }
+  ],
+  paymentNote: {
+    en: "Pay after the trip — no online payment required.",
+    de: "Bezahlung nach dem Ausflug — keine Online-Zahlung erforderlich.",
+    it: "Paga dopo il tour — nessuna pagamento online richiesto.",
+    ru: "Оплата после экскурсии — онлайн-предоплата не требуется.",
+    pl: "Płatność po wycieczce — płatność online nie jest wymagana.",
+    cz: "Platba až po výletu — není vyžadována platba předem online."
+  },
+  disclaimer: {
+    en: "Personal expenses and photos/videos taken by local photographers are optional and not included in the price.",
+    de: "Persönliche Ausgaben sowie Fotos/Videos von lokalen Fotografen sind optional und nicht im Preis enthalten.",
+    it: "Le spese personali e le foto/video scattate da fotografi locali sono opzionali e non incluse nel prezzo.",
+    ru: "Личные расходы и фото/видео от местных фотографов оплачиваются отдельно по желанию.",
+    pl: "Wydatki osobiste oraz zdjęcia i filmy od lokalnych fotografów są opcjonalne i nie są wliczone w cenę.",
+    cz: "Osobní výdaje a fotografie/videa od místních fotografů jsou volitelné a nejsou zahrnuty v ceně."
+  },
+  images: {
+    featured: "/images/tours/safari-card.webp",
+    gallery: [
+      "/images/tours/safari-1.webp",
+      "/images/tours/safari-2.webp",
+      "/images/tours/safari-3.webp"
+    ]
   }
+},
+{
+  id: "sunset-horse-riding-bedouin-night",
+  slug: "sunset-horse-riding-bedouin-night",
+  title: {
+    en: "Sunset Horse Riding & Bedouin Night",
+    de: "Sonnenuntergangs-Ausritt & Beduinennacht",
+    it: "Cavalcatata al Tramonto e Notte Beduina",
+    ru: "Конная прогулка на закате и Бедуинская ночь",
+    pl: "Jazda konna o zachodzie słońca i Noc Beduńska",
+    cz: "Jízda na koni při západu slunce a Beduínská noc"
+  },
+  subtitle: {
+    en: "Horse Riding • Campfire • Bedouin Dinner",
+    de: "Ausritt • Lagerfeuer • Beduinen-Abendessen",
+    it: "Cavalcatata • Falò • Cena Beduina",
+    ru: "Прогулка на лошадях • Костер • Бедуинский ужин",
+    pl: "Jazda konna • Ognisko • Kolacja Beduńska",
+    cz: "Jízda na koni • Táborák • Beduínská večeře"
+  },
+  category: {
+    en: "Desert & Cultural",
+    de: "Wüste & Kultur",
+    it: "Deserto e Cultura",
+    ru: "Пустыня и Культура",
+    pl: "Pustynia i Kultura",
+    cz: "Poušť a Kultura"
+  },
+  price: {
+    amount: 65,
+    currency: "€",
+    unit: {
+      en: "per person",
+      de: "pro Person",
+      it: "per persona",
+      ru: "за человека",
+      pl: "za osobę",
+      cz: "za osobu"
+    }
+  },
+  duration: {
+    en: "8 Hours",
+    de: "8 Stunden",
+    it: "8 Ore",
+    ru: "8 часов",
+    pl: "8 godzin",
+    cz: "8 hodin"
+  },
+  departure: {
+    en: "South Marsa Alam",
+    de: "Süd-Marsa Alam",
+    it: "Sud di Marsa Alam",
+    ru: "Юг Марса-Алама",
+    pl: "Południowe Marsa Alam",
+    cz: "Jižní Marsa Alam"
+  },
+  overview: {
+    en: "Experience an authentic Bedouin evening by the Red Sea. Enjoy a relaxing evening combining a one-hour horse ride with a traditional beach campfire. Enjoy traditional Bedouin coffee and a fresh fish dinner, relax with drinks, and finish beneath the stars away from busy tourist areas.",
+    de: "Erleben Sie einen authentischen Beduinenabend am Roten Meer. Genießen Sie einen entspannten Abend, der einen einstündigen Ausritt mit einem traditionellen Lagerfeuer am Strand verbindet. Genießen Sie traditionellen Beduinenkaffee, ein frisches Fischgericht und entspannen Sie unter dem Sternenhimmel.",
+    it: "Vivi un'autentica serata beduina sul Mar Rosso. Goditi una serata rilassante che unisce un'ora di passeggiata a cavallo con un tradizionale falò in spiaggia. Gusta il caffè beduino e una cena a base di pesce fresco sotto le stelle.",
+    ru: "Испытайте настоящий бедуинский вечер на берегу Красного моря. Наслаждайтесь расслабляющим вечером, сочетающим часовую прогулку на лошадях и традиционный костер на пляже. Попробуйте бедуинский кофе, ужин из свежей рыбы и отдохните под звездами.",
+    pl: "Przeżyj autentyczny beduiński wieczór nad Morzem Czerwonym. Ciesz się relaksującym wieczorem łączącym godzinną jazdę konną z tradycyjnym ogniskiem na plaży. Spróbuj tradycyjnej beduińskiej kawy, świeżej ryby i zrelaksuj się pod gwiazdami.",
+    cz: "Zažijte autentický beduínský večer u Rudého moře. Užijte si pohodový večer spojující hodinovou jízdu na koni s tradičním táborákem na pláži. Vychutnejte si beduínskou kávu, večeři z čerstvých ryb a relaxujte pod hvězdami."
+  },
+  highlights: {
+    en: [
+      "1-hour horse riding experience",
+      "Professional horse riding guide",
+      "Traditional beach campfire",
+      "Traditional Bedouin coffee",
+      "Fresh fish dinner",
+      "All drinks included",
+      "Relaxing evening by the Red Sea",
+      "Stargazing away from busy tourist areas",
+      "Hotel pickup and drop-off",
+      "Entrance ticket included"
+    ],
+    de: [
+      "1-stündiger Ausritt",
+      "Professioneller Reitführer",
+      "Traditionelles Lagerfeuer am Strand",
+      "Traditioneller Beduinenkaffee",
+      "Frisches Fisch-Abendessen",
+      "Alle Getränke inklusive",
+      "Entspannender Abend am Roten Meer",
+      "Sternenbeobachtung fernab des Trubels",
+      "Hotelabholung und Rückbringung",
+      "Eintrittskarte inklusive"
+    ],
+    it: [
+      "1 ora di passeggiata a cavallo",
+      "Guida equestre professionale",
+      "Tradizionale falò in spiaggia",
+      "Caffè beduino tradizionale",
+      "Cena a base di pesce fresco",
+      "Tutte le bevande incluse",
+      "Serata rilassante sul Mar Rosso",
+      "Osservazione delle stelle lontano dal caos",
+      "Transfer da e per l'hotel",
+      "Biglietto d'ingresso incluso"
+    ],
+    ru: [
+      "1 час прогулки на лошадях",
+      "Профессиональный гид по верховой езде",
+      "Традиционный костер на пляже",
+      "Традиционный бедуинский кофе",
+      "Ужин из свежей рыбы",
+      "Все напитки включены",
+      "Расслабляющий вечер у Красного моря",
+      "Наблюдение за звездами вдали от суеты",
+      "Трансфер из отеля и обратно",
+      "Входной билет включен"
+    ],
+    pl: [
+      "1 godzina jazdy konnej",
+      "Profesjonalny przewodnik jeździecki",
+      "Tradycyjne ognisko na plaży",
+      "Tradycyjna kawa beduińska",
+      "Kolacja ze świeżej ryby",
+      "Wszystkie napoje w cenie",
+      "Relaksujący wieczór nad Morzem Czerwonym",
+      "Obserwacja gwiazd z dala od tłumów",
+      "Odbiór i powrót do hotelu",
+      "Bilet wstępu w cenie"
+    ],
+    cz: [
+      "1 hodina jízdy na koni",
+      "Profesionální průvodce pro jízdu na koni",
+      "Tradiční táborák na pláži",
+      "Tradiční beduínská káva",
+      "Večeře z čerstvých ryb",
+      "Všechny nápoje v ceně",
+      "Pohodový večer u Rudého moře",
+      "Pozorování hvězd mimo rušné oblasti",
+      "Vyzvednutí a návrat do hotelu",
+      "Vstupenka v ceně"
+    ]
+  },
+  included: {
+    en: [
+      "Hotel pickup and drop-off",
+      "1-hour horse riding",
+      "Professional horse riding guide",
+      "Beach campfire experience",
+      "Traditional Bedouin coffee",
+      "Fresh fish dinner",
+      "All drinks",
+      "Entrance ticket",
+      "Stargazing experience"
+    ],
+    de: [
+      "Hotelabholung und Rückbringung",
+      "1-stündiger Ausritt",
+      "Professioneller Reitführer",
+      "Strand-Lagerfeuer-Erlebnis",
+      "Traditioneller Beduinenkaffee",
+      "Frisches Fisch-Abendessen",
+      "Alle Getränke",
+      "Eintrittskarte",
+      "Sternenbeobachtung"
+    ],
+    it: [
+      "Transfer da e per l'hotel",
+      "1 ora di passeggiata a cavallo",
+      "Guida equestre professionale",
+      "Esperienza del falò in spiaggia",
+      "Caffè beduino tradizionale",
+      "Cena a base di pesce fresco",
+      "Tutte le bevande",
+      "Biglietto d'ingresso",
+      "Osservazione delle stelle"
+    ],
+    ru: [
+      "Трансфер из отеля и обратно",
+      "1 час прогулки на лошадях",
+      "Профессиональный гид по верховой езде",
+      "Костер на пляже",
+      "Традиционный бедуинский кофе",
+      "Ужин из свежей рыбы",
+      "Все напитки",
+      "Входной билет",
+      "Наблюдение за звездами"
+    ],
+    pl: [
+      "Odbiór i powrót do hotelu",
+      "1 godzina jazdy konnej",
+      "Profesjonalny przewodnik jeździecki",
+      "Ognisko na plaży",
+      "Tradycyjna kawa beduińska",
+      "Kolacja ze świeżej ryby",
+      "Wszystkie napoje",
+      "Bilet wstępu",
+      "Obserwacja gwiazd"
+    ],
+    cz: [
+      "Vyzvednutí a návrat do hotelu",
+      "1 hodina jízdy na koni",
+      "Profesionální průvodce pro jízdu na koni",
+      "Táborák na pláži",
+      "Tradiční beduínská káva",
+      "Večeře z čerstvých ryb",
+      "Všechny nápoje",
+      "Vstupenka",
+      "Pozorování hvězd"
+    ]
+  },
+  notIncluded: {
+    en: [
+      "Personal expenses",
+      "Optional activities or services not mentioned above"
+    ],
+    de: [
+      "Persönliche Ausgaben",
+      "Optionale Aktivitäten oder oben nicht genannte Dienstleistungen"
+    ],
+    it: [
+      "Spese personali",
+      "Attività opzionali o servizi non menzionati sopra"
+    ],
+    ru: [
+      "Личные расходы",
+      "Дополнительные услуги или активности, не указанные выше"
+    ],
+    pl: [
+      "Wydatki osobiste",
+      "Opcjonalne atrakcje lub usługi niewymienione powyżej"
+    ],
+    cz: [
+      "Osobní výdaje",
+      "Volitelné активности nebo služby výše neuvedené"
+    ]
+  },
+  whatToBring: {
+    en: ["Comfortable clothes", "Comfortable shoes", "Sunglasses", "Sun protection", "Camera or phone", "Light jacket for the evening"],
+    de: ["Bequeme Kleidung", "Bequeme Schuhe", "Sonnenbrille", "Sonnenschutz", "Kamera oder Handy", "Leichte Jacke für den Abend"],
+    it: ["Abiti comodi", "Scarpe comode", "Occhiali da sole", "Protezione solare", "Fotocamera o telefono", "Giacca leggera per la sera"],
+    ru: ["Удобная одежда", "Удобная обувь", "Солнцезащитные очки", "Защита от солнца", "Камера или телефон", "Легкая куртка на вечер"],
+    pl: ["Wygodne ubranie", "Wygodne buty", "Okulary przeciwsłoneczne", "Ochrona przeciwsłoneczna", "Aparat lub telefon", "Lekka kurtka na wieczór"],
+    cz: ["Pohodlné oblečení", "Pohodlná obuv", "Sluneční brýle", "Ochrana proti slunci", "Fotoaparát nebo telefon", "Lehká bunda na večer"]
+  },
+  childrenPolicy: {
+    under5: {
+      en: "Under 5 years: Free",
+      de: "Unter 5 Jahren: Kostenlos",
+      it: "Sotto i 5 anni: Gratuito",
+      ru: "До 5 лет: Бесплатно",
+      pl: "Poniżej 5 lat: Bezpłatnie",
+      cz: "Pod 5 let: Zdarma"
+    },
+    from5to10: {
+      en: "5–10 years: 50% of adult price",
+      de: "5–10 Jahre: 50% des Erwachsenenpreises",
+      it: "5–10 anni: 50% del prezzo adulti",
+      ru: "5–10 лет: 50% от стоимости взрослого",
+      pl: "5–10 lat: 50% ceny dorosłego",
+      cz: "5–10 let: 50 % z ceny dospělého"
+    },
+    over10: {
+      en: "Over 10 years: Full adult price",
+      de: "Über 10 Jahre: Voller Erwachsenenpreis",
+      it: "Oltre i 10 anni: Prezzo intero adulto",
+      ru: "Старше 10 лет: Полная стоимость",
+      pl: "Powyżej 10 lat: Pełna cena",
+      cz: "Nad 10 let: Plná cena"
+    }
+  },
+  itinerary: [
+    {
+      step: "01",
+      title: {
+        en: "16:00 — Hotel Pickup",
+        de: "16:00 — Hotelabholung",
+        it: "16:00 — Transfer dall'Hotel",
+        ru: "16:00 — Трансфер из отеля",
+        pl: "16:00 — Odbiór z Hotelu",
+        cz: "16:00 — Vyzvednutí v hotelu"
+      },
+      description: {
+        en: "Pickup from your hotel.",
+        de: "Abholung von Ihrem Hotel.",
+        it: "Ritiro presso il tuo hotel.",
+        ru: "Трансфер из вашего отеля.",
+        pl: "Odbiór z Twojego hotelu.",
+        cz: "Vyzvednutí z vašeho hotelu."
+      }
+    },
+    {
+      step: "02",
+      title: {
+        en: "Arrival at Beach Camp",
+        de: "Ankunft im Strandcamp",
+        it: "Arrivo al Campo in Spiaggia",
+        ru: "Прибытие в пляжный лагерь",
+        pl: "Przyjazd do Obozu na Plaży",
+        cz: "Příjezd do plážového kempu"
+      },
+      description: {
+        en: "Arrive at the traditional beach camp by the Red Sea.",
+        de: "Ankunft im traditionellen Strandcamp am Roten Meer.",
+        it: "Arrivo al tradizionale campo sulla spiaggia del Mar Rosso.",
+        ru: "Прибытие в традиционный пляжный лагерь на берегу моря.",
+        pl: "Przyjazd do tradycyjnego obozu na plaży nad Morzem Czerwonym.",
+        cz: "Příjezd do tradičního plážového kempu u Rudého moře."
+      }
+    },
+    {
+      step: "03",
+      title: {
+        en: "1-Hour Horse Riding",
+        de: "1-stündiger Ausritt",
+        it: "1 Ora di Passeggiata a Cavallo",
+        ru: "1 час прогулки на лошадях",
+        pl: "1 Godzina Jazdy Konnej",
+        cz: "1 hodina jízdy na koni"
+      },
+      description: {
+        en: "Enjoy a 1-hour ride with a professional guide.",
+        de: "Genießen Sie einen 1-stündigen Ausritt mit Reitführer.",
+        it: "Goditi un'ora di passeggiata con guida professionale.",
+        ru: "Часовая прогулка с профессиональным инструктором.",
+        pl: "Ciesz się godzinną jazdą z przewodnikiem.",
+        cz: "Užijte si 1 hodinu jízdy s průvodcem."
+      }
+    },
+    {
+      step: "04",
+      title: {
+        en: "Return to Beach Camp",
+        de: "Rückkehr ins Camp",
+        it: "Rientro al Campo",
+        ru: "Возвращение в лагерь",
+        pl: "Powrót do Obozu",
+        cz: "Návrat do kempu"
+      },
+      description: {
+        en: "Return to the camp after the horse ride.",
+        de: "Rückkehr ins Camp nach dem Ausritt.",
+        it: "Ritorno al campo dopo la passeggiata.",
+        ru: "Возвращение в лагерь после прогулки.",
+        pl: "Powrót do obozu po jazdzy konnej.",
+        cz: "Návrat do kempu po jízdě na koni."
+      }
+    },
+    {
+      step: "05",
+      title: {
+        en: "Beach Campfire & Coffee",
+        de: "Lagerfeuer & Beduinenkaffee",
+        it: "Falò e Caffè Beduino",
+        ru: "Костер и бедуинский кофе",
+        pl: "Ognisko i Kawa Beduińska",
+        cz: "Táborák a Beduínská káva"
+      },
+      description: {
+        en: "Relax around the campfire and enjoy Bedouin coffee.",
+        de: "Entpannen Sie am Lagerfeuer bei Beduinenkaffee.",
+        it: "Rilassati intorno al falò e gusta il caffè beduino.",
+        ru: "Отдохните у костра и попробуйте бедуинский кофе.",
+        pl: "Zrelaksuj się przy ognisku i spróbuj kawy.",
+        cz: "Odpočiňte si u táboráku a vychutnejte si kávu."
+      }
+    },
+    {
+      step: "06",
+      title: {
+        en: "Fresh Fish Dinner",
+        de: "Frisches Fisch-Abendessen",
+        it: "Cena di Pesce Fresco",
+        ru: "Ужин из свежей рыбы",
+        pl: "Kolacja ze Świeżej Ryby",
+        cz: "Večeře z čerstvých ryb"
+      },
+      description: {
+        en: "Enjoy a fresh fish dinner at the camp.",
+        de: "Genießen Sie ein frisches Fisch-Abendessen im Camp.",
+        it: "Gusta una cena a base di pesce fresco al campo.",
+        ru: "Наслаждайтесь ужином из свежей рыбы в лагере.",
+        pl: "Zjedz kolację ze świeżej ryby w obozie.",
+        cz: "Vychutnejte si večeři z čerstvých ryb v kempu."
+      }
+    },
+    {
+      step: "07",
+      title: {
+        en: "Relax & Stargazing",
+        de: "Entspannung & Sternenbeobachtung",
+        it: "Relax e Osservazione Stelle",
+        ru: "Отдых и наблюдение за звездами",
+        pl: "Relaks i Obserwacja Gwiazd",
+        cz: "Relaxace a pozorování hvězd"
+      },
+      description: {
+        en: "Relax by the sea with drinks under the stars.",
+        de: "Entspannen Sie am Meer unter dem Sternenhimmel.",
+        it: "Rilassati al mare sotto le stelle con le bevande.",
+        ru: "Отдохните у моря под звездным небом.",
+        pl: "Zrelaksuj się nad morzem pod gwiazdami.",
+        cz: "Odpočiňte si u moře pod hvězdami."
+      }
+    },
+    {
+      step: "08",
+      title: {
+        en: "Return Transfer",
+        de: "Rücktransfer",
+        it: "Rientro in Hotel",
+        ru: "Обратный трансфер",
+        pl: "Powrót do Hotelu",
+        cz: "Návrat do hotelu"
+      },
+      description: {
+        en: "Around Midnight — Transfer back to your hotel.",
+        de: "Gegen Mitternacht — Rückfahrt zu Ihrem Hotel.",
+        it: "Verso mezzanotte — Trasferimento di ritorno.",
+        ru: "Около полуночи — Трансфер обратно в отель.",
+        pl: "Około północy — Powrót do hotelu.",
+        cz: "Kolem půlnoci — Návrat do hotelu."
+      }
+    }
+  ],
+  paymentNote: {
+    en: "Pay after the trip — no online payment required.",
+    de: "Bezahlung nach dem Ausflug — keine Online-Zahlung erforderlich.",
+    it: "Paga dopo il tour — nessuna pagamento online richiesto.",
+    ru: "Оплата после экскурсии — онлайн-предоплата не требуется.",
+    pl: "Płatność po wycieczce — płatność online nie jest wymagana.",
+    cz: "Platba až po výletu — není vyžadována platba předem online."
+  },
+  disclaimer: {
+    en: "This relaxed Red Sea evening combines horse riding, Bedouin hospitality, a traditional beach campfire and dinner under the stars with a professional guide.",
+    de: "Dieser entspannte Abend kombiniert Reiten, Beduinen-Gastfreundschaft, Lagerfeuer und Abendessen unter den Sternen mit einem professionellen Reitführer.",
+    it: "Questa serata sul Mar Rosso unisce cavalcatata, ospitalità beduina, falò in spiaggia e cena sotto le stelle con una guida professionale.",
+    ru: "Этот вечер сочетает в себе верховую езду, бедуинское гостеприимство, костер на пляже и ужин под звездами с гидом.",
+    pl: "Ten wieczór łączy jazdę konną, beduińską gościnność, ognisko na plaży i kolację pod gwiazdami z przewodnikiem.",
+    cz: "Tento pohodový večer kombinuje jízdu na koni, beduínskou pohostinnost, táborák na pláži a večeři pod hvězdami s průvodcem."
+  },
+  images: {
+    featured: "/images/tours/horse-riding-card.webp",
+    gallery: [
+      "/images/tours/horse-riding-1.webp",
+      "/images/tours/horse-riding-2.webp",
+      "/images/tours/horse-riding-3.webp"
+    ]
+  }
+}
 ];

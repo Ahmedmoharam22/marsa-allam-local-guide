@@ -32,9 +32,9 @@ export function Hero({ lang, dict }: HeroProps) {
   const t = dict.hero;
 
   return (
-   <section className="relative flex h-screen w-full flex-col justify-between overflow-hidden bg-slate-950 pt-28">
+    <section className="relative flex min-h-[70vh] sm:min-h-[75vh] lg:h-[80vh] max-h-[850px] w-full flex-col justify-between overflow-hidden bg-slate-950 pt-24 pb-14 sm:pt-28 sm:pb-16">
       
-      {/* Background Image - Full Viewport */}
+      {/* Background Image - Viewport Scaled */}
       <div className="absolute inset-0 z-0">
         <ImageNext
           src="/images/hero/hero.webp"
@@ -45,7 +45,7 @@ export function Hero({ lang, dict }: HeroProps) {
           className="object-cover object-center"
         />
         {/* Subtle Dark Overlay to boost readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-950/40 to-transparent rtl:bg-gradient-to-l" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/50 to-transparent rtl:bg-gradient-to-l" />
       </div>
 
       {/* Main Content Area */}
@@ -53,33 +53,33 @@ export function Hero({ lang, dict }: HeroProps) {
         <div className="max-w-xl text-left rtl:text-right">
           
           {/* Tag / Welcome */}
-          <span className="font-sans text-sm font-semibold text-teal-300">
+          <span className="font-sans text-xs sm:text-sm font-semibold text-teal-300">
             {t.welcome}
           </span>
 
           {/* Headline - Serif Font */}
-          <h1 className="mt-2 font-serif text-4xl font-normal leading-[1.15] text-white sm:text-6xl lg:text-7xl">
+          <h1 className="mt-2 font-serif text-3xl font-normal leading-[1.15] text-white sm:text-5xl lg:text-6xl xl:text-7xl">
             {t.title_main} <br />
             {t.title_sub}
           </h1>
 
           {/* Subtitle Accent */}
-          <p className="mt-4 font-sans text-lg font-bold tracking-tight text-white sm:text-2xl">
+          <p className="mt-3 font-sans text-base font-bold tracking-tight text-white sm:text-xl lg:text-2xl">
             {t.tagline}
           </p>
 
           {/* Description */}
-          <p className="mt-2 max-w-lg font-sans text-xs font-normal leading-relaxed text-slate-200 sm:text-base">
+          <p className="mt-2 max-w-lg font-sans text-xs font-normal leading-relaxed text-slate-200 sm:text-sm lg:text-base">
             {t.description}
           </p>
 
-          {/* CTAs - تعديل الزراير لتكون تحت بعض في الموبايل وجنب بعض في الشاشات الكبيرة */}
-          <div className="mt-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
+          {/* CTAs */}
+          <div className="mt-5 sm:mt-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
             <a
               href="https://wa.me/201000000000"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 px-6 py-3.5 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-400 active:scale-95 text-center"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 px-6 py-3 text-xs sm:text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-400 active:scale-95 text-center"
             >
               <MessageCircle className="h-4 w-4 fill-current shrink-0" />
               <span>{t.cta_whatsapp}</span>
@@ -87,7 +87,7 @@ export function Hero({ lang, dict }: HeroProps) {
 
             <Link
               href={`/${lang}/tours`}
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/60 bg-slate-900/40 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20 active:scale-95 text-center"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/60 bg-slate-900/40 px-6 py-3 text-xs sm:text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20 active:scale-95 text-center"
             >
               <span>{t.cta_explore}</span>
               <ArrowRight className="h-4 w-4 rtl:rotate-180 shrink-0" />

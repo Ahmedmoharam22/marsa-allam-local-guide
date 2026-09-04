@@ -52,7 +52,7 @@ export default function ScrollToTop({ lang, tooltipText }: ScrollToTopProps) {
     <button
       onClick={scrollToTop}
       aria-label={label}
-      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-12 h-12 bg-slate-900 text-white border border-slate-800 rounded-full shadow-2xl hover:bg-teal-600 hover:border-teal-500 hover:scale-110 transition-all duration-300 group focus:outline-none focus:ring-4 focus:ring-teal-500/40 animate-in fade-in zoom-in duration-300"
+      className="fixed cursor-pointer bottom-6 right-6 z-50 flex items-center justify-center w-12 h-12 bg-slate-900 text-white border border-slate-800 rounded-full shadow-2xl hover:bg-teal-600 hover:border-teal-500 hover:scale-110 transition-all duration-300 group focus:outline-none focus:ring-4 focus:ring-teal-500/40 animate-in fade-in zoom-in duration-300"
     >
       <FaArrowUp className="w-5 h-5 transition-transform group-hover:-translate-y-1" />
       

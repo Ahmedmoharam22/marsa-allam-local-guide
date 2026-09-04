@@ -23,51 +23,51 @@ export function FeaturesBar({ dict }: FeaturesBarProps) {
   const f = dict.hero.features;
 
   return (
-    <section className="relative py-8 bg-slate-50 dark:bg-slate-900/50">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6">
-        <div className="grid grid-cols-2 gap-4 rounded-2xl bg-white/95 px-6 py-5 shadow-2xl backdrop-blur-md md:grid-cols-4 md:divide-x md:divide-gray-200/60 rtl:md:divide-x-reverse">
+    <section className="relative z-20 -mt-10 sm:-mt-14 lg:-mt-16 px-4 sm:px-6">
+      <div className="mx-auto max-w-5xl">
+        <div className="grid grid-cols-2 gap-3 sm:gap-4 rounded-2xl bg-white/95 dark:bg-slate-900/95 px-4 py-4 sm:px-6 sm:py-5 shadow-2xl backdrop-blur-md border border-slate-200/50 dark:border-slate-800/50 md:grid-cols-4 md:divide-x md:divide-gray-200/60 dark:md:divide-slate-800/60 rtl:md:divide-x-reverse">
           
           {/* Feature 1 */}
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-50 text-teal-600">
-              <Compass className="h-5 w-5" />
+            <div className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-full bg-teal-50 dark:bg-teal-950/50 text-teal-600 dark:text-teal-400">
+              <Compass className="h-4 w-4 sm:h-5 sm:w-5" />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-gray-900">{f.experience_title}</h4>
-              <p className="text-[11px] text-gray-500">{f.experience_desc}</p>
+              <h4 className="text-xs font-bold text-gray-900 dark:text-slate-100">{f.experience_title}</h4>
+              <p className="text-[10px] sm:text-[11px] text-gray-500 dark:text-slate-400">{f.experience_desc}</p>
             </div>
           </div>
 
           {/* Feature 2 */}
           <div className="flex items-center gap-3 md:pl-4 rtl:md:pr-4">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-50 text-teal-600">
-              <Users className="h-5 w-5" />
+            <div className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-full bg-teal-50 dark:bg-teal-950/50 text-teal-600 dark:text-teal-400">
+              <Users className="h-4 w-4 sm:h-5 sm:w-5" />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-gray-900">{f.groups_title}</h4>
-              <p className="text-[11px] text-gray-500">{f.groups_desc}</p>
+              <h4 className="text-xs font-bold text-gray-900 dark:text-slate-100">{f.groups_title}</h4>
+              <p className="text-[10px] sm:text-[11px] text-gray-500 dark:text-slate-400">{f.groups_desc}</p>
             </div>
           </div>
 
           {/* Feature 3 */}
           <div className="flex items-center gap-3 md:pl-4 rtl:md:pr-4">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-50 text-teal-600">
-              <ShieldCheck className="h-5 w-5" />
+            <div className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-full bg-teal-50 dark:bg-teal-950/50 text-teal-600 dark:text-teal-400">
+              <ShieldCheck className="h-4 w-4 sm:h-5 sm:w-5" />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-gray-900">{f.safety_title}</h4>
-              <p className="text-[11px] text-gray-500">{f.safety_desc}</p>
+              <h4 className="text-xs font-bold text-gray-900 dark:text-slate-100">{f.safety_title}</h4>
+              <p className="text-[10px] sm:text-[11px] text-gray-500 dark:text-slate-400">{f.safety_desc}</p>
             </div>
           </div>
 
           {/* Feature 4 */}
           <div className="flex items-center gap-3 md:pl-4 rtl:md:pr-4">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-50 text-teal-600">
-              <Star className="h-5 w-5" />
+            <div className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-full bg-teal-50 dark:bg-teal-950/50 text-teal-600 dark:text-teal-400">
+              <Star className="h-4 w-4 sm:h-5 sm:w-5" />
             </div>
             <div>
-              <h4 className="text-xs font-bold text-gray-900">{f.care_title}</h4>
-              <p className="text-[11px] text-gray-500">{f.care_desc}</p>
+              <h4 className="text-xs font-bold text-gray-900 dark:text-slate-100">{f.care_title}</h4>
+              <p className="text-[10px] sm:text-[11px] text-gray-500 dark:text-slate-400">{f.care_desc}</p>
             </div>
           </div>
 
