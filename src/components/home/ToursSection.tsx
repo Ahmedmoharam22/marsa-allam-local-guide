@@ -123,9 +123,10 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
           {searchQuery && (
             <button
               onClick={() => setSearchQuery("")}
-              className="absolute end-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
+              aria-label="Clear search"
+              className="absolute end-1 top-1/2 -translate-y-1/2 p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-muted-foreground hover:text-foreground"
             >
-              <X className="h-3.5 w-3.5" />
+              <X className="h-4 w-4" />
             </button>
           )}
         </div>

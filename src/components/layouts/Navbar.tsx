@@ -46,14 +46,18 @@ export default function Navbar({ lang, dict }: NavbarProps) {
   const showSolidNav = isScrolled || !isHome;
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 20);
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
+    setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -76,6 +80,8 @@ export default function Navbar({ lang, dict }: NavbarProps) {
       const element = document.getElementById(targetId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     } else {
       router.push(`/${lang}#${targetId}`);
@@ -93,36 +99,32 @@ export default function Navbar({ lang, dict }: NavbarProps) {
     { key: 'courses', label: dict.nav.courses, href: `/${lang}/tours`, target: 'tours', isPage:   true },
     { key: 'about', label: dict.nav.about, href: `/${lang}#about`, target: 'about', isPage: false },
     { key: 'blogs', label: dict.nav.blogs || 'Blogs', href: `/${lang}/blogs`, target: 'blogs', isPage: true }, // صفحة البلوجز الجديدة
-    { key: 'contact', label: dict.nav.contact, href: `/${lang}#contact`, target: 'contact', isPage: false },
   ];
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         showSolidNav
-          ? 'bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm border-b border-slate-200/80 dark:border-slate-800 py-3 text-slate-900 dark:text-white'
-          : 'bg-transparent py-5 border-b border-transparent text-white'
+          ? 'bg-white/95 dark:bg-slate-950/95 backdrop-blur-md shadow-lg py-3 border-b border-slate-200/60 dark:border-slate-800/60'
+          : 'bg-gradient-to-b from-slate-950/80 via-slate-950/40 to-transparent py-5'
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
-        {/* Logo */}
-        <Logo
-          lang={lang}
-          siteName={dict.seo.site_name}
-          textColor={showSolidNav ? 'text-slate-900 dark:text-white' : 'text-white'}
-          isScrolled={showSolidNav}
-        />
+        {/* Brand Logo Component */}
+        <Logo lang={lang} isScrolled={showSolidNav} />
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex items-center gap-5 text-sm font-medium">
+        <nav className="hidden md:flex items-center gap-6 text-sm font-semibold">
           {navLinks.map((link) => (
             <Link
               key={link.key}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.target, link.isPage)}
-              className={`transition-colors duration-300 ${
-                showSolidNav ? 'text-slate-700 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400' : 'text-white/90 hover:text-teal-300'
+              className={`transition-colors duration-200 ${
+                showSolidNav
+                  ? 'text-slate-700 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400'
+                  : 'text-white/90 hover:text-white'
               }`}
             >
               {link.label}
@@ -131,18 +133,14 @@ export default function Navbar({ lang, dict }: NavbarProps) {
         </nav>
 
         {/* Language Switcher & WhatsApp CTA (Desktop) */}
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-4">
           <LanguageSwitcher currentLang={lang} isScrolled={showSolidNav} />
-          
+
           <a
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-bold text-white shadow-md transition-all duration-300 ${
-              showSolidNav
-                ? 'bg-emerald-600 hover:bg-emerald-500 shadow-emerald-600/20'
-                : 'bg-emerald-500 hover:bg-emerald-400 shadow-emerald-500/30'
-            }`}
+            className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-5 py-2.5 text-xs font-semibold text-white shadow-md transition hover:bg-emerald-400 active:scale-95"
           >
             <MessageCircle className="h-4 w-4 fill-current" />
             <span>{whatsappText}</span>
@@ -155,8 +153,8 @@ export default function Navbar({ lang, dict }: NavbarProps) {
           
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle Menu"
-            className={`p-2 rounded-xl transition-colors ${
+            aria-label="Toggle navigation menu"
+            className={`p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-xl transition-colors ${
               showSolidNav ? 'text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-800' : 'text-white bg-white/10'
             }`}
           >

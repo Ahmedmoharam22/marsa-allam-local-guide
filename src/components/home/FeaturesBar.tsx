@@ -34,7 +34,7 @@ export function FeaturesBar({ dict }: FeaturesBarProps) {
             </div>
             <div>
               <h4 className="text-xs font-bold text-gray-900 dark:text-slate-100">{f.experience_title}</h4>
-              <p className="text-[10px] sm:text-[11px] text-gray-500 dark:text-slate-400">{f.experience_desc}</p>
+              <p className="text-[10px] sm:text-[11px] text-slate-600 dark:text-slate-300">{f.experience_desc}</p>
             </div>
           </div>
 
@@ -45,7 +45,7 @@ export function FeaturesBar({ dict }: FeaturesBarProps) {
             </div>
             <div>
               <h4 className="text-xs font-bold text-gray-900 dark:text-slate-100">{f.groups_title}</h4>
-              <p className="text-[10px] sm:text-[11px] text-gray-500 dark:text-slate-400">{f.groups_desc}</p>
+              <p className="text-[10px] sm:text-[11px] text-slate-600 dark:text-slate-300">{f.groups_desc}</p>
             </div>
           </div>
 
@@ -56,7 +56,7 @@ export function FeaturesBar({ dict }: FeaturesBarProps) {
             </div>
             <div>
               <h4 className="text-xs font-bold text-gray-900 dark:text-slate-100">{f.safety_title}</h4>
-              <p className="text-[10px] sm:text-[11px] text-gray-500 dark:text-slate-400">{f.safety_desc}</p>
+              <p className="text-[10px] sm:text-[11px] text-slate-600 dark:text-slate-300">{f.safety_desc}</p>
             </div>
           </div>
 
@@ -67,7 +67,7 @@ export function FeaturesBar({ dict }: FeaturesBarProps) {
             </div>
             <div>
               <h4 className="text-xs font-bold text-gray-900 dark:text-slate-100">{f.care_title}</h4>
-              <p className="text-[10px] sm:text-[11px] text-gray-500 dark:text-slate-400">{f.care_desc}</p>
+              <p className="text-[10px] sm:text-[11px] text-slate-600 dark:text-slate-300">{f.care_desc}</p>
             </div>
           </div>
 

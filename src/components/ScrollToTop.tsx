@@ -22,16 +22,18 @@ export default function ScrollToTop({ lang, tooltipText }: ScrollToTopProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
     const toggleVisibility = () => {
-      // زودنا الحد الأدنى لـ 800 بكسل عشان يظهر متأخر ومتوسط في الصفحة
-      if (window.scrollY > 800) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsVisible(window.scrollY > 800);
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
-    window.addEventListener('scroll', toggleVisibility);
+    window.addEventListener('scroll', toggleVisibility, { passive: true });
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 

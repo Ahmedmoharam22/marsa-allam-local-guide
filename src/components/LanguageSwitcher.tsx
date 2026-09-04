@@ -41,7 +41,8 @@ export default function LanguageSwitcher({ currentLang, isScrolled = false }: La
     <div className="relative inline-block text-left rtl:text-right" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm font-medium backdrop-blur-sm transition-all duration-300 ${
+        aria-label="Select language"
+        className={`flex items-center gap-2 rounded-lg border px-3 py-2.5 text-sm font-medium backdrop-blur-sm min-h-[44px] transition-all duration-300 ${
           isScrolled
             ? 'border-gray-200 bg-gray-50/80 text-gray-800 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900/80 dark:text-gray-200'
             : 'border-white/20 bg-white/10 text-white hover:bg-white/20'

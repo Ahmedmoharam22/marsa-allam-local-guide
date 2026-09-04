@@ -40,7 +40,8 @@ export function Hero({ lang, dict }: HeroProps) {
           src="/images/hero/hero.webp"
           alt="Dolphins Marsa Alam Local Guide"
           fill
-          priority
+          priority={true} 
+          quality={85}
           sizes="100vw"
           className="object-cover object-center"
         />
