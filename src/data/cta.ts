@@ -8,7 +8,7 @@ export const ctaData: Record<Language, { badge: string; title: string; subtitle:
     buttonText: "Chat on WhatsApp",
     info: {
       location: "Marsa Alam, Egypt",
-      whatsapp: "+20 100 123 4567",
+      whatsapp: "+20 10 80268114",
       instagram: "@marsaalamlocalguide",
       email: "info@marsaalamlocalguide.com"
     }
@@ -20,7 +20,7 @@ export const ctaData: Record<Language, { badge: string; title: string; subtitle:
     buttonText: "Auf WhatsApp chatten",
     info: {
       location: "Marsa Alam, Ägypten",
-      whatsapp: "+20 100 123 4567",
+      whatsapp: "+20 10 80268114",
       instagram: "@marsaalamlocalguide",
       email: "info@marsaalamlocalguide.com"
     }
@@ -32,7 +32,7 @@ export const ctaData: Record<Language, { badge: string; title: string; subtitle:
     buttonText: "Chatta su WhatsApp",
     info: {
       location: "Marsa Alam, Egitto",
-      whatsapp: "+20 100 123 4567",
+      whatsapp: "+20 10 80268114",
       instagram: "@marsaalamlocalguide",
       email: "info@marsaalamlocalguide.com"
     }
@@ -44,7 +44,7 @@ export const ctaData: Record<Language, { badge: string; title: string; subtitle:
     buttonText: "Чат в WhatsApp",
     info: {
       location: "Марса-Алам, Египет",
-      whatsapp: "+20 100 123 4567",
+      whatsapp: "+20 10 80268114",
       instagram: "@marsaalamlocalguide",
       email: "info@marsaalamlocalguide.com"
     }
@@ -56,7 +56,7 @@ export const ctaData: Record<Language, { badge: string; title: string; subtitle:
     buttonText: "Czat na WhatsApp",
     info: {
       location: "Marsa Alam, Egipt",
-      whatsapp: "+20 100 123 4567",
+      whatsapp: "+20 10 80268114",
       instagram: "@marsaalamlocalguide",
       email: "info@marsaalamlocalguide.com"
     }
@@ -68,7 +68,7 @@ export const ctaData: Record<Language, { badge: string; title: string; subtitle:
     buttonText: "Chatovat na WhatsAppu",
     info: {
       location: "Marsa Alam, Egypt",
-      whatsapp: "+20 100 123 4567",
+      whatsapp: "+20 10 80268114",
       instagram: "@marsaalamlocalguide",
       email: "info@marsaalamlocalguide.com"
     }

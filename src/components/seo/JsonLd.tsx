@@ -6,7 +6,7 @@ export default function JsonLd() {
     image: 'https://marsa-alam-local-guide-six.vercel.app/og-image.jpg',
     '@id': 'https://marsa-alam-local-guide-six.vercel.app',
     url: 'https://marsa-alam-local-guide-six.vercel.app',
-    telephone: '+201001188941',
+    telephone: '+201080268114',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Marsa Alam',

@@ -1,3 +1,6 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Language } from "@/types/tour";
 import { footerData } from "@/data/footer";
@@ -10,11 +13,19 @@ interface FooterProps {
 
 export default function Footer({ lang }: FooterProps) {
   const t = footerData[lang] || footerData.en;
+  const [currentYear, setCurrentYear] = useState<number>(2026);
 
-  // دالة مساعدة لتأكيد إضافة لغة الـ prefix للرابط لو مش موجودة
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
+  // Localized Href Helper: Correctly handles anchor links (/#about, #about) and page links (/blogs)
   const getLocalizedHref = (href: string) => {
     if (!href) return `/${lang}`;
     if (href.startsWith(`/${lang}`)) return href;
+    if (href === '/' || href === '/#') return `/${lang}`;
+    if (href.startsWith('/#')) return `/${lang}${href.slice(1)}`;
+    if (href.startsWith('#')) return `/${lang}${href}`;
     return `/${lang}${href.startsWith('/') ? href : `/${href}`}`;
   };
 
@@ -27,7 +38,7 @@ export default function Footer({ lang }: FooterProps) {
           
           {/* العمود الأول: الشعار ونبذة مختصرة والسوشيال (4 أعمدة) */}
           <div className="lg:col-span-4 space-y-5">
-           <Logo lang={lang} textColor="text-white" isScrolled={false} />
+            <Logo lang={lang} textColor="text-white" isScrolled={false} />
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
               {t.description}
             </p>
@@ -42,43 +53,37 @@ export default function Footer({ lang }: FooterProps) {
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:bg-red-600 hover:text-white hover:border-red-600 transition-all">
                 <FaYoutube className="w-4 h-4" />
               </a>
-              <a href="https://wa.me/201001188941" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition-all">
+              <a href="https://wa.me/201080268114" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition-all">
                 <FaWhatsapp className="w-4 h-4" />
               </a>
             </div>
           </div>
 
-          {/* العمود الثاني: الكورسات (3 أعمدة) - Coming Soon لو لسه مش صفحات فعلية */}
-          <div className="lg:col-span-3 space-y-4">
+          {/* العمود الثاني: روابط سريعة (2 عمود) */}
+          <div className="lg:col-span-2 space-y-4">
             <h3 className="text-white font-bold text-base tracking-wide border-l-2 border-cyan-500 pl-3">
-              {t.coursesTitle}
+              {t.quickLinksTitle}
             </h3>
             <ul className="space-y-2.5 text-sm">
-              {t.courses.map((course, idx) => (
+              {t.quickLinks.map((link, idx) => (
                 <li key={idx}>
-                  {course.href ? (
-                    <Link href={getLocalizedHref(course.href)} className="text-slate-400 hover:text-cyan-400 transition-colors">
-                      {course.name}
-                    </Link>
-                  ) : (
-                    <span className="text-slate-600 cursor-not-allowed">
-                      {course.name} <span className="text-[10px] text-slate-600">(Soon)</span>
-                    </span>
-                  )}
+                  <Link href={getLocalizedHref(link.href)} className="text-slate-400 hover:text-cyan-400 transition-colors">
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* العمود الثالث: الرحلات (2.5 عمود) */}
-          <div className="lg:col-span-2 space-y-4">
+          {/* العمود الثالث: الرحلات (3 أعمدة) */}
+          <div className="lg:col-span-3 space-y-4">
             <h3 className="text-white font-bold text-base tracking-wide border-l-2 border-cyan-500 pl-3">
               {t.tripsTitle}
             </h3>
             <ul className="space-y-2.5 text-sm">
               {t.trips.map((trip, idx) => (
                 <li key={idx}>
-                  <Link href={getLocalizedHref(trip.href)} className="text-slate-400 hover:text-cyan-400 transition-colors">
+                  <Link href={getLocalizedHref(trip.href)} className="text-slate-400 hover:text-cyan-400 transition-colors line-clamp-1">
                     {trip.name}
                   </Link>
                 </li>
@@ -86,7 +91,7 @@ export default function Footer({ lang }: FooterProps) {
             </ul>
           </div>
 
-          {/* العمود الرابع: المدونة (2.5 عمود) */}
+          {/* العمود الرابع: المدونة (3 أعمدة) */}
           <div className="lg:col-span-3 space-y-4">
             <h3 className="text-white font-bold text-base tracking-wide border-l-2 border-cyan-500 pl-3">
               {t.blogTitle}
@@ -94,15 +99,9 @@ export default function Footer({ lang }: FooterProps) {
             <ul className="space-y-2.5 text-sm">
               {t.blogs.map((blog, idx) => (
                 <li key={idx}>
-                  {blog.href ? (
-                    <Link href={getLocalizedHref(blog.href)} className="text-slate-400 hover:text-cyan-400 transition-colors">
-                      {blog.name}
-                    </Link>
-                  ) : (
-                    <span className="text-slate-600 cursor-not-allowed">
-                      {blog.name} <span className="text-[10px] text-slate-600">(Soon)</span>
-                    </span>
-                  )}
+                  <Link href={getLocalizedHref(blog.href)} className="text-slate-400 hover:text-cyan-400 transition-colors line-clamp-1">
+                    {blog.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -112,10 +111,10 @@ export default function Footer({ lang }: FooterProps) {
 
         {/* حقوق النشر السفلية والسياسات */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© {new Date().getFullYear()} Marsa Alam Local Guide. {t.allRights}</p>
+          <p>© {currentYear} Marsa Alam Local Guide. {t.allRights}</p>
           <div className="flex items-center gap-6">
-            <Link href={`/${lang}/privacy`} className="hover:text-slate-400 transition-colors">{t.privacy}</Link>
-            <Link href={`/${lang}/terms`} className="hover:text-slate-400 transition-colors">{t.terms}</Link>
+            <Link href={getLocalizedHref('/privacy')} className="hover:text-slate-400 transition-colors">{t.privacy}</Link>
+            <Link href={getLocalizedHref('/terms')} className="hover:text-slate-400 transition-colors">{t.terms}</Link>
           </div>
         </div>
 

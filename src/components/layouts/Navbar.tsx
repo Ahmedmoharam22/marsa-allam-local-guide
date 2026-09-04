@@ -84,7 +84,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
 
   const whatsappText = dict?.nav?.whatsappCta || 'Book on WhatsApp';
   const inquiryText = whatsappInquiryMessages[lang] || whatsappInquiryMessages.en;
-  const whatsappUrl = `https://wa.me/201001188941?text=${encodeURIComponent(inquiryText)}`;
+  const whatsappUrl = `https://wa.me/201080268114?text=${encodeURIComponent(inquiryText)}`;
 
   const navLinks = [
     { key: 'home', label: dict.nav.home, href: `/${lang}`, target: 'hero', isPage: false },

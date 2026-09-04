@@ -35,21 +35,21 @@ export default function GetInTouchSection({ lang }: GetInTouchProps) {
               
               <ul className="space-y-3 text-sm">
                 <li>
-                  <a href="https://wa.me/201001188941" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  <a href="https://wa.me/201080268114" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
                     <span className="p-2 rounded-lg bg-emerald-500/10 text-emerald-600"><FaWhatsapp className="w-4 h-4" /></span>
                     <div>
                       <span className="block text-xs text-slate-400">{t.whatsappLabel}</span>
-                      <span className="font-semibold" dir="ltr">+20 100 118 8941</span>
+                      <span className="font-semibold" dir="ltr">+20 10 80268114</span>
                     </div>
                   </a>
                 </li>
                 
                 <li>
-                  <a href="tel:+201011888941" className="flex items-center gap-3 text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                  <a href="tel:+201080268114" className="flex items-center gap-3 text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
                     <span className="p-2 rounded-lg bg-cyan-500/10 text-cyan-600"><FaPhoneAlt className="w-4 h-4" /></span>
                     <div>
                       <span className="block text-xs text-slate-400">{t.phoneLabel}</span>
-                      <span className="font-semibold" dir="ltr">+20 101 188 8941</span>
+                      <span className="font-semibold" dir="ltr">+20 10 80268114</span>
                     </div>
                   </a>
                 </li>

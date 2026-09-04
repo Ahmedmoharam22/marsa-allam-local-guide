@@ -25,7 +25,7 @@ export const getInTouchData: Record<Language, {
     emailLabel: "Email Address",
     locationsTitle: "Our Locations",
     headOfficeLabel: "Head Office",
-    headOfficeAddress: "68 street, Downtown, Marsa Alam, Red Sea",
+    headOfficeAddress: "Marsa Alam, Red Sea",
     hoursLabel: "Operating Hours",
     hoursValue: "Daily: 8:00 AM - 6:00 PM",
     mapBadge: "📍 Marsa Alam, Red Sea, Egypt"
@@ -40,7 +40,7 @@ export const getInTouchData: Record<Language, {
     emailLabel: "E-Mail-Adresse",
     locationsTitle: "Unsere Standorte",
     headOfficeLabel: "Hauptsitz",
-    headOfficeAddress: "68 street, Downtown, Marsa Alam, Rotes Meer",
+    headOfficeAddress: "Marsa Alam, Rotes Meer",
     hoursLabel: "Öffnungszeiten",
     hoursValue: "Täglich: 8:00 - 18:00 Uhr",
     mapBadge: "📍 Marsa Alam, Rotes Meer, Ägypten"
@@ -55,7 +55,7 @@ export const getInTouchData: Record<Language, {
     emailLabel: "Indirizzo Email",
     locationsTitle: "Le Nostre Sedi",
     headOfficeLabel: "Sede Centrale",
-    headOfficeAddress: "68 street, Downtown, Marsa Alam, Mar Rosso",
+    headOfficeAddress: "Marsa Alam, Mar Rosso",
     hoursLabel: "Orari di Apertura",
     hoursValue: "Tutti i giorni: 8:00 - 18:00",
     mapBadge: "📍 Marsa Alam, Mar Rosso, Egitto"
@@ -70,7 +70,7 @@ export const getInTouchData: Record<Language, {
     emailLabel: "Эл. почта",
     locationsTitle: "Наши офисы",
     headOfficeLabel: "Главный офис",
-    headOfficeAddress: "68 street, Downtown, Marsa Alam, Red Sea",
+    headOfficeAddress: "Marsa Alam, Red Sea",
     hoursLabel: "Часы работы",
     hoursValue: "Ежедневно: 8:00 - 18:00",
     mapBadge: "📍 Марса-Алам, Красное море, Египет"
@@ -85,7 +85,7 @@ export const getInTouchData: Record<Language, {
     emailLabel: "Adres e-mail",
     locationsTitle: "Nasze lokalizacje",
     headOfficeLabel: "Siedziba główna",
-    headOfficeAddress: "68 street, Downtown, Marsa Alam, Morze Czerwone",
+    headOfficeAddress: "Marsa Alam, Morze Czerwone",
     hoursLabel: "Godziny pracy",
     hoursValue: "Codziennie: 8:00 - 18:00",
     mapBadge: "📍 Marsa Alam, Morze Czerwone, Egipt"
@@ -100,7 +100,7 @@ export const getInTouchData: Record<Language, {
     emailLabel: "E-mailová adresa",
     locationsTitle: "Naše pobočky",
     headOfficeLabel: "Hlavní sídlo",
-    headOfficeAddress: "68 street, Downtown, Marsa Alam, Rudé moře",
+    headOfficeAddress: "Marsa Alam, Rudé moře",
     hoursLabel: "Otevírací doba",
     hoursValue: "Denně: 8:00 - 18:00",
     mapBadge: "📍 Marsa Alam, Rudé moře, Egypt"

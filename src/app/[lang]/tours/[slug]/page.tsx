@@ -219,9 +219,14 @@ export default async function TourDetailPage({ params }: TourPageProps) {
           </div>
 
           {/* Book Action Button */}
-          <button className="w-full rounded-xl bg-emerald-600 py-3.5 text-sm font-bold text-white shadow-md transition-all hover:bg-emerald-700 active:scale-95">
+          <a
+            href={`https://wa.me/201080268114?text=${encodeURIComponent(`Hello, I would like to book: ${t.title[lang] || t.title.en}`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full text-center rounded-xl bg-emerald-600 py-3.5 text-sm font-bold text-white shadow-md transition-all hover:bg-emerald-500 active:scale-95"
+          >
             Book Now (Pay Later)
-          </button>
+          </a>
 
           <p className="mt-3 text-center text-xs text-slate-500 dark:text-slate-400">
             {t.paymentNote[lang]}

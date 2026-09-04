@@ -4,8 +4,7 @@ import { useState, useMemo } from "react";
 import { tours } from "@/data/tours";
 import { TourCard } from "../tours/TourCard";
 import { Locale } from "@/lib/i18n-config";
-import Link from "next/link";
-import { ArrowRight, Search, X } from "lucide-react";
+import { Search, X } from "lucide-react";
 
 interface ToursSectionProps {
   lang: Locale;
@@ -58,8 +57,6 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
 
     return result;
   }, [searchQuery, priceSort, alphaSort, lang]);
-
-  const displayedTours = filteredTours.slice(0, 6);
 
   return (
     <section id="tours" className="mx-auto max-w-7xl px-4 pt-6 pb-16 sm:pt-8 sm:pb-20">
@@ -135,10 +132,10 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
 
       </div>
 
-      {/* Tours Grid */}
-      {displayedTours.length > 0 ? (
+      {/* Tours Grid - Displays all filtered tours */}
+      {filteredTours.length > 0 ? (
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {displayedTours.map((tour) => (
+          {filteredTours.map((tour) => (
             <TourCard key={tour.id} tour={tour} lang={lang} />
           ))}
         </div>
@@ -147,17 +144,6 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
           <p className="text-muted-foreground">{t.noResults}</p>
         </div>
       )}
-
-      {/* View All Button */}
-      <div className="mt-12 flex justify-center">
-        <Link
-          href={`/${lang}/tours`}
-          className="group inline-flex items-center gap-3 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg transition-all duration-300 hover:bg-primary/90 hover:shadow-primary/25 "
-        >
-          <span>{t.viewAll}</span>
-          <ArrowRight className="h-5 w-5 transition-transform duration-300 rtl:rotate-180" />
-        </Link>
-      </div>
     </section>
   );
 }

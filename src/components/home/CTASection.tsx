@@ -33,7 +33,7 @@ export default function CTASection({ lang }: CTASectionProps) {
               </p>
               <div>
                 <a
-                  href="https://wa.me/201001234567"
+                  href="https://wa.me/201080268114"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold shadow-lg shadow-emerald-900/30 transition-all duration-300 transform hover:-translate-y-0.5"

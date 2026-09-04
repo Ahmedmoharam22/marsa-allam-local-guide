@@ -76,7 +76,7 @@ export function Hero({ lang, dict }: HeroProps) {
           {/* CTAs */}
           <div className="mt-5 sm:mt-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
             <a
-              href="https://wa.me/201000000000"
+              href="https://wa.me/201080268114"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 px-6 py-3 text-xs sm:text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-400 active:scale-95 text-center"
