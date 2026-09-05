@@ -5,71 +5,78 @@ export interface WhyChooseUsItem {
   description: string;
 }
 
-export const whyChooseUsData: Record<Language, { badge: string; title: string; subtitle: string; features: WhyChooseUsItem[] }> = {
+export interface WhyChooseUsData {
+  topBanner: string;
+  title: string;
+  subtitle: string;
+  features: WhyChooseUsItem[];
+}
+
+export const whyChooseUsData: Record<Language, WhyChooseUsData> = {
   en: {
-    badge: "Why Choose Us",
-    title: "Your Trusted Partner in Marsa Alam",
+    topBanner: "Pay after your trip — no upfront payment.",
+    title: "Why Choose Us",
     subtitle: "We turn your holiday into unforgettable memories with professional service and local expertise.",
     features: [
-      { title: "Certified Local Experts", description: "Licensed professional guides and top-tier safety standards for every single trip." },
-      { title: "Best Price Guarantee", description: "No hidden fees, no online payment required. Pay safely after your trip." },
-      { title: "Unforgettable Experiences", description: "Carefully curated itineraries to the most stunning spots in the Red Sea." },
-      { title: "24/7 Customer Support", description: "We are always here to assist you before, during, and after your excursion." }
+      { title: "Pay After Your Trip", description: "No upfront payment" },
+      { title: "Safety First", description: "Professional service" },
+      { title: "Direct Local Support", description: "Talk directly with a local" },
+      { title: "Small & Personal", description: "Relaxed experiences with smaller groups" }
     ]
   },
   de: {
-    badge: "Warum wir?",
-    title: "Ihr vertrauenswürdiger Partner in Marsa Alam",
-    subtitle: "Wir machen Ihren Urlaub mit professionellem Service und lokaler Expertise zu unvergesslichen Erinnerungen.",
+    topBanner: "Bezahlen Sie nach der Reise — keine Vorauszahlung.",
+    title: "Warum uns wählen",
+    subtitle: "Wir machen Ihren Urlaub mit professionellem Service und lokaler Expertise unvergesslich.",
     features: [
-      { title: "Zertifizierte Experten", description: "Lizensierte Guides und höchste Sicherheitsstandards für jeden Ausflug." },
-      { title: "Bestpreis-Garantie", description: "Keine versteckten Gebühren, keine Vorauszahlung nötig. Zahlen Sie nach der Reise." },
-      { title: "Unvergessliche Erlebnisse", description: "Sorgfältig zusammengestellte Routen zu den schönsten Plätzen des Roten Meeres." },
-      { title: "24/7 Kundensupport", description: "Wir sind vor, während und nach Ihrem Ausflug immer für Sie da." }
+      { title: "Zahlung nach dem Ausflug", description: "Keine Vorauszahlung" },
+      { title: "Sicherheit zuerst", description: "Professioneller Service" },
+      { title: "Direkter lokaler Support", description: "Sprechen Sie direkt mit einem Einheimischen" },
+      { title: "Klein & Persönlich", description: "Entpannte Erlebnisse in kleinen Gruppen" }
     ]
   },
   it: {
-    badge: "Perché sceglierci",
-    title: "Il tuo partner di fiducia a Marsa Alam",
-    subtitle: "Trasformiamo la tua vacanza in ricordi indimenticabili con servizi professionali ed esperienza locale.",
+    topBanner: "Paga dopo il viaggio — nessun pagamento anticipato.",
+    title: "Perché sceglierci",
+    subtitle: "Trasformiamo la tua vacanza in ricordi indimenticabili con servizi professionali.",
     features: [
-      { title: "Esperti Locali Certificati", description: "Guide professionistiche autorizzate e standard di sicurezza elevati." },
-      { title: "Miglior Prezzo Garantito", description: "Nessun costo nascosto o pagamento anticipato. Paga dopo il viaggio." },
-      { title: "Esperienze Indimenticabili", description: "Itinerari curati nei minimi dettagli verso i luoghi più splendidi." },
-      { title: "Assistenza 24/7", description: "Siamo sempre a tua disposizione prima, durante e dopo l'escursione." }
+      { title: "Paga dopo il tuo viaggio", description: "Nessun anticipo richiesto" },
+      { title: "Sicurezza al primo posto", description: "Servizio professionale" },
+      { title: "Supporto locale diretto", description: "Parla direttamente con un locale" },
+      { title: "Piccolo e personale", description: "Esperienze rilassanti con gruppi ridotti" }
     ]
   },
   ru: {
-    badge: "Почему выбирают нас",
-    title: "Ваш надежный партнер в Марса-Аламе",
-    subtitle: "Мы превращаем ваш отдых в незабываемые воспоминания благодаря профессионализму и местному опыту.",
+    topBanner: "Оплата после поездки — без предоплаты.",
+    title: "Почему выбирают нас",
+    subtitle: "Превращаем ваш отдых в незабываемые воспоминания.",
     features: [
-      { title: "Сертифицированные гиды", description: "Лицензированные профессиональные гиды и высокие стандарты безопасности." },
-      { title: "Гарантия лучшей цены", description: "Никаких скрытых платежей и предоплаты. Оплата после экскурсии." },
-      { title: "Незабываемые впечатления", description: "Тщательно продуманные маршруты по самым красивым местам Красного моря." },
-      { title: "Поддержка 24/7", description: "Мы всегда на связи до, во время и после вашей поездки." }
+      { title: "Оплата после поездки", description: "Без предоплаты" },
+      { title: "Безопасность прежде всего", description: "Профессиональный сервис" },
+      { title: "Прямая местная поддержка", description: "Общение напрямую с гидом" },
+      { title: "Небольшие группы", description: "Уютный отдых в малых группах" }
     ]
   },
   pl: {
-    badge: "Dlaczego my",
-    title: "Twój zaufany partner w Marsa Alam",
-    subtitle: "Zamieniamy Twoje wakacje w niezapomniane wspomnienia dzięki profesjonalnej obsłudze i lokalnej wiedzy.",
+    topBanner: "Płatność po wycieczce — bez zaliczek.",
+    title: "Dlaczego my",
+    subtitle: "Zamieniamy Twoje wakacje w niezapomniane wspomnienia.",
     features: [
-      { title: "Certyfikowani Przewodnicy", description: "Licencjonowani przewodnicy i najwyższe standardy bezpieczeństwa." },
-      { title: "Gwarancja Najlepszej Ceny", description: "Brak ukrytych opłat i przedpłat. Płacisz bezpiecznie po wycieczce." },
-      { title: "Niezapomniane Wrażenia", description: "Starannie zaplanowane trasy do najpiękniejszych miejsc Morza Czerwonego." },
-      { title: "Wsparcie 24/7", description: "Jesteśmy do Twojej dyspozycji przed, w trakcie i po wycieczce." }
+      { title: "Płatność po wycieczce", description: "Brak opłat wstępnych" },
+      { title: "Bezpieczeństwo na 1. miejscu", description: "Profesjonalna obsługa" },
+      { title: "Bezpośrednie wsparcie", description: "Rozmawiaj bezpośrednio z lokalnym przewodnikiem" },
+      { title: "Kameralnie i osobiście", description: "Relaksujące wycieczki w małych grupach" }
     ]
   },
   cz: {
-    badge: "Proč si vybrat nás",
-    title: "Váš spolehlivý partner v Marsa Alam",
-    subtitle: "Proměníme vaši dovolenou v nezapomenutelné zážitky díky profesionálním službám a místním znalostem.",
+    topBanner: "Platba až po výletu — žádná záloha.",
+    title: "Proč si vybrat nás",
+    subtitle: "Proměníme vaši dovolenou v nezapomenutelné zážitky.",
     features: [
-      { title: "Certifikovaní průvodci", description: "Licencovaní profesionální průvodci a špičkové bezpečnostní standardy." },
-      { title: "Záruka nejlepší ceny", description: "Žádné skryté poplatky ani platba předem. Platíte až po výletu." },
-      { title: "Nezapomenutelné zážitky", description: "Pečlivě připravené trasy na nejkrásnější místa Rudého moře." },
-      { title: "Zákaznická podpora 24/7", description: "Jsme tu pro vás před, během i po vašem výletu." }
+      { title: "Platba až po výletu", description: "Bez platby předem" },
+      { title: "Bezpečnost na prvním místě", description: "Profesionální služby" },
+      { title: "Přímá místní podpora", description: "Mluvte přímo s místním průvodcem" },
+      { title: "Malé skupiny & osobní přístup", description: "Pohodové zážitky v menších skupinách" }
     ]
   }
 };

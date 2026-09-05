@@ -1,50 +1,66 @@
 import { Language } from "@/types/tour";
 import { whyChooseUsData } from "@/data/whyChooseUs";
 import SectionTitle from "../common/SectionTitle";
+import { CreditCard, ShieldCheck, MessageCircle, Users } from "lucide-react";
 
 interface WhyChooseUsProps {
   lang: Language;
 }
 
-const icons = [
-  <svg key="0" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-  </svg>,
-  <svg key="1" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M14.121 7.879A3 3 0 0010.5 7.5m-6 3.75l6-6m-6 6.75l7.5 7.5m-6-15h.008v.008H4.5v-.008zm0 6h.008v.008H4.5v-.008zm0 6h.008v.008H4.5v-.008z" />
-  </svg>,
-  <svg key="2" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
-  </svg>,
-  <svg key="3" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-  </svg>
-];
-
 export default function WhyChooseUs({ lang }: WhyChooseUsProps) {
   const t = whyChooseUsData[lang] || whyChooseUsData.en;
 
+  const featureIcons = [
+    <CreditCard key="card" className="w-6 h-6 text-aqua-600 dark:text-aqua-400" />,
+    <ShieldCheck key="shield" className="w-6 h-6 text-aqua-600 dark:text-aqua-400" />,
+    <MessageCircle key="comments" className="w-6 h-6 text-aqua-600 dark:text-aqua-400" />,
+    <Users key="users" className="w-6 h-6 text-aqua-600 dark:text-aqua-400" />,
+  ];
+
   return (
-    <section id="about" className="py-20 bg-slate-50 dark:bg-slate-900/50 transition-colors relative overflow-hidden">
+    <section id="about" className="py-16 bg-surface dark:bg-ocean-950 transition-colors relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Top Banner Badge */}
+        <div className="flex items-center justify-center mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-aqua-100/80 dark:bg-ocean-900/90 border border-aqua-400/40 dark:border-ocean-800 text-ocean-900 dark:text-aqua-400 text-xs sm:text-sm font-semibold shadow-sm">
+            <ShieldCheck className="w-4 h-4 text-aqua-600 dark:text-aqua-400" />
+            <span>{t.topBanner}</span>
+          </div>
+        </div>
+
+        {/* Section Title */}
         <SectionTitle
           title={t.title}
           subtitle={t.subtitle}
           align="center"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Responsive Grid: 1 col mobile -> 2 cols tablet -> 4 cols desktop */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
           {t.features.map((feature, index) => (
-            <div key={index} className="bg-white dark:bg-slate-800/80 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 border border-slate-100 dark:border-slate-700/50 group">
-              <div className="w-14 h-14 rounded-xl bg-cyan-50 dark:bg-cyan-950/50 flex items-center justify-center text-cyan-600 dark:text-cyan-400 mb-6 group-hover:scale-110 transition-transform duration-300">
-                {icons[index]}
+            <div 
+              key={index} 
+              className="bg-white dark:bg-ocean-900/80 p-6 rounded-2xl border border-ocean-800/15 dark:border-ocean-800 shadow-sm hover:shadow-xl hover:border-ocean-700 hover:-translate-y-1 transition-all duration-300 flex flex-col items-start group"
+            >
+              {/* Icon Container */}
+              <div className="w-12 h-12 rounded-2xl bg-aqua-100/70 dark:bg-ocean-800/60 border border-aqua-400/20 dark:border-ocean-700/50 flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-aqua-100 dark:group-hover:bg-ocean-800 transition-all duration-300">
+                {featureIcons[index]}
               </div>
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">{feature.title}</h3>
-              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">{feature.description}</p>
+
+              <h3 className="text-lg font-bold text-ocean-950 dark:text-white mb-2 leading-snug">
+                {feature.title}
+              </h3>
+
+              <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
 }
+
