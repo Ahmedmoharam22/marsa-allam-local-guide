@@ -7,7 +7,6 @@ import type { Locale } from '@/lib/i18n-config';
 // Below-the-fold sections: code-split to reduce initial JS bundle
 const ToursSection    = dynamic(() => import('@/components/home/ToursSection'));
 const AboutGuide    = dynamic(() => import('@/components/home/AboutGuide'));
-const WhyChooseUs     = dynamic(() => import('@/components/home/WhyChooseUs'));
 const GallerySection  = dynamic(() => import('@/components/home/GallerySection'));
 const Testimonials    = dynamic(() => import('@/components/home/Testimonials'));
 const FAQSection      = dynamic(() => import('@/components/home/FAQSection'));
@@ -25,10 +24,9 @@ export default async function HomePage({
   return (
     <main className="min-h-screen">
       <Hero lang={lang} dict={dict} />
-      <FeaturesBar lang={lang} dict={dict} />
+      <FeaturesBar lang={lang} />
       <ToursSection lang={lang} dict={dict} />
       <AboutGuide lang={lang} />
-      <WhyChooseUs lang={lang} />
       <GallerySection lang={lang} />
       <Testimonials lang={lang} />
       <FAQSection lang={lang} />

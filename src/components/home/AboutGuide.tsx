@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Language } from "@/types/tour";
 import { aboutGuideData } from "@/data/aboutGuide";
+import SectionTitle from "../common/SectionTitle";
 import { ChevronLeft, ChevronRight, ShieldCheck, Award, Users, HeartHandshake, MapPin } from "lucide-react";
 
 interface AboutGuideProps {
@@ -29,6 +30,16 @@ export default function AboutGuide({ lang, images = defaultImages }: AboutGuideP
   return (
     <section id="guide" className="py-24 bg-surface dark:bg-ocean-950 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Section Title */}
+        <div className="mb-12">
+          <SectionTitle
+            title={t.badge || "Meet Your Local Guide"}
+            subtitle={t.subtitle}
+            align="center"
+          />
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
 
           {/* Image column */}
@@ -86,24 +97,14 @@ export default function AboutGuide({ lang, images = defaultImages }: AboutGuideP
 
           {/* Content column */}
           <div className="lg:col-span-7">
-            <div className="flex items-center gap-2 text-aqua-600 dark:text-aqua-400 mb-4">
-              <ShieldCheck className="w-4 h-4" />
-              <span className="text-sm font-semibold">{t.badge}</span>
-            </div>
-
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-ocean-950 dark:text-white leading-[1.1] mb-3 tracking-tight">
-              {t.title}
-            </h2>
-            <p className="text-lg text-aqua-600 dark:text-aqua-400 font-medium mb-8">
-              {t.subtitle}
-            </p>
-
             {/* Pull-quote */}
-            <blockquote className="border-l-2 border-aqua-500 pl-5 mb-8">
-              <p className="text-xl font-medium italic text-ocean-950 dark:text-aqua-100 leading-snug">
-                {t.tagline}
-              </p>
-            </blockquote>
+            {t.tagline && (
+              <blockquote className="border-l-2 border-aqua-500 pl-5 mb-8">
+                <p className="text-xl font-medium italic text-ocean-950 dark:text-aqua-100 leading-snug">
+                  {t.tagline}
+                </p>
+              </blockquote>
+            )}
 
             <div className="space-y-4 max-w-[65ch] text-slate-600 dark:text-slate-300 leading-relaxed">
               <p>{t.bio1}</p>
@@ -112,30 +113,32 @@ export default function AboutGuide({ lang, images = defaultImages }: AboutGuideP
             </div>
 
             {/* Trust points */}
-            <div className="mt-12 pt-8 border-t border-ocean-900/10 dark:border-ocean-800">
-              <h3 className="text-lg font-bold text-ocean-950 dark:text-white mb-6">
-                {t.trustSectionTitle}
-              </h3>
+            {t.trustPoints && (
+              <div className="mt-12 pt-8 border-t border-ocean-900/10 dark:border-ocean-800">
+                <h3 className="text-lg font-bold text-ocean-950 dark:text-white mb-6">
+                  {t.trustSectionTitle}
+                </h3>
 
-              <ul className="divide-y divide-ocean-900/10 dark:divide-ocean-800">
-                {t.trustPoints.map((point, index) => {
-                  const Icon = trustIcons[index % trustIcons.length];
-                  return (
-                    <li key={point.id} className="py-4 flex items-start gap-4">
-                      <Icon className="w-5 h-5 text-aqua-600 dark:text-aqua-400 shrink-0 mt-0.5" />
-                      <div>
-                        <h4 className="text-base font-semibold text-ocean-950 dark:text-white">
-                          {point.title}
-                        </h4>
-                        <p className="text-sm text-slate-600 dark:text-slate-300 mt-0.5">
-                          {point.description}
-                        </p>
-                      </div>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
+                <ul className="divide-y divide-ocean-900/10 dark:divide-ocean-800">
+                  {t.trustPoints.map((point, index) => {
+                    const Icon = trustIcons[index % trustIcons.length];
+                    return (
+                      <li key={point.id} className="py-4 flex items-start gap-4">
+                        <Icon className="w-5 h-5 text-aqua-600 dark:text-aqua-400 shrink-0 mt-0.5" />
+                        <div>
+                          <h4 className="text-base font-semibold text-ocean-950 dark:text-white">
+                            {point.title}
+                          </h4>
+                          <p className="text-sm text-slate-600 dark:text-slate-300 mt-0.5">
+                            {point.description}
+                          </p>
+                        </div>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
           </div>
 
         </div>

@@ -32,7 +32,8 @@ export function Hero({ lang, dict }: HeroProps) {
   const t = dict.hero;
 
   return (
-    <section className="relative flex min-h-[70vh] sm:min-h-[75vh] lg:h-[80vh] max-h-[850px] w-full flex-col justify-between overflow-hidden bg-slate-950 pt-24 pb-14 sm:pt-28 sm:pb-16">
+    <section id="hero" className="relative flex min-h-[70vh] sm:min-h-[75vh] lg:h-[80vh] max-h-[850px] w-full flex-col justify-between overflow-hidden bg-slate-950 pt-24 pb-14 sm:pt-28 sm:pb-16">
+
       
       {/* Background Image - Viewport Scaled */}
       <div className="absolute inset-0 z-0">
