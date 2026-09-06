@@ -1047,7 +1047,8 @@ export const tours: Tour[] = [
     gallery: [
       "/images/tours/dabbab-4.webp",
       "/images/tours/dabbab-3.webp",
-      "/images/tours/dabbab-2.webp"
+      "/images/tours/dabbab-2.webp",
+      "/images/tours/dabbab-1.webp"
     ]
   }
 },
@@ -2217,9 +2218,9 @@ export const tours: Tour[] = [
   images: {
     featured: "/images/tours/hamata-card.webp",
     gallery: [
-      "/images/tours/hamata-1.webp",
       "/images/tours/hamata-2.webp",
-      "/images/tours/hamata-3.webp"
+      "/images/tours/hamata-3.webp",
+      "/images/tours/hamata-1.webp",
     ]
   }
 },
@@ -2656,7 +2657,8 @@ export const tours: Tour[] = [
       gallery: [
         "/images/tours/wadi-el-gemal-1.webp",
         "/images/tours/wadi-el-gemal-2.webp",
-        "/images/tours/wadi-el-gemal-3.webp"
+        "/images/tours/wadi-el-gemal-3.webp",
+        "/images/tours/wadi-el-gemal-4.webp",
       ]
     }
   },
@@ -3486,7 +3488,8 @@ export const tours: Tour[] = [
     gallery: [
       "/images/tours/safari-1.webp",
       "/images/tours/safari-2.webp",
-      "/images/tours/safari-3.webp"
+      "/images/tours/safari-3.webp",
+      "/images/tours/safari-4.webp",
     ]
   }
 },
