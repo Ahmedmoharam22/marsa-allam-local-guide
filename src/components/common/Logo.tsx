@@ -16,7 +16,7 @@ export default function Logo({
   siteName = 'Marsa Alam Local Guide',
   className,
   showText = true,
-  textColor = 'text-white',
+  textColor,
   isScrolled = false,
 }: LogoProps) {
   return (
@@ -28,13 +28,13 @@ export default function Logo({
       {/* Icon in bg-teal-500/20 rounded container */}
       <div
         className={cn(
-          'flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl',
+          'flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl border transition-all duration-300',
           isScrolled
             ? 'bg-teal-500/15 text-teal-600 border-teal-500/30 group-hover:bg-teal-500/25'
             : 'bg-teal-500/20 text-teal-300 border-teal-500/30 group-hover:bg-teal-500/30'
         )}
       >
-<svg
+        <svg
           width="32"
           height="32"
           viewBox="0 0 88 40"
@@ -49,15 +49,26 @@ export default function Logo({
             d="M88.0006 3C88.0006 4.65685 86.6575 6 85.0006 6C83.3438 6 82.0006 4.65685 82.0006 3C82.0006 1.34315 83.3438 0 85.0006 0C86.6575 0 88.0006 1.34315 88.0006 3Z"
             fill="#206EE3"
           />
-        </svg>      </div>
+        </svg>
+      </div>
 
       {/* Compact 2-line Brand Text */}
       {showText && (
         <div className="flex flex-col leading-tight text-left rtl:text-right">
-          <span className={cn('font-serif text-base font-bold uppercase tracking-wider', textColor)}>
+          <span
+            className={cn(
+              'font-serif text-base font-bold uppercase tracking-wider transition-colors duration-300',
+              textColor ?? (isScrolled ? 'text-slate-900 dark:text-white' : 'text-white')
+            )}
+          >
             MARSA ALAM
           </span>
-          <span className={cn('text-[10px] font-semibold uppercase tracking-[0.2em]', isScrolled ? 'text-teal-600' : 'text-teal-300')}>
+          <span
+            className={cn(
+              'text-[10px] font-semibold uppercase tracking-[0.2em] transition-colors duration-300',
+              isScrolled ? 'text-teal-600 dark:text-teal-400' : 'text-teal-300'
+            )}
+          >
             LOCAL GUIDE
           </span>
         </div>
