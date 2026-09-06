@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Image from 'next/image';
-import { ChevronLeft, ChevronRight, X, Maximize2 } from 'lucide-react';
+import { X, Maximize2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface TourGalleryProps {
   images: {
@@ -13,85 +13,92 @@ interface TourGalleryProps {
 }
 
 export default function TourGallery({ images, title }: TourGalleryProps) {
-  // تجميع كل الصور (الرئيسية + الجاليري) في مصفوفة واحدة
   const allImages = [images.featured, ...(images.gallery || [])];
   
   const [activeIndex, setActiveIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const mainScrollRef = useRef<HTMLDivElement>(null);
 
-  const handleNext = () => {
+  // تحديث الـ index الحالي عند سحب الصور باليد
+  const handleScroll = () => {
+    if (!mainScrollRef.current) return;
+    const { scrollLeft, clientWidth } = mainScrollRef.current;
+    const newIndex = Math.round(Math.abs(scrollLeft) / clientWidth);
+    if (newIndex !== activeIndex && newIndex >= 0 && newIndex < allImages.length) {
+      setActiveIndex(newIndex);
+    }
+  };
+
+  // عند الضغط على المصغرات السفلية يتم الانتقال للصورة بسلاسة
+  const scrollToImage = (index: number) => {
+    setActiveIndex(index);
+    if (mainScrollRef.current) {
+      const width = mainScrollRef.current.clientWidth;
+      mainScrollRef.current.scrollTo({
+        left: index * width,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  const handleNextLightbox = () => {
     setActiveIndex((prev) => (prev + 1) % allImages.length);
   };
 
-  const handlePrev = () => {
+  const handlePrevLightbox = () => {
     setActiveIndex((prev) => (prev - 1 + allImages.length) % allImages.length);
   };
 
   return (
     <section className="mb-6 sm:mb-8">
-      {/* 1. Main Display Area */}
+      {/* 1. Main Display Area with Full Width Cover */}
       <div className="relative group w-full h-[320px] sm:h-[450px] lg:h-[500px] overflow-hidden rounded-2xl bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-md">
         
-        {/* Ambient Blur Background (عشان الصورة ما تبقاش مقصوصة وفي نفس الوقت مفيش هوامش سوداء بثرة) */}
+        {/* Swipeable Container */}
         <div 
-          className="absolute inset-0 bg-cover bg-center blur-2xl opacity-40 scale-110"
-          style={{ backgroundImage: `url(${allImages[activeIndex]})` }}
-        />
-
-        {/* The Main Uncropped Image */}
-        <div className="relative w-full h-full p-2 flex items-center justify-center">
-          <Image
-            src={allImages[activeIndex]}
-            alt={`${title} - photo ${activeIndex + 1}`}
-            fill
-            priority
-            sizes="(max-width: 1024px) 100vw, 1200px"
-            className="object-contain drop-shadow-xl transition-all duration-300"
-          />
+          ref={mainScrollRef}
+          onScroll={handleScroll}
+          className="relative z-10 w-full h-full flex overflow-x-auto snap-x snap-mandatory scrollbar-none scroll-smooth"
+        >
+          {allImages.map((img, idx) => (
+            <div 
+              key={idx} 
+              className="relative w-full h-full shrink-0 snap-center flex items-center justify-center"
+            >
+              <Image
+                src={img}
+                alt={`${title} - photo ${idx + 1}`}
+                fill
+                priority={idx === 0}
+                sizes="(max-width: 1024px) 100vw, 1200px"
+                className="object-cover transition-transform duration-300"
+              />
+            </div>
+          ))}
         </div>
-
-        {/* Slider Controls (Next / Prev) */}
-        {allImages.length > 1 && (
-          <>
-            <button
-              onClick={handlePrev}
-              aria-label="Previous Image"
-              className="absolute left-3 top-1/2 -translate-y-1/2 p-2.5 rounded-full bg-black/40 text-white backdrop-blur-md opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-all hover:bg-black/70 hover:scale-105 active:scale-95"
-            >
-              <ChevronLeft className="h-5 w-5 rtl:rotate-180" />
-            </button>
-            <button
-              onClick={handleNext}
-              aria-label="Next Image"
-              className="absolute right-3 top-1/2 -translate-y-1/2 p-2.5 rounded-full bg-black/40 text-white backdrop-blur-md opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-all hover:bg-black/70 hover:scale-105 active:scale-95"
-            >
-              <ChevronRight className="h-5 w-5 rtl:rotate-180" />
-            </button>
-          </>
-        )}
 
         {/* Expand / Lightbox Button */}
         <button
           onClick={() => setIsLightboxOpen(true)}
-          className="absolute top-3 right-3 p-2 rounded-xl bg-black/40 text-white backdrop-blur-md hover:bg-black/70 transition-all active:scale-95 flex items-center gap-1.5 text-xs font-semibold px-3"
+          className="absolute top-3 right-3 z-20 p-2 rounded-xl bg-black/40 text-white backdrop-blur-md hover:bg-black/70 transition-all active:scale-95 flex items-center gap-1.5 text-xs font-semibold px-3"
         >
           <Maximize2 className="h-3.5 w-3.5" />
           <span className="hidden sm:inline">View Full</span>
         </button>
 
         {/* Counter Badge */}
-        <div className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-black/50 text-white backdrop-blur-md text-xs font-medium">
+        <div className="absolute bottom-3 right-3 z-20 px-3 py-1 rounded-full bg-black/50 text-white backdrop-blur-md text-xs font-medium">
           {activeIndex + 1} / {allImages.length}
         </div>
       </div>
 
-      {/* 2. Thumbnails Bar (تنسيق شاشة الموبايل والكمبيوتر) */}
+      {/* 2. Thumbnails Bar */}
       {allImages.length > 1 && (
         <div className="mt-3 flex items-center gap-2.5 overflow-x-auto pb-2 scrollbar-none snap-x">
           {allImages.map((img, idx) => (
             <button
               key={idx}
-              onClick={() => setActiveIndex(idx)}
+              onClick={() => scrollToImage(idx)}
               className={`relative h-16 sm:h-20 w-24 sm:w-28 shrink-0 overflow-hidden rounded-xl border-2 transition-all snap-start bg-slate-900 ${
                 activeIndex === idx
                   ? 'border-cyan-500 ring-2 ring-cyan-500/30 scale-95 opacity-100'
@@ -133,13 +140,13 @@ export default function TourGallery({ images, title }: TourGalleryProps) {
           {allImages.length > 1 && (
             <>
               <button
-                onClick={handlePrev}
+                onClick={handlePrevLightbox}
                 className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all"
               >
                 <ChevronLeft className="h-6 w-6 rtl:rotate-180" />
               </button>
               <button
-                onClick={handleNext}
+                onClick={handleNextLightbox}
                 className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all"
               >
                 <ChevronRight className="h-6 w-6 rtl:rotate-180" />
