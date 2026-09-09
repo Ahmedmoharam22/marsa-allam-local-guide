@@ -12,9 +12,12 @@ export interface TourItineraryStep {
   description?: LocalizedString;
 }
 
+export type TourType = 'snorkeling' | 'scuba-diving' | 'courses';
+
 export interface Tour {
   id: string; // "dolphin-house-samadai"
   slug: string; // "dolphin-house-samadai-reef"
+  type: TourType;
   title: LocalizedString;
   subtitle: LocalizedString;
   category: LocalizedString;

@@ -4,6 +4,7 @@ export const tours: Tour[] = [
   {
     id: "dolphin-house-samadai",
     slug: "dolphin-house-samadai-reef",
+    type: 'snorkeling',
     title: {
       en: "Dolphin House (Samadai Reef)",
       de: "Delfinhaus (Samadai-Riff)",
@@ -360,6 +361,7 @@ export const tours: Tour[] = [
   {
   id: "sataya-reef-dolphins",
   slug: "sataya-reef-dolphin-snorkeling",
+  type: 'snorkeling',
   title: {
     en: "Sataya Reef",
     de: "Sataya-Riff",
@@ -716,6 +718,7 @@ export const tours: Tour[] = [
 {
   id: "abu-dabbab-turtle-bay",
   slug: "abu-dabbab-turtle-bay-snorkeling",
+  type: 'snorkeling',
   title: {
     en: "Abu Dabbab (Turtle Bay)",
     de: "Abu Dabbab (Schildkrötenbucht)",
@@ -1055,6 +1058,7 @@ export const tours: Tour[] = [
 {
   id: "marsa-mubarak-dugong-turtle",
   slug: "marsa-mubarak-dugong-turtle-snorkeling",
+  type: 'snorkeling',
   title: {
     en: "Marsa Mubarak",
     de: "Marsa Mubarak",
@@ -1447,6 +1451,7 @@ export const tours: Tour[] = [
 {
   id: "abu-dabbab-speedboat",
   slug: "abu-dabbab-speedboat-snorkeling",
+  type: 'snorkeling',
   title: {
     en: "Abu Dabbab Speedboat",
     de: "Abu Dabbab Speedboot",
@@ -1808,6 +1813,7 @@ export const tours: Tour[] = [
 {
   id: "hamata-islands",
   slug: "hamata-islands",
+  type: 'snorkeling',
   title: {
     en: "Hamata Islands",
     de: "Hamata Inseln",
@@ -2227,6 +2233,7 @@ export const tours: Tour[] = [
 {
     id: "wadi-el-gemal-islands",
     slug: "wadi-el-gemal-islands",
+    type: 'snorkeling',
     title: {
       en: "Wadi El Gemal Islands",
       de: "Wadi El Gemal Inseln",
@@ -2665,6 +2672,7 @@ export const tours: Tour[] = [
   {
     id: "qulaan-mangroves-sharm-el-luli",
     slug: "qulaan-mangroves-sharm-el-luli",
+    type: 'snorkeling',
     title: {
       en: "Qulaan Mangroves & Sharm El Luli",
       de: "Qulaan Mangroven & Sharm El Luli",
@@ -3108,6 +3116,7 @@ export const tours: Tour[] = [
   {
   id: "super-safari",
   slug: "super-safari-desert-bedouin-experience",
+  type: 'snorkeling',
   title: {
     en: "Super Safari",
     de: "Super-Safari",
@@ -3496,6 +3505,7 @@ export const tours: Tour[] = [
 {
   id: "sunset-horse-riding-bedouin-night",
   slug: "sunset-horse-riding-bedouin-night",
+  type: 'snorkeling',
   title: {
     en: "Sunset Horse Riding & Bedouin Night",
     de: "Sonnenuntergangs-Ausritt & Beduinennacht",
@@ -3934,6 +3944,2568 @@ export const tours: Tour[] = [
       "/images/tours/horse-riding-1.webp",
       "/images/tours/horse-riding-2.webp",
       "/images/tours/horse-riding-3.webp"
+    ]
+  }
+},
+{
+  id: "try-scuba-dive",
+  slug: "try-scuba-dive",
+  type: "scuba-diving",
+  title: {
+    en: "TRY SCUBA DIVE",
+    de: "TRY SCUBA DIVE",
+    it: "TRY SCUBA DIVE",
+    ru: "TRY SCUBA DIVE",
+    pl: "TRY SCUBA DIVE",
+    cz: "TRY SCUBA DIVE"
+  },
+  subtitle: {
+    en: "Your First Dive — No Experience Needed",
+    de: "Ihr erster Tauchgang — Keine Erfahrung erforderlich",
+    it: "La tua prima immersione — Nessuna esperienza richiesta",
+    ru: "Ваше первое погружение — Опыт не требуется",
+    pl: "Twój pierwszy nurkowanie — Doświadczenie nie jest wymagane",
+    cz: "Váš první ponor — Bez předchozích zkušeností"
+  },
+  category: {
+    en: "Scuba Diving",
+    de: "Tauchen",
+    it: "Immersioni Subacquee",
+    ru: "Дайвинг",
+    pl: "Nurkowanie",
+    cz: "Potápění"
+  },
+  price: {
+    amount: 0, 
+    currency: "€",
+    unit: {
+      en: "per person",
+      de: "pro Person",
+      it: "per persona",
+      ru: "за человека",
+      pl: "za osobę",
+      cz: "za osobu"
+    }
+  },
+  duration: {
+    en: "Half Day",
+    de: "Halbtags",
+    it: "Mezza giornata",
+    ru: "Полдня",
+    pl: "Pół dnia",
+    cz: "Půl dne"
+  },
+  departure: {
+    en: "Marsa Alam Hotels",
+    de: "Marsa Alam Hotels",
+    it: "Hotel di Marsa Alam",
+    ru: "Отели Марса-Алам",
+    pl: "Hotele w Marsa Alam",
+    cz: "Hotely v Marsa Alam"
+  },
+  overview: {
+    en: "Your First Dive — No Experience Needed. Details coming soon.",
+    de: "Ihr erster Tauchgang — Keine Erfahrung erforderlich. Details folgen bald.",
+    it: "La tua prima immersione — Nessuna esperienza richiesta. Dettagli in arrivo.",
+    ru: "Ваше первое погружение — Опыт не требуется. Подробности скоро.",
+    pl: "Twój pierwszy nurkowanie — Doświadczenie nie jest wymagane. Szczegóły wkrótce.",
+    cz: "Váš první ponor — Bez předchozích zkušeností. Podrobnosti již brzy."
+  },
+  highlights: { en: [], de: [], it: [], ru: [], pl: [], cz: [] },
+  included: { en: [], de: [], it: [], ru: [], pl: [], cz: [] },
+  whatToBring: { en: [], de: [], it: [], ru: [], pl: [], cz: [] },
+  childrenPolicy: {
+    under5: { en: "", de: "", it: "", ru: "", pl: "", cz: "" },
+    from5to10: { en: "", de: "", it: "", ru: "", pl: "", cz: "" },
+    over10: { en: "", de: "", it: "", ru: "", pl: "", cz: "" }
+  },
+  itinerary: [],
+  paymentNote: { en: "", de: "", it: "", ru: "", pl: "", cz: "" },
+  disclaimer: { en: "", de: "", it: "", ru: "", pl: "", cz: "" },
+  images: {
+    featured: "/images/tours/special-card-1.webp",
+    gallery: []
+  }
+},
+{
+  id: "dolphin-house-samadai-scuba",
+  slug: "dolphin-house-samadai-reef-scuba-diving",
+  type: "scuba-diving",
+  title: {
+    en: "Dolphin House (Samadai Reef) — Scuba Diving",
+    de: "Delfinhaus (Samadai-Riff) — Tauchen",
+    it: "Dolphin House (Samadai Reef) — Immersioni",
+    ru: "Дом дельфинов (Риф Самадай) — Дайвинг",
+    pl: "Dolphin House (Rafa Samadai) — Nurkowanie",
+    cz: "Dolphin House (Útes Samadai) — Potápění"
+  },
+  subtitle: {
+    en: "Scuba Diving Experience (Max 4 Divers)",
+    de: "Taucherlebnis (Max. 4 Taucher)",
+    it: "Esperienza di Immersione (Max 4 Sub)",
+    ru: "Погружение с аквалангом (Макс. 4 дайвера)",
+    pl: "Przygoda z nurkowaniem (Maks. 4 nurków)",
+    cz: "Zážitek z potápění (Max. 4 potápěči)"
+  },
+  category: {
+    en: "Scuba Diving",
+    de: "Tauchen",
+    it: "Immersioni Subacquee",
+    ru: "Дайвинг",
+    pl: "Nurkowanie",
+    cz: "Potápění"
+  },
+  price: {
+    amount: 110,
+    currency: "€",
+    unit: {
+      en: "per person (Park Fee Included)",
+      de: "pro Person (Parkgebühr inklusive)",
+      it: "per persona (Tassa Parco Inclusa)",
+      ru: "за человека (Сбор парка включен)",
+      pl: "za osobę (Opłata za park w cenie)",
+      cz: "za osobu (Poplatek za park v ceně)"
+    }
+  },
+  duration: {
+    en: "Full Day (8–9 Hours)",
+    de: "Ganztägig (8–9 Std.)",
+    it: "Intera giornata (8–9 Ore)",
+    ru: "Полный день (8–9 часов)",
+    pl: "Cały dzień (8–9 godzin)",
+    cz: "Celý den (8–9 hodin)"
+  },
+  departure: {
+    en: "Marsa Alam Marina",
+    de: "Marina Marsa Alam",
+    it: "Marina di Marsa Alam",
+    ru: "Марина Марса-Алам",
+    pl: "Marina Marsa Alam",
+    cz: "Marina Marsa Alam"
+  },
+  overview: {
+    en: "Discover the underwater world of Dolphin House (Samadai Reef) with 2 scuba dives. Explore beautiful coral formations, swim-throughs, and a long underwater cave. Guided in small groups (maximum 4 divers) by PADI/SSI Instructors.",
+    de: "Entdecken Sie die Unterwasserwelt von Dolphin House (Samadai Reef) bei 2 Tauchgängen. Erkunden Sie wunderschöne Korallenformationen, Durchbrüche und eine lange Unterwasserhöhle in kleinen Gruppen (max. 4 Taucher).",
+    it: "Scopri il mondo sottomarino di Dolphin House (Samadai Reef) con 2 immersioni. Esplora meravigliose formazioni coralline, passaggi e una lunga grotta sottomarina in piccoli gruppi (massimo 4 sub).",
+    ru: "Откройте для себя подводный мир Дома Дельфинов (риф Самадай) во время 2 погружений. Исследуйте коралловые рифы, пещеры и проходы в небольших группах (максимум 4 дайвера).",
+    pl: "Odkryj podwodny świat Dolphin House (Rafa Samadai) podczas 2 nurkowań. Odkrywaj piękne formacje koralowe, przesmyki i długą podwodną jaskinię w małych grupach (maks. 4 nurków).",
+    cz: "Objevte podvodní svět Dolphin House (útes Samadai) během 2 ponorů. Prozkoumejte krásné koralové útvary, průplavy a dlouhou podvodní jeskyni v malých skupinách (max. 4 potápěči)."
+  },
+  highlights: {
+    en: [
+      "2 Scuba Dives around outer reef & cave",
+      "Small group (Maximum 4 divers per guide)",
+      "PADI or SSI Certified Instructor",
+      "Marine Park Fee Included",
+      "Full scuba equipment & wetsuit included",
+      "Dolphin watching from boat during surface interval",
+      "Fresh buffet lunch & drinks onboard"
+    ],
+    de: [
+      "2 Tauchgänge am Außenriff & in Höhlen",
+      "Kleine Gruppe (Maximal 4 Taucher pro Guide)",
+      "PADI- oder SSI-zertifizierter Tauchlehrer",
+      "Nationalparkgebühr inbegriffen",
+      "Komplette Tauchausrüstung & Neoprenanzug inklusive",
+      "Delfinbeobachtung vom Boot in der Oberflächenpause",
+      "Frisches Mittagsbuffet & Getränke an Bord"
+    ],
+    it: [
+      "2 immersioni sulla barriera esterna e grotte",
+      "Piccolo gruppo (Massimo 4 sub per guida)",
+      "Istruttore certificato PADI o SSI",
+      "Tassa del Parco Marino inclusa",
+      "Attrezzatura da sub completa e muta incluse",
+      "Avvistamento delfini dalla barca nell'intervallo di superficie",
+      "Pranzo a buffet e bevande a bordo"
+    ],
+    ru: [
+      "2 погружения на внешнем рифе и пещерах",
+      "Маленькая группа (Максимум 4 дайвера на гида)",
+      "Инструктор PADI или SSI",
+      "Сбор морского заповедника включен",
+      "Полное снаряжение для дайвинга и гидрокостюм",
+      "Наблюдение за дельфинами с борта во время перерыва",
+      "Свежий обед (шведский стол) и напитки"
+    ],
+    pl: [
+      "2 nurkowania przy zewnętrznej rafie i jaskiniach",
+      "Mała grupa (Maksymalnie 4 nurków na przewodnika)",
+      "Certyfikowany instruktor PADI lub SSI",
+      "Opłata za park morski w cenie",
+      "Pełny sprzęt do nurkowania i pianka w cenie",
+      "Obserwacja delfinów z łodzi podczas przerwy",
+      "Świeży obiad w formie bufetu i napoje na pokładzie"
+    ],
+    cz: [
+      "2 ponory na vnějším útesu a v jeskyních",
+      "Malá skupina (Maximálně 4 potápěči na průvodce)",
+      "Certifikovaný instruktor PADI nebo SSI",
+      "Poplatek za mořský park v ceně",
+      "Kompletní potápěčské vybavení a neopren v ceně",
+      "Pozorování delfínů z lodi během povrchového intervalu",
+      "Čerstvý oběd formou bufetu a nápoje na palubě"
+    ]
+  },
+  included: {
+    en: [
+      "Hotel pickup & drop-off",
+      "Boat trip & Marine Park / Protected Area Fee",
+      "2 scuba dives with PADI/SSI Instructor",
+      "Full scuba diving equipment (Wetsuit, tanks, weights)",
+      "Maximum 4 divers per group",
+      "Fresh buffet lunch onboard",
+      "Hot & cold drinks and mineral water"
+    ],
+    de: [
+      "Hotelabholung & Rückbringung",
+      "Bootsfahrt & Nationalparkgebühren",
+      "2 Tauchgänge mit PADI/SSI Tauchlehrer",
+      "Komplette Tauchausrüstung (Neoprenanzug, Flaschen, Blei)",
+      "Maximal 4 Taucher pro Gruppe",
+      "Frisches Mittagsbuffet an Bord",
+      "Warme & kalte Getränke sowie Mineralwasser"
+    ],
+    it: [
+      "Transfer da e per l'hotel",
+      "Gita in barca e Tassa del Parco Marino",
+      "2 immersioni con istruttore PADI/SSI",
+      "Attrezzatura subacquea completa (Muta, bombole, zavorra)",
+      "Massimo 4 subacquei per gruppo",
+      "Pranzo a buffet a bordo",
+      "Bevande calde, fredde e acqua minerale"
+    ],
+    ru: [
+      "Трансфер из отеля и обратно",
+      "Морская прогулка и сбор за посещение заповедника",
+      "2 погружения с инструктором PADI/SSI",
+      "Полное снаряжение (Гидрокостюм, баллоны, грузы)",
+      "Максимум 4 дайвера в группе",
+      "Свежий обед (шведский стол) на борту",
+      "Горячие, холодные напитки и минеральная вода"
+    ],
+    pl: [
+      "Odbiór i powrót do hotelu",
+      "Rejs statkiem i opłata za park morski",
+      "2 nurkowania z instruktorem PADI/SSI",
+      "Pełny sprzęt nurkowy (Pianka, butle, balast)",
+      "Maksymalnie 4 nurków w grupie",
+      "Świeży obiad w formie bufetu na pokładzie",
+      "Zimne i gorące napoje oraz woda mineralna"
+    ],
+    cz: [
+      "Vyzvednutí a návrat do hotelu",
+      "Výlet lodí a poplatek za mořský park",
+      "2 ponory s instruktorem PADI/SSI",
+      "Kompletní potápěčské vybavení (Neopren, lahve, zátěž)",
+      "Maximálně 4 potápěči ve skupině",
+      "Čerstvý oběd formou bufetu na palubě",
+      "Teplé a studené nápoje, minerální voda"
+    ]
+  },
+  whatToBring: {
+    en: [
+      "Diving certification (digital or physical)",
+      "Logbook",
+      "Towel",
+      "Eco-friendly sunscreen",
+      "Hat & Sunglasses"
+    ],
+    de: [
+      "Taucherlebnis-Zertifikat (digital oder physisch)",
+      "Logbuch",
+      "Handtuch",
+      "Umweltfreundliche Sonnencreme",
+      "Hut & Sonnenbrille"
+    ],
+    it: [
+      "Brevetto subacqueo (digitale o fisico)",
+      "Libretto immersioni (Logbook)",
+      "Asciugamano",
+      "Crema solare ecologica",
+      "Cappello e occhiali da sole"
+    ],
+    ru: [
+      "Сертификат дайвера (цифровой или бумажный)",
+      "Логбук (книга погружений)",
+      "Полотенце",
+      "Экологичный солнцезащитный крем",
+      "Головной убор и очки"
+    ],
+    pl: [
+      "Certyfikat nurkowy (cyfrowy lub fizyczny)",
+      "Logbook (książka nurkowa)",
+      "Ręcznik",
+      "Ekologiczny krem z filtrem",
+      "Czapka i okulary przeciwsłoneczne"
+    ],
+    cz: [
+      "Potápěčská certifikace (digitální nebo fyzická)",
+      "Lógbook (potápěčský deník)",
+      "Ručník",
+      "Ekologický opalovací krém",
+      "Klobouk a sluneční brýle"
+    ]
+  },
+  childrenPolicy: {
+    under5: {
+      en: "Not recommended for children under 10 years without certification",
+      de: "Nicht empfohlen für Kinder unter 10 Jahren ohne Zertifikat",
+      it: "Non consigliato ai bambini sotto i 10 anni senza brevetto",
+      ru: "Не рекомендуется детям до 10 лет без сертификата",
+      pl: "Nie zalecane dla dzieci poniżej 10 lat bez certyfikatu",
+      cz: "Nedoporučuje se pro děti do 10 let bez certifikace"
+    },
+    from5to10: {
+      en: "Certified Junior Divers: Full dive rate applies",
+      de: "Zertifizierte Junior-Taucher: Voller Tauchtarif gilt",
+      it: "Junior Diver Certificati: Si applica la tariffa sub completa",
+      ru: "Сертифицированные Junior дайверы: Полный тариф",
+      pl: "Certyfikowani Junior Nurkowie: Pełna stawka za nurkowanie",
+      cz: "Certifikovaní Junior potápěči: Plná cena ponoru"
+    },
+    over10: {
+      en: "Full adult rate applies",
+      de: "Voller Erwachsenentarif gilt",
+      it: "Si applica la tariffa intera",
+      ru: "Полный взрослый тариф",
+      pl: "Obowiązuje pełna stawka",
+      cz: "Plná cena"
+    }
+  },
+  itinerary: [
+    {
+      step: "01",
+      title: {
+        en: "Hotel Pickup — 07:30 AM",
+        de: "Hotelabholung — 07:30 Uhr",
+        it: "Transfer dall'Hotel — 07:30",
+        ru: "Трансфер из отеля — 07:30",
+        pl: "Odbiór z hotelu — 07:30",
+        cz: "Vyzvednutí v hotelu — 07:30"
+      },
+      description: {
+        en: "Pickup from your hotel and transfer to Marsa Alam Marina.",
+        de: "Abholung vom Hotel und Transfer zur Marina Marsa Alam.",
+        it: "Pick-up dall'hotel e trasferimento alla Marina di Marsa Alam.",
+        ru: "Трансфер из отеля в Марину Марса-Алам.",
+        pl: "Odbiór z hotelu i transfer do Mariny Marsa Alam.",
+        cz: "Vyzvednutí v hotelu a transfer do Mariny Marsa Alam."
+      }
+    },
+    {
+      step: "02",
+      title: {
+        en: "Preparation at Marina",
+        de: "Vorbereitung in der Marina",
+        it: "Preparazione alla Marina",
+        ru: "Подготовка в марине",
+        pl: "Przygotowanie w Marinie",
+        cz: "Příprava v marině"
+      },
+      description: {
+        en: "Prepare equipment and get ready for departure.",
+        de: "Ausrüstung vorbereiten und auf die Abfahrt vorbereiten.",
+        it: "Preparazione dell'attrezzatura e imbarco.",
+        ru: "Подготовка снаряжения и посадка на судно.",
+        pl: "Przygotowanie sprzętu i gotowość do wypłynięcia.",
+        cz: "Příprava оборудования а příprava k odjezdu."
+      }
+    },
+    {
+      step: "03",
+      title: {
+        en: "Boat Cruise & Briefing",
+        de: "Bootsfahrt & Einweisung",
+        it: "Navigazione e Briefing",
+        ru: "Круиз и брифинг",
+        pl: "Rejs i odprawa",
+        cz: "Plavba lodí a briefing"
+      },
+      description: {
+        en: "Cruise toward Samadai Reef with dive safety briefing.",
+        de: "Fahrt zum Samadai-Riff mit Sicherheitsunterweisung.",
+        it: "Navigazione verso il Samadai Reef con briefing di sicurezza.",
+        ru: "Круиз к рифу Самадай и инструктаж по безопасности.",
+        pl: "Rejs w stronę Rafy Samadai z odprawą bezpieczeństwa.",
+        cz: "Plavba k útesu Samadai s bezpečnostním briefingem."
+      }
+    },
+    {
+      step: "04",
+      title: {
+        en: "Dive 1 — Samadai Reef Outer Wall",
+        de: "Tauching 1 — Samadai Außenriff",
+        it: "Immersione 1 — Parete Esterna Samadai",
+        ru: "Погружение 1 — Внешняя стена Самадай",
+        pl: "Nurkowanie 1 — Zewnętrzna ściana Samadai",
+        cz: "Ponor 1 — Vnější stěna Samadai"
+      },
+      description: {
+        en: "Explore outer reef wall, coral pinnacles and rich marine life.",
+        de: "Erkunden Sie die Außenriffwand, Korallentürme und Meeresleben.",
+        it: "Esplora la parete esterna, i pinnacoli e la vita marina.",
+        ru: "Исследование внешней стены рифа и коралловых башен.",
+        pl: "Odkrywanie zewnętrznej ściany rafy i iglic koralowych.",
+        cz: "Prozkoumejte vnější stěnu útesu a koralové věže."
+      }
+    },
+    {
+      step: "05",
+      title: {
+        en: "Surface Interval & Dolphin Watching",
+        de: "Oberflächenpause & Delfinbeobachtung",
+        it: "Intervallo di Superficie & Delfini",
+        ru: "Интервал на поверхности и дельфины",
+        pl: "Przerwa powierzchniowa i delfiny",
+        cz: "Povrchový interval a pozorování delfínů"
+      },
+      description: {
+        en: "Relax onboard. Observe wild dolphins from boat if present.",
+        de: "Entspannen an Bord. Delfinbeobachtung vom Boot aus.",
+        it: "Relax a bordo e avvistamento delfini dalla barca.",
+        ru: "Отдых на борту. Наблюдение за дельфинами с катера.",
+        pl: "Relaks na pokładzie i obserwacja delfinów z łodzi.",
+        cz: "Odpočinek na palubě. Pozorování delfínów z lodi."
+      }
+    },
+    {
+      step: "06",
+      title: {
+        en: "Dive 2 — Cave & Swim-Throughs",
+        de: "Tauchgang 2 — Höhle & Durchbrüche",
+        it: "Immersione 2 — Grotta e Passaggi",
+        ru: "Погружение 2 — Пещера и каньоны",
+        pl: "Nurkowanie 2 — Jaskinia i przesmyki",
+        cz: "Ponor 2 — Jeskyně a průplavy"
+      },
+      description: {
+        en: "Discover Samadai's iconic underwater cave and reef formations.",
+        de: "Entdecken Sie die berühmte Unterwasserhöhle von Samadai.",
+        it: "Esplora la famosa grotta sottomarina di Samadai.",
+        ru: "Погружение в знаменитую подводную пещеру Самадай.",
+        pl: "Odkryj słynną podwodną jaskinię Samadai.",
+        cz: "Objevení slavné podvodní jeskyně Samadai."
+      }
+    },
+    {
+      step: "07",
+      title: {
+        en: "Lunch Onboard",
+        de: "Mittagessen an Bord",
+        it: "Pranzo a Bordo",
+        ru: "Обед на борту",
+        pl: "Obiad na pokładzie",
+        cz: "Oběd na palubě"
+      },
+      description: {
+        en: "Enjoy freshly prepared buffet lunch onboard.",
+        de: "Genießen Sie das frisch zubereitete Buffet an Bord.",
+        it: "Goditi il pranzo a buffet appena preparato.",
+        ru: "Свежий обед (шведский стол) на борту.",
+        pl: "Obiad w formie bufetu na pokładzie.",
+        cz: "Oběd formou bufetu na palubě."
+      }
+    },
+    {
+      step: "08",
+      title: {
+        en: "Return & Hotel Drop-off — 03:30 PM",
+        de: "Rückkehr & Hotelabgabe — 15:30 Uhr",
+        it: "Ritorno e Transfer Hotel — 15:30",
+        ru: "Возвращение в отель — 15:30",
+        pl: "Powrót do hotelu — 15:30",
+        cz: "Návrat do hotelu — 15:30"
+      },
+      description: {
+        en: "Return to marina and transfer back to your hotel.",
+        de: "Rückfahrt zur Marina und Transfer zurück zum Hotel.",
+        it: "Rientro alla marina e trasferimento in hotel.",
+        ru: "Возвращение в марину и трансфер в отель.",
+        pl: "Powrót do mariny i transfer do hotelu.",
+        cz: "Návrat do mariny a transfer do hotelu."
+      }
+    }
+  ],
+  paymentNote: {
+    en: "Pay after the trip — no online payment required.",
+    de: "Bezahlung nach dem Ausflug — keine Online-Zahlung erforderlich.",
+    it: "Paga dopo il tour — nessuna pagamento online richiesto.",
+    ru: "Оплата после экскурсии — онлайн-предоплата не требуется.",
+    pl: "Płatność po wycieczce — płatność online nie jest wymagana.",
+    cz: "Platba až po výletu — není vyžadována platba předem online."
+  },
+  disclaimer: {
+    en: "Diving inside designated dolphin resting area is strictly prohibited. Dives occur in outer reef zones. Dolphin sightings are wild & not guaranteed.",
+    de: "Das Tauchen in der Delfin-Ruhezone ist gesetzlich verboten. Tauchgänge finden am Außenriff statt. Delfinsichtungen sind nicht garantiert.",
+    it: "L'immersione nella zona di riposo dei delfini è proibita. Le immersioni avvengono all'esterno. L'avvistamento non è garantito.",
+    ru: "Дайвинг в заповедной зоне отдыха дельфинов запрещен законом. Погружения проходят на внешнем рифе.",
+    pl: "Nurkowanie w strefie odpoczynku delfinów jest zabronione. Nurkowania odbywają się na zewnętrznej rafie.",
+    cz: "Potápění v zóně odpočinku delfínů je přísně zakázáno. Ponory probíhají na vnějším útesu."
+  },
+  images: {
+    featured: "/images/tours/samadai-scuba-card.webp",
+    gallery: [
+      "/images/tours/samadai-scuba-1.webp",
+      "/images/tours/samadai-scuba-2.webp",
+      "/images/tours/samadai-scuba-3.webp"
+    ]
+  }
+},
+{
+  id: "elphinstone-reef-scuba",
+  slug: "elphinstone-reef-advanced-scuba-diving",
+  type: "scuba-diving",
+  title: {
+    en: "Elphinstone Reef — Advanced Scuba Diving",
+    de: "Elphinstone-Riff — Fortgeschrittenes Tauchen",
+    it: "Elphinstone Reef — Immersioni per Avanzati",
+    ru: "Риф Эльфинстоун — Дайвинг для продвинутых",
+    pl: "Rafa Elphinstone — Zaawansowane Nurkowanie",
+    cz: "Útes Elphinstone — Pokročilé Potápění"
+  },
+  subtitle: {
+    en: "Fast Speedboat Transit (Max 4 Divers)",
+    de: "Schnellboot-Transfer (Max. 4 Taucher)",
+    it: "Trasferimento in gommone veloce (Max 4 Sub)",
+    ru: "Скоростной катер (Макс. 4 дайвера)",
+    pl: "Szybki pontoon/motorówka (Maks. 4 nurków)",
+    cz: "Rychlý člun (Max. 4 potápěči)"
+  },
+  category: {
+    en: "Scuba Diving",
+    de: "Tauchen",
+    it: "Immersioni Subacquee",
+    ru: "Дайвинг",
+    pl: "Nurkowanie",
+    cz: "Potápění"
+  },
+  price: {
+    amount: 145,
+    currency: "€",
+    unit: {
+      en: "per person (Park & Env. Fees Included)",
+      de: "pro Person (Park- & Umweltgebühren inklusive)",
+      it: "per persona (Tasse Parco e Ambientali Incluse)",
+      ru: "за человека (Сборы парка включены)",
+      pl: "za osobę (Opłaty parkowe i środowiskowe w cenie)",
+      cz: "za osobu (Poplatky v ceně)"
+    }
+  },
+  duration: {
+    en: "Half Day (~5–6 Hours)",
+    de: "Halbtags (~5–6 Std.)",
+    it: "Mezza giornata (~5–6 Ore)",
+    ru: "Полдня (~5–6 часов)",
+    pl: "Pół dnia (~5–6 godzin)",
+    cz: "Půl dne (~5–6 hodin)"
+  },
+  departure: {
+    en: "Marsa Alam / Abu Dabbab Bay",
+    de: "Marsa Alam / Abu Dabbab Bucht",
+    it: "Marsa Alam / Baia di Abu Dabbab",
+    ru: "Марса-Алам / Бухта Абу-Даббаб",
+    pl: "Marsa Alam / Zatoka Abu Dabbab",
+    cz: "Marsa Alam / Záliv Abu Dabbab"
+  },
+  overview: {
+    en: "Experience high-voltage offshore diving at the world-famous Elphinstone Reef via fast speedboat. Known for its sheer vertical walls, deep drop-offs, vibrant soft corals, and regular encounters with Oceanic Whitetip sharks and hammerheads. Strictly for Advanced Open Water certified divers.",
+    de: "Erleben Sie spektakuläres Tauchen am weltberühmten Elphinstone-Riff mit dem Schnellboot. Bekannt für steile Wände, tief abfallende Riffe und Begegnungen mit Weißspitzen-Hochseehaien und Hammerhaien. Nur für zertifizierte Fortgeschrittene (Advanced Open Water).",
+    it: "Vivi l'adrenalina delle immersioni al famoso Elphinstone Reef in gommone veloce. Famoso per le sue pareti verticali, coralli morbidi e incontri con squali al largo (Longimano e Martello). Esclusivamente per sub con brevetto Advanced Open Water.",
+    ru: "Испытайте драйв погружений на всемирно известном рифе Эльфинстоун на скоростном катере. Отвесные стены, глубокие обрывы и встречи с океаническими длиннокрылыми и молотоголовыми акулами. Только для сертификата Advanced Open Water.",
+    pl: "Doświadcz ekscytujących nurkowań na słynnej rafie Elphinstone z pokładu szybkiej motorówki. Słynie z pionowych ścian, miękkich koralowców i spotkań z rekinami oceanicznych i młotami. Wyłącznie dla nurków Advanced Open Water.",
+    cz: "Zažijte akční potápění na světoznámém útesu Elphinstone s rychlým člunem. Známý pro kolmé stěny, nádherné měkké korály a setkání s oceánskými žraloky. Pouze pro držitele certifikace Advanced Open Water."
+  },
+  highlights: {
+    en: [
+      "2 Guided Advanced scuba dives over deep drop-offs",
+      "Fast Speedboat transit — direct & minimal sea travel time",
+      "Small group setting (Maximum 4 divers per guide)",
+      "PADI or SSI Certified Dive Instructor",
+      "High probability of pelagic & shark sightings",
+      "Marine Park & Environmental Fees included",
+      "Full rental diving equipment included (Discount available for own gear)",
+      "Cold drinks & light snacks included"
+    ],
+    de: [
+      "2 Geführte Tauchgänge für Fortgeschrittene an Steilwänden",
+      "Schneller Transfer mit dem Schnellboot — kurze Fahrtzeit",
+      "Kleine Gruppe (Maximal 4 Taucher pro Guide)",
+      "PADI- oder SSI-zertifizierter Tauchlehrer",
+      "Hohe Chance auf Großfisch- & Hai-Sichtungen",
+      "Park- & Umweltgebühren komplett inklusive",
+      "Volle Mietausrüstung inklusive (Rabatt bei eigener Ausrüstung)",
+      "Kalte Getränke & leichte Snacks an Bord"
+    ],
+    it: [
+      "2 immersioni guidate per avanzati su pareti profonde",
+      "Trasferimento veloce in gommone — tempo di navigazione ridotto",
+      "Piccolo gruppo (Massimo 4 sub per guida)",
+      "Istruttore certificato PADI o SSI",
+      "Alta probabilità di avvistamento di squali e pelagici",
+      "Tasse del Parco e Ambientali incluse",
+      "Attrezzatura completa inclusa (Sconto per chi ha la propria)",
+      "Bevande fresche e snack leggeri inclusi"
+    ],
+    ru: [
+      "2 погружения для продвинутых вдоль глубоких стен",
+      "Скоростной катер — быстрый трансфер к рифу",
+      "Маленькая группа (Максимум 4 дайвера на гида)",
+      "Инструктор PADI или SSI",
+      "Высокий шанс увидеть океанических акул",
+      "Сборы заповедника и экологический сбор включены",
+      "Полная аренда снаряжения (Скидка при наличии своего)",
+      "Напитки и легкие закуски"
+    ],
+    pl: [
+      "2 nurkowania z przewodnikiem dla zaawansowanych na głębokich ścianach",
+      "Szybki pontoon/motorówka — krótki czas płynięcia",
+      "Mała grupa (Maksymalnie 4 nurków na przewodnika)",
+      "Certyfikowany instruktor PADI lub SSI",
+      "Duża szansa na spotkanie rekinów i ryb oceanicznych",
+      "Opłaty parkowe i środowiskowe w cenie",
+      "Pełny sprzęt w cenie (Zniżka przy własnym sprzęcie)",
+      "Zimne napoje i lekkie przekąski"
+    ],
+    cz: [
+      "2 ponory s průvodcem pro pokročilé na hlubokých stěnách",
+      "Rychlý člun — přímá a rychlá cesta na útes",
+      "Malá skupina (Maximálně 4 potápěči na průvodce)",
+      "Certifikovaný instruktor PADI nebo SSI",
+      "Vysoká šance na pozorování žraloků",
+      "Poplatky parkové a environmentální v cenie",
+      "Kompletní zapůjčení vybavení (Sleva při vlastním vybavení)",
+      "Chlazené nápoje a lehké občerstvení v cení"
+    ]
+  },
+  included: {
+    en: [
+      "Hotel pickup & drop-off",
+      "Speedboat transit to Elphinstone Reef",
+      "2 Guided scuba dives",
+      "Marine Park & Environmental Fees",
+      "Full rental diving equipment (wetsuit, BCD, regulator, tanks, weights)",
+      "PADI or SSI Dive Instructor (Max 4 divers)",
+      "Fresh mineral water, cold drinks & light snacks",
+      "Safety stop support"
+    ],
+    de: [
+      "Hotelabholung & Rückbringung",
+      "Schnellboot-Fahrt zum Elphinstone-Riff",
+      "2 Geführte Tauchgänge",
+      "Park- & Umweltgebühren",
+      "Komplette Mietausrüstung (Neopren, BCD, Atemregler, Flaschen, Blei)",
+      "PADI/SSI Tauchlehrer (Max. 4 Taucher)",
+      "Mineralwasser, kalte Getränke & leichte Snacks",
+      "Sicherheitsstopp-Unterstützung"
+    ],
+    it: [
+      "Transfer da e per l'hotel",
+      "Gommone veloce per Elphinstone Reef",
+      "2 Immersioni guidate",
+      "Tasse del Parco Marino e Ambientali",
+      "Attrezzatura completa a noleggio (Muta, GAV, erogatore, bombole, zavorra)",
+      "Istruttore PADI/SSI (Max 4 sub)",
+      "Acqua minerale, bevande fresche e snack leggeri",
+      "Supporto durante la sosta di sicurezza"
+    ],
+    ru: [
+      "Трансфер из отеля и обратно",
+      "Трансфер на скоростном катере к Эльфинстоуну",
+      "2 погружения с гидом",
+      "Сборы заповедника и экологический сбор",
+      "Полный комплект снаряжения (Гидрокостюм, BCD, регулятор, баллоны, грузы)",
+      "Инструктор PADI или SSI (Макс. 4 человека)",
+      "Минеральная вода, напитки и легкие закуски",
+      "Остановки безопасности"
+    ],
+    pl: [
+      "Odbiór i powrót do hotelu",
+      "Rejs szybką motorówką na Elphinstone Reef",
+      "2 Nurkowania z przewodnikiem",
+      "Opłaty parkowe i środowiskowe",
+      "Pełny sprzęt do wypożyczenia (Pianka, BCD, automat, akumulatory, balast)",
+      "Instruktor PADI/SSI (Maks. 4 nurków)",
+      "Woda mineralna, zimne napoje i lekkie przekąski",
+      "Wsparcie podczas przystanku bezpieczeństwa"
+    ],
+    cz: [
+      "Vyzvednutí a návrat do hotelu",
+      "Přeprava rychlým člunem na útes Elphinstone",
+      "2 Ponory s průvodcem",
+      "Parkové a environmentální poplatky",
+      "Kompletní zapůjčení výstroje (Neopren, žaket, automatika, lahve, zátěž)",
+      "Instruktor PADI/SSI (Max. 4 potápěči)",
+      "Minerální voda, studené nápoje a občerstvení",
+      "Podpora při bezpečnostní zastávce"
+    ]
+  },
+  whatToBring: {
+    en: [
+      "Advanced Open Water certification (Digital or Physical)",
+      "Logbook verifying recent deep/drift dive experience",
+      "Towel",
+      "Reef-safe sunscreen",
+      "Hat & Sunglasses",
+      "Personal medication if needed"
+    ],
+    de: [
+      "Advanced Open Water Zertifikat (Digital oder Papier)",
+      "Logbuch mit Nachweis aktueller Tief-/Strömungstauchgänge",
+      "Handtuch",
+      "Riff-freundliche Sonnencreme",
+      "Hut & Sonnenbrille",
+      "Persönliche Medikamente bei Bedarf"
+    ],
+    it: [
+      "Brevetto Advanced Open Water (Digitale o Fisico)",
+      "Logbook con registrazione di immersioni profonde/in corrente recenti",
+      "Asciugamano",
+      "Crema solare ecologica per barriera corallina",
+      "Cappello e occhiali da sole",
+      "Farmaci personali se necessari"
+    ],
+    ru: [
+      "Сертификат Advanced Open Water (Цифровой или бумажный)",
+      "Логбук с записью недавних глубоких/дрифтовых погружений",
+      "Полотенце",
+      "Безопасный для рифов солнцезащитный крем",
+      "Головной убор и очки",
+      "Личные медикаменты"
+    ],
+    pl: [
+      "Certyfikat Advanced Open Water (Cyfrowy lub fizyczny)",
+      "Logbook potwierdzający niedawne nurkowania głębokie/w prądzie",
+      "Ręcznik",
+      "Krem z filtrem bezpieczny dla rafy",
+      "Czapka i okulary przeciwsłoneczne",
+      "Leki osobiste w razie potrzeby"
+    ],
+    cz: [
+      "Certifikace Advanced Open Water (Digitální nebo fyzická)",
+      "Logbook s potvrzením nedávných hlubokých/proudových ponorů",
+      "Ručník",
+      "Opalovací krém šetrný k útesům",
+      "Klobouk a sluneční brýle",
+      "Osobní léky v případě potřeby"
+    ]
+  },
+  childrenPolicy: {
+    under5: {
+      en: "Not allowed — Deep offshore environment for advanced divers only",
+      de: "Nicht erlaubt — Tiefwassergebiet nur für fortgeschrittene Taucher",
+      it: "Non consentito — Ambiente di mare aperto riservato ai soli sub avanzati",
+      ru: "Не допускается — Погружение только для продвинутых дайверов",
+      pl: "Niedozwolone — Nurkowanie w otwartym morzu tylko dla zaawansowanych",
+      cz: "Není povoleno — Určeno výhradně pro pokročilé potápěče"
+    },
+    from5to10: {
+      en: "Not allowed — Minimum age and certification limits apply",
+      de: "Nicht erlaubt — Mindestalter und Zertifizierungsbeschränkungen",
+      it: "Non consentito — Limiti di età e di brevetto minimi",
+      ru: "Не допускается — Ограничения по возрасту и сертификации",
+      pl: "Niedozwolone — Ograniczenia wiekowe i wymagany certyfikat",
+      cz: "Není povoleno — Platí věková a certifikační omezení"
+    },
+    over10: {
+      en: "Certified Advanced Junior Divers (12+ years): Full adult rate applies",
+      de: "Zertifizierte Advanced Junior Taucher (ab 12 J.): Voller Tarif",
+      it: "Sub Junior Advanced Certificati (da 12 anni): Tariffa intera",
+      ru: "Сертифицированные Junior Advanced (с 12 лет): Полная стоимость",
+      pl: "Certyfikowani nurkowie Junior Advanced (od 12 lat): Pełna stawka",
+      cz: "Certifikovaní potápěči Junior Advanced (od 12 let): Plná cena"
+    }
+  },
+  itinerary: [
+    {
+      step: "01",
+      title: {
+        en: "Hotel Pickup & Transfer",
+        de: "Hotelabholung & Transfer",
+        it: "Transfer dall'Hotel",
+        ru: "Трансфер из отеля",
+        pl: "Odbiór z hotelu i transfer",
+        cz: "Vyzvednutí v hotelu a transfer"
+      },
+      description: {
+        en: "Morning pickup from your hotel to the departure launch site.",
+        de: "Morgenabholung vom Hotel zum Schnellboot-Ableger.",
+        it: "Pick-up mattutino dall'hotel verso il punto di imbarco.",
+        ru: "Утренний трансфер из отеля к месту отправления катера.",
+        pl: "Poranny odbiór z hotelu do punktu startowego.",
+        cz: "Ranní vyzvednutí v hotelu a přesun na místo odjezdu."
+      }
+    },
+    {
+      step: "02",
+      title: {
+        en: "Gear Check & Briefing",
+        de: "Ausrüstungs-Check & Briefing",
+        it: "Controllo Attrezzatura e Briefing",
+        ru: "Проверка снаряжения и брифинг",
+        pl: "Sprawdzenie sprzętu i odprawa",
+        cz: "Kontrola výstroje a briefing"
+      },
+      description: {
+        en: "Briefing on currents, dive profiles, emergency procedures, and gear check.",
+        de: "Einweisung zu Strömungen, Tauchprofil, Sicherheit und Ausrüstungs-Check.",
+        it: "Briefing su correnti, profilo d'immersione, sicurezza e controllo attrezzatura.",
+        ru: "Инструктаж по течениям, профилю погружения и проверка оборудования.",
+        pl: "Odprawa na temat prądów, profilu nurkowania i sprawdzanie sprzętu.",
+        cz: "Briefing o proudech, profilu ponoru a kontrola výstroje."
+      }
+    },
+    {
+      step: "03",
+      title: {
+        en: "Fast Speedboat Transit",
+        de: "Schnellboot-Überfahrt",
+        it: "Navigazione in Gommone",
+        ru: "Переход на скоростном катере",
+        pl: "Rejs szybką motorówką",
+        cz: "Rychlá plavba člunem"
+      },
+      description: {
+        en: "High-speed ride directly to Elphinstone Reef.",
+        de: "Schnelle Fahrt direkt zum Elphinstone-Riff.",
+        it: "Navigazione ad alta velocità verso Elphinstone Reef.",
+        ru: "Быстрый переход непосредственно к рифу Эльфинстоун.",
+        pl: "Szybki rejs bezpośrednio do rafy Elphinstone.",
+        cz: "Rychlá jízda přímo k útesu Elphinstone."
+      }
+    },
+    {
+      step: "04",
+      title: {
+        en: "Dive 1 — North Plateau / Steep Wall",
+        de: "Tauchgang 1 — Nordplateau / Steilwand",
+        it: "Immersione 1 — Plateau Nord / Parete",
+        ru: "Погружение 1 — Северное плато / Стена",
+        pl: "Nurkowanie 1 — Północny płaskowyż / Ściana",
+        cz: "Ponor 1 — Severní plato / Stěna"
+      },
+      description: {
+        en: "Deep drift dive along the sheer vertical drop-offs looking for pelagics.",
+        de: "Tiefes Strömungstauchen entlang der Steilwand auf der Suche nach Großfischen.",
+        it: "Immersione profonda in corrente lungo le pareti verticali alla ricerca di pelagici.",
+        ru: "Глубокое дрифтовое погружение вдоль отвесных стен в поисках крупных обитателей.",
+        pl: "Głębokie nurkowanie w prądzie wzdłuż pionowych ścian w poszukiwaniu ryb pelagicznych.",
+        cz: "Hluboký proudový ponor podél kolmých stěn s možností pozorování pelagických ryb."
+      }
+    },
+    {
+      step: "05",
+      title: {
+        en: "Surface Interval & Refreshments",
+        de: "Oberflächenpause & Snacks",
+        it: "Intervallo di Superficie e Snack",
+        ru: "Перерыв и напитки",
+        pl: "Przerwa powierzchniowa i przekąski",
+        cz: "Povrchový interval a občerstvení"
+      },
+      description: {
+        en: "Rest on board, enjoy cold drinks and light snacks while tracking shark activity.",
+        de: "Pause an Bord bei kalten Getränken und leichten Snacks.",
+        it: "Riposo a bordo con bevande fresche e snack leggeri.",
+        ru: "Отдых на борту, напитки и легкие закуски.",
+        pl: "Odpoczynek na pokładzie, zimne napoje i lekkie przekąski.",
+        cz: "Odpočinek na palubě, studené nápoje a občerstvení."
+      }
+    },
+    {
+      step: "06",
+      title: {
+        en: "Dive 2 — South Plateau & Wall",
+        de: "Tauchgang 2 — Südplateau & Steilwand",
+        it: "Immersione 2 — Plateau Sud e Parete",
+        ru: "Погружение 2 — Южное плато и стена",
+        pl: "Nurkowanie 2 — Południowy płaskowyż i ściana",
+        cz: "Ponor 2 — Jižní plato a stěna"
+      },
+      description: {
+        en: "Second dive along the rich southern formations and gorgonian fan corals.",
+        de: "Zweiter Tauchgang an den südlichen Formationen und Fächerkorallen.",
+        it: "Seconda immersione tra le formazioni meridionali e i coralli a ventaglio.",
+        ru: "Второе погружение у южного плато с гигантскими веерными кораллами.",
+        pl: "Drugie nurkowanie wśród południowych formacji i wielkich gorgonii.",
+        cz: "Druhý ponor podél jižních koralových útvarů a gorgonií."
+      }
+    },
+    {
+      step: "07",
+      title: {
+        en: "Speedboat Return & Hotel Drop-off",
+        de: "Rückfahrt & Hotelabgabe",
+        it: "Rientro in Gommone e Transfer Hotel",
+        ru: "Возвращение и трансфер в отель",
+        pl: "Powrót motorówką i transfer do hotelu",
+        cz: "Návrat člunem a transfer do hotelu"
+      },
+      description: {
+        en: "Express ride back to shore and comfortable transfer to your hotel.",
+        de: "Schnelle Rückfahrt an Land und bequemer Transfer zurück zum Hotel.",
+        it: "Rientro rapido a terra e comodo trasferimento al tuo hotel.",
+        ru: "Быстрый переход к берегу и комфортный трансфер в отель.",
+        pl: "Szybki powrót na brzeg i wygodny transfer do hotelu.",
+        cz: "Rychlý návrat na břeh a pohodlný transfer do hotelu."
+      }
+    }
+  ],
+  paymentNote: {
+    en: "Pay after the trip — no online payment required. Custom discount applied if you bring your own diving equipment.",
+    de: "Bezahlung nach dem Ausflug — keine Online-Zahlung erforderlich. Rabatt bei eigener Ausrüstung.",
+    it: "Paga dopo il tour — nessun pagamento online. Sconto applicato se porti la tua attrezzatura.",
+    ru: "Оплата после поездки — без предоплаты. Скидка при наличии собственного снаряжения.",
+    pl: "Płatność po wycieczce — bez opłat online. Zniżka w przypadku posiadania własnego sprzętu.",
+    cz: "Platba až po výletu. Při použití vlastního vybavení bude uplatněna sleva."
+  },
+  disclaimer: {
+    en: "Strictly Advanced Open Water certified divers only. Deep drop-offs and moderate to strong currents. The famous Elphinstone Arch lies at technical depths beyond recreational limits and is NOT included. Do not chase or touch sharks or marine life.",
+    de: "Nur für zertifizierte Advanced Open Water Taucher. Starke Strömungen möglich. Der Elphinstone-Bogen liegt in technischer Tiefe außerhalb des Sporttauchens und wird NICHT angetaucht. Marine Tiere nicht berühren oder belästigen.",
+    it: "Esclusivamente per sub Advanced Open Water. Pareti profonde e correnti forti. L'Arco di Elphinstone si trova a profondità tecniche ed è ESCLUSO. Non toccare né inseguire la fauna marina.",
+    ru: "Только для сертификата Advanced Open Water. Сильные течения. Знаменитая арка Эльфинстоун находится на технической глубине и НЕ входит в программу. Запрещено трогать и преследовать морских обитателей.",
+    pl: "Wyłącznie dla nurków Advanced Open Water. Głębokie ściany i silne prądy. Słynny Łuk Elphinstone znajduje się na głębokościach technicznych i NIE JEST częścią nurkowania. Nie wolno dotykać ani gonić zwierząt.",
+    cz: "Určeno výhradně pro pokročilé potápěče (Advanced Open Water). Hluboké stěny a silné proudy. Slavný Elphinstone Arch leží v technických hloubkách a NEJEDNÁ SE o součást ponoru. Zákaz dotýkání se mořských živočichů."
+  },
+  images: {
+    featured: "/images/tours/elphinstone-card.webp",
+    gallery: [
+      "/images/tours/elphinstone-1.webp",
+      "/images/tours/elphinstone-2.webp",
+      "/images/tours/elphinstone-3.webp"
+    ]
+  }
+},
+{
+  id: "abu-dabbab-bay-scuba",
+  slug: "abu-dabbab-bay-scuba-diving",
+  type: "scuba-diving",
+  title: {
+    en: "Abu Dabbab Bay — Scuba Diving",
+    de: "Abu Dabbab Bucht — Tauchen",
+    it: "Baia di Abu Dabbab — Immersioni",
+    ru: "Бухта Абу-Даббаб — Дайвинг",
+    pl: "Zatoka Abu Dabbab — Nurkowanie",
+    cz: "Záliv Abu Dabbab — Potápění"
+  },
+  subtitle: {
+    en: "Shore Dives with Turtles & Sea Cows (Max 4 Divers)",
+    de: "Ufertauchgänge mit Schildkröten & Seekühen (Max. 4 Taucher)",
+    it: "Immersioni da Riva con Tartarughe e Dugonghi (Max 4 Sub)",
+    ru: "Погружения с берега с черепахами и дюгонями (Макс. 4 дайвера)",
+    pl: "Nurkowanie z brzegu z żółwiami i diugoniami (Maks. 4 nurków)",
+    cz: "Ponory z pobřeží s želvami a dugongy (Max. 4 potápěči)"
+  },
+  category: {
+    en: "Scuba Diving",
+    de: "Tauchen",
+    it: "Immersioni Subacquee",
+    ru: "Дайвинг",
+    pl: "Nurkowanie",
+    cz: "Potápění"
+  },
+  price: {
+    amount: 85,
+    currency: "€",
+    unit: {
+      en: "per person (Bay Entrance Included)",
+      de: "pro Person (Bucht-Eintritt inklusive)",
+      it: "per persona (Ingresso Baia Incluso)",
+      ru: "за человека (Вход в бухту включен)",
+      pl: "za osobę (Wstęp do zatoki w cenie)",
+      cz: "za osobu (Vstup do zálivu v ceně)"
+    }
+  },
+  duration: {
+    en: "Full Day (Flexible Shore Dives)",
+    de: "Ganztägig (Flexible Ufertauchgänge)",
+    it: "Intera giornata (Immersioni da riva flessibili)",
+    ru: "Полный день (Гибкие погружения с берега)",
+    pl: "Cały dzień (Elastyczne nurkowania z brzegu)",
+    cz: "Celý den (Flexibilní ponory z pobřeží)"
+  },
+  departure: {
+    en: "Marsa Alam Hotels / Abu Dabbab Beach",
+    de: "Marsa Alam Hotels / Abu Dabbab Strand",
+    it: "Hotel di Marsa Alam / Spiaggia di Abu Dabbab",
+    ru: "Отели Марса-Алам / Пляж Абу-Даббаб",
+    pl: "Hotele w Marsa Alam / Plaża Abu Dabbab",
+    cz: "Hotely v Marsa Alam / Pláž Abu Dabbab"
+  },
+  overview: {
+    en: "Dive into the famed sandy slopes and seagrass meadows of Abu Dabbab Bay. Renowned for resident giant green sea turtles, guitar sharks, and the rare dugong (sea cow). Easy shore entries make this an exceptional dive spot for all certified divers.",
+    de: "Tauchen Sie ein in die berühmten Seegraswiesen der Bucht von Abu Dabbab. Bekannt für riesige Grüne Meeresschildkröten, Geigenrochen und die seltene Seekuh (Dugong). Einfacher Einstieg vom Strand.",
+    it: "Immergiti nei famosi prati di posidonia della Baia di Abu Dabbab. Famosa per le gigantesche tartarughe verdi, gli squali chitarra e il raro dugongo. Facile ingresso da spiaggia ideale per tutti i sub brevettati.",
+    ru: "Погрузитесь в знаменитые морские луга бухты Абу-Даббаб. Место славится гигантскими зелеными черепахами, акулами-гитарами и редким дюгонем. Удобный заход с берега.",
+    pl: "Nurkuj na słynnych łąkach trawy morskiej w Zatoce Abu Dabbab. Słynie z gigantycznych żółwi zielonych, rekinów gitarowych i rzadkiego diugonia. Łatwe wejście z brzegu dla wszystkich certyfikowanych nurków.",
+    cz: "Ponořte se do slavných mořských luk v zálivu Abu Dabbab. Proslulé obřími zelenými želvami, kytarovci a vzácným dugongem (mořskou krávou). Snadný vstup z pláže."
+  },
+  highlights: {
+    en: [
+      "2 Shore Guided Scuba Dives over seagrass meadows & house reef",
+      "High chances to spot giant Green Sea Turtles & Dugongs",
+      "Easy, calm shore entry — perfect for relaxed diving",
+      "Small groups (Maximum 4 divers per instructor)",
+      "PADI or SSI Certified Instructor",
+      "Full scuba equipment & high-quality wetsuit included",
+      "Abu Dabbab Protected Marine Park Entrance Fee included"
+    ],
+    de: [
+      "2 Geführte Ufertauchgänge an den Seegraswiesen & Hausriff",
+      "Hohe Chance auf riesige Grüne Meeresschildkröten & Seekühe",
+      "Ruhiger und einfacher Einstieg vom Strand",
+      "Kleine Gruppe (Maximal 4 Taucher pro Guide)",
+      "PADI- oder SSI-zertifizierter Tauchlehrer",
+      "Komplette Tauchausrüstung & Neoprenanzug inklusive",
+      "Eintrittsgebühr für das Abu Dabbab Schutzgebiet inklusive"
+    ],
+    it: [
+      "2 immersioni guidate da riva tra praterie di posidonia e house reef",
+      "Alta possibilità di avvistare tartarughe verdi giganti e dugonghi",
+      "Ingresso da spiaggia comodo e calmo",
+      "Piccolo gruppo (Massimo 4 sub per guida)",
+      "Istruttore certificato PADI o SSI",
+      "Attrezzatura completa da sub e muta incluse",
+      "Ingresso all'area protetta di Abu Dabbab incluso"
+    ],
+    ru: [
+      "2 погружения с берега вдоль морской травы и домашнего рифа",
+      "Высокие шансы встретить гигантских зеленых черепах и дюгоня",
+      "Легкий и спокойный заход с пляжа",
+      "Маленькая группа (Максимум 4 дайвера на гида)",
+      "Инструктор PADI или SSI",
+      "Полное снаряжение для дайвинга и гидрокостюм",
+      "Входной билет в заповедную зону Абу-Даббаб включен"
+    ],
+    pl: [
+      "2 nurkowania z przewodnikiem z brzegu na łąkach trawy morskiej i rafie domowej",
+      "Duża szansa na spotkanie gigantycznych żółwi i diugoni",
+      "Łatwe, spokojne wejście z brzegu",
+      "Mała grupa (Maksymalnie 4 nurków na przewodnika)",
+      "Certyfikowany instruktor PADI lub SSI",
+      "Pełny sprzęt do nurkowania i pianka w cenie",
+      "Opłata za wstęp do rezerwatu Abu Dabbab w cenie"
+    ],
+    cz: [
+      "2 ponory s průvodcem z bờehu na mořských lukách a domovském útesu",
+      "Vysoká šance na pozorování obřích zelených želv a dugongů",
+      "Snadný a klidný vstup z pláže",
+      "Malá skupina (Maximálně 4 potápěči na průvodce)",
+      "Certifikovaný instruktor PADI nebo SSI",
+      "Kompletní potápěčské vybavení a neopren v ceně",
+      "Vstupní poplatek do chráněné oblasti Abu Dabbab v ceně"
+    ]
+  },
+  included: {
+    en: [
+      "Hotel pickup & drop-off",
+      "Abu Dabbab Natural Reserve Beach Entrance Fee",
+      "2 Guided shore dives with PADI/SSI Instructor",
+      "Full scuba diving equipment (wetsuit, tanks, weights)",
+      "Maximum 4 divers per group",
+      "Beach umbrella and sunbed access",
+      "Fresh mineral water and soft drinks"
+    ],
+    de: [
+      "Hotelabholung & Rückbringung",
+      "Strandeintrittsgebühr für das Naturschutzgebiet Abu Dabbab",
+      "2 Geführte Ufertauchgänge mit PADI/SSI Tauchlehrer",
+      "Komplette Tauchausrüstung (Neoprenanzug, Flaschen, Blei)",
+      "Maximal 4 Taucher pro Gruppe",
+      "Zugang zu Sonnenschirmen und Liegestühlen am Strand",
+      "Mineralwasser und Erfrischungsgetränke"
+    ],
+    it: [
+      "Transfer da e per l'hotel",
+      "Tassa d'ingresso alla spiaggia della riserva di Abu Dabbab",
+      "2 immersioni guidate da riva con istruttore PADI/SSI",
+      "Attrezzatura subacquea completa (Muta, bombole, zavorra)",
+      "Massimo 4 subacquei per gruppo",
+      "Accesso a ombrelloni e lettini in spiaggia",
+      "Acqua minerale e bevande analcoliche"
+    ],
+    ru: [
+      "Трансфер из отеля и обратно",
+      "Входной билет на пляж заповедника Абу-Даббаб",
+      "2 погружения с берега с инструктором PADI/SSI",
+      "Полное снаряжение (Гидрокостюм, баллоны, грузы)",
+      "Максимум 4 дайвера в группе",
+      "Пользование шезлонгами и зонтиками на пляже",
+      "Минеральная вода и безалкогольные напитки"
+    ],
+    pl: [
+      "Odbiór i powrót do hotelu",
+      "Opłata za wstęp na plażę rezerwatu Abu Dabbab",
+      "2 nurkowania z brzegu z instruktorem PADI/SSI",
+      "Pełny sprzęt nurkowy (Pianka, butle, balast)",
+      "Maksymalnie 4 nurków w grupie",
+      "Dostęp do leżaków i parasoli na plaży",
+      "Woda mineralna i napoje chłodzące"
+    ],
+    cz: [
+      "Vyzvednutí a návrat do hotelu",
+      "Vstupní poplatek na plaž přírodní rezervace Abu Dabbab",
+      "2 ponory z bờehu s instruktorem PADI/SSI",
+      "Kompletní potápěčské vybavení (Neopren, lahve, zátěž)",
+      "Maximálně 4 potápěči ve skupině",
+      "Dostupnost lehátek a slunečníků na pláži",
+      "Minerální voda a nealkoholické nápoje"
+    ]
+  },
+  whatToBring: {
+    en: [
+      "Open Water certification (Digital copy on phone accepted)",
+      "Logbook (digital or physical)",
+      "Towel",
+      "Reef-safe sunscreen",
+      "Hat & Sunglasses",
+      "Personal pocket money for souvenirs or beach extras",
+      "Personal medication if needed"
+    ],
+    de: [
+      "Open Water Zertifikat (Digitale Kopie auf dem Handy akzeptiert)",
+      "Logbuch (digital oder physisch)",
+      "Handtuch",
+      "Riff-freundliche Sonnencreme",
+      "Hut & Sonnenbrille",
+      "Taschengeld für Extras oder Souvenirs",
+      "Persönliche Medikamente bei Bedarf"
+    ],
+    it: [
+      "Brevetto Open Water (Accettata copia digitale su telefono)",
+      "Logbook (digitale o fisico)",
+      "Asciugamano",
+      "Crema solare ecologica",
+      "Cappello e occhiali da sole",
+      "Denaro contante per extra o souvenir",
+      "Farmaci personali se necessari"
+    ],
+    ru: [
+      "Сертификат Open Water (Принимается цифровая копия)",
+      "Логбук (цифровой или бумажный)",
+      "Полотенце",
+      "Безопасный для рифов солнцезащитный крем",
+      "Головной убор и очки",
+      "Карманные деньги на личные расходы",
+      "Личные медикаменты"
+    ],
+    pl: [
+      "Certyfikat Open Water (Akceptowana kopia cyfrowa w telefonie)",
+      "Logbook (cyfrowy lub fizyczny)",
+      "Ręcznik",
+      "Krem z filtrem bezpieczny dla rafy",
+      "Czapka i okulary przeciwsłoneczne",
+      "Kieszonkowe na dodatkowe wydatki lub pamiątki",
+      "Leki osobiste w razie potrzeby"
+    ],
+    cz: [
+      "Certifikace Open Water (Akceptována digitální kopie v telefonu)",
+      "Logbook (digitální nebo fyzický)",
+      "Ručník",
+      "Opalovací krém šetrný k útesům",
+      "Klobouk a sluneční brýle",
+      "Kapesné na osobní útratu a suvenýry",
+      "Osobní léky v případě potřeby"
+    ]
+  },
+  childrenPolicy: {
+    under5: {
+      en: "Non-diving companions under 5: Free entry to beach area",
+      de: "Nicht-tauchende Begleiter unter 5 Jahren: Freier Eintritt",
+      it: "Accompagnatori non sub sotto i 5 anni: Ingresso gratuito",
+      ru: "Сопровождающие не-дайверы до 5 лет: Бесплатно",
+      pl: "Osoby towarzyszące poniżej 5 lat: Wstęp bezpłatny",
+      cz: "Doprovod bez potápění do 5 let: Vstup zdarma"
+    },
+    from5to10: {
+      en: "Certified Junior Divers (10+ yrs): Full dive rate applies",
+      de: "Zertifizierte Junior-Taucher (ab 10 J.): Voller Tauchtarif",
+      it: "Junior Diver Certificati (da 10 anni): Tariffa sub completa",
+      ru: "Сертифицированные Junior дайверы (с 10 лет): Полный тариф",
+      pl: "Certyfikowani Junior Nurkowie (od 10 lat): Pełna stawka",
+      cz: "Certifikovaní Junior potápěči (od 10 let): Plná cena"
+    },
+    over10: {
+      en: "Full adult dive rate applies",
+      de: "Voller Erwachsenentarif gilt",
+      it: "Si applica la tariffa intera sub",
+      ru: "Полный взрослый тариф",
+      pl: "Obowiązuje pełna stawka",
+      cz: "Plná cena"
+    }
+  },
+  itinerary: [
+    {
+      step: "01",
+      title: {
+        en: "Hotel Pickup — 08:00 AM",
+        de: "Hotelabholung — 08:00 Uhr",
+        it: "Transfer dall'Hotel — 08:00",
+        ru: "Трансфер из отеля — 08:00",
+        pl: "Odbiór z hotelu — 08:00",
+        cz: "Vyzvednutí v hotelu — 08:00"
+      },
+      description: {
+        en: "Pickup from your hotel and short drive to Abu Dabbab Bay.",
+        de: "Abholung vom Hotel und kurze Fahrt zur Bucht von Abu Dabbab.",
+        it: "Pick-up dall'hotel e breve trasferimento alla Baia di Abu Dabbab.",
+        ru: "Трансфер из отеля и короткая поездка в бухту Абу-Даббаб.",
+        pl: "Odbiór z hotelu i krótki przejazd do Zatoki Abu Dabbab.",
+        cz: "Vyzvednutí v hotelu a krátký přesun do zálivu Abu Dabbab."
+      }
+    },
+    {
+      step: "02",
+      title: {
+        en: "Briefing & Gear Setup",
+        de: "Briefing & Ausrüstungsaufbau",
+        it: "Briefing e Preparazione Attrezzatura",
+        ru: "Брифинг и сборка снаряжения",
+        pl: "Odprawa i przygotowanie sprzętu",
+        cz: "Briefing a příprava výstroje"
+      },
+      description: {
+        en: "Welcome briefing at the dive center and custom fitting of scuba gear.",
+        de: "Willkommens-Briefing Basis und Anprobe der Tauchausrüstung.",
+        it: "Briefing di benvenuto al centro giudiziale e controllo attrezzatura.",
+        ru: "Приветственный брифинг в дайв-центре и подбор снаряжения.",
+        pl: "Odprawa w centrum nurkowym i dopasowanie sprzętu.",
+        cz: "Uvítací briefing v potápěčském centru a příprava výstroje."
+      }
+    },
+    {
+      step: "03",
+      title: {
+        en: "Dive 1 — North Reef / Seagrass Meadow",
+        de: "Tauchgang 1 — Nordriff / Seegraswiese",
+        it: "Immersione 1 — Barriera Nord / Posidonia",
+        ru: "Погружение 1 — Северный риф / Морские луга",
+        pl: "Nurkowanie 1 — Północna rafa / Trawa morska",
+        cz: "Ponor 1 — Severní útes / Mořské louky"
+      },
+      description: {
+        en: "Easy beach entry. Search for feeding giant sea turtles and guitar rays.",
+        de: "Einfacher Strandeinstieg. Suche nach fressenden Meeresschildkröten.",
+        it: "Ingresso facile da spiaggia. Ricerca di tartarughe e razze chitarra.",
+        ru: "Удобный заход с пляжа. Поиск гигантских черепах и акул-гитар.",
+        pl: "Łatwe wejście z plaży. Poszukiwanie żółwi i płaszczek.",
+        cz: "Snadný vstup z pláže. Hledání krmících se obřích želv."
+      }
+    },
+    {
+      step: "04",
+      title: {
+        en: "Surface Interval & Beach Relaxation",
+        de: "Oberflächenpause & Strandentspannung",
+        it: "Intervallo di Superficie in Spiaggia",
+        ru: "Перерыв и отдых на пляже",
+        pl: "Przerwa powierzchniowa i relaks na plaży",
+        cz: "Povrchový interval a odpočinek na pláži"
+      },
+      description: {
+        en: "Relax under sunbeds, enjoy drinks and absorb the tropical bay atmosphere.",
+        de: "Entspannen auf Liegestühlen, Getränke genießen und Sonne tanken.",
+        it: "Relax sui lettini, bevande fresche e atmosfera tropicale.",
+        ru: "Отдых на шезлонгах, прохладительные напитки на пляже.",
+        pl: "Odpoczynek na leżakach i napoje w tropikalnej otoczce.",
+        cz: "Odpočinek na lehátkách, nápoje a nasávání tropické atmosféry."
+      }
+    },
+    {
+      step: "05",
+      title: {
+        en: "Dive 2 — South Reef & Deep Seagrass Zone",
+        de: "Tauchgang 2 — Südriff & Tiefe Seegraszone",
+        it: "Immersione 2 — Barriera Sud e Zona Profonda",
+        ru: "Погружение 2 — Южный риф и глубокие луга",
+        pl: "Nurkowanie 2 — Południowa rafa i głębokie trawy",
+        cz: "Ponor 2 — Jižní útes a hluboké mořské louky"
+      },
+      description: {
+        en: "Second dive along the colorful southern wall and central bay in search of the resident Dugong.",
+        de: "Zweiter Tauchgang entlang der bunten Südwand auf der Suche nach dem Dugong.",
+        it: "Seconda immersione lungo la parete sud alla ricerca del Dugongo.",
+        ru: "Второе погружение у южной стены бухты в поисках дюгоня.",
+        pl: "Drugie nurkowanie wzdłuż kolorowej ściany w poszukiwaniu Diugonia.",
+        cz: "Druhý ponor podél jižní stěny a pátrání po dugongovi."
+      }
+    },
+    {
+      step: "06",
+      title: {
+        en: "Logbook Session & Hotel Return — 02:30 PM",
+        de: "Logbuch-Stempel & Rückfahrt — 14:30 Uhr",
+        it: "Logbook e Transfer Hotel — 14:30",
+        ru: "Заполнение логбука и трансфер — 14:30",
+        pl: "Wpisy do Logbooka i powrót — 14:30",
+        cz: "Zápis do deníku a návrat — 14:30"
+      },
+      description: {
+        en: "Stamp logbooks with your instructor and comfortable return transfer to hotel.",
+        de: "Logbücher abstempeln und bequemer Rücktransfer zum Hotel.",
+        it: "Firma dei logbook con l'istruttore e rientro in hotel.",
+        ru: "Заполнение и подпись логбуков с гидом и трансфер в отель.",
+        pl: "Wpisy i pieczątki w książkach nurkowych oraz powrót do hotelu.",
+        cz: "Razítkování potápěčských deníků s instruktorem a návrat do hotelu."
+      }
+    }
+  ],
+  paymentNote: {
+    en: "Pay after the trip — no online payment required.",
+    de: "Bezahlung nach dem Ausflug — keine Online-Zahlung erforderlich.",
+    it: "Paga dopo il tour — nessun pagamento online richiesto.",
+    ru: "Оплата после поездки — без предоплаты.",
+    pl: "Płatność po wycieczce — płatność online nie jest wymagana.",
+    cz: "Platba až po výletu — není vyžadována platba předem online."
+  },
+  disclaimer: {
+    en: "Abu Dabbab is a protected marine reserve with wild animals. Turtle and dugong sightings are never guaranteed. Strictly prohibit touching, chasing, or feeding any marine life. Instructor retains full authority to adjust dive entries based on sea conditions.",
+    de: "Abu Dabbab ist ein geschütztes Reservat. Schildkröten- und Seekuh-Sichtungen sind nicht garantiert. Berühren oder Jagen von Tieren ist strengstens verboten.",
+    it: "Abu Dabbab è una riserva naturale protetta. Gli avvistamenti di tartarughe e dugonghi non sono garantiti. È vietato toccare o inseguire la fauna.",
+    ru: "Абу-Даббаб — охраняемый природный заповедник. Встречи с черепахами и дюгонем не гарантируются. Запрещено трогать и преследовать животных.",
+    pl: "Abu Dabbab to chroniony rezerwat morski. Spotkania z żółwiami i diugoniami nie są gwarantowane. Zakaz dotykania i nękania zwierząt.",
+    cz: "Abu Dabbab je chráněná mořská rezervace. Pozorování želv a dugongů není garantováno. Přísný zákaz dotýkání se a pronásledování živočichů."
+  },
+  images: {
+    featured: "/images/tours/dabbab-bay-scuba-card.webp",
+    gallery: [
+      "/images/tours/dabbab-bay-scuba-1.webp",
+      "/images/tours/dabbab-bay-scuba-2.webp",
+      "/images/tours/dabbab-bay-scuba-3.webp"
+    ]
+  }
+},
+{
+  id: "dugong-turtle-speedboat-scuba",
+  slug: "dugong-turtle-speedboat-scuba-diving",
+  type: "scuba-diving",
+  title: {
+    en: "Abu Dabbab Reefs — Speedboat Dugong & Turtle Scuba Quest",
+    de: "Abu Dabbab Riffe — Schnellboot Dugong & Schildkröten Tauchen",
+    it: "Barriere di Abu Dabbab — Immersioni in Gommone per Dugonghi e Tartarughe",
+    ru: "Рифы Абу-Даббаб — Погружения на скоростном катере к дюгоням и черепахам",
+    pl: "Rafe Abu Dabbab — Nurkowanie Motorówką z Diugoniami i Żółwiami",
+    cz: "Útesy Abu Dabbab — Potápění z rychlého člunu za dugongy a želvami"
+  },
+  subtitle: {
+    en: "Fast Speedboat Transit to Outer Bay Reefs (Max 4 Divers)",
+    de: "Schnellboot-Transfer zu den äußeren Riffen (Max. 4 Taucher)",
+    it: "Trasferimento in gommone veloce verso i reef esterni (Max 4 Sub)",
+    ru: "Скоростной катер к внешним рифам (Макс. 4 дайвера)",
+    pl: "Szybki pontoon/motorówka na zewnętrzne rafy (Maks. 4 nurków)",
+    cz: "Rychlý člun na vnější útesy (Max. 4 potápěči)"
+  },
+  category: {
+    en: "Scuba Diving",
+    de: "Tauchen",
+    it: "Immersioni Subacquee",
+    ru: "Дайвинг",
+    pl: "Nurkowanie",
+    cz: "Potápění"
+  },
+  price: {
+    amount: 120,
+    currency: "€",
+    unit: {
+      en: "per person (Park & Fees Included)",
+      de: "pro Person (Park- Gebühren inklusive)",
+      it: "per persona (Tasse e Parco Inclusi)",
+      ru: "за человека (Сборы включены)",
+      pl: "za osobę (Opłaty w cenie)",
+      cz: "za osobu (Poplatky v ceně)"
+    }
+  },
+  duration: {
+    en: "Half Day (~4–5 Hours)",
+    de: "Halbtags (~4–5 Std.)",
+    it: "Mezza giornata (~4–5 Ore)",
+    ru: "Полдня (~4–5 часов)",
+    pl: "Pół dnia (~4–5 godzin)",
+    cz: "Půl dne (~4–5 hodin)"
+  },
+  departure: {
+    en: "Marsa Alam Hotels / Abu Dabbab Launch",
+    de: "Marsa Alam Hotels / Abu Dabbab Ableger",
+    it: "Hotel di Marsa Alam / Imbarco Abu Dabbab",
+    ru: "Отели Марса-Алам / Пирс Абу-Даббаб",
+    pl: "Hotele w Marsa Alam / Start Abu Dabbab",
+    cz: "Hotely v Marsa Alam / Přístaviště Abu Dabbab"
+  },
+  overview: {
+    en: "Hop aboard a fast speedboat to explore the pristine outer reefs of Abu Dabbab Bay in search of resident Dugongs, giant Green Sea Turtles, and rays. Reach untouched diving zones quickly with minimal sea travel time in a small group setting.",
+    de: "Gehen Sie an Bord eines Schnellboots, um die unberührten äußeren Riffe von Abu Dabbab auf der Suche nach Dugongs, riesigen Grünen Meeresschildkröten und Rochen zu erkunden. Schneller Transfer in kleiner Gruppe.",
+    it: "Sali a bordo di un gommone veloce per esplorare i reef esterni incontaminati di Abu Dabbab alla ricerca di Dugonghi, tartarughe verdi giganti e razze. Raggiungi rapidamente siti esclusivi in piccoli gruppi.",
+    ru: "Отправляйтесь на скоростном катере к внешним рифам Абу-Даббаб на поиски дюгоней, гигантских зеленых черепах и скатов. Быстрый трансфер и малая группа.",
+    pl: "Wskocz na pokład szybkiej motorówki i odkrywaj zewnętrzne rafy Abu Dabbab w poszukiwaniu Diugoni, gigantycznych żółwi i płaszczek. Szybki rejs w kameralnej grupie.",
+    cz: "Nasedněte na rychlý člun a prozkoumejte vnější útesy zálivu Abu Dabbab při pátrání po dugonzích, obřích želvách a rejnocích. Rychlá doprava v malé skupině."
+  },
+  highlights: {
+    en: [
+      "2 Guided Speedboat Scuba Dives on outer bay reefs",
+      "Fast Speedboat transit — zero wasted time, max water time",
+      "Focused search for wild Dugongs & giant Green Sea Turtles",
+      "Small intimate group (Maximum 4 divers per guide)",
+      "PADI or SSI Certified Dive Instructor",
+      "Full high-quality rental equipment included (Discount for own gear)",
+      "Marine Park & Environmental Fees included",
+      "Fresh mineral water, cold drinks & light snacks"
+    ],
+    de: [
+      "2 Geführte Schnellboot-Tauchgänge an den äußeren Riffen",
+      "Schnellboot-Transfer — minimale Fahrzeit, maximale Tauchzeit",
+      "Fokussierte Suche nach wilden Dugongs & riesigen Schildkröten",
+      "Kleine, intime Gruppe (Maximal 4 Taucher pro Guide)",
+      "PADI- oder SSI-zertifizierter Tauchlehrer",
+      "Komplette Mietausrüstung inklusive (Rabatt bei eigener Ausrüstung)",
+      "Park- & Umweltgebühren inklusive",
+      "Erfrischungsgetränke, Mineralwasser & leichte Snacks"
+    ],
+    it: [
+      "2 immersioni guidate da gommone sui reef esterni",
+      "Trasferimento veloce in gommone — meno navigazione, più immersione",
+      "Ricerca mirata di Dugonghi e tartarughe verdi giganti",
+      "Gruppo ridotto (Massimo 4 sub per guida)",
+      "Istruttore certificato PADI o SSI",
+      "Attrezzatura completa a noleggio inclusa (Sconto con propria)",
+      "Tasse del Parco e Ambientali incluse",
+      "Acqua fresca, bevande e snack leggeri"
+    ],
+    ru: [
+      "2 погружения с гидом со скоростного катера на внешних рифах",
+      "Скоростной катер — минимум времени в пути, максимум под водой",
+      "Поиск дюгоней и гигантских зеленых черепах",
+      "Маленькая группа (Максимум 4 дайвера на гида)",
+      "Инструктор PADI или SSI",
+      "Полный комплект аренды снаряжения (Скидка со своим)",
+      "Парковые и экологические сборы включены",
+      "Минеральная вода, прохладительные напитки и закуски"
+    ],
+    pl: [
+      "2 nurkowania z przewodnikiem z motorówki na zewnętrznych rafach",
+      "Szybki pontoon/motorówka — oszczędność czasu, więcej nurkowania",
+      "Poszukiwanie dzikich Diugoni i gigantycznych żółwi",
+      "Kameralna grupa (Maksymalnie 4 nurków na przewodnika)",
+      "Certyfikowany instruktor PADI lub SSI",
+      "Pełny sprzęt w cenie (Zniżka przy własnym sprzęcie)",
+      "Opłaty parkowe i środowiskowe w cenie",
+      "Woda mineralna, zimne napoje i lekkie przekąski"
+    ],
+    cz: [
+      "2 ponory s průvodcem z rychlého člunu na vnějších útesech",
+      "Rychlá plavba člunem — méně cestování, více potápění",
+      "Cílené pátrání po wild dugonzích a obřích želvách",
+      "Malá skupina (Maximálně 4 potápěči na průvodce)",
+      "Certifikovaný instruktor PADI nebo SSI",
+      "Kompletní výstroj v ceně (Sleva při vlastní výstroji)",
+      "Parkové a environmentální poplatky v ceně",
+      "Minerální voda, studené nápoje a občerstvení"
+    ]
+  },
+  included: {
+    en: [
+      "Hotel pickup & drop-off",
+      "Fast Speedboat transit to dive sites",
+      "2 Guided speedboat dives",
+      "Marine Park & Environmental Fees",
+      "Full rental scuba diving equipment (wetsuit, BCD, regulator, tanks, weights)",
+      "PADI or SSI Instructor (Max 4 divers)",
+      "Fresh mineral water, cold drinks & light snacks",
+      "Safety stop support"
+    ],
+    de: [
+      "Hotelabholung & Rückbringung",
+      "Schnellboot-Transfer zu den Tauchplätzen",
+      "2 Geführte Schnellboot-Tauchgänge",
+      "Park- & Umweltgebühren",
+      "Komplette Mietausrüstung (Neopren, BCD, Atemregler, Flaschen, Blei)",
+      "PADI/SSI Tauchlehrer (Max. 4 Taucher)",
+      "Mineralwasser, kalte Getränke & leichte Snacks",
+      "Sicherheitsstopp-Unterstützung"
+    ],
+    it: [
+      "Transfer da e per l'hotel",
+      "Gommone veloce verso i punti di immersione",
+      "2 Immersioni guidate da gommone",
+      "Tasse del Parco Marino e Ambientali",
+      "Attrezzatura completa a noleggio (Muta, GAV, erogatore, bombole, zavorra)",
+      "Istruttore PADI/SSI (Max 4 sub)",
+      "Acqua minerale, bevande fresche e snack leggeri",
+      "Supporto durante la sosta di sicurezza"
+    ],
+    ru: [
+      "Трансфер из отеля и обратно",
+      "Трансфер на скоростном катере к сайтам",
+      "2 погружения со скоростного катера с гидом",
+      "Сборы заповедника и экологический сбор",
+      "Полный комплект снаряжения (Гидрокостюм, BCD, регулятор, баллоны, грузы)",
+      "Инструктор PADI или SSI (Макс. 4 человека)",
+      "Минеральная вода, напитки и легкие закуски",
+      "Остановки безопасности"
+    ],
+    pl: [
+      "Odbiór i powrót do hotelu",
+      "Transport szybką motorówką do miejsc nurkowych",
+      "2 Nurkowania z przewodnikiem z motorówki",
+      "Opłaty parkowe i środowiskowe",
+      "Pełny sprzęt do wypożyczenia (Pianka, BCD, automat, akumulatory, balast)",
+      "Instruktor PADI/SSI (Maks. 4 nurków)",
+      "Woda mineralna, zimne napoje i lekkie przekąski",
+      "Wsparcie podczas przystanku bezpieczeństwa"
+    ],
+    cz: [
+      "Vyzvednutí a návrat do hotelu",
+      "Rychlá doprava člunem na lokality ponorů",
+      "2 Ponory s průvodcem z člunu",
+      "Parkové a environmentální poplatky",
+      "Kompletní zapůjčení výstroje (Neopren, žaket, automatika, lahve, zátěž)",
+      "Instruktor PADI/SSI (Max. 4 potápěči)",
+      "Minerální voda, studené nápoje a občerstvení",
+      "Podpora při bezpečnostní zastávce"
+    ]
+  },
+  whatToBring: {
+    en: [
+      "Diving certification (Digital copy on phone accepted)",
+      "Logbook (digital or physical)",
+      "Towel",
+      "Reef-safe sunscreen",
+      "Hat & Sunglasses",
+      "Personal medication if needed"
+    ],
+    de: [
+      "Tauchschein (Digitale Kopie auf dem Handy akzeptiert)",
+      "Logbuch (digital oder physisch)",
+      "Handtuch",
+      "Riff-freundliche Sonnencreme",
+      "Hut & Sonnenbrille",
+      "Persönliche Medikamente bei Bedarf"
+    ],
+    it: [
+      "Brevetto sub (Accettata copia digitale su telefono)",
+      "Logbook (digitale o fisico)",
+      "Asciugamano",
+      "Crema solare ecologica",
+      "Cappello e occhiali da sole",
+      "Farmaci personali se necessari"
+    ],
+    ru: [
+      "Сертификат дайвера (Принимается цифровая копия)",
+      "Логбук (цифровой или бумажный)",
+      "Полотенце",
+      "Безопасный для рифов солнцезащитный крем",
+      "Головной убор и очки",
+      "Личные медикаменты"
+    ],
+    pl: [
+      "Certyfikat nurkowy (Akceptowana kopia cyfrowa w telefonie)",
+      "Logbook (cyfrowy lub fizyczny)",
+      "Ręcznik",
+      "Krem z filtrem bezpieczny dla rafy",
+      "Czapka i okulary przeciwsłoneczne",
+      "Leki osobiste w razie potrzeby"
+    ],
+    cz: [
+      "Potápěčská certifikace (Akceptována digitální kopie v telefonu)",
+      "Logbook (digitální nebo fyzický)",
+      "Ručník",
+      "Opalovací krém šetrný k útesům",
+      "Klobouk a sluneční brýle",
+      "Osobní léky v případě potřeby"
+    ]
+  },
+  childrenPolicy: {
+    under5: {
+      en: "Not allowed — Speedboat dives are for certified divers only",
+      de: "Nicht erlaubt — Schnellboot-Tauchgänge nur für zertifizierte Taucher",
+      it: "Non consentito — Immersioni da gommone riservate ai soli sub certificati",
+      ru: "Не допускается — Погружения со скоростного катера только для сертифицированных дайверов",
+      pl: "Niedozwolone — Nurkowania z motorówki tylko dla certyfikowanych nurków",
+      cz: "Není povoleno — Ponory z rychlého člunu pouze pro certifikované potápěče"
+    },
+    from5to10: {
+      en: "Not allowed — Minimum certification age limits apply",
+      de: "Nicht erlaubt — Mindestalter für Zertifizierung gilt",
+      it: "Non consentito — Limiti di età per brevetto applicati",
+      ru: "Не допускается — Ограничения по возрасту для сертификации",
+      pl: "Niedozwolone — Ograniczenia wiekowe certyfikacji",
+      cz: "Není povoleno — Platí věková omezení certifikace"
+    },
+    over10: {
+      en: "Certified Junior Divers (10+ yrs): Full adult dive rate applies",
+      de: "Zertifizierte Junior-Taucher (ab 10 J.): Voller Tauchtarif",
+      it: "Junior Diver Certificati (da 10 anni): Tariffa sub completa",
+      ru: "Сертифицированные Junior дайверы (с 10 лет): Полный тариф",
+      pl: "Certyfikowani Junior Nurkowie (od 10 lat): Pełna stawka",
+      cz: "Certifikovaní Junior potápěči (od 10 let): Plná cena"
+    }
+  },
+  itinerary: [
+    {
+      step: "01",
+      title: {
+        en: "Hotel Pickup & Transfer",
+        de: "Hotelabholung & Transfer",
+        it: "Transfer dall'Hotel",
+        ru: "Трансфер из отеля",
+        pl: "Odbiór z hotelu i transfer",
+        cz: "Vyzvednutí v hotelu a transfer"
+      },
+      description: {
+        en: "Morning pickup from your hotel to the speedboat boarding site.",
+        de: "Morgenabholung vom Hotel zum Schnellboot-Anleger.",
+        it: "Pick-up mattutino dall'hotel al punto di imbarco del gommone.",
+        ru: "Утренний трансфер из отеля к места посадки на скоростной катер.",
+        pl: "Poranny odbiór z hotelu do miejsca startu motorówki.",
+        cz: "Ranní vyzvednutí v hotelu a přesun k rychlému člunu."
+      }
+    },
+    {
+      step: "02",
+      title: {
+        en: "Briefing & Gear Check",
+        de: "Briefing & Ausrüstungs-Check",
+        it: "Briefing e Controllo Attrezzatura",
+        ru: "Брифинг и проверка оборудования",
+        pl: "Odprawa i sprawdzanie sprzętu",
+        cz: "Briefing a kontrola výstroje"
+      },
+      description: {
+        en: "Dive profile briefing, eco-guidelines, and equipment check.",
+        de: "Briefing zum Tauchprofil, Umweltregeln und Ausrüstungs-Check.",
+        it: "Briefing sul profilo di immersione, linee guida ecologiche e controllo attrezzatura.",
+        ru: "Брифинг по погружениям, эко-правила и проверка оборудования.",
+        pl: "Odprawa na temat profilu nurkowania, zasad ekologicznych i sprawdzenie sprzętu.",
+        cz: "Briefing o profilu ponoru, ekologických pravidlech a kontrola výstroje."
+      }
+    },
+    {
+      step: "03",
+      title: {
+        en: "Speedboat Dive 1 — Turtle & Seagrass Zone",
+        de: "Schnellboot-Tauchgang 1 — Schildkröten- & Seegraszone",
+        it: "Immersione in Gommone 1 — Zona Tartarughe e Posidonia",
+        ru: "Погружение 1 с катера — Черепахи и морские луга",
+        pl: "Nurkowanie 1 z motorówki — Strefa żółwi i trawy morskiej",
+        cz: "Ponor 1 z člunu — Zóna želv a mořské trávy"
+      },
+      description: {
+        en: "Fast transit to outer seagrass areas. Dive searching for giant Green Turtles and rays.",
+        de: "Schnelle Überfahrt zu den äußeren Seegraswiesen. Tauchgang zu Schildkröten und Rochen.",
+        it: "Navigazione veloce verso le praterie esterne. Immersione alla ricerca di tartarughe e razze.",
+        ru: "Быстрый переход к внешним лугам. Погружение в поисках гигантских зеленых черепах.",
+        pl: "Szybki rejs na zewnętrzne łąki trawy. Nurkowanie w poszukiwaniu żółwi i płaszczek.",
+        cz: "Rychlá plavba na vnější mořské louky. Ponor s hledáním obřích zelených želv."
+      }
+    },
+    {
+      step: "04",
+      title: {
+        en: "Surface Interval & Drinks",
+        de: "Oberflächenpause & Getränke",
+        it: "Intervallo di Superficie e Bevande",
+        ru: "Перерыв и прохладительные напитки",
+        pl: "Przerwa powierzchniowa i napoje",
+        cz: "Povrchový interval a nápoje"
+      },
+      description: {
+        en: "Rest on board the speedboat, enjoy cold drinks and light snacks.",
+        de: "Entspannen an Bord des Schnellboots bei kalten Getränken und Snacks.",
+        it: "Riposo a bordo del gommone con bevande fresche e snack leggeri.",
+        ru: "Отдых на борту скоростного катера с напитками и лёгкими закусками.",
+        pl: "Odpoczynek na pokładzie motorówki z zimnymi napojami i przekąskami.",
+        cz: "Odpočinek na palubě člunu, studené nápoje a občerstvení."
+      }
+    },
+    {
+      step: "05",
+      title: {
+        en: "Speedboat Dive 2 — Outer Reef & Dugong Quest",
+        de: "Schnellboot-Tauchgang 2 — Äußeres Riff & Dugong-Suche",
+        it: "Immersione in Gommone 2 — Reef Esterno e Caccia al Dugongo",
+        ru: "Погружение 2 с катера — Внешний риф и поиск дюгоня",
+        pl: "Nurkowanie 2 z motorówki — Zewnętrzna rafa i poszukiwanie Diugonia",
+        cz: "Ponor 2 z člunu — Vnější útes a pátrání po dugongovi"
+      },
+      description: {
+        en: "Explore outer coral walls and deeper sandy patches in active search of wild Dugongs.",
+        de: "Erkunden Sie äußere Korallenwände und tiefere Sandflächen auf der Suche nach dem Dugong.",
+        it: "Esplora le pareti esterne e i fondali sabbiosi alla ricerca del Dugongo.",
+        ru: "Исследование внешних коралловых стен и песчаных плато в поисках дюгоней.",
+        pl: "Odkrywanie zewnętrznych ścian i piaszczystych obszarów w poszukiwaniu Diugonia.",
+        cz: "Prozkoumávání vnějších koralových stěn a písků při hledání dugongů."
+      }
+    },
+    {
+      step: "06",
+      title: {
+        en: "Fast Return & Hotel Drop-off",
+        de: "Schnelle Rückfahrt & Hotelabgabe",
+        it: "Rientro Veloce e Transfer Hotel",
+        ru: "Быстрое возвращение и трансфер в отель",
+        pl: "Szybki powrót i transfer do hotelu",
+        cz: "Rychlý návrat a transfer do hotelu"
+      },
+      description: {
+        en: "Express boat transit back to shore and comfortable hotel transfer.",
+        de: "Express-Rückfahrt an Land und bequemer Transfer zurück zum Hotel.",
+        it: "Rientro rapido a terra e comodo trasferimento al tuo hotel.",
+        ru: "Быстрый переход к берегу и комфортный трансфер в отель.",
+        pl: "Szybki powrót na brzeg i wygodny transfer do hotelu.",
+        cz: "Rychlý návrat na břeh a pohodlný transfer do hotelu."
+      }
+    }
+  ],
+  paymentNote: {
+    en: "Pay after the trip — no online payment or deposit required. Custom discount applied if you bring your own equipment.",
+    de: "Bezahlung nach dem Ausflug — keine Online-Zahlung erforderlich. Rabatt bei eigener Ausrüstung.",
+    it: "Paga dopo il tour — nessun pagamento online richiesto. Sconto se porti la tua attrezzatura.",
+    ru: "Оплата после поездки — без предоплаты. Скидка при наличии собственного снаряжения.",
+    pl: "Płatność po wycieczce — bez opłat online. Zniżka przy własnym sprzęcie.",
+    cz: "Platba až po výletu — bez zálohy. Při vlastním vybavení bude uplatněna sleva."
+  },
+  disclaimer: {
+    en: "Focuses on searching for wild marine animals in their natural habitat; sightings can never be guaranteed. Strict eco-guidelines apply: chasing, touching, or riding animals is strictly prohibited. Instructor holds full authority to alter route based on weather and sea conditions.",
+    de: "Fokus auf die Suche nach wilden Tieren in ihrem natürlichen Lebensraum; Sichtungen nicht garantiert. Tiere anfassen oder jagen ist streng verboten. Tauchlehrer kann Route wetterbedingt anpassen.",
+    it: "Incontro con animali selvatici nel loro habitat naturale non garantito. Rispetto rigoroso delle norme ecologiche: vietato toccare o inseguire gli animali.",
+    ru: "Поиск диких животных в их естественной среде; встречи не гарантируются. Запрещено преследовать и трогать животных. Гид имеет право менять маршрут по погоде.",
+    pl: "Poszukiwanie dzikich zwierząt w naturalnym środowisku; brak gwarancji zobaczenia. Surowy zakaz dotykania i nękania zwierząt.",
+    cz: "Pátrání po wild živočiších; pozorování není garantováno. Přísný zákaz dotýkání se a pronásledování zvířat."
+  },
+  images: {
+    featured: "/images/tours/speedboat-scuba-card.webp",
+    gallery: [
+      "/images/tours/speedboat-scuba-1.webp",
+      "/images/tours/speedboat-scuba-2.webp",
+      "/images/tours/speedboat-scuba-3.webp"
+    ]
+  }
+},
+{
+  id: "marsa-mubarak-boat-scuba",
+  slug: "marsa-mubarak-dugong-turtle-boat-scuba-diving",
+  type: "scuba-diving",
+  title: {
+    en: "Marsa Mubarak — Dugong & Turtle Boat Diving Experience",
+    de: "Marsa Mubarak — Bootstauchen mit Seekühen & Schildkröten",
+    it: "Marsa Mubarak — Immersioni in Barca per Dugonghi e Tartarughe",
+    ru: "Марса-Мубарак — Погружения с катера к дюгоням и черепахам",
+    pl: "Marsa Mubarak — Nurkowanie z Łodzi z Diugoniami i Żółwiami",
+    cz: "Marsa Mubarak — Potápění z lodi za dugongy a želvami"
+  },
+  subtitle: {
+    en: "2 Guided Boat Dives from Port Ghalib (Max 4 Divers)",
+    de: "2 Geführte Boots-Tauchgänge ab Port Ghalib (Max. 4 Taucher)",
+    it: "2 Immersioni guidate in barca da Port Ghalib (Max 4 Sub)",
+    ru: "2 погружения с катера из Порт-Галиб (Макс. 4 дайвера)",
+    pl: "2 nurkowania z łodzi z przewodnikiem z Port Ghalib (Maks. 4 nurków)",
+    cz: "2 ponory s průvodcem z lodi z Port Ghalib (Max. 4 potápěči)"
+  },
+  category: {
+    en: "Scuba Diving",
+    de: "Tauchen",
+    it: "Immersioni Subacquee",
+    ru: "Дайвинг",
+    pl: "Nurkowanie",
+    cz: "Potápění"
+  },
+  price: {
+    amount: 90,
+    currency: "€",
+    unit: {
+      en: "per person (Marine Park Fee Included)",
+      de: "pro Person (Parkgebühren inklusive)",
+      it: "per persona (Tassa Parco Inclusa)",
+      ru: "за человека (Сбор заповедника включен)",
+      pl: "za osobę (Opłata parkowa w cenie)",
+      cz: "za osobu (Poplatek za park v ceně)"
+    }
+  },
+  duration: {
+    en: "Full Trip (~6–7 Hours)",
+    de: "Ganztägig (~6–7 Std.)",
+    it: "Intera giornata (~6–7 Ore)",
+    ru: "Полный день (~6–7 часов)",
+    pl: "Cały dzień (~6–7 godzin)",
+    cz: "Celý den (~6–7 hodin)"
+  },
+  departure: {
+    en: "Marsa Alam Hotels / Port Ghalib Pier",
+    de: "Marsa Alam Hotels / Hafen Port Ghalib",
+    it: "Hotel di Marsa Alam / Porto di Port Ghalib",
+    ru: "Отели Марса-Алам / Пирс Порт-Галиб",
+    pl: "Hotele w Marsa Alam / Port Ghalib",
+    cz: "Hotely v Marsa Alam / Přístav Port Ghalib"
+  },
+  overview: {
+    en: "Marsa Mubarak is a world-famous natural bay near Port Ghalib, renowned for shallow, crystal-clear seagrass meadows where green sea turtles and the rare resident dugong roam. Explore lush seagrass feeding areas alongside outer coral gardens and pinnacles in a small guided group.",
+    de: "Marsa Mubarak ist eine weltberühmte Bucht nahe Port Ghalib, bekannt für ihre Seegraswiesen, in denen Grüne Meeresschildkröten und der seltene Dugong leben. Erkunden Sie Seegrasflächen sowie Korallengärten in einer kleinen Gruppe.",
+    it: "Marsa Mubarak è una rinomata baia naturale vicino a Port Ghalib, famosa per i bassi fondali di posidonia dove vivono tartarughe verdi e il raro dugongo. Esplora praterie marine e giardini di corallo in un gruppo ridotto.",
+    ru: "Марса-Мубарак — знаменитая бухта возле Порт-Галиб, известная мелководными лугами морской травы, где обитают зеленые черепахи и дюгонь. Исследуйте коралловые сады и морские луга в малых группах.",
+    pl: "Marsa Mubarak to słynna Zatoka w bliskości Port Ghalib, znana z płytkich łąk trawy morskiej, gdzie żyją żółwie zielone i rzadki diugoń. Odkrywaj łąki i ogrody koralowe w kameralnej grupie.",
+    cz: "Marsa Mubarak je světově proslulý záliv u Port Ghalib, známý mořskými loukami s zelenými želvami a vzácným dugongem. Prozkoumejte mořské louky a koralové zahrady v malé skupině."
+  },
+  highlights: {
+    en: [
+      "2 Guided Scuba Dives from a fully equipped dive boat",
+      "Explore famous seagrass feeding zones for Turtles & Dugongs",
+      "Discover vibrant coral gardens & pinnacles outer bay",
+      "Depart directly from Port Ghalib Marina",
+      "Small intimate group (Maximum 4 divers per guide)",
+      "PADI or SSI Certified Dive Instructor",
+      "Full rental scuba gear included (Discount if using own gear)",
+      "Official Marine Park & Environmental Fees included"
+    ],
+    de: [
+      "2 Geführte Boots-Tauchgänge von einem vollausgestatteten Boot",
+      "Erkundung der Seegraswiesen für Schildkröten & Seekühe",
+      "Entdeckung farbenfroher Korallengärten & Riffblöcke",
+      "Direkte Abfahrt vom Yachthafen Port Ghalib",
+      "Kleine, intime Gruppe (Maximal 4 Taucher pro Guide)",
+      "PADI- oder SSI-zertifizierter Tauchlehrer",
+      "Komplette Ausrüstung inklusive (Rabatt bei eigener Ausrüstung)",
+      "Offizielle Park- & Umweltgebühren inklusive"
+    ],
+    it: [
+      "2 immersioni guidate da una barca da sub attrezzata",
+      "Esplora le praterie marine per avvistare tartarughe e dugonghi",
+      "Scopri giardini di corallo e pinnacoli all'esterno della baia",
+      "Partenza diretta dal porto turistico di Port Ghalib",
+      "Gruppo ridotto (Massimo 4 sub per guida)",
+      "Istruttore certificato PADI o SSI",
+      "Attrezzatura completa inclusa (Sconto con attrezzatura propria)",
+      "Tasse ufficiali del Parco Marino e Ambientali incluse"
+    ],
+    ru: [
+      "2 погружения с гидом с оснащенного дайв-бота",
+      "Исследование лугов морской травы в поисках черепах и дюгоня",
+      "Красочные коралловые сады и рифовые вершины",
+      "Прямой выезд из пристани Порт-Галиб",
+      "Маленькая группа (Максимум 4 дайвера на гида)",
+      "Инструктор PADI или SSI",
+      "Полный комплект аренды снаряжения (Скидка со своим)",
+      "Все официальные сборы заповедника включены"
+    ],
+    pl: [
+      "2 nurkowania z przewodnikiem z wyposażonej łodzi nurkowej",
+      "Odkrywanie łąk trawy morskiej i poszukiwanie żółwi oraz diugoni",
+      "Odkrywaj tętniące życiem ogrody koralowe i iglice",
+      "Wypłynięcie bezpośrednio z Mariny Port Ghalib",
+      "Kameralna grupa (Maksymalnie 4 nurków na przewodnika)",
+      "Certyfikowany instruktor PADI lub SSI",
+      "Pełny sprzęt w cenie (Zniżka przy własnym sprzęcie)",
+      "Oficjalne opłaty parkowe i środowiskowe w cenie"
+    ],
+    cz: [
+      "2 ponory s průvodcem z plně vybavené potápěčské lodi",
+      "Prozkoumávání mořských luk za želvami a dugongy",
+      "Koralové zahrady a útesové věže v zálivu",
+      "Odjezd přímo z maríny Port Ghalib",
+      "Malá skupina (Maximálně 4 potápěči na průvodce)",
+      "Certifikovaný instruktor PADI nebo SSI",
+      "Kompletní výstroj v ceně (Sleva při vlastní výstroji)",
+      "Oficální poplatky za národní парк a prostředí v ceně"
+    ]
+  },
+  included: {
+    en: [
+      "2 Guided boat dives",
+      "Full high-quality scuba diving equipment rental (wetsuit, tanks, weights)",
+      "Official Marine Park & Environmental Fees",
+      "Hotel pickup & drop-off (A/C vehicle)",
+      "Fresh mineral water & cold drinks on board",
+      "Light snacks & fresh fruits on board",
+      "PADI or SSI Instructor (Max 4 divers per group)",
+      "Safety stop support"
+    ],
+    de: [
+      "2 Geführte Boots-Tauchgänge",
+      "Komplette Tauchausrüstung (Neoprenanzug, Flaschen, Blei)",
+      "Offizielle Park- & Umweltgebühren",
+      "Hotelabholung & Rückbringung (Klimatisiertes Fahrzeug)",
+      "Frisches Mineralwasser & kalte Getränke an Bord",
+      "Leichte Snacks & frisches Obst an Bord",
+      "PADI/SSI Tauchlehrer (Max. 4 Taucher pro Gruppe)",
+      "Sicherheitsstopp-Unterstützung"
+    ],
+    it: [
+      "2 immersioni guidate in barca",
+      "Noleggio attrezzatura subacquea completa (Muta, bombole, zavorra)",
+      "Tasse ufficiali del Parco Marino e Ambientali",
+      "Transfer da e per l'hotel (Veicolo climatizzato)",
+      "Acqua minerale e bevande fresche a bordo",
+      "Snack leggeri e frutta fresca a bordo",
+      "Istruttore PADI/SSI (Max 4 sub per gruppo)",
+      "Supporto durante la sosta di sicurezza"
+    ],
+    ru: [
+      "2 погружения с гидом с катера",
+      "Полная аренда оборудования (Гидрокостюм, баллоны, грузы)",
+      "Официальные сборы заповедника и экологический сбор",
+      "Трансфер из отеля и обратно (кондиционируемый авто)",
+      "Минеральная вода и прохладительные напитки на борту",
+      "Легкие закуски и свежие фрукты на борту",
+      "Инструктор PADI или SSI (Макс. 4 человек)",
+      "Остановки безопасности"
+    ],
+    pl: [
+      "2 nurkowania z łodzi z przewodnikiem",
+      "Wypożyczenie pełnego sprzętu (Pianka, butle, balast)",
+      "Oficjalne opłaty parkowe i środowiskowe",
+      "Odbiór i powrót do hotelu (Klimatyzowany pojazd)",
+      "Świeża woda mineralna i zimne napoje na pokładzie",
+      "Lekkie przekąski i świeże owoce na pokładzie",
+      "Instruktor PADI/SSI (Maks. 4 nurków w grupie)",
+      "Wsparcie podczas przystanku bezpieczeństwa"
+    ],
+    cz: [
+      "2 ponory z lodi s průvodcem",
+      "Zapůjčení kompletní výstroje (Neopren, lahve, zátěž)",
+      "Oficiální poplatky za národní park a prostředí",
+      "Vyzvednutí a návrat do hotelu (Klimatizovaný vůz)",
+      "Minerální voda a studené nápoje na palubě",
+      "Občerstvení a čerstvé ovoce na palubě",
+      "Instruktor PADI/SSI (Max. 4 potápěči ve skupině)",
+      "Podpora při bezpečnostní zastávce"
+    ]
+  },
+  whatToBring: {
+    en: [
+      "Diving certification (Digital copy on phone accepted)",
+      "Logbook (digital or physical)",
+      "Towel",
+      "Reef-safe sunscreen",
+      "Hat & Sunglasses",
+      "Personal medication if needed"
+    ],
+    de: [
+      "Tauchschein (Digitale Kopie auf dem Handy akzeptiert)",
+      "Logbuch (digital oder physisch)",
+      "Handtuch",
+      "Riff-freundliche Sonnencreme",
+      "Hut & Sonnenbrille",
+      "Persönliche Medikamente bei Bedarf"
+    ],
+    it: [
+      "Brevetto sub (Accettata copia digitale su telefono)",
+      "Logbook (digitale o fisico)",
+      "Asciugamano",
+      "Crema solare ecologica",
+      "Cappello e occhiali da sole",
+      "Farmaci personali se necessari"
+    ],
+    ru: [
+      "Сертификат дайвера (Принимается цифровая копия)",
+      "Логбук (цифровой или бумажный)",
+      "Полотенце",
+      "Безопасный для рифов солнцезащитный крем",
+      "Головной убор и очки",
+      "Личные медикаменты"
+    ],
+    pl: [
+      "Certyfikat nurkowy (Akceptowana kopia cyfrowa w telefonie)",
+      "Logbook (cyfrowy lub fizyczny)",
+      "Ręcznik",
+      "Krem z filtrem bezpieczny dla rafy",
+      "Czapka i okulary przeciwsłoneczne",
+      "Leki osobiste w razie potrzeby"
+    ],
+    cz: [
+      "Potápěčská certifikace (Akceptována digitální kopie v telefonu)",
+      "Logbook (digitální nebo fyzický)",
+      "Ručník",
+      "Opalovací krém šetrný k útesům",
+      "Klobouk a sluneční brýle",
+      "Osobní léky v případě potřeby"
+    ]
+  },
+  childrenPolicy: {
+    under5: {
+      en: "Non-diving companions under 5: Subject to boat availability",
+      de: "Nicht-tauchende Begleiter unter 5: Abhängig von Bootkapazität",
+      it: "Accompagnatori non sub sotto i 5 anni: Soggetto a disponibilità",
+      ru: "Сопровождающие не-дайверы до 5 лет: По запросу",
+      pl: "Osoby towarzyszące poniżej 5 lat: Zależnie od dostępności łodzi",
+      cz: "Doprovod bez potápění do 5 let: Dle kapacity lodi"
+    },
+    from5to10: {
+      en: "Non-diving companions: Reduced boat fee applies",
+      de: "Nicht-tauchende Begleiter: Ermäßigte Bootsgebühr",
+      it: "Accompagnatori non sub: Tariffa barca ridotta",
+      ru: "Сопровождающие не-дайверы: Скидка на сбор катера",
+      pl: "Osoby towarzyszące bez nurkowania: Zniżka na rejs",
+      cz: "Doprovod bez potápění: Snížený poplatek за lodi"
+    },
+    over10: {
+      en: "Certified Junior Divers (10+ yrs): Full adult dive rate applies",
+      de: "Zertifizierte Junior-Taucher (ab 10 J.): Voller Tauchtarif",
+      it: "Junior Diver Certificati (da 10 anni): Tariffa sub completa",
+      ru: "Сертифицированные Junior дайверы (с 10 лет): Полный тариф",
+      pl: "Certyfikowani Junior Nurkowie (od 10 lat): Pełna stawka",
+      cz: "Certifikovaní Junior potápěči (od 10 let): Plná cena"
+    }
+  },
+  itinerary: [
+    {
+      step: "01",
+      title: {
+        en: "Hotel Pickup — 07:30 AM",
+        de: "Hotelabholung — 07:30 Uhr",
+        it: "Transfer dall'Hotel — 07:30",
+        ru: "Трансфер из отеля — 07:30",
+        pl: "Odbiór z hotelu — 07:30",
+        cz: "Vyzvednutí v hotelu — 07:30"
+      },
+      description: {
+        en: "Pickup directly from your hotel and transfer via comfortable A/C vehicle to Port Ghalib Pier.",
+        de: "Abholung vom Hotel und Fahrt im klimatisierten Fahrzeug zum Hafen Port Ghalib.",
+        it: "Pick-up in hotel e trasferimento in veicolo climatizzato al porto di Port Ghalib.",
+        ru: "Трансфер из отеля на комфортабельном авто с кондиционером к пристани Порт-Галиб.",
+        pl: "Odbiór z hotelu i przejazd klimatyzowanym pojazdem do Port Ghalib.",
+        cz: "Vyzvednutí v hotelu a přesun klimatizovaným vozem do přístavu Port Ghalib."
+      }
+    },
+    {
+      step: "02",
+      title: {
+        en: "Boat Departure",
+        de: "Boot-Abfahrt",
+        it: "Partenza della Barca",
+        ru: "Отплытие катера",
+        pl: "Wypłynięcie łodzi",
+        cz: "Odjezd lodi"
+      },
+      description: {
+        en: "Board the fully equipped dive boat, complete registration and set sail for Marsa Mubarak Bay.",
+        de: "Gehen Sie an Bord des Tauchboots, schließen Sie die Registrierung ab und fahren Sie nach Marsa Mubarak.",
+        it: "Imbarco sulla barca attrezzata, registrazione e navigazione verso la baia di Marsa Mubarak.",
+        ru: "Посадка на бот, регистрация и отправление в бухту Марса-Мубарак.",
+        pl: "Wejście na pokład łodzi, rejestracja i rejs w stronę Zatoki Marsa Mubarak.",
+        cz: "Nástup na palubu lodi, registrace a plavba do zálivu Marsa Mubarak."
+      }
+    },
+    {
+      step: "03",
+      title: {
+        en: "Safety Dive Briefing",
+        de: "Sicherheit-Briefing",
+        it: "Briefing di Sicurezza",
+        ru: "Брифинг по безопасности",
+        pl: "Odprawa bezpieczeństwa",
+        cz: "Bezpečnostní briefing"
+      },
+      description: {
+        en: "Your instructor details the dive profile, depth limits, buddy checks, and eco-guidelines.",
+        de: "Ihr Tauchlehrer erklärt den Tauchplan, Tiefe, Buddy-System und Umweltregeln.",
+        it: "L'istruttore illustra il piano di immersione, profondità, sistema di coppia e norme ambientali.",
+        ru: "Инструктор объясняет план погружения, глубины, работу в парах и эко-правила.",
+        pl: "Instruktor omawia plan nurkowania, głębokość, zasady bezpieczeństwa i ekologii.",
+        cz: "Instruktor vysvětlí plán ponoru, hloubkové limity, buddy system a ekologická pravidla."
+      }
+    },
+    {
+      step: "04",
+      title: {
+        en: "Dive 1 — Seagrass Feeding Meadows",
+        de: "Tauchgang 1 — Seegraswiesen",
+        it: "Immersione 1 — Praterie di Posidonia",
+        ru: "Погружение 1 — Морские луга",
+        pl: "Nurkowanie 1 — Łąki trawy morskiej",
+        cz: "Ponor 1 — Mořské louky"
+      },
+      description: {
+        en: "Gear up for your first guided dive, exploring seagrass areas for turtles, rays, and dugongs.",
+        de: "Erster geführter Tauchgang im Seegrasgebiet auf der Suche nach Schildkröten und Dugongs.",
+        it: "Prima immersione guidata tra le praterie alla ricerca di tartarughe, razze e dugonghi.",
+        ru: "Первое погружение вдоль морской травы в поисках черепах, скатов и дюгоня.",
+        pl: "Pierwsze nurkowanie z przewodnikiem po obszarach trawy morskiej w poszukiwaniu żółwi i diugoni.",
+        cz: "První ponor s průvodcem po mořských lukách s hledáním želv a dugongů."
+      }
+    },
+    {
+      step: "05",
+      title: {
+        en: "Surface Interval Break & Snacks",
+        de: "Oberflächenpause & Snacks",
+        it: "Intervallo di Superficie e Snack",
+        ru: "Поверхностный перерыв и закуски",
+        pl: "Przerwa powierzchniowa i przekąski",
+        cz: "Povrchový interval a občerstvení"
+      },
+      description: {
+        en: "Relax on board between dives. Enjoy fresh mineral water, cold drinks, and seasonal fruits.",
+        de: "Entspannen Sie an Bord. Genießen Sie frisches Wasser, kühle Getränke und Obst.",
+        it: "Relax a bordo tra le immersioni con acqua fresca, bevande e frutta di stagione.",
+        ru: "Отдых на борту между погружениями с напитками, легкими закусками и фруктами.",
+        pl: "Odpoczynek na pokładzie. Świeża woda, zimne napoje i owoce sezonowe.",
+        cz: "Odpočinek na palubě mezi ponory. Minerální voda, studené nápoje a ovoce."
+      }
+    },
+    {
+      step: "06",
+      title: {
+        en: "Dive 2 — Coral Gardens & Outer Reef",
+        de: "Tauchgang 2 — Korallengärten & Äußeres Riff",
+        it: "Immersione 2 — Giardini di Corallo e Reef Esterno",
+        ru: "Погружение 2 — Коралловые сады и внешний риф",
+        pl: "Nurkowanie 2 — Ogrody koralowe i zewnętrzna rafa",
+        cz: "Ponor 2 — Koralové zahrady a vnější útes"
+      },
+      description: {
+        en: "Explore another section of Marsa Mubarak featuring colorful coral formations and reef life.",
+        de: "Zweiter Tauchgang an farbenfrohen Korallenformationen und Riffwänden.",
+        it: "Esplora un'altra sezione di Marsa Mubarak tra formazioni coralline e vita marina.",
+        ru: "Второе погружение в другой части бухты среди красочных кораллов и рифовых рыб.",
+        pl: "Drugie nurkowanie wokół malowniczych formacji koralowych i obfitego życia morskiego.",
+        cz: "Druhý ponor v další části zálivu s koralovými formacemi a bohatým životem."
+      }
+    },
+    {
+      step: "07",
+      title: {
+        en: "Return Cruise & Hotel Drop-off",
+        de: "Rückfahrt & Hotelabgabe",
+        it: "Rientro e Transfer Hotel",
+        ru: "Обратный путь и трансфер в отель",
+        pl: "Rejs powrotny i transfer do hotelu",
+        cz: "Návratová plavba a transfer do hotelu"
+      },
+      description: {
+        en: "Pack gear, cruise back to Port Ghalib Pier, and comfortable transfer back to your resort.",
+        de: "Rückfahrt zum Hafen von Port Ghalib und anschließender Transfer zum Hotel.",
+        it: "Rientro al porto di Port Ghalib e comodo trasferimento di ritorno al resort.",
+        ru: "Возвращение в пирс Порт-Галиб и комфортный трансфер в отель.",
+        pl: "Rejs powrotny do mariny i wygodny transfer powrotny do hotelu.",
+        cz: "Návrat do přístavu Port Ghalib a pohodlný transfer zpět do hotelu."
+      }
+    }
+  ],
+  paymentNote: {
+    en: "Pay after the trip — no online payment or deposit required. Custom discount applied if you bring your own equipment.",
+    de: "Bezahlung nach dem Ausflug — keine Online-Zahlung erforderlich. Rabatt bei eigener Ausrüstung.",
+    it: "Paga dopo il tour — nessun pagamento online richiesto. Sconto se porti la tua attrezzatura.",
+    ru: "Оплата после поездки — без предоплаты. Скидка при наличии собственного снаряжения.",
+    pl: "Płatność po wycieczce — bez opłat online. Zniżka przy własnym sprzęcie.",
+    cz: "Platba až po výletu — bez zálohy. Při vlastním vybavení bude uplatněna sleva."
+  },
+  disclaimer: {
+    en: "Marsa Mubarak is a natural marine reserve with wild animals. Turtle and dugong sightings are never 100% guaranteed. Strict eco-guidelines apply: chasing, touching, or feeding animals is strictly prohibited. Instructor holds safety authority to adjust dive routes.",
+    de: "Marsa Mubarak ist ein Naturschutzgebiet mit wilden Tieren. Sichtungen von Schildkröten und Seekühen sind nicht garantiert. Anfassen oder Jagen ist streng verboten.",
+    it: "Marsa Mubarak è una riserva naturale. Gli avvistamenti di fauna selvatica non sono garantiti al 100%. Vietato toccare o inseguire gli animali.",
+    ru: "Марса-Мубарак — природный заповедник. Встречи с черепахами и дюгонем не гарантируются. Запрещено преследовать и трогать животных.",
+    pl: "Marsa Mubarak to rezerwat morski. Spotkania ze zwierzętami nie są gwarantowane. Zakaz nękania i dotykania fauny morskiej.",
+    cz: "Marsa Mubarak je přírodní rezervace. Pozorování živočichů není 100% garantováno. Přísný zákaz dotýkání se a pronásledování zvířat."
+  },
+  images: {
+    featured: "/images/tours/boat-scuba-card.webp",
+    gallery: [
+      "/images/tours/boat-scuba-1.webp",
+      "/images/tours/boat-scuba-2.webp",
+      "/images/tours/boat-scuba-3.webp"
+    ]
+  }
+},
+{
+  id: "abu-dabbab-night-dive",
+  slug: "abu-dabbab-night-scuba-diving",
+  type: "scuba-diving",
+  title: {
+    en: "Abu Dabbab — Night Scuba Diving Experience",
+    de: "Abu Dabbab — Nachttauchen Erlebnis",
+    it: "Abu Dabbab — Esperienza di Immersione Notturna",
+    ru: "Абу-Даббаб — Ночное погружение",
+    pl: "Abu Dabbab — Nocne Nurkowanie",
+    cz: "Abu Dabbab — Noční potápění"
+  },
+  subtitle: {
+    en: "Discover the Mystery of the Reef After Dark (Max Depth 20m, Max 4 Divers)",
+    de: "Entdecken Sie das Geheimnis des Riffs nach Einbruch der Dunkelheit (Max. 20m, Max. 4 Taucher)",
+    it: "Scopri i misteri della barriera dopo il tramonto (Max 20m, Max 4 Sub)",
+    ru: "Тайны ночного рифа после заката (Макс. глубина 20 м, Макс. 4 дайвера)",
+    pl: "Odkryj tajemnice rafy po zmroku (Maks. głębokość 20m, Maks. 4 nurków)",
+    cz: "Objevte tajemství útesu po setmění (Max. hloubka 20m, Max. 4 potápěči)"
+  },
+  category: {
+    en: "Scuba Diving",
+    de: "Tauchen",
+    it: "Immersioni Subacquee",
+    ru: "Дайвинг",
+    pl: "Nurkowanie",
+    cz: "Potápění"
+  },
+  price: {
+    amount: 95,
+    currency: "€",
+    unit: {
+      en: "per person (Abu Dabbab Entry Included)",
+      de: "pro Person (Eintritt Abu Dabbab inklusive)",
+      it: "per persona (Ingresso Abu Dabbab Incluso)",
+      ru: "за человека (Вход включен)",
+      pl: "za osobę (Wstęp w cenie)",
+      cz: "za osobu (Vstup v ceně)"
+    }
+  },
+  duration: {
+    en: "Evening Experience (~4 Hours)",
+    de: "Abenderlebnis (~4 Std.)",
+    it: "Esperienza Serale (~4 Ore)",
+    ru: "Вечерняя экскурсия (~4 часа)",
+    pl: "Przygoda wieczorna (~4 godziny)",
+    cz: "Večerní zážitek (~4 hodiny)"
+  },
+  departure: {
+    en: "Marsa Alam Hotels / Abu Dabbab Beach",
+    de: "Marsa Alam Hotels / Abu Dabbab Strand",
+    it: "Hotel di Marsa Alam / Spiaggia di Abu Dabbab",
+    ru: "Отели Марса-Алам / Пляж Абу-Даббаб",
+    pl: "Hotele w Marsa Alam / Plaża Abu Dabbab",
+    cz: "Hotely v Marsa Alam / Pláž Abu Dabbab"
+  },
+  overview: {
+    en: "Experience Abu Dabbab after sunset, when the underwater world transforms and nocturnal marine life becomes active. Guided by a professional dive light, explore octopuses, hunting moray eels, lionfish, and Spanish dancers on a safe, shore-entry night adventure.",
+    de: "Erleben Sie Abu Dabbab nach Sonnenuntergang, wenn die Unterwasserwelt erwacht und nachtaktive Meeresbewohner aktiv werden. Erkunden Sie Oktopusse, Muränen und Rotfeuerfische mit Ihrer Tauchlampe.",
+    it: "Vivi Abu Dabbab dopo il tramonto, quando il mondo sottomarino si trasforma e la vita notturna si risveglia. Esplora polpi, murene in caccia e pesci leone guidato dalla tua torcia.",
+    ru: "Исследуйте Абу-Даббаб после заката, когда подводный мир оживает. С профессиональным фонарем вы увидите осьминогов, охотящихся мурен, крылаток и других ночных обитателей.",
+    pl: "Zobacz Abu Dabbab po zachodzie słońca, gdy świat podwodny budzi się do życia. Z latarką nurkową odkrywaj ośmiornice, polujące mureny i skrzydlice podczas bezpiecznego nurkowania z brzegu.",
+    cz: "Zažijte Abu Dabbab po západu slunce, kdy se podmořský svět promění a noční živočichové ožívají. S potápěčskou svítilnou objevujte chobotnice, lovící murény a perutýny."
+  },
+  highlights: {
+    en: [
+      "1 Guided Shore Night Dive at Abu Dabbab Bay",
+      "High-power professional dive torch included",
+      "Observe nocturnal creatures: Octopuses, Moray Eels, Lionfish & Nudibranchs",
+      "Easy shore entry directly from the beach after sunset",
+      "Small intimate group (Maximum 4 divers per guide)",
+      "PADI or SSI Certified Dive Instructor specializing in Night Dives",
+      "Full rental equipment included (Discount if using own gear)",
+      "Official Abu Dabbab Beach Entry Ticket included"
+    ],
+    de: [
+      "1 Geführter Nachttauchgang vom Strand in Abu Dabbab",
+      "Professionelle High-Power Tauchlampe inklusive",
+      "Beobachten Sie nachtaktive Tiere: Oktopusse, Muränen, Rotfeuerfische",
+      "Bequemer Einstieg vom Strand direkt nach Sonnenuntergang",
+      "Kleine Gruppe (Maximal 4 Taucher pro Guide)",
+      "PADI/SSI-zertifizierter Tauchlehrer für Nachttauchgänge",
+      "Komplette Ausrüstung inklusive (Rabatt bei eigener Ausrüstung)",
+      "Eintrittsticket für den Strand von Abu Dabbab inklusive"
+    ],
+    it: [
+      "1 Immersione notturna guidata da riva a Abu Dabbab",
+      "Torcia subacquea professionale ad alta potenza inclusa",
+      "Osserva creature notturne: Polpi, murene, pesci leone e nudibranchi",
+      "Facile ingresso da spiaggia subito dopo il tramonto",
+      "Gruppo ridotto (Massimo 4 sub per guida)",
+      "Istruttore certificato PADI o SSI specializzato in notturne",
+      "Attrezzatura completa inclusa (Sconto con attrezzatura propria)",
+      "Biglietto d'ingresso alla spiaggia di Abu Dabbab incluso"
+    ],
+    ru: [
+      "1 ночное погружение с гидом с берега в бухте Абу-Даббаб",
+      "Мощный профессиональный подводный фонарь включен",
+      "Наблюдение за ночной жизнью: осьминоги, мурены, крылатки",
+      "Удобный заход с пляжа сразу после заката",
+      "Маленькая группа (Максимум 4 дайвера на гида)",
+      "Инструктор PADI или SSI по ночным погружениям",
+      "Полный комплект аренды снаряжения (Скидка со своим)",
+      "Входной билет на пляж Абу-Даббаб включен"
+    ],
+    pl: [
+      "1 nocne nurkowanie z przewodnikiem z brzegu w Abu Dabbab",
+      "Profesjonalna latarka nurkowa dużej mocy w cenie",
+      "Obserwacja nocnych stworzeń: Ośmiornice, mureny, skrzydlice",
+      "Łatwe wejście z plaży tuż po zachodzie słońca",
+      "Kameralna grupa (Maksymalnie 4 nurków na przewodnika)",
+      "Certyfikowany instruktor PADI/SSI do nurkowań nocnych",
+      "Pełny sprzęt w cenie (Zniżka przy własnym sprzęcie)",
+      "Bilet wstępu na plażę Abu Dabbab w cenie"
+    ],
+    cz: [
+      "1 noční ponor s průvodcem z bờehu v zálivu Abu Dabbab",
+      "Výkonná potápěčská svítilna v ceně",
+      "Pozorování nočních živočichů: Chobotnice, murény, perutýni",
+      "Snadný vstup z pláže hned po západu slunce",
+      "Malá skupina (Maximálně 4 potápěči na průvodce)",
+      "Instruktor PADI/SSI pro noční ponory",
+      "Kompletní výstroj v ceně (Sleva při vlastní výstroji)",
+      "Vstupenka na pláž Abu Dabbab v ceně"
+    ]
+  },
+  included: {
+    en: [
+      "1 Guided night dive (Shore entry)",
+      "Professional high-power dive torch",
+      "Full scuba diving equipment rental (wetsuit, tanks, weights)",
+      "Official Abu Dabbab Beach Entry Ticket",
+      "Hotel pickup & drop-off (A/C vehicle)",
+      "Fresh mineral water & refreshments",
+      "PADI or SSI Instructor (Max 4 divers per group)",
+      "Safety stop support"
+    ],
+    de: [
+      "1 Geführter Nachttauchgang (Strandeinstieg)",
+      "Professionelle High-Power Tauchlampe",
+      "Komplette Tauchausrüstung (Neoprenanzug, Flaschen, Blei)",
+      "Eintrittsticket für den Strand von Abu Dabbab",
+      "Hotelabholung & Rückbringung (Klimatisiertes Fahrzeug)",
+      "Frisches Mineralwasser & Erfrischungen",
+      "PADI/SSI Tauchlehrer (Max. 4 Taucher pro Gruppe)",
+      "Sicherheitsstopp-Unterstützung"
+    ],
+    it: [
+      "1 Immersione notturna guidata (Ingresso da riva)",
+      "Torcia subacquea professionale",
+      "Noleggio attrezzatura subacquea completa (Muta, bombole, zavorra)",
+      "Biglietto d'ingresso alla spiaggia di Abu Dabbab",
+      "Transfer da e per l'hotel (Veicolo climatizzato)",
+      "Acqua minerale e rinfreschi",
+      "Istruttore PADI/SSI (Max 4 sub per gruppo)",
+      "Supporto durante la sosta di sicurezza"
+    ],
+    ru: [
+      "1 ночное погружение с гидом (с берега)",
+      "Профессиональный подводный фонарь",
+      "Полная аренда оборудования (Гидрокостюм, баллоны, грузы)",
+      "Входной билет на пляж Абу-Даббаб",
+      "Трансфер из отеля и обратно (кондиционируемый авто)",
+      "Минеральная вода и напитки",
+      "Инструктор PADI или SSI (Макс. 4 человек)",
+      "Остановки безопасности"
+    ],
+    pl: [
+      "1 Nocne nurkowanie z przewodnikiem (wejście z brzegu)",
+      "Profesjonalna latarka nurkowa",
+      "Wypożyczenie pełnego sprzętu (Pianka, butle, balast)",
+      "Bilet wstępu na plażę Abu Dabbab",
+      "Odbiór i powrót do hotelu (Klimatyzowany pojazd)",
+      "Świeża woda mineralna i napoje",
+      "Instruktor PADI/SSI (Maks. 4 nurków w grupie)",
+      "Wsparcie podczas przystanku bezpieczeństwa"
+    ],
+    cz: [
+      "1 Noční ponor s průvodcem (vstup z pláže)",
+      "Profesionální potápěčská svítilna",
+      "Zapůjčení kompletní výstroje (Neopren, lahve, zátěž)",
+      "Vstupenka na pláž Abu Dabbab",
+      "Vyzvednutí a návrat do hotelu (Klimatizovaný vůz)",
+      "Minerální voda a občerstvení",
+      "Instruktor PADI/SSI (Max. 4 potápěči ve skupině)",
+      "Podpora při bezpečnostní zastávce"
+    ]
+  },
+  whatToBring: {
+    en: [
+      "Diving certification (Digital copy on phone accepted)",
+      "Logbook (digital or physical)",
+      "Towel",
+      "Warm hoodie or jacket (Highly recommended after the night dive)",
+      "Dry clothes",
+      "Personal medication if needed"
+    ],
+    de: [
+      "Tauchschein (Digitale Kopie auf dem Handy akzeptiert)",
+      "Logbuch (digital oder physisch)",
+      "Handtuch",
+      "Warmer Pullover oder Jacke (Sehr empfohlen nach dem Tauchgang)",
+      "Trockene Kleidung",
+      "Persönliche Medikamente bei Bedarf"
+    ],
+    it: [
+      "Brevetto sub (Accettata copia digitale su telefono)",
+      "Logbook (digitale o fisico)",
+      "Asciugamano",
+      "Felpa o giacca calda (Consigliata vivamente dopo l'immersione)",
+      "Abiti asciutti",
+      "Farmaci personali se necessari"
+    ],
+    ru: [
+      "Сертификат дайвера (Принимается цифровая копия)",
+      "Логбук (цифровой или бумажный)",
+      "Полотенце",
+      "Теплая кофта или куртка (Настоятельно рекомендуется после погружения)",
+      "Сухая одежда",
+      "Личные медикаменты"
+    ],
+    pl: [
+      "Certyfikat nurkowy (Akceptowana kopia cyfrowa w telefonie)",
+      "Logbook (cyfrowy lub fizyczny)",
+      "Ręcznik",
+      "Ciepła bluza lub kurtka (Gorąco polecane po nurkowaniu)",
+      "Suche ubrania na zmianę",
+      "Leki osobiste w razie potrzeby"
+    ],
+    cz: [
+      "Potápěčská certifikace (Akceptována digitální kopie v telefonu)",
+      "Logbook (digitální nebo fyzický)",
+      "Ručník",
+      "Teplá mikina nebo bunda (Doporučeno po nočním ponoru)",
+      "Suché oblečení",
+      "Osobní léky v případě potřeby"
+    ]
+  },
+  childrenPolicy: {
+    under5: {
+      en: "Not allowed — Night dives are restricted to certified divers only",
+      de: "Nicht erlaubt — Nachttauchgänge nur für zertifizierte Taucher",
+      it: "Non consentito — Immersioni notturne riservate ai soli sub certificati",
+      ru: "Не допускается — Ночные погружения только для сертифицированных дайверов",
+      pl: "Niedozwolone — Nurkowania nocne tylko dla certyfikowanych nurków",
+      cz: "Není povoleno — Noční ponory pouze pro certifikované potápěče"
+    },
+    from5to10: {
+      en: "Not allowed — Minimum certification limits apply",
+      de: "Nicht erlaubt — Mindestalter für Zertifizierung gilt",
+      it: "Non consentito — Limiti di brevetto applicati",
+      ru: "Не допускается — Ограничения по сертификации",
+      pl: "Niedozwolone — Ograniczenia certyfikacji",
+      cz: "Není povoleno — Platí věková omezení certifikace"
+    },
+    over10: {
+      en: "Certified Junior Divers (10+ yrs with buoyancy check): Full adult rate applies",
+      de: "Zertifizierte Junior-Taucher (ab 10 J. mit Tarierungs-Check): Voller Tarif",
+      it: "Junior Diver Certificati (da 10 anni): Tariffa intera",
+      ru: "Сертифицированные Junior дайверы (с 10 лет): Полный тариф",
+      pl: "Certyfikowani Junior Nurkowie (od 10 lat): Pełna stawka",
+      cz: "Certifikovaní Junior potápěči (od 10 let): Plná cena"
+    }
+  },
+  itinerary: [
+    {
+      step: "01",
+      title: {
+        en: "Evening Pickup — 05:00 PM",
+        de: "Abendabholung — 17:00 Uhr",
+        it: "Transfer Serale — 17:00",
+        ru: "Вечерний трансфер — 17:00",
+        pl: "Wieczorny odbiór — 17:00",
+        cz: "Večerní vyzvednutí — 17:00"
+      },
+      description: {
+        en: "Pickup from hotel and transfer by comfortable A/C vehicle to Abu Dabbab Beach.",
+        de: "Abholung vom Hotel und Fahrt im klimatisierten Fahrzeug zum Strand von Abu Dabbab.",
+        it: "Pick-up dall'hotel e trasferimento al mare di Abu Dabbab in veicolo climatizzato.",
+        ru: "Трансфер из отеля на авто с кондиционером на пляж Абу-Даббаб.",
+        pl: "Odbiór z hotelu i przejazd do Zatoki Abu Dabbab.",
+        cz: "Vyzvednutí v hotelu a přesun na pláž Abu Dabbab."
+      }
+    },
+    {
+      step: "02",
+      title: {
+        en: "Arrival & Gear Setup — 05:45 PM",
+        de: "Ankunft & Ausrüstungsaufbau — 17:45 Uhr",
+        it: "Arrivo e Preparazione — 17:45",
+        ru: "Прибытие и сборка оборудования — 17:45",
+        pl: "Przyjazd i przygotowanie sprzętu — 17:45",
+        cz: "Příjezd a příprava výstroje — 17:45"
+      },
+      description: {
+        en: "Arrive at Abu Dabbab, prepare your equipment and perform functional check on your dive torch.",
+        de: "Ankunft in Abu Dabbab, Vorbereitung der Ausrüstung und Funktionstest der Tauchlampe.",
+        it: "Arrivo a Abu Dabbab, preparazione dell'attrezzatura e controllo funzionale della torcia.",
+        ru: "Прибытие, подгонка снаряжения и проверка работы подводных фонарей.",
+        pl: "Przyjazd do Abu Dabbab, przygotowanie sprzętu i sprawdzanie latarek.",
+        cz: "Příjezd do Abu Dabbab, příprava výstroje a kontrola svítilen."
+      }
+    },
+    {
+      step: "03",
+      title: {
+        en: "Night Dive Briefing — 06:00 PM",
+        de: "Nachttauchgang Briefing — 18:00 Uhr",
+        it: "Briefing Immersione Notturna — 18:00",
+        ru: "Брифинг перед ночным погружением — 18:00",
+        pl: "Odprawa przed nurkowaniem nocnym — 18:00",
+        cz: "Briefing před nočním ponorem — 18:00"
+      },
+      description: {
+        en: "Instructor explains planned route, maximum depth (up to 20m), light signals, buddy check and eco-rules.",
+        de: "Taucherklärung zu Route, Max. Tiefe (bis 20m), Lichtsignalen und Umweltregeln.",
+        it: "Spiegazione del percorso, profondità max (20m), segnali luminosi e regole ambientali.",
+        ru: "Разбор маршрута, глубины (до 20м), световых сигналов и правил экологии.",
+        pl: "Omówienie trasy, głębokości (do 20m), sygnałów świetlnych i zasad ekologii.",
+        cz: "Vysvětlení trasy, max. hloubky (do 20m), světelných signálů a pravidel."
+      }
+    },
+    {
+      step: "04",
+      title: {
+        en: "The Night Dive — 06:15 PM",
+        de: "Der Nachttauchgang — 18:15 Uhr",
+        it: "L'Immersione Notturna — 18:15",
+        ru: "Ночное погружение — 18:15",
+        pl: "Nocne Nurkowanie — 18:15",
+        cz: "Noční ponor — 18:15"
+      },
+      description: {
+        en: "Enter directly from the beach after sunset to explore inner reef edge and sandy areas (~45-50 min).",
+        de: "Strandeinstieg nach Sonnenuntergang. Erkundung der Riffkante und Sandflächen (~45-50 Min).",
+        it: "Ingresso da spiaggia dopo il tramonto ed esplorazione del reef e fondale sabbioso (~45-50 min).",
+        ru: "Заход с пляжа после заката. Исследование рифовой стены и песка (~45-50 минут).",
+        pl: "Wejście z plaży po zachodzie słońca. Odkrywanie rafy i piaszczystych obszarów (~45-50 min).",
+        cz: "Vstup z pláže po západu slunce. Prozkoumávání okraje útesu a písků (~45-50 min)."
+      }
+    },
+    {
+      step: "05",
+      title: {
+        en: "Exit & Pack Up — 07:15 PM",
+        de: "Ausstieg & Einpacken — 19:15 Uhr",
+        it: "Uscita e Risistemazione — 19:15",
+        ru: "Выход и сбор снаряжения — 19:15",
+        pl: "Wyjście z wody i pakowanie — 19:15",
+        cz: "Výstup a balení — 19:15"
+      },
+      description: {
+        en: "Exit the water, dry off, pack equipment and prepare for departure.",
+        de: "Aussteigen, Abtrocknen, Ausrüstung verpacken und Abfahrt vorbereiten.",
+        it: "Uscita dall'acqua, asciugatura, confezionamento attrezzatura e preparazione al rientro.",
+        ru: "Выход из воды, сборы снаряжения и подготовка к обратной дороге.",
+        pl: "Wyjście z wody, wysuszenie się, spakowanie sprzętu i przygotowanie do powrotu.",
+        cz: "Výstup z vody, osušení, zabalení výstroje a příprava k odjezdu."
+      }
+    },
+    {
+      step: "06",
+      title: {
+        en: "Hotel Drop-off — 08:00 PM",
+        de: "Hotelabgabe — 20:00 Uhr",
+        it: "Transfer Hotel — 20:00",
+        ru: "Возвращение в отель — 20:00",
+        pl: "Powrót do hotelu — 20:00",
+        cz: "Návrat do hotelu — 20:00"
+      },
+      description: {
+        en: "Relaxing transfer back to your resort.",
+        de: "Entspannter Rücktransfer zu Ihrem Hotel.",
+        it: "Trasferimento di ritorno al tuo resort.",
+        ru: "Комфортный трансфер обратно в отель.",
+        pl: "Wygodny transfer powrotny do hotelu.",
+        cz: "Pohodlný transfer zpět do hotelu."
+      }
+    }
+  ],
+  paymentNote: {
+    en: "Pay after the trip — no online payment or deposit required. Custom discount applied if you bring your own equipment.",
+    de: "Bezahlung nach dem Ausflug — keine Online-Zahlung erforderlich. Rabatt bei eigener Ausrüstung.",
+    it: "Paga dopo il tour — nessun pagamento online richiesto. Sconto se porti la tua attrezzatura.",
+    ru: "Оплата после поездки — без предоплаты. Скидка при наличии собственного снаряжения.",
+    pl: "Płatność po wycieczce — bez opłat online. Zniżka przy własnym sprzęcie.",
+    cz: "Platba až po výletu — bez zálohy. Při vlastním vybavení bude uplatněna sleva."
+  },
+  disclaimer: {
+    en: "Requires good buoyancy control and comfort in low-light conditions. Maximum depth is 20m. Never touch, chase, or shine light directly into animals' eyes. Instructor holds full authority to cancel or modify dive based on weather or safety conditions.",
+    de: "Gute Tarierung und Komfort bei Dunkelheit erforderlich. Maximale Tiefe 20m. Niemals Tiere direkt anstrahlen oder anfassen. Der Tauchlehrer kann den Tauchgang aus Sicherheitsgründen anpassen.",
+    it: "Richiede buon controllo dell'assetto e tranquillità al buio. Profondità max 20m. Vietato puntare la torcia negli occhi degli animali o toccarli.",
+    ru: "Требуется хороший контроль плавучести и комфорт в темноте. Макс. глубина 20м. Запрещено светить прямо в глаза животным или трогать их.",
+    pl: "Wymagana dobra pływalność i komfort w ciemności. Maks. głębokość 20m. Zakaz świecenia prosto w oczy zwierząt i dotykania ich.",
+    cz: "Vyžaduje dobrou vyváženost a komfort ve tmě. Max. hloubka 20m. Přísný zákaz svícení do očí zvířat a dotýkání se."
+  },
+  images: {
+    featured: "/images/tours/night-dive-card.webp",
+    gallery: [
+      "/images/tours/night-dive-1.webp",
+      "/images/tours/night-dive-2.webp",
+      "/images/tours/night-dive-3.webp"
     ]
   }
 }

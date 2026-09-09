@@ -1,10 +1,11 @@
+
 "use client";
 
 import { useState, useMemo } from "react";
 import { tours } from "@/data/tours";
 import { TourCard } from "../tours/TourCard";
 import { Locale } from "@/lib/i18n-config";
-import { Search, X } from "lucide-react";
+import { ArrowUpDown, ArrowDownNarrowWide, ArrowUpNarrowWide } from "lucide-react";
 
 interface ToursSectionProps {
   lang: Locale;
@@ -15,38 +16,57 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
   const title = dict?.tours?.title || dict?.toursTitle || "Explore Our Marsa Alam Tours";
   const subtitle = dict?.tours?.subtitle || dict?.toursSubtitle || "Discover the best marine adventures and desert safaris, and enjoy the magic of nature with us.";
 
-  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [priceSort, setPriceSort] = useState<"default" | "low" | "high">("default");
   const [alphaSort, setAlphaSort] = useState<"default" | "asc">("default");
 
-  const uiTexts: Record<Locale, { searchPlaceholder: string; noResults: string; viewAll: string; lowToHigh: string; highToLow: string; alphabetical: string }> = {
-    en: { searchPlaceholder: "Search tours...", noResults: "No tours found matching your search.", viewAll: "View All Tours", lowToHigh: "Low Price", highToLow: "High Price", alphabetical: "A-Z" },
-    de: { searchPlaceholder: "Ausflüge suchen...", noResults: "Keine passenden Ausflüge gefunden.", viewAll: "Alle Ausflüge anzeigen", lowToHigh: "Günstig", highToLow: "Teuer", alphabetical: "A-Z" },
-    it: { searchPlaceholder: "Cerca tour...", noResults: "Nessun tour trovato.", viewAll: "Visualizza Tutti i Tour", lowToHigh: "Prezzo Basso", highToLow: "Prezzo Alto", alphabetical: "A-Z" },
-    ru: { searchPlaceholder: "Поиск экскурсий...", noResults: "Экскурсии не найдены.", viewAll: "Все экскурсии", lowToHigh: "Дешевле", highToLow: "Дороже", alphabetical: "А-Я" },
-    pl: { searchPlaceholder: "Szukaj wycieczek...", noResults: "Nie znaleziono wycieczek.", viewAll: "Zobacz Wszystkie Wycieczki", lowToHigh: "Niska cena", highToLow: "Wysoka cena", alphabetical: "A-Z" },
-    cz: { searchPlaceholder: "Hledat výlety...", noResults: "Žádné výlety nenalezeny.", viewAll: "Zobrazit všechny výlety", lowToHigh: "Nízká cena", highToLow: "Vysoká cena", alphabetical: "A-Z" },
+  const uiTexts: Record<
+    Locale,
+    {
+      noResults: string;
+      all: string;
+      lowToHigh: string;
+      highToLow: string;
+      alphabetical: string;
+    }
+  > = {
+    en: { noResults: "No tours found.", all: "All Tours", lowToHigh: "Low Price", highToLow: "High Price", alphabetical: "A-Z" },
+    de: { noResults: "Keine Ausflüge gefunden.", all: "Alle Ausflüge", lowToHigh: "Günstig", highToLow: "Teuer", alphabetical: "A-Z" },
+    it: { noResults: "Nessun tour trovato.", all: "Tutti i Tour", lowToHigh: "Prezzo Basso", highToLow: "Prezzo Alto", alphabetical: "A-Z" },
+    ru: { noResults: "Экскурсии не найдены.", all: "Все экскурсии", lowToHigh: "Дешевле", highToLow: "Дороже", alphabetical: "А-Я" },
+    pl: { noResults: "Nie znaleziono wycieczek.", all: "Wszystkie Wycieczki", lowToHigh: "Niska cena", highToLow: "Wysoka cena", alphabetical: "A-Z" },
+    cz: { noResults: "Žádné výlety nenalezeny.", all: "Všechny výlety", lowToHigh: "Nízká cena", highToLow: "Vysoká cena", alphabetical: "A-Z" },
+  };
+
+  const categoryLabels: Record<string, Record<Locale, string>> = {
+    "scuba-diving": { en: "Scuba Diving", de: "Tauchen", it: "Immersioni", ru: "Дайвинг", pl: "Nurkowanie", cz: "Potápění" },
+    "snorkeling": { en: "Snorkeling Trips", de: "Schnorcheln", it: "Snorkeling", ru: "Сноркелинг", pl: "Snorkeling", cz: "Šnorchlování" },
+    "sea-trips": { en: "Snorkeling Trips", de: "Schnorcheln", it: "Snorkeling", ru: "Сноркелинг", pl: "Snorkeling", cz: "Šnorchlování" },
+    "safari": { en: "Desert Safari", de: "Wüstensafari", it: "Safari nel Deserto", ru: "Сафари", pl: "Safari", cz: "Safari" },
   };
 
   const t = uiTexts[lang] || uiTexts.en;
 
+  const categories = useMemo(() => {
+    const cats = new Set<string>();
+    tours.forEach((tour) => {
+      if (tour.type) cats.add(tour.type);
+    });
+    return Array.from(cats);
+  }, []);
+
   const filteredTours = useMemo(() => {
     let result = tours.filter((tour) => {
-      const tourTitle = (tour.title[lang] || tour.title.en).toLowerCase();
-      const tourCategory = (tour.category[lang] || tour.category.en).toLowerCase();
-      const query = searchQuery.toLowerCase();
-
-      return tourTitle.includes(query) || tourCategory.includes(query);
+      if (selectedCategory === "all") return true;
+      return tour.type === selectedCategory;
     });
 
-    // Sort by Price (Low / High)
     if (priceSort === "low") {
       result.sort((a, b) => a.price.amount - b.price.amount);
     } else if (priceSort === "high") {
       result.sort((a, b) => b.price.amount - a.price.amount);
     }
 
-    // Sort by A-Z
     if (alphaSort === "asc") {
       result.sort((a, b) => {
         const titleA = a.title[lang] || a.title.en;
@@ -56,28 +76,67 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
     }
 
     return result;
-  }, [searchQuery, priceSort, alphaSort, lang]);
+  }, [selectedCategory, priceSort, alphaSort, lang]);
 
   return (
-    <section id="tours" className="mx-auto max-w-7xl px-4 pt-6 pb-16 sm:pt-8 sm:pb-20">
-      {/* Control Bar: Search on extreme Left, Sort buttons on extreme Right */}
-      <div className="mx-auto mb-8 mt-4 flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
-        
-        {/* Sort & Filter Buttons (Right side) */}
-        <div className="flex flex-wrap items-center gap-2">
-          {/* Price Low / High Buttons */}
+    <section id="tours" className="mx-auto max-w-7xl px-4 pt-6 pb-16 sm:px-6 sm:pt-10 sm:pb-24">
+      {/* Header Section */}
+      <div className="text-center mb-6 sm:mb-10">
+        <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-4xl">{title}</h2>
+        <p className="mt-2 text-sm text-muted-foreground sm:text-base max-w-2xl mx-auto">{subtitle}</p>
+      </div>
+
+      {/* Unified Control Bar: Categories + Sorting in One Single Scrollable Line */}
+      <div className="mb-8 overflow-x-auto pb-3 scrollbar-none -mx-4 px-4 sm:mx-0 sm:px-0">
+        <div className="flex items-center gap-2 min-w-max">
+          
+          {/* Category Tabs */}
+          <button
+            onClick={() => setSelectedCategory("all")}
+            className={`shrink-0 rounded-full px-4 py-2 text-xs font-semibold transition-all ${
+              selectedCategory === "all"
+                ? "bg-primary text-primary-foreground shadow-sm"
+                : "bg-card text-muted-foreground hover:bg-accent hover:text-foreground border border-border"
+            }`}
+          >
+            {t.all}
+          </button>
+
+          {categories.map((cat) => {
+            const label = categoryLabels[cat]?.[lang] || categoryLabels[cat]?.en || cat;
+
+            return (
+              <button
+                key={cat}
+                onClick={() => setSelectedCategory(cat)}
+                className={`shrink-0 rounded-full px-4 py-2 text-xs font-semibold transition-all ${
+                  selectedCategory === cat
+                    ? "bg-primary text-primary-foreground shadow-sm"
+                    : "bg-card text-muted-foreground hover:bg-accent hover:text-foreground border border-border"
+                }`}
+              >
+                {label}
+              </button>
+            );
+          })}
+
+          {/* Divider between Categories & Sorting */}
+          <div className="h-5 w-[1px] bg-border mx-1 shrink-0" />
+
+          {/* Price & Alpha Sort Buttons */}
           <button
             onClick={() => {
               setPriceSort(priceSort === "low" ? "default" : "low");
               setAlphaSort("default");
             }}
-            className={`rounded-lg border px-3.5 py-2 text-xs font-medium transition-all ${
+            className={`shrink-0 flex items-center gap-1.5 rounded-full border px-3.5 py-2 text-xs font-medium transition-all ${
               priceSort === "low"
-                ? "border-secondary bg-secondary/10 text-secondary"
-                : "border-border bg-card text-muted-foreground hover:border-secondary/50 hover:text-foreground"
+                ? "border-primary bg-primary/10 text-primary shadow-sm"
+                : "border-border bg-card text-muted-foreground hover:border-primary/50 hover:text-foreground"
             }`}
           >
-            {t.lowToHigh} ↓
+            <ArrowDownNarrowWide className="h-3.5 w-3.5" />
+            {t.lowToHigh}
           </button>
 
           <button
@@ -85,64 +144,46 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
               setPriceSort(priceSort === "high" ? "default" : "high");
               setAlphaSort("default");
             }}
-            className={`rounded-lg border px-3.5 py-2 text-xs font-medium transition-all ${
+            className={`shrink-0 flex items-center gap-1.5 rounded-full border px-3.5 py-2 text-xs font-medium transition-all ${
               priceSort === "high"
-                ? "border-secondary bg-secondary/10 text-secondary"
-                : "border-border bg-card text-muted-foreground hover:border-secondary/50 hover:text-foreground"
+                ? "border-primary bg-primary/10 text-primary shadow-sm"
+                : "border-border bg-card text-muted-foreground hover:border-primary/50 hover:text-foreground"
             }`}
           >
-            {t.highToLow} ↑
+            <ArrowUpNarrowWide className="h-3.5 w-3.5" />
+            {t.highToLow}
           </button>
 
-          {/* A-Z Button */}
           <button
             onClick={() => {
               setAlphaSort(alphaSort === "asc" ? "default" : "asc");
               setPriceSort("default");
             }}
-            className={`rounded-lg border px-3.5 py-2 text-xs font-medium transition-all ${
+            className={`shrink-0 flex items-center gap-1.5 rounded-full border px-3.5 py-2 text-xs font-medium transition-all ${
               alphaSort === "asc"
-                ? "border-secondary bg-secondary/10 text-secondary"
-                : "border-border bg-card text-muted-foreground hover:border-secondary/50 hover:text-foreground"
+                ? "border-primary bg-primary/10 text-primary shadow-sm"
+                : "border-border bg-card text-muted-foreground hover:border-primary/50 hover:text-foreground"
             }`}
           >
+            <ArrowUpDown className="h-3.5 w-3.5" />
             {t.alphabetical}
           </button>
-        </div>
 
-        {/* Small Search Bar (Left side) */}
-        <div className="relative w-full sm:w-64">
-          <Search className="absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder={t.searchPlaceholder}
-            className="w-full rounded-xl border border-border bg-card px-9 py-2 text-xs text-foreground placeholder-muted-foreground shadow-sm transition-all focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary/20"
-          />
-          {searchQuery && (
-            <button
-              onClick={() => setSearchQuery("")}
-              aria-label="Clear search"
-              className="absolute end-1 top-1/2 -translate-y-1/2 p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-muted-foreground hover:text-foreground"
-            >
-              <X className="h-4 w-4" />
-            </button>
-          )}
         </div>
-
       </div>
 
-      {/* Tours Grid - Displays all filtered tours */}
+      {/* Tours Grid */}
       {filteredTours.length > 0 ? (
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
           {filteredTours.map((tour) => (
-            <TourCard key={tour.id} tour={tour} lang={lang} />
+            <div key={tour.id} className="h-full flex flex-col transition-transform duration-300 hover:-translate-y-1">
+              <TourCard tour={tour} lang={lang} />
+            </div>
           ))}
         </div>
       ) : (
-        <div className="py-16 text-center">
-          <p className="text-muted-foreground">{t.noResults}</p>
+        <div className="py-20 text-center rounded-2xl border border-dashed border-border bg-card/50">
+          <p className="text-muted-foreground text-sm">{t.noResults}</p>
         </div>
       )}
     </section>
