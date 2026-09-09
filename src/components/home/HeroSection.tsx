@@ -42,7 +42,7 @@ export function Hero({ lang, dict }: HeroProps) {
           alt="Dolphins Marsa Alam Local Guide"
           fill
           priority={true} 
-          quality={85}
+          quality={88}
           sizes="100vw"
           className="object-cover object-center"
         />

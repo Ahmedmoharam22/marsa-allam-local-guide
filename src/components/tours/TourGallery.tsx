@@ -69,6 +69,7 @@ export default function TourGallery({ images, title }: TourGalleryProps) {
                 src={img}
                 alt={`${title} - photo ${idx + 1}`}
                 fill
+                quality={88}
                 priority={idx === 0}
                 sizes="(max-width: 1024px) 100vw, 1200px"
                 className="object-cover transition-transform duration-300"
@@ -132,6 +133,7 @@ export default function TourGallery({ images, title }: TourGalleryProps) {
               src={allImages[activeIndex]}
               alt={`${title} Full`}
               fill
+              quality={88}
               className="object-contain"
               priority
             />

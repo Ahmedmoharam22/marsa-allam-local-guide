@@ -49,6 +49,7 @@ export default function AboutGuide({ lang, images = defaultImages }: AboutGuideP
                 src={images[currentImage]}
                 alt={t.title}
                 fill
+                quality={88}
                 className="object-cover transition-all duration-500 group-hover:scale-[1.03]"
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 priority

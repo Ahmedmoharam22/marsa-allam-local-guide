@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check-images": "node scripts/check-image-sizes.mjs"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
@@ -30,6 +31,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
+    "image-size": "^2.0.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

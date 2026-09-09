@@ -4,6 +4,7 @@ const nextconfig: NextConfig = {
   // تفعيل أفضل صيغ الضغط للصور
   images: {
     formats: ['image/avif', 'image/webp'],
+    qualities: [75, 85, 90],
     remotePatterns: [
       {
         protocol: 'https',
