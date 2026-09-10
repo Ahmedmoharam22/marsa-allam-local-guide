@@ -42,6 +42,8 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
     "snorkeling": { en: "Snorkeling Trips", de: "Schnorcheln", it: "Snorkeling", ru: "Сноркелинг", pl: "Snorkeling", cz: "Šnorchlování" },
     "sea-trips": { en: "Snorkeling Trips", de: "Schnorcheln", it: "Snorkeling", ru: "Сноркелинг", pl: "Snorkeling", cz: "Šnorchlování" },
     "safari": { en: "Desert Safari", de: "Wüstensafari", it: "Safari nel Deserto", ru: "Сафари", pl: "Safari", cz: "Safari" },
+    "courses": { en: "Diving Courses", de: "Tauchkurse", it: "Corsi Subacquei", ru: "Курсы Дайвинга", pl: "Kursy Nurkowe", cz: "Potápěčské Kurzy" },
+    "city-tours": { en: "City & Sightseeing", de: "Städte & Kultur", it: "Tour della Città", ru: "Экскурсии по Городам", pl: "Wycieczki Miejskie", cz: "Městské Tours" },
   };
 
   const t = uiTexts[lang] || uiTexts.en;

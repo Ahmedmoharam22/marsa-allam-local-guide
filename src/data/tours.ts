@@ -6508,5 +6508,1811 @@ export const tours: Tour[] = [
       "/images/tours/night-dive-3.webp"
     ]
   }
+},
+{
+  id: "padi-open-water-diver",
+  slug: "padi-open-water-diver-course",
+  type: "courses",
+  title: {
+    en: "PADI Open Water Diver Course",
+    de: "PADI Open Water Diver Kurs",
+    it: "Corso PADI Open Water Diver",
+    ru: "Курс PADI Open Water Diver",
+    pl: "Kurs PADI Open Water Diver",
+    cz: "Kurz PADI Open Water Diver"
+  },
+  subtitle: {
+    en: "Premium Small-Group Certification Course (Max 2 Students per Instructor)",
+    de: "Premium-Zertifizierungskurs in kleinen Gruppen (Max. 2 Schüler pro Tauchlehrer)",
+    it: "Corso di Certificazione Premium in Piccoli Gruppi (Max 2 Studenti per Istruttore)",
+    ru: "Премиум-курс сертификации в малых группах (Макс. 2 студента на инструктора)",
+    pl: "Certyfikowany kurs premium w małych grupach (Maks. 2 studentów na instruktora)",
+    cz: "Certifikační kurz premium v malých skupinách (Max. 2 studenti na instruktora)"
+  },
+  category: {
+    en: "Diving Courses",
+    de: "Tauchkurse",
+    it: "Corsi Subacquei",
+    ru: "Курсы Дайвинга",
+    pl: "Kursy Nurkowe",
+    cz: "Potápěčské Kurzy"
+  },
+  price: {
+    amount: 420,
+    currency: "€",
+    unit: {
+      en: "per person (PADI eLearning & Full Gear Included)",
+      de: "pro Person (PADI eLearning & Ausrüstung inklusive)",
+      it: "per persona (PADI eLearning e Attrezzatura Inclusi)",
+      ru: "за человека (PADI eLearning и снаряжение включены)",
+      pl: "za osobę (PADI eLearning i sprzęt w cenie)",
+      cz: "za osobu (PADI eLearning a výstroj v ceně)"
+    }
+  },
+  duration: {
+    en: "3–4 Days (8:00 AM – 1:00 PM)",
+    de: "3–4 Tage (8:00 bis 13:00 Uhr)",
+    it: "3–4 Giorni (8:00 – 13:00)",
+    ru: "3–4 Дня (с 8:00 до 13:00)",
+    pl: "3–4 Dni (8:00 – 13:00)",
+    cz: "3–4 Dny (8:00 – 13:00)"
+  },
+  departure: {
+    en: "Abu Dabbab Bay / Marsa Alam Hotels",
+    de: "Abu Dabbab Bucht / Marsa Alam Hotels",
+    it: "Baia di Abu Dabbab / Hotel di Marsa Alam",
+    ru: "Бухта Абу-Дабаб / Отели Марса-Алам",
+    pl: "Zatoka Abu Dabbab / Hotele w Marsa Alam",
+    cz: "Zátoka Abu Dabbab / Hotely v Marsa Alam"
+  },
+  overview: {
+    en: "Ready to stop watching the Red Sea from the surface and learn how to explore it yourself? The PADI Open Water Diver course combines online theory, confined-water practice and four open-water dives in Abu Dabbab with maximum 2 students per instructor.",
+    de: "Bereit, das Rote Meer nicht mehr nur von der Oberfläche aus zu betrachten? Der PADI Open Water Diver Kurs kombiniert Online-Theorie, Übungen im flachen Wasser und 4 Freiwassertauchgänge in Abu Dabbab mit max. 2 Schülern pro Tauchlehrer.",
+    it: "Pronto a esplorare il Mar Rosso da vicino? Il corso PADI Open Water Diver unisce teoria online, pratica in acque delimitate e 4 immersioni in mare aperto a Abu Dabbab con massimo 2 studenti per istruttore.",
+    ru: "Готовы перестать смотреть на Красное море с поверхности? Курс PADI Open Water Diver сочетает онлайн-теорию, практику на мелководье и 4 учебных погружения в Абу-Даббаб (макс. 2 студента на инструктора).",
+    pl: "Gotowy, by poznać podwodny świat Morza Czerwonego? Kurs PADI Open Water Diver łączy teorię online, praktykę na płytkiej wodzie oraz 4 nurkowania w Abu Dabbab (maks. 2 studentów na instruktora).",
+    cz: "Jste připraveni prozkoumat podmořský svět Rudého moře? Kurz PADI Open Water Diver kombinuje online teorii, praxi v mělkém prostředí a 4 ponory v Abu Dabbab (max. 2 studenti na instruktora)."
+  },
+  highlights: {
+    en: [
+      "Maximum 2 students per instructor for ultimate personal attention",
+      "Official PADI digital eLearning included to study at your own pace",
+      "Confined water skills practice directly from Abu Dabbab Beach",
+      "4 full open-water training dives exploring Red Sea coral reefs",
+      "Certification allows diving down to 18 metres worldwide",
+      "Full high-quality scuba equipment rental included",
+      "Official Abu Dabbab Beach entry fees included",
+      "Daily round-trip hotel pickup & drop-off included"
+    ],
+    de: [
+      "Maximal 2 Schüler pro Tauchlehrer für maximale persönliche Betreuung",
+      "Offizielles PADI digitales eLearning inklusive für flexibles Lernen",
+      "Übungen im flachen Flachwasser direkt am Strand von Abu Dabbab",
+      "4 Freiwassertauchgänge zur Erkundung der Korallenriffe",
+      "Zertifizierung berechtigt zum Tauchen bis zu 18 Metern weltweit",
+      "Komplette hochwertige Tauchausrüstung inklusive",
+      "Eintrittsticket für den Strand von Abu Dabbab inklusive",
+      "Täglicher Hin- und Rücktransfer vom Hotel inklusive"
+    ],
+    it: [
+      "Massimo 2 studenti per istruttore per un'attenzione personalizzata",
+      "PADI digital eLearning ufficiale incluso per studiare con i tuoi tempi",
+      "Esercitazioni in acque delimitate dalla spiaggia di Abu Dabbab",
+      "4 immersioni di addestramento in mare aperto per esplorare il reef",
+      "Certificazione valida per immersioni fino a 18 metri in tutto il mondo",
+      "Noleggio attrezzatura subacquea completa di alta qualità inclusa",
+      "Biglietto d'ingresso alla spiaggia di Abu Dabbab incluso",
+      "Trasferimento giornaliero da e per l'hotel incluso"
+    ],
+    ru: [
+      "Максимум 2 студента на инструктора для максимального внимания",
+      "Официальный цифровой PADI eLearning включен в стоимость",
+      "Практика навыков на мелководье прямо с пляжа Абу-Даббаб",
+      "4 полноценных учебных погружения в открытой воде на рифе",
+      "Сертификат позволяет погружаться до 18 метров по всему миру",
+      "Полная аренда высококачественного снаряжения включена",
+      "Входной билет на пляж Абу-Даббаб включен",
+      "Ежедневный трансфер из отеля и обратно включен"
+    ],
+    pl: [
+      "Maksymalnie 2 studentów na instruktora dla maksymalnej uwagi",
+      "Oficjalny PADI eLearning w cenie, by uczyć się w własnym tempie",
+      "Ćwiczenia w płytkiej wodzie bezpośrednio z plaży Abu Dabbab",
+      "4 nurkowania szkoleniowe na otwartej wodzie na rafie",
+      "Certyfikat uprawniający do nurkowania do 18 metrów na całym świecie",
+      "Wypożyczenie pełnego, wysokiej jakości sprzętu w cenie",
+      "Bilet wstępu na plażę Abu Dabbab w cenie",
+      "Codzienny transfer z i do hotelu w cenie"
+    ],
+    cz: [
+      "Maximálně 2 studenti na instruktora pro osobní přístup",
+      "Oficiální PADI digital eLearning v ceně pro studium vlastním tempem",
+      "Trénink dovedností v mělkém prostředí z pláže Abu Dabbab",
+      "4 výcvikové ponory na otevřené vodě při prozkoumávání útesu",
+      "Certifikace umožňuje potápění až do 18 metrů po celém světě",
+      "Zapůjčení kompletního kvalitního vybavení v ceně",
+      "Vstupenka na pláž Abu Dabbab v ceně",
+      "Denní zpáteční transfer z hotelu v ceně"
+    ]
+  },
+  included: {
+    en: [
+      "Official PADI eLearning access code & digital materials",
+      "PADI Certification processing fees",
+      "Maximum 2 students per instructor ratio",
+      "Confined-water beach training sessions",
+      "4 Full open-water training dives",
+      "Full high-quality scuba equipment rental (wetsuit, BCD, regulator, mask, fins, tanks & weights)",
+      "All Abu Dabbab Beach entry fees",
+      "Daily round-trip hotel pickup & drop-off (A/C vehicle)",
+      "Professional certified PADI Diving Instructor"
+    ],
+    de: [
+      "Zugangscode zu offiziellem PADI eLearning & Unterlagen",
+      "PADI Zertifizierungsgebühren",
+      "Maximal 2 Schüler pro Tauchlehrer",
+      "Übungseinheiten im Flachwasser am Strand",
+      "4 vollständige Freiwassertauchgänge",
+      "Komplette Tauchausrüstung (Neoprenanzug, Tarrierweste, Atemregler, Maske, Flossen, Flaschen & Blei)",
+      "Alle Eintrittsgebühren für die Bucht von Abu Dabbab",
+      "Täglicher Hotelabholung & Rückbringung (Klimatisiert)",
+      "Zertifizierter professioneller PADI Tauchlehrer"
+    ],
+    it: [
+      "Codice d'accesso PADI eLearning ufficiale e materiale digitale",
+      "Tasse di certificazione PADI",
+      "Rapporto massimo 2 studenti per istruttore",
+      "Sessioni di addestramento in acque delimitate da spiaggia",
+      "4 immersioni complete di addestramento in mare aperto",
+      "Noleggio attrezzatura subacquea completa (muta, BCD, erogatore, maschera, pinne, bombole e zavorra)",
+      "Tutti i biglietti d'ingresso alla spiaggia di Abu Dabbab",
+      "Transfer giornaliero da e per l'hotel (Veicolo climatizzato)",
+      "Istruttore subacqueo PADI professionista certificato"
+    ],
+    ru: [
+      "Доступ к официальному PADI eLearning и цифровые материалы",
+      "Сборы за оформление сертификата PADI",
+      "Максимальное соотношение: 2 студента на 1 инструктора",
+      "Тренировочные занятия на мелководье с пляжа",
+      "4 полноценных учебных погружения в открытой воде",
+      "Полная аренда снаряжения (гидрокостюм, компенсатор, регулятор, маска, ласты, баллоны, грузы)",
+      "Все входные билеты на пляж Абу-Даббаб",
+      "Ежедневный трансфер из отеля и обратно (кондиционируемый авто)",
+      "Сертифицированный профессиональный инструктор PADI"
+    ],
+    pl: [
+      "Oficjalny kod dostępu do PADI eLearning i materiały cyfrowe",
+      "Opłaty za wydanie certyfikatu PADI",
+      "Maksymalnie 2 studentów na 1 instruktora",
+      "Szkolenia w płytkiej wodzie z plaży",
+      "4 pełne nurkowania szkoleniowe na otwartej wodzie",
+      "Pełne wypożyczenie sprzętu (pianka, JKR, automat, maska, płetwy, butle i balast)",
+      "Wszystkie opłaty za wstęp do zatoki Abu Dabbab",
+      "Codzienny odbiór i powrót do hotelu (Klimatyzowany pojazd)",
+      "Certyfikowany profesjonalny instruktor PADI"
+    ],
+    cz: [
+      "Prístupový kód k oficiálnímu PADI eLearning a materiály",
+      "Poplatky za zpracování certifikace PADI",
+      "Maximální poměr 2 studenti na 1 instruktora",
+      "Tréninky v mělkém prostředí z pláže",
+      "4 plné výcvikové ponory na otevřené vodě",
+      "Zapůjčení kompletní výstroje (neopren, žaket, automatika, maska, ploutve, lahve a zátěž)",
+      "Všechny vstupní poplatky na pláž Abu Dabbab",
+      "Denní vyzvednutí a návrat do hotelu (Klimatizovaný vůz)",
+      "Certifikovaný profesionální instruktor PADI"
+    ]
+  },
+  whatToBring: {
+    en: [
+      "Passport or official ID card",
+      "Swimwear & towel",
+      "Sunscreen (reef-safe preferred)",
+      "Hat & sunglasses",
+      "Personal medication if needed"
+    ],
+    de: [
+      "Reisepass oder offizieller Personalausweis",
+      "Badebekleidung & Handtuch",
+      "Sonnenschutz (rifftfreundlich bevorzugt)",
+      "Hut & Sonnenbrille",
+      "Persönliche Medikamente bei Bedarf"
+    ],
+    it: [
+      "Passaporto o carta d'identità ufficiale",
+      "Costume da bagno e asciugamano",
+      "Protezione solare (preferibilmente reef-safe)",
+      "Cappello e occhiali da sole",
+      "Farmaci personali se necessari"
+    ],
+    ru: [
+      "Паспорт или удостоверение личности",
+      "Купальник/плавки и полотенце",
+      "Солнцезащитный крем (желательно безопасный для рифов)",
+      "Головной убор и солнцезащитные очки",
+      "Личные медикаменты при необходимости"
+    ],
+    pl: [
+      "Paszport lub oficjalny dowód osobisty",
+      "Stroje kąpielowe i ręcznik",
+      "Krem z filtrem (najlepiej bezpieczny dla rafy)",
+      "Czapka i okulary przeciwsłoneczne",
+      "Leki osobiste w razie potrzeby"
+    ],
+    cz: [
+      "Cestovní pas nebo oficiální průkaz totožnosti",
+      "Plavky a ručník",
+      "Opalovací krém (šetrný k útesům)",
+      "Klobouk a sluneční brýle",
+      "Osobní léky v případě potřeby"
+    ]
+  },
+  childrenPolicy: {
+    under5: {
+      en: "Not allowed — Minimum age for PADI Open Water course is 10 years",
+      de: "Nicht erlaubt — Mindestalter für den PADI Open Water Kurs beträgt 10 Jahre",
+      it: "Non consentito — L'età minima per il corso PADI Open Water è 10 anni",
+      ru: "Не допускается — Минимальный возраст для курса PADI Open Water — 10 лет",
+      pl: "Niedozwolone — Minimalny wiek na kurs PADI Open Water to 10 lat",
+      cz: "Není povoleno — Minimální věk pro kurs PADI Open Water je 10 let"
+    },
+    from5to10: {
+      en: "Not allowed — Children must be at least 10 years old to start certification",
+      de: "Nicht erlaubt — Kinder müssen mindestens 10 Jahre alt sein",
+      it: "Non consentito — I bambini devono avere almeno 10 anni",
+      ru: "Не допускается — Детям должно исполниться 10 лет для начала обучения",
+      pl: "Niedozwolone — Dzieci muszą mieć ukończone co najmniej 10 lat",
+      cz: "Není povoleno — Dětem musí být minimálně 10 let"
+    },
+    over10: {
+      en: "Junior Open Water Diver (10–14 yrs): Full adult rate applies (Max depth 12m for 10-11 yrs / 18m for 12-14 yrs)",
+      de: "Junior Open Water Diver (10–14 J.): Voller Tarif (Max. Tiefe 12m für 10-11 J. / 18m für 12-14 J.)",
+      it: "Junior Open Water Diver (10–14 anni): Tariffa intera (Profondità max 12m per 10-11 anni / 18m per 12-14 anni)",
+      ru: "Junior Open Water Diver (10–14 лет): Полный тариф (Макс. глубина 12м для 10-11 лет / 18м для 12-14 лет)",
+      pl: "Junior Open Water Diver (10–14 lat): Pełna stawka (Maks. głębokość 12m dla 10-11 lat / 18m dla 12-14 lat)",
+      cz: "Junior Open Water Diver (10–14 let): Plná cena (Max. hloubka 12m pro 10-11 let / 18m pro 12-14 let)"
+    }
+  },
+  itinerary: [
+    {
+      step: "01",
+      title: {
+        en: "Day 1: Theory & Confined Water — 08:00 AM",
+        de: "Tag 1: Theorie & Flachwasser — 08:00 Uhr",
+        it: "Giorno 1: Teoria e Acque Delimitate — 08:00",
+        ru: "День 1: Теория и практика на мелководье — 08:00",
+        pl: "Dzień 1: Teoria i płytka woda — 08:00",
+        cz: "Den 1: Teorie a mělká voda — 08:00"
+      },
+      description: {
+        en: "Pickup from hotel to Abu Dabbab Bay. Complete digital theory review, gear setup, breathing practice, mask clearing and buoyancy control in shallow water.",
+        de: "Abholung vom Hotel zur Abu Dabbab Bucht. Wiederholung der Theorie, Aufbau der Ausrüstung, Atemübungen und Tarierung im Flachwasser.",
+        it: "Pick-up dall'hotel per Abu Dabbab. Ripasso teoria, montaggio attrezzatura, respirazione e controllo dell'assetto in acqua bassa.",
+        ru: "Трансфер в Абу-Даббаб. Разбор теории, сборка снаряжения, упражнения на дыхание, очистка маски и плавучесть на мелководье.",
+        pl: "Odbiór z hotelu do Abu Dabbab. Przegląd teorii, montaż sprzętu, ćwiczenia oddechowe i kontrola pływalności w płytkiej wodzie.",
+        cz: "Vyzvednutí z hotelu do Abu Dabbab. Opakování teorie, příprava výstroje, dýchací cvičení a vyvážení v mělkém prostředí."
+      }
+    },
+    {
+      step: "02",
+      title: {
+        en: "Day 2: Open Water Dives 1 & 2 — 08:00 AM",
+        de: "Tag 2: Freiwassertauchgänge 1 & 2 — 08:00 Uhr",
+        it: "Giorno 2: Immersioni 1 e 2 — 08:00",
+        ru: "День 2: Погружения 1 и 2 в открытой воде — 08:00",
+        pl: "Dzień 2: Nurkowania 1 i 2 na otwartej wodzie — 08:00",
+        cz: "Den 2: Ponory 1 a 2 na otevřené vodě — 08:00"
+      },
+      description: {
+        en: "First real ocean dives in Abu Dabbab Bay. Practice emergency procedures, navigation, and marine life exploration down to 12 metres.",
+        de: "Erste echte Tauchgänge in der Bucht von Abu Dabbab. Übung von Sicherheitsverfahren, Navigation und Erkundung der Unterwasserwelt bis 12m.",
+        it: "Prime vere immersioni nella baia di Abu Dabbab. Pratica di procedure d'emergenza, navigazione ed esplorazione del reef fino a 12 metri.",
+        ru: "Первые настоящие погружения в бухте Абу-Даббаб. Отработка аварийных навыков, навигация и исследование рифа до 12 метров.",
+        pl: "Pierwsze nurkowania w zatoce Abu Dabbab. Ćwiczenie procedur bezpieczeństwa, nawigacji i obserwacja rafy do 12 metrów.",
+        cz: "První opravdové ponory v zátoce Abu Dabbab. Nácvik bezpečnostních postupy, navigace a prozkoumávání útesu do 12 metrů."
+      }
+    },
+    {
+      step: "03",
+      title: {
+        en: "Day 3: Open Water Dives 3 & 4 — 08:00 AM",
+        de: "Tag 3: Freiwassertauchgänge 3 & 4 — 08:00 Uhr",
+        it: "Giorno 3: Immersioni 3 e 4 — 08:00",
+        ru: "День 3: Погружения 3 и 4 в открытой воде — 08:00",
+        pl: "Dzień 3: Nurkowania 3 i 4 na otwartej wodzie — 08:00",
+        cz: "Den 3: Ponory 3 a 4 na otevřené vodě — 08:00"
+      },
+      description: {
+        en: "Final qualification dives down to maximum 18 metres. Demonstrate full skill mastery, buoyancy control and underwater communication.",
+        de: "Abschlusstauchgänge bis maximal 18 Meter. Beherrschung aller Fähigkeiten, Tarierung und Unterwasserkommunikation demonstrieren.",
+        it: "Immersioni finali di qualifica fino a 18 metri. Dimostrazione di piena padronanza delle abilità, assetto e comunicazione.",
+        ru: "Финальные погружения до 18 метров. Демонстрация всех навыков, идеального контроля плавучести и связи под водой.",
+        pl: "Finałowe nurkowania do 18 metrów. Demonstrowanie opanowania umiejętności, pływalności i komunikacji pod wodą.",
+        cz: "Závěrečné kvalifikační ponory do 18 metrů. Prokázání plného zvládnutí dovedností, vyvážení a podmořské komunikace."
+      }
+    },
+    {
+      step: "04",
+      title: {
+        en: "Day 4: Optional Day / Certification — Flexible",
+        de: "Tag 4: Optionaler Tag / Zertifizierung — Flexibel",
+        it: "Giorno 4: Giorno Opzionale / Certificazione — Flessibile",
+        ru: "День 4: Дополнительный день / Сертификация — По графику",
+        pl: "Dzień 4: Dzień opcjonalny / Certyfikacja — Elastycznie",
+        cz: "Den 4: Volitelný den / Certifikace — Flexibilní"
+      },
+      description: {
+        en: "Buffer day for additional skill practice if needed, logging dives, and processing your official lifetime PADI Open Water Diver e-Card.",
+        de: "Puffertag für zusätzliche Übungen bei Bedarf, Logbuchführen und Ausstellung Ihrer offiziellen PADI e-Card.",
+        it: "Giorno di margine per eventuale pratica extra, compilazione logbook e rilascio del brevetto digitale ufficiale PADI.",
+        ru: "Резервный день для дополнительной практики при необходимости, заполнения логбука и получения официального e-Card PADI.",
+        pl: "Dzień zapasowy na dodatkowe ćwiczenia w razie potrzeby, wpisy do logbooka i wydanie oficjalnej e-Karty PADI.",
+        cz: "Rezervní den pro případný dodatečný nácvik, zápis do logbooku a vystavení oficiální e-Karty PADI."
+      }
+    }
+  ],
+  paymentNote: {
+    en: "Flexible Payment Plan: €200 paid after successfully completing Day 1. Remaining €220 paid upon final course completion. No online deposit required.",
+    de: "Flexibler Zahlungsplan: 200 € nach erfolgreichem Abschluss von Tag 1. Die restlichen 220 € nach Kursabschluss. Keine Online-Anzahlung.",
+    it: "Pagamento flessibile: €200 pagati dopo il completamento del 1° giorno. I restanti €220 al completamento del corso. Nessun deposito online.",
+    ru: "Гибкая оплата: 200 € оплачиваются после 1-го дня. Оставшиеся 220 € — после завершения курса. Без предоплаты.",
+    pl: "Elastyczna płatność: 200 € po ukończeniu 1. dnia. Pozostałe 220 € po ukończeniu całego kursu. Bez zaliczek online.",
+    cz: "Flexibilní platba: 200 € po úspěšném dokončení 1. dne. Zbývajících 220 € po dokončení kurzu. Bez zálohy."
+  },
+  disclaimer: {
+    en: "Students must be comfortable in the water and meet medical fitness standards. PADI Open Water Diver is a complete certification course and dives cannot be sold as separate daily trips. Instructor holds full authority to modify schedule based on student progress or weather.",
+    de: "Schüler müssen schwimmsicher sein und medizinische Voraussetzungen erfüllen. Der Kurs ist ein komplettes Zertifizierungsprogramm. Der Tauchlehrer kann den Zeitplan je nach Lernfortschritt oder Wetter anpassen.",
+    it: "Gli studenti devono saper nuotare e soddisfare i requisiti medici. Il corso è un programma completo. L'istruttore si riserva il diritto di modificare il programma in base ai progressi o al meteo.",
+    ru: "Студенты должны уметь плавать и соответствовать медицинским требованиям. Курс является целостной программой. Инструктор вправе менять график исходя из успехов ученика или погоды.",
+    pl: "Uczestnicy muszą umieć pływać i spełniać wymogi medyczne. Kurs jest pełnym programem certyfikacyjnym. Instruktor ma prawo dostosować harmonogram do postępów lub pogody.",
+    cz: "Studenti musí umět plavat a splňovat zdravotní způsobilost. Kurz je ucelený program. Instruktor má právo upravit harmonogram podle pokroků studenta nebo počasí."
+  },
+  images: {
+    featured: "/images/tours/padi-open-water.webp",
+    gallery: [
+      "/images/tours/padi-open-water-1.webp",
+      "/images/tours/padi-open-water-2.webp",
+      "/images/tours/padi-open-water-3.webp"
+    ]
+  }
+},
+{
+  id: "padi-advanced-open-water-diver",
+  slug: "padi-advanced-open-water-diver-course",
+  type: "courses",
+  title: {
+    en: "PADI Advanced Open Water Diver Course",
+    de: "PADI Advanced Open Water Diver Kurs",
+    it: "Corso PADI Advanced Open Water Diver",
+    ru: "Курс PADI Advanced Open Water Diver",
+    pl: "Kurs PADI Advanced Open Water Diver",
+    cz: "Kurz PADI Advanced Open Water Diver"
+  },
+  subtitle: {
+    en: "Premium Small-Group Advanced Course (6 Dives & Dolphin House Boat Trip)",
+    de: "Premium-Fortgeschrittenenkurs in kleinen Gruppen (6 Tauchgänge & Dolphin House Bootsausflug)",
+    it: "Corso Avanzato Premium in Piccoli Gruppi (6 Immersioni e Gita in Barca a Dolphin House)",
+    ru: "Премиум-курс для продвинутых в малых группах (6 погружений и выезд в Dolphin House)",
+    pl: "Zaawansowany kurs premium w małych grupach (6 nurkowań i rejs do Dolphin House)",
+    cz: "Pokročilý kurz premium v malých skupinách (6 ponorů a výlet lodí do Dolphin House)"
+  },
+  category: {
+    en: "Diving Courses",
+    de: "Tauchkurse",
+    it: "Corsi Subacquei",
+    ru: "Курсы Дайвинга",
+    pl: "Kursy Nurkowe",
+    cz: "Potápěčské Kurzy"
+  },
+  price: {
+    amount: 400,
+    currency: "€",
+    unit: {
+      en: "per person (6 Dives, Boat Trip & Full Gear Included)",
+      de: "pro Person (6 Tauchgänge, Bootsfahrt & Ausrüstung inklusive)",
+      it: "per persona (6 Immersioni, Gita in Barca e Attrezzatura Inclusi)",
+      ru: "за человека (6 погружений, прогулка на корабле и снаряжение включены)",
+      pl: "za osobę (6 nurkowań, rejs i sprzęt w cenie)",
+      cz: "za osobu (6 ponorů, výlet lodí a výstroj v ceně)"
+    }
+  },
+  duration: {
+    en: "2 Days (Shore & Boat Experience)",
+    de: "2 Tage (Strand- & Bootserlebnis)",
+    it: "2 Giorni (Esperienza da Riva e Barca)",
+    ru: "2 Дня (с берега и с корабля)",
+    pl: "2 Dni (Z brzegu i z łodzi)",
+    cz: "2 Dny (Z pláže i z lodi)"
+  },
+  departure: {
+    en: "Abu Dabbab Bay & Dolphin House (Samadai Reef)",
+    de: "Abu Dabbab Bucht & Dolphin House (Samadai Riff)",
+    it: "Baia di Abu Dabbab e Dolphin House (Samadai Reef)",
+    ru: "Бухта Абу-Дабаб и Dolphin House (Риф Самадай)",
+    pl: "Zatoka Abu Dabbab i Dolphin House (Rafa Samadai)",
+    cz: "Zátoka Abu Dabbab a Dolphin House (Útes Samadai)"
+  },
+  overview: {
+    en: "Take your diving to the next level with the PADI Advanced Open Water Diver course. Complete 5 Adventure Dives (Peak Buoyancy, Navigation, Deep, Boat & Drift, Underwater Exploration) plus 1 extra guided dive—combining shore diving at Abu Dabbab Bay and boat diving at Dolphin House (Samadai) with maximum 2 students per instructor.",
+    de: "Bringen Sie Ihr Tauchen auf das nächste Level mit dem PADI Advanced Open Water Diver Kurs. Absolvieren Sie 5 Adventure-Tauchgänge plus 1 zusätzlichen geführten Tauchgang – eine Kombination aus Strandtauchen in Abu Dabbab und Bootstauchen im Dolphin House (Samadai) mit max. 2 Schülern pro Tauchlehrer.",
+    it: "Porta la tua subacquea al livello successivo con il corso PADI Advanced Open Water Diver. Completa 5 Adventure Dives più 1 immersione guidata extra, unendo immersioni da riva a Abu Dabbab e in barca a Dolphin House (Samadai) con massimo 2 studenti per istruttore.",
+    ru: "Поднимите свой дайвинг на новый уровень с курсом PADI Advanced Open Water Diver. Пройдите 5 специализированных погружений и 1 дополнительное с гидом, совмещая погружения с берега в Абу-Даббаб и с корабля в Dolphin House (Самадай) при макс. 2 студентах на инструктора.",
+    pl: "Wejdź na wyższy poziom nurkowania z kursem PADI Advanced Open Water Diver. Ukończ 5 nurkowań przygodowych oraz 1 dodatkowe nurkowanie z przewodnikiem, łącząc nurkowanie z brzegu w Abu Dabbab i z łodzi w Dolphin House (Samadai) z maks. 2 studentami na instruktora.",
+    cz: "Posuňte své potápění na vyšší úroveň s kurzem PADI Advanced Open Water Diver. Dokončete 5 dobrodružných ponorů a 1 dodatečný ponor s průvodcem, kombinující potápění z pláže v Abu Dabbab a z lodi v Dolphin House (Samadai) s max. 2 studenty na instruktora."
+  },
+  highlights: {
+    en: [
+      "Maximum 2 students per instructor for personalized instruction",
+      "Includes 6 guided dives in total (5 Adventure Dives + 1 Extra Dive)",
+      "Deep Dive experience down to maximum 30 metres",
+      "Full-day boat trip to Dolphin House (Samadai Reef) with buffet lunch",
+      "Shore diving skills practice at Abu Dabbab Bay",
+      "Official PADI Advanced eLearning digital materials included",
+      "Full high-quality equipment rental & navigation compass included",
+      "Marine Park fees & hotel pickup/drop-off fully covered"
+    ],
+    de: [
+      "Maximal 2 Schüler pro Tauchlehrer für persönliche Betreuung",
+      "Inklusive 6 geführte Tauchgänge insgesamt (5 Adventure-Tauchgänge + 1 Extra)",
+      "Tieftaucherfahrung bis maximal 30 Meter",
+      "Ganztägiger Bootsausflug zum Dolphin House (Samadai Riff) inkl. Mittagessen",
+      "Fähigkeitstraining vom Strand in der Abu Dabbab Bucht",
+      "Offizielles digitales PADI Advanced eLearning-Material inklusive",
+      "Komplette hochwertige Ausrüstung & Navigationskompass inklusive",
+      "Meerespark-Gebühren & Hotel-Transfer vollständig abgedeckt"
+    ],
+    it: [
+      "Massimo 2 studenti per istruttore per un insegnamento personalizzato",
+      "Include 6 immersioni guidate in totale (5 Adventure Dives + 1 Extra)",
+      "Esperienza di immersione profonda fino a un massimo di 30 metri",
+      "Gita in barca di un giorno intero a Dolphin House (Samadai) con pranzo a buffet",
+      "Pratica delle abilità da riva nella baia di Abu Dabbab",
+      "Materiali digitali ufficiali PADI Advanced eLearning inclusi",
+      "Noleggio attrezzatura completa di alta qualità e bussola inclusi",
+      "Tasse del Parco Marino e transfer da/per l'hotel inclusi"
+    ],
+    ru: [
+      "Максимум 2 студента на инструктора для персонального обучения",
+      "Включает 6 погружений с гидом (5 учебных + 1 дополнительное)",
+      "Опыт глубоководного погружения на глубину до 30 метров",
+      "Полнодневная прогулка на корабле в Dolphin House (Самадай) с обедом",
+      "Практика навыков с берега в бухте Абу-Даббаб",
+      "Официальные цифровые учебные материалы PADI Advanced eLearning",
+      "Полная аренда высококачественного снаряжения и компаса включена",
+      "Сборы морского заповедника и трансфер из/в отель включены"
+    ],
+    pl: [
+      "Maksymalnie 2 studentów na instruktora dla spersonalizowanej nauki",
+      "Łącznie 6 nurkowań z przewodnikiem (5 nurkowań przygodowych + 1 extra)",
+      "Głębokie nurkowanie do maksymalnie 30 metrów",
+      "Całodniowy rejs do Dolphin House (Rafa Samadai) z obiadami w formie bufetu",
+      "Praktyka umiejętności z brzegu w Zatoce Abu Dabbab",
+      "Oficjalny PADI Advanced eLearning w cenie",
+      "Pełne wypożyczenie wysokiej jakości sprzętu i kompasu w cenie",
+      "Opłaty за Park Morski oraz transfer z/do hotelu w cenie"
+    ],
+    cz: [
+      "Maximálně 2 studenti na instruktora pro osobní přístup",
+      "Zahrnuje celkem 6 ponorů s průvodcem (5 dobrodružných + 1 extra)",
+      "Zkušenost s hloubkovým ponorem až do 30 metrů",
+      "Celodenní výlet lodí do Dolphin House (Útes Samadai) s obědem",
+      "Trénink dovedností z pláže v zátoce Abu Dabbab",
+      "Oficiální digitální materiály PADI Advanced eLearning v ceně",
+      "Zapůjčení kompletního kvalitního vybavení a kompasu v ceně",
+      "Poplatky za mořský park a transfery z/do hotelu v ceně"
+    ]
+  },
+  included: {
+    en: [
+      "Official PADI Advanced eLearning access & certification fees",
+      "Maximum 2:1 student-to-instructor ratio",
+      "5 Required PADI Adventure Dives + 1 additional guided dive (6 total)",
+      "Day 1: Shore diving at Abu Dabbab Bay",
+      "Day 2: Full-day boat cruise to Dolphin House (Samadai Reef)",
+      "Buffet lunch, soft drinks & mineral water on Day 2 boat trip",
+      "Samadai Marine Park protection fees",
+      "Full rental equipment (wetsuit, BCD, regulator, mask, fins, tanks, weights)",
+      "Underwater navigation compass & dive equipment",
+      "Round-trip hotel transfers in A/C vehicle",
+      "Professional certified PADI Instructor"
+    ],
+    de: [
+      "Offizieller PADI Advanced eLearning-Zugang & Zertifizierungsgebühren",
+      "Betreuungsverhältnis von max. 2 Schülern pro Tauchlehrer",
+      "5 PADI Adventure-Tauchgänge + 1 zusätzlicher geführter Tauchgang (6 gesamt)",
+      "Tag 1: Strandtauchen in der Bucht von Abu Dabbab",
+      "Tag 2: Ganztägige Bootsfahrt zum Dolphin House (Samadai Riff)",
+      "Mittagsbuffet, Erfrischungsgetränke & Mineralwasser am Tag 2 auf dem Boot",
+      "Samadai Meerespark-Schutzgebühren",
+      "Komplette Ausrüstung (Neoprenanzug, Tarrierweste, Atemregler, Maske, Flossen, Flaschen, Blei)",
+      "Unterwasser-Navigationskompass & Zubehör",
+      "Hin- und Rücktransfer vom Hotel im klimatisierten Fahrzeug",
+      "Zertifizierter professioneller PADI Tauchlehrer"
+    ],
+    it: [
+      "Accesso PADI Advanced eLearning ufficiale e tasse di certificazione",
+      "Rapporto massimo 2 studenti per istruttore",
+      "5 PADI Adventure Dives obbligatorie + 1 immersione guidata extra (6 in totale)",
+      "Giorno 1: Immersioni da riva nella baia di Abu Dabbab",
+      "Giorno 2: Crociera giornaliera in barca a Dolphin House (Samadai Reef)",
+      "Pranzo a buffet, bevande analcoliche e acqua minerale in barca il 2° giorno",
+      "Tasse del Parco Marino di Samadai",
+      "Attrezzatura completa a noleggio (muta, BCD, erogatore, maschera, pinne, bombole, zavorra)",
+      "Bussola per navigazione subacquea",
+      "Trasferimento A/R dall'hotel in veicolo climatizzato",
+      "Istruttore subacqueo PADI professionista certificato"
+    ],
+    ru: [
+      "Доступ к PADI Advanced eLearning и сборы за оформление сертификата",
+      "Максимальное соотношение: 2 студента на 1 инструктора",
+      "5 обязательных погружений Adventure Dives + 1 дополнительное (всего 6)",
+      "День 1: Погружения с берега в бухте Абу-Даббаб",
+      "День 2: Полнодневная прогулка на яхте в Dolphin House (Риф Самадай)",
+      "Обед 'шведский стол', безалкогольные напитки и вода на яхте во 2-й день",
+      "Сборы за посещение заповедника Самадай",
+      "Полная аренда снаряжения (гидрокостюм, BCD, регулятор, маска, ласты, баллоны, грузы)",
+      "Подводный компас для навигации",
+      "Трансфер из отеля и обратно на авто с кондиционером",
+      "Сертифицированный профессиональный инструктор PADI"
+    ],
+    pl: [
+      "Oficjalny dostęp do PADI Advanced eLearning i opłaty certyfikacyjne",
+      "Maksymalnie 2 studentów na 1 instruktora",
+      "5 wymaganych nurkowań PADI Adventure + 1 dodatkowe z przewodnikiem (łącznie 6)",
+      "Dzień 1: Nurkowanie z brzegu w Zatoce Abu Dabbab",
+      "Dzień 2: Całodniowy rejs statkiem do Dolphin House (Rafa Samadai)",
+      "Obiad w formie bufetu, napoje i woda mineralna na łodzi w 2. dniu",
+      "Opłaty za wstęp do Parku Morskiego Samadai",
+      "Pełne wypożyczenie sprzętu (pianka, JKR, automat, maska, płetwy, butle, balast)",
+      "Kompas do nawigacji podwodnej",
+      "Odbiór i powrót do hotelu klimatyzowanym pojazdem",
+      "Certyfikowany profesjonalny instruktor PADI"
+    ],
+    cz: [
+      "Oficiální přístup k PADI Advanced eLearning a certifikační poplatky",
+      "Maximální poměr 2 studenti na 1 instruktora",
+      "5 povinných ponorů PADI Adventure + 1 dodatečný ponor s průvodcem (celkem 6)",
+      "Den 1: Potápění z pláže v zátoce Abu Dabbab",
+      "Den 2: Celodenní plavba lodí do Dolphin House (Útes Samadai)",
+      "Oběd formou bufetu, nealkoholické nápoje a voda na lodi 2. den",
+      "Poplatky za vstup do mořského parku Samadai",
+      "Zapůjčení kompletní výstroje (neopren, žaket, automatika, maska, ploutve, lahve, zátěž)",
+      "Kompas pro podmořskou navigaci",
+      "Zpáteční transfery z hotelu klimatizovaným vozem",
+      "Certifikovaný profesionální instruktor PADI"
+    ]
+  },
+  whatToBring: {
+    en: [
+      "PADI Open Water Diver certification card (Digital copy accepted)",
+      "Diving Logbook (digital or physical)",
+      "Confirmation of PADI Advanced eLearning completion",
+      "Passport or official ID",
+      "Swimwear & towel",
+      "Dry clothes",
+      "Reef-safe sunscreen",
+      "Hat & sunglasses",
+      "Personal medication if needed"
+    ],
+    de: [
+      "PADI Open Water Diver Brevet (Digitale Kopie akzeptiert)",
+      "Tauchlogbuch (digital oder physisch)",
+      "Bestätigung über den Abschluss des PADI Advanced eLearning",
+      "Reisepass oder offizieller Personalausweis",
+      "Badebekleidung & Handtuch",
+      "Trockene Kleidung",
+      "Riff-freundliche Sonnencreme",
+      "Hut & Sonnenbrille",
+      "Persönliche Medikamente bei Bedarf"
+    ],
+    it: [
+      "Brevetto PADI Open Water Diver (Accettata copia digitale)",
+      "Logbook subacqueo (digitale o fisico)",
+      "Conferma del completamento del PADI Advanced eLearning",
+      "Passaporto o documento d'identità",
+      "Costume da bagno e asciugamano",
+      "Abiti asciutti",
+      "Protezione solare reef-safe",
+      "Cappello e occhiali da sole",
+      "Farmaci personali se necessari"
+    ],
+    ru: [
+      "Сертификат PADI Open Water Diver (Принимается цифровая копия)",
+      "Дайверский логбук (цифровой или бумажный)",
+      "Подтверждение прохождения PADI Advanced eLearning",
+      "Паспорт или удостоверение личности",
+      "Купальник/плавки и полотенце",
+      "Сухая одежда",
+      "Солнцезащитный крем (безопасный для рифов)",
+      "Головной убор и очки",
+      "Личные медикаменты"
+    ],
+    pl: [
+      "Certyfikat PADI Open Water Diver (Akceptowana kopia cyfrowa)",
+      "Logbook nurkowy (cyfrowy lub fizyczny)",
+      "Potwierdzenie ukończenia PADI Advanced eLearning",
+      "Paszport lub dowód osobisty",
+      "Stroje kąpielowe i ręcznik",
+      "Suche ubrania na zmianę",
+      "Krem z filtrem bezpieczny dla rafy",
+      "Czapka i okulary przeciwsłoneczne",
+      "Leki osobiste w razie potrzeby"
+    ],
+    cz: [
+      "Certifikace PADI Open Water Diver (Akceptována digitální kopie)",
+      "Potápěčský logbook (digitální nebo fyzický)",
+      "Potvrzení o dokončení PADI Advanced eLearning",
+      "Cestovní pas nebo průkaz totožnosti",
+      "Plavky a ručník",
+      "Suché oblečení",
+      "Opalovací krém šetrný k útesům",
+      "Klobouk a sluneční brýle",
+      "Osobní léky v případě potřeby"
+    ]
+  },
+  childrenPolicy: {
+    under5: {
+      en: "Not allowed — Minimum age for PADI Advanced course is 12 years",
+      de: "Nicht erlaubt — Mindestalter für den PADI Advanced Kurs beträgt 12 Jahre",
+      it: "Non consentito — L'età minima per il corso PADI Advanced è 12 anni",
+      ru: "Не допускается — Минимальный возраст для курса PADI Advanced — 12 лет",
+      pl: "Niedozwolone — Minimalny wiek na kurs PADI Advanced to 12 lat",
+      cz: "Není povoleno — Minimální věk pro kurz PADI Advanced je 12 let"
+    },
+    from5to10: {
+      en: "Not allowed — Must be at least 12 years old and hold Open Water Diver certification",
+      de: "Nicht erlaubt — Mindestalter 12 Jahre und Open Water Zertifizierung erforderlich",
+      it: "Non consentito — Richiesti almeno 12 anni e brevetto Open Water Diver",
+      ru: "Не допускается — Требуется возраст от 12 лет и наличие сертификата Open Water",
+      pl: "Niedozwolone — Wymagane ukończone 12 lat i certyfikat Open Water Diver",
+      cz: "Není povoleno — Vyžadován věk minimálně 12 let a certifikace Open Water Diver"
+    },
+    over10: {
+      en: "Junior Advanced Open Water Diver (12–14 yrs): Full adult rate applies (Max depth limit 21m for 12-14 yrs / 30m for 15+ yrs)",
+      de: "Junior Advanced Open Water Diver (12–14 J.): Voller Tarif (Max. Tiefe 21m für 12-14 J. / 30m ab 15 J.)",
+      it: "Junior Advanced Open Water Diver (12–14 anni): Tariffa intera (Profondità max 21m per 12-14 anni / 30m dai 15 anni)",
+      ru: "Junior Advanced Open Water Diver (12–14 лет): Полный тариф (Макс. глубина 21м для 12-14 лет / 30м для 15+ лет)",
+      pl: "Junior Advanced Open Water Diver (12–14 lat): Pełna stawka (Maks. głębokość 21m dla 12-14 lat / 30m dla 15+ lat)",
+      cz: "Junior Advanced Open Water Diver (12–14 let): Plná cena (Max. hloubková hranice 21m pro 12-14 let / 30m pro 15+ let)"
+    }
+  },
+  itinerary: [
+    {
+      step: "01",
+      title: {
+        en: "Day 1: Abu Dabbab Shore Training — 08:00 AM",
+        de: "Tag 1: Abu Dabbab Strandtraining — 08:00 Uhr",
+        it: "Giorno 1: Addestramento da Riva a Abu Dabbab — 08:00",
+        ru: "День 1: Тренировки с берега в Абу-Даббаб — 08:00",
+        pl: "Dzień 1: Szkolenie z brzegu w Abu Dabbab — 08:00",
+        cz: "Den 1: Trénink z pláže v Abu Dabbab — 08:00"
+      },
+      description: {
+        en: "Hotel pickup & transfer to Abu Dabbab. Briefing followed by Peak Performance Buoyancy Adventure Dive and Underwater Navigation Adventure Dive.",
+        de: "Hotelabholung & Transfer nach Abu Dabbab. Briefing, gefolgt vom Tarierung in Perfektion- & Unterwasser-Navigations-Tauchgang.",
+        it: "Pick-up dall'hotel e transfer a Abu Dabbab. Briefing seguito da Adventure Dives di Assetto e Navigazione Subacquea.",
+        ru: "Трансфер из отеля в Абу-Даббаб. Брифинг, погружение на отработку идеальной плавучести и погружение по подводной навигации.",
+        pl: "Odbiór z hotelu i transfer do Abu Dabbab. Odprawa, a następnie nurkowania przygodowe: Doskonała Pływalność i Nawigacja Podwodna.",
+        cz: "Vyzvednutí v hotelu a transfer do Abu Dabbab. Briefing a následně ponory: Dokonalé vyvážení a Podmořská navigace."
+      }
+    },
+    {
+      step: "02",
+      title: {
+        en: "Day 2: Dolphin House Boat Expedition — 07:00 AM",
+        de: "Tag 2: Bootsausflug zum Dolphin House — 07:00 Uhr",
+        it: "Giorno 2: Spedizione in Barca a Dolphin House — 07:00",
+        ru: "День 2: Морская экспедиция в Dolphin House — 07:00",
+        pl: "Dzień 2: Wycieczka statkiem do Dolphin House — 07:00",
+        cz: "Den 2: Výprava lodí do Dolphin House — 07:00"
+      },
+      description: {
+        en: "Transfer to marina and sail to Samadai Reef (Dolphin House). Complete Deep Adventure Dive (up to 30m), Boat & Drift Dive, Underwater Exploration Dive, plus 1 additional guided dive.",
+        de: "Transfer zur Marina und Fahrt zum Samadai Riff. Absolvierung von Tieftauchen (bis 30m), Boots- & Strömungstauchen, Unterwasser-Erkundung sowie 1 zusätzlichen geführten Tauchgang.",
+        it: "Trasferimento al marina e navigazione verso Samadai Reef. Immersioni: Profonda (fino a 30m), Barca e Corrente, Esplorazione Subacquea + 1 immersione guidata extra.",
+        ru: "Трансфер в марину и выход в море к рифу Самадай. Глубоководное погружение (до 30м), погружение с дрейфом, исследование рифа и 1 дополнительное погружение.",
+        pl: "Transfer do przystani i rejs na Rafę Samadai. Nurkowanie głębokie (do 30m), z łodzi/w prądzie, eksploracyjne oraz 1 dodatkowe nurkowanie z przewodnikiem.",
+        cz: "Transfer do maríny a plavba na útes Samadai. Hloubkový ponor (až 30m), ponor z lodi v proudu, průzkumný ponor a 1 dodatečný ponor s průvodcem."
+      }
+    },
+    {
+      step: "03",
+      title: {
+        en: "Onboard Buffet Lunch & Relaxation — 01:00 PM",
+        de: "Mittagsbuffet an Bord & Entspannung — 13:00 Uhr",
+        it: "Pranzo a Buffet a Bordo e Relax — 13:00",
+        ru: "Обед 'шведский стол' на корабле и отдых — 13:00",
+        pl: "Obiad w formie bufetu na łodzi i relaks — 13:00",
+        cz: "Oběd formou bufetu na lodi a relaxace — 13:00"
+      },
+      description: {
+        en: "Enjoy freshly prepared lunch and refreshments on the boat deck, log your dives with your instructor, and relax during the return cruise.",
+        de: "Genießen Sie ein frisch zubereitetes Mittagessen und Erfrischungen an Bord, tragen Sie die Tauchgänge ins Logbuch ein und entspannen Sie auf der Rückfahrt.",
+        it: "Gusta un pranzo fresco e rinfreschi sul ponte della barca, compila il logbook con l'istruttore e rilassati durante il rientro.",
+        ru: "Свежеприготовленный обед и напитки на палубе, заполнение логбука с инструктором и отдых во время обратного пути.",
+        pl: "Ciesz się świeżo przygotowanym obiadem i napojami na pokładzie, uzupełnij logbook z instruktorem i zrelaksuj się w drodze powrotnej.",
+        cz: "Užijte si čerstvě připravený oběd a občerstvení na palubě, zapište ponory do logbooku s instruktorem a relaxujte během plavby zpět."
+      }
+    },
+    {
+      step: "04",
+      title: {
+        en: "Return & Certification — 02:30 PM",
+        de: "Rückkehr & Zertifizierung — 14:30 Uhr",
+        it: "Rientro e Certificazione — 14:30",
+        ru: "Возвращение и сертификация — 14:30",
+        pl: "Powrót i certyfikacja — 14:30",
+        cz: "Návrat a certifikace — 14:30"
+      },
+      description: {
+        en: "Return to the marina, review final skills performance, process your official lifetime PADI Advanced Open Water Diver certification and transfer back to hotel.",
+        de: "Ankunft in der Marina, Auswertung der Leistungen, Ausstellung der offiziellen PADI Advanced e-Card und Rücktransfer zum Hotel.",
+        it: "Rientro al marina, debriefing finale, elaborazione del brevetto ufficiale PADI Advanced e transfer di ritorno in hotel.",
+        ru: "Возвращение в марину, финальный дебрифинг, оформление официального сертификата PADI Advanced e-Card и трансфер в отель.",
+        pl: "Powrót do przystani, podsumowanie wyników, wydanie oficjalnego certyfikatu PADI Advanced i transfer powrotny do hotelu.",
+        cz: "Návrat do maríny, závěrečné vyhodnocení, vystavení oficiální e-Karty PADI Advanced a transfer zpět do hotelu."
+      }
+    }
+  ],
+  paymentNote: {
+    en: "Flexible Payment Terms: €200 paid after completing Day 1. Remaining €200 paid upon full course completion on Day 2. No online payment or deposit required. Custom discount applied if you bring your own equipment.",
+    de: "Flexibles Zahlungsmodell: 200 € nach Tag 1. Die restlichen 200 € nach Abschluss des Kurses an Tag 2. Keine Online-Anzahlung erforderlich. Rabatt bei eigener Ausrüstung.",
+    it: "Pagamento Flessibile: €200 pagati dopo il 1° giorno. I restanti €200 al completamento del corso il 2° giorno. Nessun acconto online richiesto. Sconto se porti la tua attrezzatura.",
+    ru: "Гибкая оплата: 200 € оплачиваются после 1-го дня. Оставшиеся 200 € — после полного завершения курса во 2-й день. Без предоплаты. Скидка при наличии своего снаряжения.",
+    pl: "Elastyczna płatność: 200 € po ukończeniu 1. dnia. Pozostałe 200 € po ukończeniu kursu w 2. dniu. Bez zaliczek online. Zniżka przy własnym sprzęcie.",
+    cz: "Flexibilní platba: 200 € po dokončení 1. dne. Zbývajících 200 € po dokončení kurzu 2. den. Bez zálohy. Při vlastním vybavení bude uplatněna sleva."
+  },
+  disclaimer: {
+    en: "Prerequisite: Must hold a PADI Open Water Diver certification (or equivalent). Complete certification program consisting of 6 dives total. Schedule and dive sites may be modified by instructor depending on weather, visibility, currents and safety conditions.",
+    de: "Voraussetzung: PADI Open Water Diver Zertifikat (oder Äquivalent). Vollständiges Zertifizierungsprogramm mit 6 Tauchgängen. Der Tauchlehrer kann den Ablauf je nach Wetter, Sicht und Strömung anpassen.",
+    it: "Prerequisito: Requisito di brevetto PADI Open Water Diver (o equivalente). Programma di certificazione completo di 6 immersioni. L'istruttore può modificare l'itinerario in base alle condizioni meteo e di sicurezza.",
+    ru: "Предварительные требования: Наличие сертификата PADI Open Water Diver (или аналога). Полный курс из 6 погружений. Маршрут и график могут быть изменены инструктором в зависимости от погоды и условий в море.",
+    pl: "Wymagania wstępne: Certyfikat PADI Open Water Diver (lub odpowiednik). Pełny program certyfikacyjny obejmujący 6 nurkowań. Instruktor zastrzega sobie prawo do zmiany harmonogramu ze względów bezpieczeństwa lub pogodowych.",
+    cz: "Předpoklad: Certifikace PADI Open Water Diver (nebo ekvivalent). Ucelený certifikační program obsahující celkem 6 ponorů. Instruktor může upravit harmonogram podle počasí, viditelnosti a mořských proudů."
+  },
+  images: {
+    featured: "/images/tours/padi-advanced-open-water.webp",
+    gallery: [
+      "/images/tours/padi-advanced-open-water-1.webp",
+      "/images/tours/padi-advanced-open-water-2.webp",
+      "/images/tours/padi-advanced-open-water-3.png"
+    ]
+  }
+},
+{
+  id: "private-luxor-day-trip",
+  slug: "private-luxor-day-trip-from-marsa-alam",
+  type: "city-tours", 
+  title: {
+    en: "Private Luxor Day Trip from Marsa Alam",
+    de: "Privater Tagesausflug nach Luxor von Marsa Alam",
+    it: "Escursione Privata a Luxor da Marsa Alam",
+    ru: "Частная экскурсия в Луксор из Марса-Алам",
+    pl: "Prywatna wycieczka do Luksoru z Marsa Alam",
+    cz: "Soukromý celodenní výlet do Luxoru z Marsa Alam"
+  },
+  subtitle: {
+    en: "Full-Day Private Guided Tour to Ancient Thebes (East & West Banks)",
+    de: "Ganztägige private Führung durch das antike Theben (Ost- & Westufer)",
+    it: "Tour Privato con Guida per l'Intera Giornata all'Antica Tebe (Riva Est e Ovest)",
+    ru: "Частный однодневный тур с гидом по древним Фивам (Восточный и Западный берег)",
+    pl: "Prywatna całodniowa wycieczka z przewodnikiem do starożytnych Teb (Wschodni i Zachodni Brzeg)",
+    cz: "Soukromá celodenní prohlídka starověkých Théb s průvodcem (Východní a Západní břeh)"
+  },
+  category: {
+    en: "City Tours",
+    de: "Städtereisen & Kultur",
+    it: "Tour delle Città",
+    ru: "Экскурсии по Городам",
+    pl: "Wycieczki Miejskie",
+    cz: "Městské Tours"
+  },
+  price: {
+    amount: 170,
+    currency: "€",
+    unit: {
+      en: "per person (Private Vehicle & Egyptologist Included - Min. 2 Persons)",
+      de: "pro Person (Privatfahrzeug & Ägyptologe inklusive - Mind. 2 Personen)",
+      it: "per persona (Veicolo Privato ed Egittologo Inclusi - Min. 2 Persone)",
+      ru: "за человека (Частный авто и гид-египтолог включены - Мин. 2 человека)",
+      pl: "za osobę (Prywatny pojazd i egiptolog w cenie - Min. 2 osoby)",
+      cz: "za osobu (Soukromé auto a egyptolog v ceně - Min. 2 osoby)"
+    }
+  },
+  duration: {
+    en: "Full Day (Approx. 3:00 AM – 9:00 PM)",
+    de: "Ganztägig (ca. 03:00 bis 21:00 Uhr)",
+    it: "Intera Giornata (Circa 3:00 – 21:00)",
+    ru: "Целый день (Прибл. с 3:00 до 21:00)",
+    pl: "Cały dzień (Około 3:00 – 21:00)",
+    cz: "Celý den (Cca 3:00 – 21:00)"
+  },
+  departure: {
+    en: "Marsa Alam Hotels (Private Pick-up)",
+    de: "Hotels in Marsa Alam (Private Abholung)",
+    it: "Hotel di Marsa Alam (Pick-up Privato)",
+    ru: "Отели Марса-Алам (Частный трансфер)",
+    pl: "Hotele w Marsa Alam (Prywatny odbiór)",
+    cz: "Hotely v Marsa Alam (Soukromý odvoz)"
+  },
+  overview: {
+    en: "Travel from Marsa Alam to Luxor and discover the ultimate highlights of ancient Egypt with a dedicated private Egyptologist guide and private AC vehicle, exploring both the East and West Banks of the Nile including Karnak, Valley of the Kings, and Hatshepsut Temple.",
+    de: "Reisen Sie von Marsa Alam nach Luxor und entdecken Sie die Höhepunkte des antiken Ägyptens mit einem privaten Reiseleiter und Privatfahrzeug. Erkunden Sie das Ost- und Westufer des Nils, einschließlich Karnak, dem Tal der Könige und dem Hatschepsut-Tempel.",
+    it: "Viaggia da Marsa Alam a Luxor e scopri le meraviglie dell'antico Egitto con una guida egittologa privata e un veicolo climatizzato riservato. Esplora le sponde Est e Ovest del Nilo, inclusi Karnak, la Valle dei Re e il Tempio di Hatshepsut.",
+    ru: "Отправьтесь из Марса-Алам в Луксор и откройте для себя главные сокровища Древнего Египта с персональным гидом-египтологом и частным авто. Вы посетите Восточный и Западный берега Нила, Карнакский храм, Долину Царей и храм Хатшепсут.",
+    pl: "Podróżuj z Marsa Alam do Luksoru i odkryj najważniejsze zabytki starożytnego Egiptu z prywatnym przewodnikiem-egiptologiem i prywatnym pojazdem, zwiedzając Wschodni i Zachodni Brzeg Nilu (Karnak, Dolina Królów, Świątynia Hatszepsut).",
+    cz: "Cestujte z Marsa Alam do Luxoru a objevte nejvýznamnější památky starověkého Egypta s privátním průvodcem-egyptologem a soukromým vozem. Prozkoumejte Východní i Západní břeh Nilu včetně Karnaku, Údolí králů a chrámu Hatšepsut."
+  },
+  highlights: {
+    en: [
+      "100% Private tour experience with tailored pace and personal Egyptologist guide",
+      "Explore the vast Karnak Temple complex and its famous Hypostyle Hall",
+      "Discover the West Bank's Valley of the Kings with entry to 3 royal tombs",
+      "Visit the impressive multi-terraced Mortuary Temple of Queen Hatshepsut",
+      "Photo stop at the iconic Colossi of Memnon statues",
+      "Enjoy a delicious lunch at a local restaurant in Luxor included",
+      "Comfortable round-trip transportation in a private AC Limousine or Van",
+      "Free bottled water provided inside the vehicle throughout the day"
+    ],
+    de: [
+      "100% privates Tourerlebnis im eigenen Tempo mit persönlichem Ägyptologen",
+      "Erkunden Sie den gewaltigen Karnak-Tempelkomplex und die Hypostyl-Halle",
+      "Entdecken Sie das Tal der Könige am Westufer inklusive Eintritt zu 3 Gräbern",
+      "Besuchen Sie den beeindruckenden Terrassentempel der Königin Hatschepsut",
+      "Fotostopp an den imposanten Memnonkolossen",
+      "Genießen Sie ein leckeres Mittagessen in einem lokalen Restaurant in Luxor",
+      "Bequemer Hin- und Rücktransfer in einer privaten klimatisierten Limousine/Van",
+      "Kostenloses Flaschenwasser im Fahrzeug während des gesamten Tages"
+    ],
+    it: [
+      "Esperienza tour 100% privata con ritmi personalizzati e guida egittologa",
+      "Esplora l'immenso complesso del Tempio di Karnak e la sala ipostila",
+      "Scopri la Valle dei Re sulla sponda ovest con ingresso a 3 tombe reali",
+      "Visita l'imponente Tempio Funerario della Regina Hatshepsut",
+      "Tappa fotografica ai maestosi Colossi di Memnone",
+      "Gusta un delizioso pranzo incluso in un ristorante locale a Luxor",
+      "Trasporto comodo A/R in limousine o van privato con aria condizionata",
+      "Acqua in bottiglia gratuita a bordo del veicolo per tutta la giornata"
+    ],
+    ru: [
+      "100% частный тур в удобном для вас темпе с личным гидом-египтологом",
+      "Исследование величественного Карнакского храма и его Гипостильного зала",
+      "Посещение Долины Царей на Западном берегу с входом в 3 королевские гробницы",
+      "Визит в уникальный террасный заупокойный храм царицы Хатшепсут",
+      "Остановка для фото у знаменитых Колоссов Мемнона",
+      "Вкусный обед в местном ресторане в Луксоре включен в стоимость",
+      "Комфортабельный трансфер на частном авто/минивэне с кондиционером",
+      "Бесплатная питьевая вода в машине в течение всего дня"
+    ],
+    pl: [
+      "W 100% prywatna wycieczka we własnym tempie z osobistym egiptologiem",
+      "Zwiedzanie ogromnego kompleksu świątynnego w Karnaku i Wielkiej Sali Kolumnowej",
+      "Odkrywanie Doliny Królów na Zachodnim Brzegu z wejściem do 3 grobowców",
+      "Wizyta w imponującej tarasowej Świątyni Hatszepsut",
+      "Przystanek na zdjęcia przy słynnych Kolosach Memnona",
+      "Pyszny obiad w lokalnej restauracji w Luksorze w cenie",
+      "Wygodny prywatny transport klimatyzowaną limuzyną lub vanem",
+      "Bezpłatna woda butelkowana w pojeździe przez cały dzień"
+    ],
+    cz: [
+      "100% soukromý zážitek s vlastním tempem a osobním egyptologem",
+      "Prohlídka rozsáhlého chrámu v Karnaku a jeho Velkého sloupového sálu",
+      "Objevování Údolí králů na Západním břehu se vstupem do 3 královských hrobek",
+      "Návštěva úchvatného terasovitého chrámu královny Hatšepsut",
+      "Fotostop u ikonických Memnonových kolosů",
+      "Lahoďný oběd v místní restauraci v Luxoru v ceně",
+      "Pohodlný zpáteční transport soukromou klimatizovanou limuzínou nebo vanem",
+      "Balená voda v autě zdarma po celý den"
+    ]
+  },
+  included: {
+    en: [
+      "Private modern AC vehicle (Limousine or Van)",
+      "Professional private Egyptologist tour guide",
+      "Karnak Temple entrance tickets",
+      "Valley of the Kings entrance tickets (includes 3 royal tombs)",
+      "Hatshepsut Temple entrance tickets",
+      "Lunch at a local restaurant in Luxor",
+      "Complimentary bottled water inside the vehicle all day",
+      "Hotel pickup and drop-off from Marsa Alam"
+    ],
+    de: [
+      "Privates modernes klimatisiertes Fahrzeug (Limousine oder Van)",
+      "Professioneller privater ägyptologischer Reiseleiter",
+      "Eintrittskarten für den Karnak-Tempel",
+      "Eintrittskarten für das Tal der Könige (inkl. 3 Gräber)",
+      "Eintrittskarten für den Hatschepsut-Tempel",
+      "Mittagessen in einem lokalen Restaurant in Luxor",
+      "Kostenloses Flaschenwasser im Fahrzeug den ganzen Tag",
+      "Hotelabholung und Rückbringung von Marsa Alam"
+    ],
+    it: [
+      "Veicolo privato moderno climatizzato (Limousine o Van)",
+      "Guida turistica egittologa privata e professionale",
+      "Biglietti d'ingresso al Tempio di Karnak",
+      "Biglietti d'ingresso alla Valle dei Re (include 3 tombe reali)",
+      "Biglietti d'ingresso al Tempio di Hatshepsut",
+      "Pranzo in un ristorante locale a Luxor",
+      "Acqua in bottiglia gratuita all'interno del veicolo tutto il giorno",
+      "Pick-up e drop-off dall'hotel a Marsa Alam"
+    ],
+    ru: [
+      "Частный современный автомобиль с кондиционером (седаны/минивэн)",
+      "Профессиональный частный гид-египтолог",
+      "Входные билеты в Карнакский храм",
+      "Входные билеты в Долину Царей (включая 3 гробницы)",
+      "Входные билеты в Храм Хатшепсут",
+      "Обед в местном ресторане в Луксоре",
+      "Бесплатная бутилированная вода в машине на весь день",
+      "Трансфер из отеля и обратно из Марса-Алам"
+    ],
+    pl: [
+      "Prywatny nowoczesny pojazd z klimatyzacją (Limuzyna lub Van)",
+      "Profesjonalny prywatny przewodnik egiptolog",
+      "Bilety wstępu do Świątyni w Karnaku",
+      "Bilety wstępu do Doliny Królów (obejmuje 3 grobowce)",
+      "Bilety wstępu do Świątyni Hatszepsut",
+      "Obiad w lokalnej restauracji w Luksorze",
+      "Bezpłatna woda butelkowana w samochodzie przez cały dzień",
+      "Odbiór i powrót do hotelu w Marsa Alam"
+    ],
+    cz: [
+      "Soukromé moderní klimatizované auto (Limuzína nebo Van)",
+      "Profesionální soukromý průvodce egyptolog",
+      "Vstupenky do chrámu v Karnaku",
+      "Vstupenky do Údolí králů (zahrnuje 3 královské hrobky)",
+      "Vstupenky do chrámu Hatšepsut",
+      "Oběd v místní restauraci v Luxoru",
+      "Balená voda v autě po celý den zdarma",
+      "Vyzvednutí a návrat do hotelu v Marsa Alam"
+    ]
+  },
+  whatToBring: {
+    en: [
+      "Passport or official ID",
+      "Breakfast box from hotel (requested 1 day prior)",
+      "Comfortable walking shoes",
+      "Light clothing & hat",
+      "Sunglasses & sunscreen",
+      "Camera & phone charger",
+      "Local currency (EGP) for personal spending & tipping"
+    ],
+    de: [
+      "Reisepass oder offizieller Personalausweis",
+      "Frühstücksbox vom Hotel (1 Tag vorher bestellen)",
+      "Bequeme Wanderschuhe",
+      "Leichte Kleidung & Hut",
+      "Sonnenbrille & Sonnencreme",
+      "Kamera & Handy-Ladegerät",
+      "Einheimische Währung (EGP) für persönliche Ausgaben & Trinkgelder"
+    ],
+    it: [
+      "Passaporto o documento d'identità",
+      "Colazione al sacco dall'hotel (richiesta il giorno prima)",
+      "Scarpe comode da passeggio",
+      "Abiti leggeri e cappello",
+      "Occhiali da sole e protezione solare",
+      "Fotocamera e caricabatterie",
+      "Moneta locale (EGP) per spese personali e mance"
+    ],
+    ru: [
+      "Паспорт или удостоверение личности",
+      "Завтрак-бокс из отеля (заказывается за 1 день)",
+      "Удобная обувь для ходьбы",
+      "Легкая одежда и головной убор",
+      "Солнцезащитные очки и крем",
+      "Камера и зарядное устройство",
+      "Местная валюта (EGP) для личных расходов и чаевых"
+    ],
+    pl: [
+      "Paszport lub dowód osobisty",
+      "Suchy prowiant z hotelu (zamówiony dzień wcześniej)",
+      "Wygodne buty do chodzenia",
+      "Lekkie ubranie i czapka",
+      "Okulary przeciwsłoneczne i krem z filtrem",
+      "Aparat fotograficzny i ładowarka",
+      "Lokalna waluta (EGP) na wydatki osobiste i napiwki"
+    ],
+    cz: [
+      "Cestovní pas nebo průkaz totožnosti",
+      "Snídaňový balíček z hotelu (nutno objednat den předem)",
+      "Pohodlná obuv na chodění",
+      "Lehké oblečení a klobouk",
+      "Sluneční brýle a opalovací krém",
+      "Fotoaparát a nabíječka",
+      "Místní měna (EGP) na osobní výdaje a spropitné"
+    ]
+  },
+  childrenPolicy: {
+    under5: {
+      en: "Free of charge (Under 6 years old)",
+      de: "Kostenlos (Unter 6 Jahren)",
+      it: "Gratuito (Sotto i 6 anni)",
+      ru: "Бесплатно (До 6 лет)",
+      pl: "Bezpłatnie (Poniżej 6 lat)",
+      cz: "Zdarma (Mladší 6 let)"
+    },
+    from5to10: {
+      en: "Child discount applies (50% discount for children aged 6 to 11)",
+      de: "Kinderermäßigung gilt (50% Rabatt für Kinder von 6 bis 11 Jahren)",
+      it: "Si applica lo sconto bambini (50% di sconto per bambini da 6 a 11 anni)",
+      ru: "Действует детская скидка (50% скидка для детей от 6 до 11 лет)",
+      pl: "Obowiązuje zniżka dla dzieci (50% zniżki dla dzieci w wieku 6-11 lat)",
+      cz: "Platí dětská sleva (50% sleva pro děti od 6 do 11 let)"
+    },
+    over10: {
+      en: "Full adult rate applies (12 years and older)",
+      de: "Voller Preis für Erwachsene (ab 12 Jahren)",
+      it: "Tariffa intera adulti (da 12 anni in poi)",
+      ru: "Полная стоимость взрослого (с 12 лет)",
+      pl: "Pełna stawka dla dorosłych (od 12 lat)",
+      cz: "Plná cena pro dospělé (od 12 let)"
+    }
+  },
+  itinerary: [
+    {
+      step: "01",
+      title: {
+        en: "Private Departure from Marsa Alam — 03:00 AM",
+        de: "Private Abreise von Marsa Alam — 03:00 Uhr",
+        it: "Partenza Privata da Marsa Alam — 03:00",
+        ru: "Частный выезд из Марса-Алам — 03:00",
+        pl: "Prywatny wyjazd z Marsa Alam — 03:00",
+        cz: "Soukromý odjezd z Marsa Alam — 03:00"
+      },
+      description: {
+        en: "Early morning pickup directly from your hotel in a private AC vehicle. Enjoy a comfortable drive across the Eastern Desert to Luxor.",
+        de: "Frühe Abholung direkt von Ihrem Hotel im privaten klimatisierten Fahrzeug. Genießen Sie eine komfortable Fahrt durch die Östliche Wüste nach Luxor.",
+        it: "Pick-up di mattina presto direttamente dal tuo hotel in un veicolo privato climatizzato. Goditi un viaggio comodo attraverso il deserto orientale verso Luxor.",
+        ru: "Ранний выезд прямо из вашего отеля на частном автомобиле с кондиционером. Комфортная поездка через Восточную пустыню в Луксор.",
+        pl: "Wczesny odbiór bezpośrednio z hotelu prywatnym klimatyzowanym pojazdem. Wygodna podróż przez Pustynię Wschodnią do Luksoru.",
+        cz: "Ranní vyzvednutí přímo z vašeho hotelu soukromým klimatizovaným vozem. Pohodlná jízda přes Východní poušť do Luxoru."
+      }
+    },
+    {
+      step: "02",
+      title: {
+        en: "Karnak Temple (East Bank) — 09:00 AM",
+        de: "Karnak-Tempel (Ostufer) — 09:00 Uhr",
+        it: "Tempio di Karnak (Riva Est) — 09:00",
+        ru: "Карнакский храм (Восточный берег) — 09:00",
+        pl: "Świątynia w Karnaku (Wschodni Brzeg) — 09:00",
+        cz: "Chrám v Karnaku (Východní břeh) — 09:00"
+      },
+      description: {
+        en: "Arrive in Luxor and start at Karnak Temple, one of the world's largest religious complexes. Walk through the Hypostyle Hall with your private guide.",
+        de: "Ankunft in Luxor und Beginn am Karnak-Tempel, einer der größten religiösen Anlagen der Welt. Durchqueren Sie die Hypostyl-Halle mit Ihrem Reiseleiter.",
+        it: "Arrivo a Luxor e visita al Tempio di Karnak, uno dei complessi religiosi più grandi al mondo. Passeggia nella Sala Ipostila con la tua guida.",
+        ru: "Прибытие в Луксор. Экскурсия по Карнакскому храму — крупнейшему религиозному комплексу древнего мира. Прогулка по Гипостильному залу.",
+        pl: "Przyjazd do Luksoru i zwiedzanie Świątyni w Karnaku, jednego z największych kompleksów religijnych. Przejście przez Salę Kolumnową z przewodnikiem.",
+        cz: "Příjezd do Luxoru a prohlídka chrámu v Karnaku, jednoho z největších náboženských komplexů. Procházka Velkým sloupovým sálem s průvodcem."
+      }
+    },
+    {
+      step: "03",
+      title: {
+        en: "Lunch at a Local Restaurant — 12:30 PM",
+        de: "Mittagessen in einem lokalen Restaurant — 12:30 Uhr",
+        it: "Pranzo in un Ristorante Locale — 12:30",
+        ru: "Обед в местном ресторане — 12:30",
+        pl: "Obiad w lokalnej restauracji — 12:30",
+        cz: "Oběd v místní restauraci — 12:30"
+      },
+      description: {
+        en: "Relax and savor a delicious lunch prepared with local Egyptian ingredients at a selected restaurant in Luxor.",
+        de: "Entspannen Sie sich und genießen Sie ein köstliches Mittagessen mit lokalen ägyptischen Zutaten in einem ausgewählten Restaurant.",
+        it: "Rilassati e gusta un delizioso pranzo preparato con ingredienti locali egiziani in un ristorante selezionato a Luxor.",
+        ru: "Отдых и вкусный обед из блюд местной египетской кухни в проверенном ресторане Луксора.",
+        pl: "Relaks i pyszny obiad przygotowany z lokalnych egipskich składników w wybranej restauracji w Luksorze.",
+        cz: "Odpočinek a lahodný oběd připravený z místních surovin ve vybrané restauraci v Luxoru."
+      }
+    },
+    {
+      step: "04",
+      title: {
+        en: "Valley of the Kings (West Bank) — 02:00 PM",
+        de: "Tal der Könige (Westufer) — 14:00 Uhr",
+        it: "Valle dei Re (Riva Ovest) — 14:00",
+        ru: "Долина Царей (Западный берег) — 14:00",
+        pl: "Dolina Królów (Zachodni Brzeg) — 14:00",
+        cz: "Údolí králů (Západní břeh) — 14:00"
+      },
+      description: {
+        en: "Cross to the West Bank to explore the ancient City of the Dead. Enter 3 remarkable royal tombs carved deep into the mountains.",
+        de: "Überquerung des Westufers zur Erkundung der Stadt der Toten. Besichtigung von 3 beeindruckenden königlichen Gräbern in den Felsen.",
+        it: "Attraversa la sponda ovest per esplorare la Città dei Morti. Entra in 3 straordinarie tombe reali scavate nella montagna.",
+        ru: "Переезд на Западный берег в 'Город Мертвых'. Посещение 3 королевских гробниц с невероятно сохранившимися фресками.",
+        pl: "Przejazd na Zachodni Brzeg do Miasta Umarłych. Wejście do 3 niezwykłych grobowców królewskich wykutych w skałach.",
+        cz: "Přejezd na Západní břeh do Města mrtvých. Prohlídka 3 pozoruhodných královských hrobek tesaných do skály."
+      }
+    },
+    {
+      step: "05",
+      title: {
+        en: "Temple of Hatshepsut & Colossi of Memnon — 04:00 PM",
+        de: "Hatschepsut-Tempel & Memnonkolosse — 16:00 Uhr",
+        it: "Tempio di Hatshepsut e Colossi di Memnone — 16:00",
+        ru: "Храм Хатшепсут и Колоссы Мемнона — 16:00",
+        pl: "Świątynia Hatszepsut i Kolosy Memnona — 16:00",
+        cz: "Chrám Hatšepsut a Memnonovy kolosy — 16:00"
+      },
+      description: {
+        en: "Visit the stunning terraced Mortuary Temple of Queen Hatshepsut at Deir el-Bahari, followed by a photo stop at the gigantic Colossi of Memnon statues.",
+        de: "Besuch des beeindruckenden Terrassentempels der Königin Hatschepsut in Deir el-Bahari, gefolgt von einem Fotostopp an den riesigen Memnonkolossen.",
+        it: "Visita al meraviglioso Tempio Funerario della Regina Hatshepsut a Deir el-Bahari, seguito da una tappa foto ai giganteschi Colossi di Memnone.",
+        ru: "Визит в уникальный храм царицы Хатшепсут в Дейр-эль-Бахри. Затем остановка у гигантских статуй Колоссов Мемнона для фото.",
+        pl: "Wizyta w zachwycającej Świątyni Hatszepsut w Deir el-Bahari, a następnie przystanek na zdjęcia przy gigantycznych Kolosach Memnona.",
+        cz: "Návštěva úchvatného chrámu královny Hatšepsut v Deir el-Bahari, po které následuje fotostop u gigantických Memnonových kolosů."
+      }
+    },
+    {
+      step: "06",
+      title: {
+        en: "Return Journey to Marsa Alam — 05:30 PM",
+        de: "Rückfahrt nach Marsa Alam — 17:30 Uhr",
+        it: "Viaggio di Ritorno a Marsa Alam — 17:30",
+        ru: "Обратный трансфер в Марса-Алам — 17:30",
+        pl: "Podróż powrotna do Marsa Alam — 17:30",
+        cz: "Cesta zpět do Marsa Alam — 17:30"
+      },
+      description: {
+        en: "Begin your comfortable private journey back to Marsa Alam, arriving at your hotel between 08:30 PM and 09:30 PM.",
+        de: "Beginn der privaten Rückfahrt nach Marsa Alam mit Ankunft in Ihrem Hotel zwischen 20:30 Uhr und 21:30 Uhr.",
+        it: "Inizio del comodo viaggio privato di rientro a Marsa Alam, con arrivo in hotel tra le 20:30 e le 21:30.",
+        ru: "Обратная поездка на частном автомобиле в Марса-Алам. Возвращение в отель ориентировочно с 20:30 до 21:30.",
+        pl: "Rozpoczęcie prywatnej podróży powrotnej do Marsa Alam, przyjazd do hotelu między 20:30 a 21:30.",
+        cz: "Zahájení soukromé cesty zpět do Marsa Alam, příjezd do hotelu mezi 20:30 a 21:30."
+      }
+    }
+  ],
+  paymentNote: {
+    en: "Private Trip Pricing: €170 per person based on a minimum of 2 guests. Family & group discounts available. Shared trip option available upon request via WhatsApp. Payment on day of the tour.",
+    de: "Preise für Privattouren: 170 € pro Person bei mindestens 2 Personen. Familien- und Gruppenrabatte verfügbar. Gruppenreisen auf Anfrage per WhatsApp. Zahlung am Tag der Tour.",
+    it: "Prezzo Tour Privato: €170 a persona per un minimo di 2 partecipanti. Sconti per famiglie e gruppi disponibili. Opzione tour di gruppo disponibile su richiesta via WhatsApp. Pagamento il giorno del tour.",
+    ru: "Цена частного тура: 170 € с человека (минимум 2 гостя). Доступны скидки для семей и групп. Стоимость группового тура — по запросу в WhatsApp. Оплата в день экскурсии.",
+    pl: "Cena wycieczki prywatnej: 170 € za osobę przy minimum 2 osobach. Dostępne zniżki rodzinne i grupowe. Opcja wycieczki grupowej dostępna na zapytanie przez WhatsApp. Płatność w dniu wycieczki.",
+    cz: "Cena soukromého výletu: 170 € za osobu při minimálně 2 osobách. Slevy pro rodiny a skupiny k dispozici. Možnost sdíleného výletu na vyžádání přes WhatsApp. Platba v den výletu."
+  },
+  disclaimer: {
+    en: "Special optional tomb entry tickets (such as King Tutankhamun or Ramses VI) and photography permits inside the tombs are not included and can be purchased on-site. Departure time is 3:00 AM; return time depends on site duration and traffic.",
+    de: "Sondergräber (wie Tutanchamun oder Ramses VI.) und Fotogenehmigungen in den Gräbern sind nicht enthalten und können vor Ort gekauft werden. Abreise um 03:00 Uhr; Rückkehr hängt von der Dauer an den Stätten und dem Verkehr ab.",
+    it: "I biglietti per tombe speciali (come Tutankhamon o Ramses VI) e i permessi fotografici all'interno delle tombe non sono inclusi e si acquistano sul posto. Partenza alle 3:00; l'orario di rientro dipende dai tempi di visita e dal traffico.",
+    ru: "Билеты в специальные гробницы (например, Тутанхамона или Рамсеса VI) и разрешение на фотосъемку не входят в стоимость и приобретаются на месте. Выезд в 3:00, время возвращения зависит от времени на объектах.",
+    pl: "Dodatkowe bilety do specjalnych grobowców (np. Tutenchamona lub Ramzesa VI) oraz pozwolenia na fotografowanie płatne na miejscu. Wyjazd o 3:00; czas powrotu zależy od czasu spędzonego w zabytkach i ruchu drogowego.",
+    cz: "Vstupenky do speciálních hrobek (např. Tutanchamon nebo Ramesse VI.) a povolení k fotografování nejsou v ceně a lze je zakoupit na místě. Odjezd ve 3:00; čas návratu závisí na stráveném čase na památkách."
+  },
+  images: {
+    featured: "/images/tours/luxor-private-day-trip.jpg",
+    gallery: [
+      "/images/tours/luxor-private-day-trip-1.jpg",
+      "/images/tours/luxor-private-day-trip-2.jpg",
+      "/images/tours/luxor-private-day-trip-3.jpg"
+    ]
+  }
+},
+{
+  id: "historical-el-quseir-tour",
+  slug: "historical-el-quseir-private-guided-tour",
+  type: "city-tours",
+  title: {
+    en: "Historical El Quseir Tour",
+    de: "Historische El Quseir Tour",
+    it: "Tour Storico di El Quseir",
+    ru: "Исторический тур по Эль-Кусейр",
+    pl: "Historyczna wycieczka po El Quseir",
+    cz: "Historická prohlídka El Quseir"
+  },
+  subtitle: {
+    en: "Private Guided Walking Tour to Fortress, Old Town & Italian Heritage",
+    de: "Privater geführter Rundgang zur Festung, Altstadt & italienischem Erbe",
+    it: "Tour a Piedi Privato con Guida alla Fortezza, Centro Storico ed Eredità Italiana",
+    ru: "Частная пешеходная экскурсия к крепости, старому городу и итальянскому наследию",
+    pl: "Prywatna piesza wycieczka z przewodnikiem do twierdzy, starego miasta i dziedzictwa włoskiego",
+    cz: "Soukromá pěší prohlídka pevnosti, starého města a italského dědictví s průvodcem"
+  },
+  category: {
+    en: "City Tours",
+    de: "Städtereisen & Kultur",
+    it: "Tour delle Città",
+    ru: "Экскурсии по Городам",
+    pl: "Wycieczki Miejskie",
+    cz: "Městské Tours"
+  },
+  price: {
+    amount: 50,
+    currency: "€",
+    unit: {
+      en: "per tour / group (Private Guide & Site Tickets Included)",
+      de: "pro Tour / Gruppe (Privater Reiseleiter & Eintrittskarten inklusive)",
+      it: "per tour / gruppo (Guida Privata e Biglietti Inclusi)",
+      ru: "за тур / группу (Частный гид и входные билеты включены)",
+      pl: "za wycieczkę / grupę (Prywatny przewodnik i bilety w cenie)",
+      cz: "za prohlídku / skupinu (Soukromý průvodce a vstupenky v ceně)"
+    }
+  },
+  duration: {
+    en: "Half Day (Flexible Duration - Starts at 3:00 PM)",
+    de: "Halbtags (Flexible Dauer - Start um 15:00 Uhr)",
+    it: "Mezza Giornata (Durata flessibile - Inizio alle 15:00)",
+    ru: "Полдня (Гибкая продолжительность - Старт в 15:00)",
+    pl: "Pół dnia (Elastyczny czas - Start o 15:00)",
+    cz: "Půl dne (Flexibilní délka - Začátek v 15:00)"
+  },
+  departure: {
+    en: "Hotels near El Quseir & Marsa Alam (3:00 PM Departure)",
+    de: "Hotels nahe El Quseir & Marsa Alam (Abfahrt 15:00 Uhr)",
+    it: "Hotel vicino a El Quseir e Marsa Alam (Partenza ore 15:00)",
+    ru: "Отели возле Эль-Кусейр и Марса-Алам (Выезд в 15:00)",
+    pl: "Hotele w pobliżu El Quseir i Marsa Alam (Wyjazd o 15:00)",
+    cz: "Hotely v blízkosti El Quseir a Marsa Alam (Odjezd v 15:00)"
+  },
+  overview: {
+    en: "Step beyond the resorts and discover the rich history of El Quseir. Explore the city's historic Ottoman fortress, ancient old town, historic Al-Farran mosque, and unique industrial heritage from the Italian phosphate era with a dedicated local expert guide.",
+    de: "Wagen Sie einen Blick über die Resorts hinaus und entdecken Sie die reiche Geschichte von El Quseir. Erkunden Sie die historische osmanische Festung, die Altstadt, die Al-Farran-Moschee und das Erbe der italienischen Phosphat-Ära mit einem lokalen Reiseleiter.",
+    it: "Oltrepassa i resort e scopri la ricca storia di El Quseir. Esplora la fortezza ottomana, il centro storico, la moschea Al-Farran e l'eredità industriale dell'era mineraria italiana con una guida locale esperta.",
+    ru: "Выйдите за пределы курортов и откройте богатую историю Эль-Кусейр. Исследуйте османскую крепость, старый город, древнюю мечеть Аль-Фарран и наследие итальянской фосфатной эры с личным местным гидом.",
+    pl: "Wyjdź poza resorty i odkryj bogatą historię El Quseir. Zwiedzaj osmańską twierdzę, stare miasto, zabytkowy meczet Al-Farran oraz włoskie dziedzictwo przemysłowe z prywatnym przewodnikiem.",
+    cz: "Vydejte se mimo rezorty a objevte bohatou historii El Quseiru. Prozkoumejte osmanskou pevnost, staré město, mešitu Al-Farran a italské průmyslové dědictví s místním průvodcem."
+  },
+  highlights: {
+    en: [
+      "Fixed group rate (€50 total for your entire family or group)",
+      "Visit the 16th-century Ottoman El Quseir Fortress & watchtower views",
+      "Guided walking tour inside the narrow alleys of El Quseir's Old Town",
+      "Discover the historic Al-Farran Mosque and iconic El Quseir Hotel",
+      "Explore the Italian Colony, old phosphate factory & historic Italian Church",
+      "Expert local guide dedicated to your group throughout the tour",
+      "Timed departure at 3:00 PM ensuring access to all historic sites before closure"
+    ],
+    de: [
+      "Fester Gruppenpreis (50 € insgesamt für Ihre gesamte Familie/Gruppe)",
+      "Besuch der osmanischen Festung El Quseir aus dem 16. Jh. & Aussichtsturm",
+      "Geführter Rundgang durch die engen Gassen der Altstadt von El Quseir",
+      "Entdecken Sie die Al-Farran-Moschee und das historische Hotel El Quseir",
+      "Erkunden Sie die italienische Kolonie, alte Phosphatfabrik & historische Kirche",
+      "Lokaler Experten-Reiseleiter exklusiv für Ihre Gruppe während der Tour",
+      "Pünktliche Abfahrt um 15:00 Uhr zur Sicherstellung aller Besichtigungszeiten"
+    ],
+    it: [
+      "Tariffa di gruppo fissa (€50 totale per tutta la famiglia o gruppo)",
+      "Visita alla fortezza ottomana del XVI secolo e vista dalla torre di guardia",
+      "Tour a piedi tra i vicoli del centro storico di El Quseir",
+      "Scopri la storica Moschea Al-Farran e l'iconico Hotel El Quseir",
+      "Esplora la Colonia Italiana, la vecchia fabbrica di fosfati e la chiesa storica",
+      "Guida esperta locale dedicata esclusivamente al tuo gruppo",
+      "Partenza alle 15:00 per garantire l'accesso a tutti i siti prima della chiusura"
+    ],
+    ru: [
+      "Фиксированная цена за группу (50 € за всю вашу семью или компанию)",
+      "Посещение османской крепости XVI века и смотровой башни",
+      "Пешеходный тур по колоритным улочкам старого города Эль-Кусейр",
+      "Знакомство с исторической мечетью Аль-Фарран и отелем El Quseir",
+      "Осмотр итальянской колонии, старой фосфатной фабрики и исторической церкви",
+      "Персональный местный гид для вашей группы на протяжении всего тура",
+      "Выезд ровно в 15:00, чтобы успеть посетить крепость до закрытия"
+    ],
+    pl: [
+      "Stała cena za grupę (50 € łącznie dla całej rodziny lub grupy)",
+      "Zwiedzanie XVI-wiecznej twierdzy osmańskiej i punktu widokowego",
+      "Pieszy spacer po klimatycznych uliczkach Starego Miasta w El Quseir",
+      "Odkryj zabytkowy meczet Al-Farran i kultowy hotel El Quseir",
+      "Zobacz osadę włoską, starą fabrykę fosfatów i historyczny kościół",
+      "Lokalny przewodnik do wyłącznej dyspozycji Twojej grupy",
+      "Wyjazd o 15:00 gwarantujący wstęp do obiektów przed zamknięciem"
+    ],
+    cz: [
+      "Pevná cena za skupinu (50 € celkem pro celou vaši rodinu nebo skupinu)",
+      "Návštěva osmanské pevnosti ze 16. století s vyhlídkou z věže",
+      "Pěší prohlídka úzkými uličkami starého města El Quseir",
+      "Objevení historické mešity Al-Farran a ikonického hotelu El Quseir",
+      "Prohlídka italské kolonie, staré továrny na fosfáty a historického kostela",
+      "Místní odborný průvodce po celou dobu prohlídky",
+      "Odjezd v 15:00 pro zajištění vstupu do památek před zavírací dobą"
+    ]
+  },
+  included: {
+    en: [
+      "Local professional guide throughout the walking tour",
+      "All entrance tickets for mentioned historical sites",
+      "El Quseir Fortress entrance ticket",
+      "Guided Old Town walking tour"
+    ],
+    de: [
+      "Lokaler professioneller Reiseleiter während des gesamten Rundgangs",
+      "Alle Eintrittskarten für die genannten historischen Stätten",
+      "Eintrittskarte für die Festung El Quseir",
+      "Geführter Altstadt-Rundgang"
+    ],
+    it: [
+      "Guida professionale locale per l'intero tour a piedi",
+      "Tutti i biglietti d'ingresso per i siti storici menzionati",
+      "Biglietto d'ingresso alla Fortezza di El Quseir",
+      "Tour a piedi guidato nel centro storico"
+    ],
+    ru: [
+      "Местный профессиональный гид на протяжении всей пешеходной экскурсии",
+      "Все входные билеты на указанные исторические объекты",
+      "Входной билет в крепость Эль-Кусейр",
+      "Пешеходная экскурсия по Старому городу"
+    ],
+    pl: [
+      "Lokalny profesjonalny przewodnik podczas całej wycieczki pieszej",
+      "Wszystkie bilety wstępu do wymienionych obiektów historycznych",
+      "Bilet wstępu do twierdzy El Quseir",
+      "Piesze zwiedzanie Starego Miasta z przewodnikiem"
+    ],
+    cz: [
+      "Místní profesionální průvodce po celou dobu pěší prohlídky",
+      "Všechny vstupenky na uvedené historické památky",
+      "Vstupenka do pevnosti El Quseir",
+      "Pěší prohlídka starého města s průvodcem"
+    ]
+  },
+  whatToBring: {
+    en: [
+      "Comfortable walking shoes",
+      "Modest clothing for visiting historic & religious sites",
+      "Camera or smartphone",
+      "Hat & sunglasses",
+      "Local currency (EGP) for personal spending, souvenirs & tips"
+    ],
+    de: [
+      "Bequeme Wanderschuhe",
+      "Angemessene Kleidung für den Besuch historischer & religiöser Stätten",
+      "Kamera oder Smartphone",
+      "Hut & Sonnenbrille",
+      "Einheimische Währung (EGP) für persönliche Ausgaben & Trinkgelder"
+    ],
+    it: [
+      "Scarpe comode da passeggio",
+      "Abbigliamento modesto per la visita a siti storici e religiosi",
+      "Fotocamera o smartphone",
+      "Cappello e occhiali da sole",
+      "Moneta locale (EGP) per spese personali, souvenir e mance"
+    ],
+    ru: [
+      "Удобная обувь для ходьбы",
+      "Скромная одежда для посещения исторических и религиозных мест",
+      "Камера или смартфон",
+      "Головной убор и очки",
+      "Местная валюта (EGP) для личных расходов, сувениров и чаевых"
+    ],
+    pl: [
+      "Wygodne buty do chodzenia",
+      "Skromne ubranie odpowiednie do miejsc historycznych i religijnych",
+      "Aparat fotograficzny lub telefon",
+      "Czapka i okulary przeciwsłoneczne",
+      "Lokalna waluta (EGP) na wydatki osobiste, pamiątki i napiwki"
+    ],
+    cz: [
+      "Pohodlná obuv na chodění",
+      "Vhodné oblečení pro návštěvu historických a náboženských míst",
+      "Fotoaparát nebo smartphone",
+      "Klobouk a sluneční brýle",
+      "Místní měna (EGP) na osobní výdaje, suvenýry a spropitné"
+    ]
+  },
+  childrenPolicy: {
+    under5: {
+      en: "Free of charge (Tour price is per group, children included)",
+      de: "Kostenlos (Tourpreis gilt pro Gruppe, Kinder inklusive)",
+      it: "Gratuito (Il prezzo del tour è per gruppo, bambini inclusi)",
+      ru: "Бесплатно (Цена тура за группу, дети включены)",
+      pl: "Bezpłatnie (Cena wycieczki dotyczy grupy, dzieci w cenie)",
+      cz: "Zdarma (Cena prohlídky je za skupinu, děti v cenie)"
+    },
+    from5to10: {
+      en: "Included in group tour price",
+      de: "Im Gruppenpreis enthalten",
+      it: "Incluso nel prezzo del gruppo",
+      ru: "Включено в стоимость тура за группу",
+      pl: "W cenie wycieczki grupowej",
+      cz: "Zahrnuto v ceně prohlídky za skupinu"
+    },
+    over10: {
+      en: "Included in group tour price",
+      de: "Im Gruppenpreis enthalten",
+      it: "Incluso nel prezzo del gruppo",
+      ru: "Включено в стоимость тура за группу",
+      pl: "W cenie wycieczki grupowej",
+      cz: "Zahrnuto v ceně prohlídky za skupinu"
+    }
+  },
+  itinerary: [
+    {
+      step: "01",
+      title: {
+        en: "Hotel Departure — 03:00 PM",
+        de: "Hotelabholung — 15:00 Uhr",
+        it: "Partenza dall'Hotel — 15:00",
+        ru: "Выезд из отеля — 15:00",
+        pl: "Wyjazd z hotelu — 15:00",
+        cz: "Odjezd z hotelu — 15:00"
+      },
+      description: {
+        en: "Pick up from your hotel. Timed strictly for 3:00 PM to ensure visiting the Ottoman fortress before closing time.",
+        de: "Abholung vom Hotel. Pünktlich um 15:00 Uhr, um die osmanische Festung vor der Schließung zu besuchen.",
+        it: "Pick-up dall'hotel. Partenza tassativa alle 15:00 per visitare la fortezza ottomana prima della chiusura.",
+        ru: "Трансфер из отеля. Выезд строго в 15:00, чтобы успеть посетить османскую крепость до закрытия.",
+        pl: "Odbiór z hotelu. Punktualnie o 15:00, aby zdążyć zwiedzić twierdzę osmańską przed zamknięciem.",
+        cz: "Vyzvednutí v hotelu. Přesně v 15:00 pro zajištění návštěvy osmanské pevnosti před zavírací dobou."
+      }
+    },
+    {
+      step: "02",
+      title: {
+        en: "El Quseir Ottoman Fortress — 03:30 PM",
+        de: "Festung von El Quseir — 15:30 Uhr",
+        it: "Fortezza di El Quseir — 15:30",
+        ru: "Османская крепость Эль-Кусейр — 15:30",
+        pl: "Twierdza El Quseir — 15:30",
+        cz: "Osmanská pevnost El Quseir — 15:30"
+      },
+      description: {
+        en: "Explore the 16th-century Ottoman fortress. Learn about El Quseir's history as a Red Sea trade & pilgrimage port and enjoy views from the watchtower.",
+        de: "Erkunden Sie die osmanische Festung aus dem 16. Jahrhundert und erfahren Sie mehr über die Geschichte des Hafens. Genießen Sie die Aussicht vom Turm.",
+        it: "Esplora la fortezza del XVI secolo. Scopri la storia del porto di El Quseir e goditi la vista dalla torre di guardia.",
+        ru: "Экскурсия по крепости XVI века. Узнайте об истории порта и насладитесь панорамным видом со смотровой башни.",
+        pl: "Zwiedzanie XVI-wiecznej twierdzy osmańskiej. Poznaj historię portu i podziwiaj widok z wieży strażniczej.",
+        cz: "Prohlídka pevnosti ze 16. století. Objevte historii přístavu a užijte si výhled strážní věže."
+      }
+    },
+    {
+      step: "03",
+      title: {
+        en: "Old Town & Al-Farran Mosque — 05:00 PM",
+        de: "Altstadt & Al-Farran-Moschee — 17:00 Uhr",
+        it: "Centro Storico e Moschea Al-Farran — 17:00",
+        ru: "Старый город и мечеть Аль-Фарран — 17:00",
+        pl: "Stare Miasto i meczet Al-Farran — 17:00",
+        cz: "Staré město a mešita Al-Farran — 17:00"
+      },
+      description: {
+        en: "Stroll through the narrow streets of the Old Town. Visit the historic Al-Farran Mosque and admire traditional architecture and the historic El Quseir Hotel.",
+        de: "Spaziergang durch die Altstadt. Besuchen Sie die historische Al-Farran-Moschee und bewundern Sie die traditionelle Architektur.",
+        it: "Passeggiata tra i vicoli del centro storico. Visita la Moschea Al-Farran e ammira l'architettura locale e lo storico Hotel El Quseir.",
+        ru: "Прогулка по колоритным улочкам Старого города. Посещение мечети Аль-Фарран и осмотр традиционной архитектуры.",
+        pl: "Spacer wąskimi uliczkami Starego Miasta. Wizyta w meczecie Al-Farran i podziwianie tradycyjnej architektury.",
+        cz: "Procházka uličkami starého města. Návštěva mešity Al-Farran a obdivování traditionalní architektury."
+      }
+    },
+    {
+      step: "04",
+      title: {
+        en: "Italian Colony & Phosphate Heritage — 06:00 PM",
+        de: "Italienische Kolonie & Phosphat-Erbe — 18:00 Uhr",
+        it: "Colonia Italiana ed Eredità dei Fosfati — 18:00",
+        ru: "Итальянская колония и фосфатное наследие — 18:00",
+        pl: "Osada Włoska i dziedzictwo przemysłowe — 18:00",
+        cz: "Italská kolonie a průmyslové dědictví — 18:00"
+      },
+      description: {
+        en: "Discover the remains of the old Italian phosphate mining company era, the historical church built for Italian engineers, and local heritage.",
+        de: "Entdecken Sie die Überreste der alten italienischen Phosphatmine, die historische italienische Kirche und das lokale Erbe.",
+        it: "Scopri i resti della vecchia era mineraria italiana, la chiesa storica costruita per gli ingegneri italiani e la cultura locale.",
+        ru: "Осмотр построек времен итальянских фосфатных разработок, старинной итальянской церкви и индустриальных памятников.",
+        pl: "Odkryj pozostałości z czasów włoskiego wydobycia fosfatów, zabytkowy kościół włoski oraz lokalne dziedzictwo.",
+        cz: "Objevení pozůstatků z éry italské těžby fosfátů, historického kostela pro italské inženýry a místního dědictví."
+      }
+    }
+  ],
+  paymentNote: {
+    en: "Private Tour Pricing: €50 total per group/family (Not per person). Hotel transfer price is calculated separately based on distance. Payment collected on the day of the tour.",
+    de: "Preis für die private Tour: 50 € insgesamt pro Gruppe/Familie (Nicht pro Person). Der Transferpreis wird je nach Entfernung berechnet. Zahlung am Tag der Tour.",
+    it: "Prezzo Tour Privato: €50 totale per gruppo/famiglia (Non a persona). Il prezzo del transfer viene calcolato a parte in base alla distanza. Pagamento il giorno del tour.",
+    ru: "Цена частного тура: 50 € за всю группу/семью (Не с человека). Трансфер оплачивается отдельно в зависимости от расстояния. Оплата в день экскурсии.",
+    pl: "Cena wycieczki prywatnej: 50 € łącznie za grupę/rodzinę (Nie za osobę). Cena transferu jest obliczana osobiście w zależności od odległości. Płatność w dniu wycieczki.",
+    cz: "Cena soukromé prohlídky: 50 € celkem za skupinu/rodinu (Ne za osobu). Cena transferu se počítá zvlášť podle vzdálenosti. Platba v den prohlídky."
+  },
+  disclaimer: {
+    en: "Strict 3:00 PM departure required due to fortress closing hours (5:00 PM). Hotel transfer costs vary depending on location. Food and drinks are not included.",
+    de: "Pünktliche Abfahrt um 15:00 Uhr erforderlich wegen der Schließung der Festung (17:00 Uhr). Transferkosten variieren je nach Lage des Hotels. Speisen und Getränke nicht enthalten.",
+    it: "Partenza tassativa alle 15:00 causa orario di chiusura della fortezza (17:00). I costi di trasferimento variano in base alla posizione. Cibo e bevande non inclusi.",
+    ru: "Выезд строго в 15:00 из-за времени работы крепости (до 17:00). Стоимость трансфера зависит от расположения отеля. Еда и напитки не входят в стоимость.",
+    pl: "Wymagany punktualny wyjazd o 15:00 ze względu na godziny otwarcia twierdzy (do 17:00). Koszt transferu zależy od lokalizacji hotelu. Posiłki i napoje nie są w cenie.",
+    cz: "Odjezd přesně v 15:00 z důvodu zavírací doby pevnosti (17:00). Náklady na transfer se liší podle polohy hotelu. Jídlo a pití nejsou v ceně."
+  },
+  images: {
+    featured: "/images/tours/el-quseir-tour.jpg",
+    gallery: [
+      "/images/tours/el-quseir-tour-1.jpg",
+      "/images/tours/el-quseir-tour-2.jpg",
+      "/images/tours/el-quseir-tour-3.jpg"
+    ]
+  }
+},
+{
+  id: "marsa-alam-city-tour-and-shopping",
+  slug: "marsa-alam-city-tour-and-shopping",
+  type: "city-tours",
+  title: {
+    en: "Marsa Alam City Tour & Shopping",
+    de: "Stadtrundfahrt & Shopping in Marsa Alam",
+    it: "Tour della Città di Marsa Alam e Shopping",
+    ru: "Обзорная экскурсия по Марса-Алам и шопинг",
+    pl: "Zwiedzanie Marsa Alam i zakupy",
+    cz: "Prohlídka města Marsa Alam a nákupy"
+  },
+  subtitle: {
+    en: "Local City Walking Tour, Cultural Sites & Authentic Egyptian Markets",
+    de: "Lokaler Stadtrundgang, Kulturstätten & authentische ägyptische Märkte",
+    it: "Tour a Piedi della Città, Siti Culturali e Mercati Egiziani Autentici",
+    ru: "Пешеходная прогулка по городу, культурные места и настоящие египетские рынки",
+    pl: "Lokalny spacer po mieście, miejsca kulturowe i autentyczne egipskie targi",
+    cz: "Místní pěší prohlídka města, kulturní místa a autentické egyptské trhy"
+  },
+  category: {
+    en: "City Tours",
+    de: "Städtereisen & Kultur",
+    it: "Tour delle Città",
+    ru: "Экскурсии по Городам",
+    pl: "Wycieczki Miejskie",
+    cz: "Městské Tours"
+  },
+  price: {
+    amount: 10,
+    currency: "$",
+    unit: {
+      en: "per tour / group (Local Guide Included)",
+      de: "pro Tour / Gruppe (Lokaler Reiseleiter inklusive)",
+      it: "per tour / gruppo (Guida Locale Inclusa)",
+      ru: "за тур / группу (Местный гид включен)",
+      pl: "za wycieczkę / grupę (Lokalny przewodnik w cenie)",
+      cz: "za prohlídku / skupinu (Místní průvodce v ceně)"
+    }
+  },
+  duration: {
+    en: "Flexible Duration (Available from 12:00 PM until late)",
+    de: "Flexible Dauer (Verfügbar ab 12:00 Uhr bis spät abends)",
+    it: "Durata Flessibile (Disponibile dalle 12:00 fino a tarda notte)",
+    ru: "Гибкая продолжительность (Доступно с 12:00 до позднего вечера)",
+    pl: "Elastyczny czas (Dostępne od 12:00 do późnego wieczora)",
+    cz: "Flexibilní délka (K dispozici od 12:00 do pozdního večera)"
+  },
+  departure: {
+    en: "Marsa Alam Hotels (Pickup time flexible from 12:00 PM)",
+    de: "Hotels in Marsa Alam (Abholzeit flexibel ab 12:00 Uhr)",
+    it: "Hotel di Marsa Alam (Orario di pick-up flessibile dalle 12:00)",
+    ru: "Отели Марса-Алам (Время трансфера гибкое с 12:00)",
+    pl: "Hotele w Marsa Alam (Czas odbioru elastyczny od 12:00)",
+    cz: "Hotely v Marsa Alam (Čas vyzvednutí flexibilní od 12:00)"
+  },
+  overview: {
+    en: "Discover Marsa Alam like a local. Explore the town, visit local landmarks, walk through vibrant Egyptian markets, and enjoy free time for shopping and experiencing everyday authentic life away from tourist resorts.",
+    de: "Entdecken Sie Marsa Alam wie ein Einheimischer. Erkunden Sie die Stadt, besuchen Sie lokale Wahrzeichen, schlendern Sie über lebendige Märkte und genießen Sie freie Zeit zum Shoppen abseits der Touristeneinrichtungen.",
+    it: "Scopri Marsa Alam come un abitante del posto. Esplora la città, visita i luoghi di interesse locale, passeggia tra i vivaci mercati ed è goditi del tempo libero per lo shopping lontano dai resort.",
+    ru: "Откройте для себя Марса-Алам глазами местного жителя. Исследуйте город, посетите местные достопримечательности, прогуляйтесь по колоритным рынкам и насладитесь шопингом вдали от курортов.",
+    pl: "Odkryj Marsa Alam jak lokalny住h. Zwiedzaj miasto, odwiedzaj lokalne miejsca, spaceruj po tętniących życiem targach i ciesz się czasem wolnym na zakupy z dala od kurortów.",
+    cz: "Objevte Marsa Alam jako místní. Prozkoumejte město, navštivte místní památky, projděte se po živých trzích a užijte si volný čas na nákupy mimo turistické rezorty."
+  },
+  highlights: {
+    en: [
+      "Unbeatable price of $10 total for your entire group/family",
+      "Guided walking tour around Marsa Alam local town",
+      "Visit the iconic local mosque and learn about everyday Egyptian culture",
+      "Explore traditional markets with Egyptian spices, souvenirs & handcrafts",
+      "Flexible departure times available anytime from 12:00 PM onwards",
+      "Accompanied by a dedicated local guide throughout the experience"
+    ],
+    de: [
+      "Unschlagbarer Preis von 10 $ insgesamt für Ihre gesamte Gruppe/Familie",
+      "Geführter Rundgang durch das Zentrum von Marsa Alam",
+      "Besuch der örtlichen Moschee und Einblicke in den ägyptischen Alltag",
+      "Erkundung traditioneller Märkte mit Gewürzen, Souvenirs & Handwerkskunst",
+      "Flexible Abfahrtszeiten jederzeit ab 12:00 Uhr verfügbar",
+      "Begleitung durch einen eigenen lokalen Reiseleiter während der gesamten Tour"
+    ],
+    it: [
+      "Prezzo imbattibile di $10 totale per l'intero gruppo/famiglia",
+      "Tour guidato a piedi nel centro abitato di Marsa Alam",
+      "Visita alla moschea locale e scoperta della vita quotidiana egiziana",
+      "Esplora i mercati tradizionali con spezie, souvenir e artigianato",
+      "Orari di partenza flessibili a partire dalle 12:00 in poi",
+      "Accompagnamento da parte di una guida locale dedicata"
+    ],
+    ru: [
+      "Выгодная цена $10 за всю вашу группу или семью",
+      "Пешеходная прогулка с гидом по городу Марса-Алам",
+      "Посещение местной мечети и знакомство с традициями и бытом",
+      "Прогулка по восточному рынку: специи, сувениры и изделия ручной работы",
+      "Гибкое время выезда в любое время начиная с 12:00",
+      "Персональный местный гид на протяжении всей экскурсии"
+    ],
+    pl: [
+      "Niesamowita cena 10 $ łącznie za całą Twoją grupę/rodzinę",
+      "Piesza wycieczka z przewodnikiem po miasteczku Marsa Alam",
+      "Wizyta w lokalnym meczecie i poznanie codziennego życia Egipcjan",
+      "Odkrywanie tradycyjnych targów z przyprawami, pamiątkami i rękodziełem",
+      "Elastyczne godziny wyjazdu dostępne od 12:00",
+      "Opieka lokalnego przewodnika podczas całej wycieczki"
+    ],
+    cz: [
+      "Bezkonkurenční cena 10 $ celkem za celou vaši skupinu/rodinu",
+      "Pěší prohlídka s průvodcem po městečku Marsa Alam",
+      "Návštěva místní mešity a poznání běžného života v Egyptě",
+      "Prohlídka tradičních trhů s kořením, suvenýry a řemeslnými výrobky",
+      "Flexibilní časy odjezdu kdykoliv od 12:00 dále",
+      "Doprovod místního průvodce po celou dobu zážitku"
+    ]
+  },
+  included: {
+    en: [
+      "Local guide throughout the tour",
+      "Guided town walking tour",
+      "Visits to the local mosque and traditional markets"
+    ],
+    de: [
+      "Lokaler Reiseleiter während der gesamten Tour",
+      "Geführter Stadtrundgang",
+      "Besuch der örtlichen Moschee und traditionellen Märkte"
+    ],
+    it: [
+      "Guida locale per tutta la durata del tour",
+      "Tour a piedi guidato della città",
+      "Visita alla moschea locale e ai mercati tradizionali"
+    ],
+    ru: [
+      "Местный гид на протяжении всего тура",
+      "Пешеходная обзорная прогулка по городу",
+      "Посещение местной мечети и традиционных рынков"
+    ],
+    pl: [
+      "Lokalny przewodnik podczas całej wycieczki",
+      "Spacer po mieście z przewodnikiem",
+      "Wizyta w lokalnym meczecie i na tradycyjnych targach"
+    ],
+    cz: [
+      "Místní průvodce po celou dobu prohlídky",
+      "Pěší prohlídka města s průvodcem",
+      "Návštěva místní mešity a tradičních trhů"
+    ]
+  },
+  whatToBring: {
+    en: [
+      "Comfortable walking shoes",
+      "Modest clothing for visiting the local mosque",
+      "Camera or smartphone",
+      "Local currency (EGP) for shopping & personal purchases"
+    ],
+    de: [
+      "Bequeme Wanderschuhe",
+      "Angemessene Kleidung für den Besuch der Moschee",
+      "Kamera oder Smartphone",
+      "Einheimische Währung (EGP) für Shopping & Einkäufe"
+    ],
+    it: [
+      "Scarpe comode da passeggio",
+      "Abbigliamento modesto per la visita alla moschea",
+      "Fotocamera o smartphone",
+      "Moneta locale (EGP) per acquisti e shopping"
+    ],
+    ru: [
+      "Удобная обувь для ходьбы",
+      "Скромная одежда для посещения мечети",
+      "Камера или смартфон",
+      "Местная валюта (EGP) для покупок и шопинга"
+    ],
+    pl: [
+      "Wygodne buty do chodzenia",
+      "Skromne ubranie odpowiednie do wizyty w meczecie",
+      "Aparat fotograficzny lub telefon",
+      "Lokalna waluta (EGP) na zakupy"
+    ],
+    cz: [
+      "Pohodlná obuv na chodění",
+      "Vhodné oblečení pro návštěvu mešity",
+      "Fotoaparát nebo smartphone",
+      "Místní měna (EGP) na nákupy"
+    ]
+  },
+  childrenPolicy: {
+    under5: {
+      en: "Free of charge (Tour price is per group, children included)",
+      de: "Kostenlos (Tourpreis gilt pro Gruppe, Kinder inklusive)",
+      it: "Gratuito (Il prezzo del tour è per gruppo, bambini inclusi)",
+      ru: "Бесплатно (Цена тура за группу, дети включены)",
+      pl: "Bezpłatnie (Cena wycieczki dotyczy grupy, dzieci w cenie)",
+      cz: "Zdarma (Cena prohlídky je za skupinu, děti v cenie)"
+    },
+    from5to10: {
+      en: "Included in group tour price",
+      de: "Im Gruppenpreis enthalten",
+      it: "Incluso nel prezzo del gruppo",
+      ru: "Включено в стоимость тура за группу",
+      pl: "W cenie wycieczki grupowej",
+      cz: "Zahrnuto v ceně prohlídky za skupinu"
+    },
+    over10: {
+      en: "Included in group tour price",
+      de: "Im Gruppenpreis enthalten",
+      it: "Incluso nel prezzo del gruppo",
+      ru: "Включено в стоимость тура за группу",
+      pl: "W cenie wycieczki grupowej",
+      cz: "Zahrnuto v ceně prohlídky za skupinu"
+    }
+  },
+  itinerary: [
+    {
+      step: "01",
+      title: {
+        en: "Hotel Departure — Flexible Timing (From 12:00 PM)",
+        de: "Hotelabholung — Flexible Zeit (Ab 12:00 Uhr)",
+        it: "Partenza dall'Hotel — Orario Flessibile (Dalle 12:00)",
+        ru: "Выезд из отеля — Гибкое время (С 12:00)",
+        pl: "Wyjazd z hotelu — Elastyczny czas (Od 12:00)",
+        cz: "Odjezd z hotelu — Flexibilní čas (Od 12:00)"
+      },
+      description: {
+        en: "Pickup from your hotel according to your preferred time slot between 12:00 PM and evening.",
+        de: "Abholung von Ihrem Hotel zu Ihrer Wunschzeit zwischen 12:00 Uhr und abends.",
+        it: "Pick-up dal tuo hotel nell'orario preferito tra le 12:00 e la sera.",
+        ru: "Трансфер из отеля в удобное для вас время с 12:00 до вечера.",
+        pl: "Odbiór z hotelu w wybranej przez Ciebie godzinie między 12:00 a wieczorem.",
+        cz: "Vyzvednutí v hotelu v čase podle вашей preference mezi 12:00 a večerem."
+      }
+    },
+    {
+      step: "02",
+      title: {
+        en: "Marsa Alam Town & Local Mosque Visit",
+        de: "Stadt Marsa Alam & Besichtigung der Moschee",
+        it: "Città di Marsa Alam e Visita alla Moschea Locale",
+        ru: "Город Марса-Алам и посещение местной мечети",
+        pl: "Miasteczko Marsa Alam i wizyta w meczecie",
+        cz: "Městečko Marsa Alam a návštěva místní mešity"
+      },
+      description: {
+        en: "Walk through the heart of Marsa Alam town, visit a local mosque landmark, and discover local community culture.",
+        de: "Spazieren Sie durch das Zentrum von Marsa Alam, besuchen Sie die örtliche Moschee und lernen Sie die Kultur der Einwohner kennen.",
+        it: "Passeggia nel cuore di Marsa Alam, visita la moschea locale e scopri la cultura della comunità.",
+        ru: "Прогулка по центру Марса-Алам, посещение местной мечети и знакомство с культурой местных жителей.",
+        pl: "Spacer po centrum Marsa Alam, wizyta w lokalnym meczecie i poznanie kultury mieszkańców.",
+        cz: "Procházka centrem Marsa Alam, návštěva místní mešity a poznání místní kultury."
+      }
+    },
+    {
+      step: "03",
+      title: {
+        en: "Local Market & Shopping Experience",
+        de: "Einkaufserlebnis auf dem lokalen Markt",
+        it: "Esperienza al Mercato Locale e Shopping",
+        ru: "Местный рынок и шопинг",
+        pl: "Lokalny targ i zakupy",
+        cz: "Místní trh a nákupy"
+      },
+      description: {
+        en: "Enjoy free time for shopping in traditional shops selling Egyptian spices, perfumes, oils, souvenirs, and handmade products.",
+        de: "Genießen Sie freie Zeit zum Einkaufen in traditionellen Geschäften mit Gewürzen, Parfüms, Ölen, Souvenirs und Handwerkskunst.",
+        it: "Goditi del tempo libero per lo shopping in negozi tradizionali di spezie, profumi, oli, souvenir e artigianato locale.",
+        ru: "Свободное время для шопинга في традиционных лавках: специи, парфюмерия, масла, сувениры и ручные изделия.",
+        pl: "Czas wolny na zakupy w tradycyjnych sklepach z przyprawami, perfumami, olejkami, pamiątkami i rękodziełem.",
+        cz: "Užijte si volný čas na nákupy v tradičních obchůdcích s kořením, parfémy, oleji, suvenýry a ručními výrobky."
+      }
+    }
+  ],
+  paymentNote: {
+    en: "City Tour Pricing: $10 total per group/family (Not per person). Transportation price is calculated separately based on pickup location and group size. Payment collected on the day of the tour.",
+    de: "Preis für die Stadtrundfahrt: 10 $ insgesamt pro Gruppe/Familie (Nicht pro Person). Der Transferpreis wird je nach Standort und Gruppengröße berechnet. Zahlung am Tag der Tour.",
+    it: "Prezzo Tour Città: $10 totale per gruppo/famiglia (Non a persona). Il prezzo del trasporto viene calcolato a parte in base alla posizione e al numero di persone. Pagamento il giorno del tour.",
+    ru: "Цена тура: $10 за всю группу/семью (Не с человека). Трансфер оплачивается отдельно в зависимости от отеля и количества человек. Оплата в день экскурсии.",
+    pl: "Cena wycieczki po mieście: 10 $ łącznie za grupę/rodzinę (Nie za osobę). Cena transportu jest obliczana osobiście w zależności od lokalizacji i liczby osób. Płatność w dniu wycieczki.",
+    cz: "Cena prohlídky města: 10 $ celkem za skupinu/rodinu (Ne za osobu). Cena dopravy se počítá zvlášť podle polohy hotelu a počtu osob. Platba v den prohlídky."
+  },
+  disclaimer: {
+    en: "Transportation costs vary depending on your hotel distance and number of guests. Food, drinks, personal shopping, and purchases are not included in the $10 tour fee.",
+    de: "Die Transportkosten variieren je nach Hotelentfernung und Personenanzahl. Verpflegung, Getränke und persönliche Einkäufe sind nicht in der Tourgebühr von 10 $ enthalten.",
+    it: "I costi di trasporto variano in base alla distanza dell'hotel e al numero di ospiti. Cibo, bevande e acquisti personali non sono inclusi nella quota tour di $10.",
+    ru: "Стоимость трансфера зависит от удаленности отеля и количества гостей. Еда, напитки и личные покупки не входят в стоимость тура $10.",
+    pl: "Koszty transportu zależą od odległości hotelu i liczby gości. Jedzenie, napoje i prywatne zakupy nie są wliczone w opłatę 10 $ za wycieczkę.",
+    cz: "Náklady na dopravu se liší podle vzdálenosti hotelu a počtu hostů. Jídlo, pití a osobní nákupy nejsou zahrnuty v ceně prohlídky 10 $."
+  },
+  images: {
+    featured: "/images/tours/marsa-alam-city-tour.jpg",
+    gallery: [
+      "/images/tours/marsa-alam-city-tour-1.jpg",
+      "/images/tours/marsa-alam-city-tour-2.jpg",
+      "/images/tours/marsa-alam-city-tour-3.jpg"
+    ]
+  }
 }
 ];
