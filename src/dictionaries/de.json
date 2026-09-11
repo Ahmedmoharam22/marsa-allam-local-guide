@@ -2,15 +2,16 @@
   "nav": {
     "home": "Startseite",
     "tours": "Tauchausflüge",
-    "liveaboards": "Tauchsafari",
     "courses": "PADI Kurse",
     "about": "Über uns",
     "contact": "Kontakt",
+    "blogs":"Blog",
+    "scubaDiving": "Tauchen",
     "whatsappCta": "Auf WhatsApp buchen"
   },
   "hero": {
     "welcome": "Willkommen bei",
-    "title_main": "Marsa Allam",
+    "title_main": "Marsa Alam",
     "title_sub": "Local Guide",
     "tagline": "Delfin-Morgen, ruhige Riffe, Wüstenhimmel.",
     "description": "Wählen Sie den perfekten Tag für das Meer, finden Sie die ruhigsten Riffe und erleben Sie Marsa Alam mit einem Einheimischen.",

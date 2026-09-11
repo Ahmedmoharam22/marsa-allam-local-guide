@@ -12,7 +12,7 @@ export interface TourItineraryStep {
   description?: LocalizedString;
 }
 
-export type TourType = 'snorkeling' | 'scuba-diving' | 'courses' | 'city-tours';
+export type TourType = 'snorkeling' | 'scuba-diving' | 'course' | 'city-tours';
 
 export interface Tour {
   id: string; // "dolphin-house-samadai"
@@ -37,7 +37,7 @@ export interface Tour {
   included: LocalizedList;
   notIncluded?: LocalizedList;
   whatToBring: LocalizedList;
-  childrenPolicy: {
+  childrenPolicy?: {
     under5: LocalizedString;
     from5to10: LocalizedString;
     over10: LocalizedString;

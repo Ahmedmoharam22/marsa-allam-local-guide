@@ -172,12 +172,14 @@ export default async function TourDetailPage({ params }: TourPageProps) {
                 </div>
               </div>
 
-              <div className="mb-6 space-y-2 rounded-xl bg-slate-50 p-3.5 text-xs text-slate-600 dark:bg-slate-800/50 dark:text-slate-300">
-                <span className="font-bold text-slate-900 dark:text-white block mb-1">Children Policy:</span>
-                <p>• {t.childrenPolicy.under5[lang]}</p>
-                <p>• {t.childrenPolicy.from5to10[lang]}</p>
-                <p>• {t.childrenPolicy.over10[lang]}</p>
-              </div>
+            {t.childrenPolicy && (
+  <div className="mb-6 space-y-2 rounded-xl bg-slate-50 p-3.5 text-xs text-slate-600 dark:bg-slate-800/50 dark:text-slate-300">
+    <span className="font-bold text-slate-900 dark:text-white block mb-1">Children Policy:</span>
+    {t.childrenPolicy.under5?.[lang] && <p>• {t.childrenPolicy.under5[lang]}</p>}
+    {t.childrenPolicy.from5to10?.[lang] && <p>• {t.childrenPolicy.from5to10[lang]}</p>}
+    {t.childrenPolicy.over10?.[lang] && <p>• {t.childrenPolicy.over10[lang]}</p>}
+  </div>
+)}
 
               <a
                 href={`https://wa.me/201080268114?text=${encodeURIComponent(`Hello, I would like to book: ${t.title[lang] || t.title.en}`)}`}

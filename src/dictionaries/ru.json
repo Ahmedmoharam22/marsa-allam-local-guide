@@ -2,15 +2,16 @@
   "nav": {
     "home": "Главная",
     "tours": "Дайвинг туры",
-    "liveaboards": "Дайвинг сафари",
     "courses": "Курсы PADI",
     "about": "О нас",
     "contact": "Контакты",
+    "blogs": "Блог",
+    "scubaDiving": "Дайвинг",
     "whatsappCta": "Забронировать в WhatsApp"
   },
   "hero": {
     "welcome": "Добро пожаловать в",
-    "title_main": "Marsa Allam",
+    "title_main": "Marsa Alam",
     "title_sub": "Local Guide",
     "tagline": "Утро с дельфинами, тихие рифы и пустынное небо.",
     "description": "Выберите идеальный день для моря, найдите самые спокойные рифы и откройте Марса-Алам с местным гидом.",

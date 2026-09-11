@@ -2,15 +2,16 @@
   "nav": {
     "home": "Strona główna",
     "tours": "Wycieczki nurkowe",
-    "liveaboards": "Safari nurkowe",
     "courses": "Kursy PADI",
     "about": "O nas",
     "contact": "Kontakt",
+    "blogs":"Blog",
+    "scubaDiving": "Nurkowanie",
     "whatsappCta": "Zarezerwuj na WhatsApp"
   },
   "hero": {
     "welcome": "Witamy w",
-    "title_main": "Marsa Allam",
+    "title_main": "Marsa Alam",
     "title_sub": "Local Guide",
     "tagline": "Poranki z delfinami, spokojne rafy, pustynne niebo.",
     "description": "Wybierz idealny dzień na morzu, znajdź najspokojniejszą rafę i poznaj Marsa Alam z lokalnym przewodnikiem.",

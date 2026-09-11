@@ -14,11 +14,11 @@ interface NavbarProps {
     nav: {
       home: string;
       tours: string;
-      liveaboards: string;
       courses: string;
       about: string;
       contact: string;
       blogs?: string;
+      scubaDiving: string;
       whatsappCta?: string;
     };
     seo: {
@@ -121,9 +121,9 @@ export default function Navbar({ lang, dict }: NavbarProps) {
   const navLinks = [
     { key: 'home', label: dict.nav.home, href: `/${lang}`, target: 'hero', isPage: false },
     { key: 'tours', label: dict.nav.tours, href: `/${lang}/tours`, target: 'tours', isPage: true },
-    { key: 'liveaboards', label: dict.nav.liveaboards, href: `/${lang}#liveaboards`, target: 'liveaboards', isPage: false },
-    { key: 'courses', label: dict.nav.courses, href: `/${lang}/tours`, target: 'tours', isPage: true },
-    { key: 'about', label: dict.nav.about, href: `/${lang}#about`, target: 'about', isPage: false },
+    { key: 'courses', label: dict.nav.courses, href: `/${lang}/courses`, target: 'courses', isPage: true },
+    { key: 'scuba-diving', label: dict.nav.scubaDiving, href: `/${lang}/scuba-diving`, target: 'scuba-diving', isPage: true },
+    { key: 'about', label: dict.nav.about, href: `/${lang}/about`, target: 'about', isPage: true },
     { key: 'blogs', label: dict.nav.blogs || 'Blogs', href: `/${lang}/blogs`, target: 'blogs', isPage: true },
   ];
 

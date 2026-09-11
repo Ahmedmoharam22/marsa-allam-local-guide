@@ -2,15 +2,15 @@
 "nav": {
   "home": "Home",
   "tours": "Diving Trips",
-  "liveaboards": "Safari Yachts",
   "courses": "PADI Courses",
   "about": "About Us",
   "blogs": "Blogs",
-  "contact": "Contact"
+  "contact": "Contact",
+  "scubaDiving": "Scuba Diving"
 },
   "hero": {
     "welcome": "Welcome to",
-    "title_main": "Marsa Allam",
+    "title_main": "Marsa Alam",
     "title_sub": "Local Guide",
     "tagline": "Dolphin mornings, quiet reefs, desert skies.",
     "description": "Choose the right sea day, find the calmest reef, and see Marsa Alam with a guide who knows the local rhythm.",

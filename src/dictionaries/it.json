@@ -2,15 +2,16 @@
   "nav": {
     "home": "Home",
     "tours": "Escursioni Sub",
-    "liveaboards": "Crociere Safari",
     "courses": "Corsi PADI",
     "about": "Chi Siamo",
     "contact": "Contatti",
+    "blogs":"Blog",
+    "scubaDiving": "Immersioni",
     "whatsappCta": "Prenota su WhatsApp"
   },
   "hero": {
     "welcome": "Benvenuto su",
-    "title_main": "Marsa Allam",
+    "title_main": "Marsa Alam",
     "title_sub": "Local Guide",
     "tagline": "Mattinate con i delfini, barriere tranquille, cieli del deserto.",
     "description": "Scegli il giorno di mare perfetto, trova la barriera più tranquilla e vivi Marsa Alam con una guida locale.",

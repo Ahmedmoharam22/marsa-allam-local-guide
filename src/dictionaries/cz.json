@@ -2,15 +2,16 @@
   "nav": {
     "home": "Hlavní strana",
     "tours": "Potápěčské výlety",
-    "liveaboards": "Potápěčské safari",
     "courses": "Kurzy PADI",
     "about": "O nás",
     "contact": "Kontakt",
+    "blogs": "blogy",
+    "scubaDiving": "Potápění",
     "whatsappCta": "Rezervovat na WhatsAppu"
   },
   "hero": {
     "welcome": "Vítejte v",
-    "title_main": "Marsa Allam",
+    "title_main": "Marsa Alam",
     "title_sub": "Local Guide",
     "tagline": "Rána s delfíny, klidné útesy, pouštní obloha.",
     "description": "Vyberte si ideální den na moři, najděte nejklidnější útes a poznejte Marsa Alam s místním průvodcem.",

@@ -4481,7 +4481,7 @@ export const tours: Tour[] = [
     cz: "Potápění"
   },
   price: {
-    amount: 145,
+    amount: 120,
     currency: "€",
     unit: {
       en: "per person (Park & Env. Fees Included)",
@@ -4686,36 +4686,10 @@ export const tours: Tour[] = [
       "Logbook s potvrzením nedávných hlubokých/proudových ponorů",
       "Ručník",
       "Opalovací krém šetrný k útesům",
-      "Klobouk a sluneční brýle",
-      "Osobní léky v případě potřeby"
+      "Klobouk a sluneční brýle"
     ]
   },
-  childrenPolicy: {
-    under5: {
-      en: "Not allowed — Deep offshore environment for advanced divers only",
-      de: "Nicht erlaubt — Tiefwassergebiet nur für fortgeschrittene Taucher",
-      it: "Non consentito — Ambiente di mare aperto riservato ai soli sub avanzati",
-      ru: "Не допускается — Погружение только для продвинутых дайверов",
-      pl: "Niedozwolone — Nurkowanie w otwartym morzu tylko dla zaawansowanych",
-      cz: "Není povoleno — Určeno výhradně pro pokročilé potápěče"
-    },
-    from5to10: {
-      en: "Not allowed — Minimum age and certification limits apply",
-      de: "Nicht erlaubt — Mindestalter und Zertifizierungsbeschränkungen",
-      it: "Non consentito — Limiti di età e di brevetto minimi",
-      ru: "Не допускается — Ограничения по возрасту и сертификации",
-      pl: "Niedozwolone — Ograniczenia wiekowe i wymagany certyfikat",
-      cz: "Není povoleno — Platí věková a certifikační omezení"
-    },
-    over10: {
-      en: "Certified Advanced Junior Divers (12+ years): Full adult rate applies",
-      de: "Zertifizierte Advanced Junior Taucher (ab 12 J.): Voller Tarif",
-      it: "Sub Junior Advanced Certificati (da 12 anni): Tariffa intera",
-      ru: "Сертифицированные Junior Advanced (с 12 лет): Полная стоимость",
-      pl: "Certyfikowani nurkowie Junior Advanced (od 12 lat): Pełna stawka",
-      cz: "Certifikovaní potápěči Junior Advanced (od 12 let): Plná cena"
-    }
-  },
+  childrenPolicy: undefined,
   itinerary: [
     {
       step: "01",
@@ -4905,7 +4879,7 @@ export const tours: Tour[] = [
     cz: "Potápění"
   },
   price: {
-    amount: 85,
+    amount: 95,
     currency: "€",
     unit: {
       en: "per person (Bay Entrance Included)",
@@ -5304,7 +5278,7 @@ export const tours: Tour[] = [
     cz: "Potápění"
   },
   price: {
-    amount: 120,
+    amount: 100,
     currency: "€",
     unit: {
       en: "per person (Park & Fees Included)",
@@ -6512,7 +6486,7 @@ export const tours: Tour[] = [
 {
   id: "padi-open-water-diver",
   slug: "padi-open-water-diver-course",
-  type: "courses",
+  type: "course",
   title: {
     en: "PADI Open Water Diver Course",
     de: "PADI Open Water Diver Kurs",
@@ -6879,7 +6853,7 @@ export const tours: Tour[] = [
 {
   id: "padi-advanced-open-water-diver",
   slug: "padi-advanced-open-water-diver-course",
-  type: "courses",
+  type: "course",
   title: {
     en: "PADI Advanced Open Water Diver Course",
     de: "PADI Advanced Open Water Diver Kurs",
