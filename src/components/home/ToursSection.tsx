@@ -4,7 +4,6 @@ import { useState, useMemo } from "react";
 import { tours } from "@/data/tours";
 import { TourCard } from "../tours/TourCard";
 import { Locale } from "@/lib/i18n-config";
-import { ArrowUpDown, ArrowDownNarrowWide, ArrowUpNarrowWide } from "lucide-react";
 
 interface ToursSectionProps {
   lang: Locale;
@@ -16,25 +15,20 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
   const subtitle = dict?.tours?.subtitle || dict?.toursSubtitle || "Discover the best marine adventures and desert safaris, and enjoy the magic of nature with us.";
 
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
-  const [priceSort, setPriceSort] = useState<"default" | "low" | "high">("default");
-  const [alphaSort, setAlphaSort] = useState<"default" | "asc">("default");
 
   const uiTexts: Record<
     Locale,
     {
       noResults: string;
       all: string;
-      lowToHigh: string;
-      highToLow: string;
-      alphabetical: string;
     }
   > = {
-    en: { noResults: "No tours found.", all: "All Tours", lowToHigh: "Low Price", highToLow: "High Price", alphabetical: "A-Z" },
-    de: { noResults: "Keine Ausflüge gefunden.", all: "Alle Ausflüge", lowToHigh: "Günstig", highToLow: "Teuer", alphabetical: "A-Z" },
-    it: { noResults: "Nessun tour trovato.", all: "Tutti i Tour", lowToHigh: "Prezzo Basso", highToLow: "Prezzo Alto", alphabetical: "A-Z" },
-    ru: { noResults: "Экскурсии не найдены.", all: "Все экскурсии", lowToHigh: "Дешевле", highToLow: "Дороже", alphabetical: "А-Я" },
-    pl: { noResults: "Nie znaleziono wycieczek.", all: "Wszystkie Wycieczki", lowToHigh: "Niska cena", highToLow: "Wysoka cena", alphabetical: "A-Z" },
-    cz: { noResults: "Žádné výlety nenalezeny.", all: "Všechny výlety", lowToHigh: "Nízká cena", highToLow: "Vysoká cena", alphabetical: "A-Z" },
+    en: { noResults: "No tours found.", all: "All Tours" },
+    de: { noResults: "Keine Ausflüge gefunden.", all: "Alle Ausflüge" },
+    it: { noResults: "Nessun tour trovato.", all: "Tutti i Tour" },
+    ru: { noResults: "Экскурсии не найдены.", all: "Все экскурсии" },
+    pl: { noResults: "Nie znaleziono wycieczek.", all: "Wszystkie Wycieczki" },
+    cz: { noResults: "Žádné výlety nenalezeny.", all: "Všechny výlety" },
   };
 
   const categoryLabels: Record<string, Record<Locale, string>> = {
@@ -57,27 +51,11 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
   }, []);
 
   const filteredTours = useMemo(() => {
-    let result = tours.filter((tour) => {
+    return tours.filter((tour) => {
       if (selectedCategory === "all") return true;
       return tour.type === selectedCategory;
     });
-
-    if (priceSort === "low") {
-      result.sort((a, b) => a.price.amount - b.price.amount);
-    } else if (priceSort === "high") {
-      result.sort((a, b) => b.price.amount - a.price.amount);
-    }
-
-    if (alphaSort === "asc") {
-      result.sort((a, b) => {
-        const titleA = a.title[lang] || a.title.en;
-        const titleB = b.title[lang] || b.title.en;
-        return titleA.localeCompare(titleB);
-      });
-    }
-
-    return result;
-  }, [selectedCategory, priceSort, alphaSort, lang]);
+  }, [selectedCategory]);
 
   return (
     <section id="tours" className="mx-auto max-w-7xl px-4 pt-6 pb-16 sm:px-6 sm:pt-10 sm:pb-24">
@@ -87,11 +65,9 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
         <p className="mt-2 text-sm text-muted-foreground sm:text-base max-w-2xl mx-auto">{subtitle}</p>
       </div>
 
-      {/* Unified Control Bar: Categories + Sorting in One Single Scrollable Line */}
+      {/* Category Tabs */}
       <div className="mb-8 overflow-x-auto pb-3 scrollbar-none -mx-4 px-4 sm:mx-0 sm:px-0">
         <div className="flex items-center gap-2 min-w-max">
-          
-          {/* Category Tabs */}
           <button
             onClick={() => setSelectedCategory("all")}
             className={`shrink-0 rounded-full px-4 py-2 text-xs font-semibold transition-all ${
@@ -120,56 +96,6 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
               </button>
             );
           })}
-
-          {/* Divider between Categories & Sorting */}
-          <div className="h-5 w-[1px] bg-border mx-1 shrink-0" />
-
-          {/* Price & Alpha Sort Buttons */}
-          <button
-            onClick={() => {
-              setPriceSort(priceSort === "low" ? "default" : "low");
-              setAlphaSort("default");
-            }}
-            className={`shrink-0 flex items-center gap-1.5 rounded-full border px-3.5 py-2 text-xs font-medium transition-all ${
-              priceSort === "low"
-                ? "border-primary bg-primary/10 text-primary shadow-sm"
-                : "border-border bg-card text-muted-foreground hover:border-primary/50 hover:text-foreground"
-            }`}
-          >
-            <ArrowDownNarrowWide className="h-3.5 w-3.5" />
-            {t.lowToHigh}
-          </button>
-
-          <button
-            onClick={() => {
-              setPriceSort(priceSort === "high" ? "default" : "high");
-              setAlphaSort("default");
-            }}
-            className={`shrink-0 flex items-center gap-1.5 rounded-full border px-3.5 py-2 text-xs font-medium transition-all ${
-              priceSort === "high"
-                ? "border-primary bg-primary/10 text-primary shadow-sm"
-                : "border-border bg-card text-muted-foreground hover:border-primary/50 hover:text-foreground"
-            }`}
-          >
-            <ArrowUpNarrowWide className="h-3.5 w-3.5" />
-            {t.highToLow}
-          </button>
-
-          <button
-            onClick={() => {
-              setAlphaSort(alphaSort === "asc" ? "default" : "asc");
-              setPriceSort("default");
-            }}
-            className={`shrink-0 flex items-center gap-1.5 rounded-full border px-3.5 py-2 text-xs font-medium transition-all ${
-              alphaSort === "asc"
-                ? "border-primary bg-primary/10 text-primary shadow-sm"
-                : "border-border bg-card text-muted-foreground hover:border-primary/50 hover:text-foreground"
-            }`}
-          >
-            <ArrowUpDown className="h-3.5 w-3.5" />
-            {t.alphabetical}
-          </button>
-
         </div>
       </div>
 

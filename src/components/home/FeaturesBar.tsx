@@ -2,7 +2,7 @@
 
 import { Language } from "@/types/tour";
 import { whyChooseUsData } from "@/data/whyChooseUs";
-import { CreditCard, ShieldCheck, MessageCircle, Users } from "lucide-react";
+import { CreditCard, ShieldCheck, MessageCircle, Users, CalendarX } from "lucide-react";
 
 interface FeaturesBarProps {
   lang: Language;
@@ -12,6 +12,7 @@ export function FeaturesBar({ lang }: FeaturesBarProps) {
   const t = whyChooseUsData[lang] || whyChooseUsData.en;
 
   const featureIcons = [
+    <CalendarX key="cancel" className="h-4 w-4 sm:h-5 sm:w-5" />,
     <CreditCard key="card" className="h-4 w-4 sm:h-5 sm:w-5" />,
     <ShieldCheck key="shield" className="h-4 w-4 sm:h-5 sm:w-5" />,
     <MessageCircle key="comments" className="h-4 w-4 sm:h-5 sm:w-5" />,
@@ -20,13 +21,13 @@ export function FeaturesBar({ lang }: FeaturesBarProps) {
 
   return (
     <section className="relative z-20 -mt-6 sm:-mt-4 lg:mt-2 px-4 sm:px-6">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
         {/* Container الرئيسي للشريط العائم */}
-        <div className="rounded-2xl bg-white/95 dark:bg-ocean-900/95 p-4 sm:p-6 shadow-2xl backdrop-blur-md border border-ocean-800/15 dark:border-ocean-800">
+        <div className="rounded-2xl bg-white/95 dark:bg-ocean-900/95 p-4 sm:p-5 shadow-2xl backdrop-blur-md border border-ocean-800/15 dark:border-ocean-800">
           
           {/* Top Banner Badge */}
           {t.topBanner && (
-            <div className="flex items-center justify-center mb-2.5">
+            <div className="flex items-center justify-center mb-3">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-aqua-100/80 dark:bg-ocean-950 border border-aqua-400/40 dark:border-ocean-800 text-ocean-950 dark:text-aqua-400 text-xs font-semibold shadow-sm">
                 <ShieldCheck className="w-3.5 h-3.5 text-aqua-600 dark:text-aqua-400" />
                 <span>{t.topBanner}</span>
@@ -34,20 +35,20 @@ export function FeaturesBar({ lang }: FeaturesBarProps) {
             </div>
           )}
 
-          {/* Simple Title Only */}
+          {/* Simple Title */}
           <div className="text-center mb-4">
             <h3 className="text-sm sm:text-base md:text-lg font-bold text-ocean-950 dark:text-white leading-tight">
               {t.title}
             </h3>
           </div>
 
-          {/* Grid Layout: 2 columns on mobile, 4 on desktop */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:divide-x md:divide-ocean-800/10 dark:md:divide-ocean-800/60 rtl:md:divide-x-reverse">
+          {/* Grid Layout: 1 column on Mobile, 5 equal columns on Desktop */}
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-3 lg:gap-2 divide-y lg:divide-y-0 lg:divide-x divide-ocean-800/10 dark:divide-ocean-800/60 rtl:lg:divide-x-reverse">
             {t.features.map((feature, index) => (
               <div
                 key={index}
-                className={`flex flex-col sm:flex-row items-start gap-2 sm:gap-3.5 ${
-                  index !== 0 ? "md:pl-4 rtl:md:pr-4" : ""
+                className={`flex flex-row lg:flex-col items-center lg:items-center lg:text-center gap-3 lg:gap-2 ${
+                  index !== 0 ? "pt-2.5 lg:pt-0 lg:pl-3 rtl:lg:pr-3" : ""
                 }`}
               >
                 {/* Icon Container */}
@@ -57,10 +58,10 @@ export function FeaturesBar({ lang }: FeaturesBarProps) {
 
                 {/* Text Content */}
                 <div className="min-w-0 flex-1">
-                  <h4 className="text-xs sm:text-sm font-bold text-ocean-950 dark:text-white leading-tight mb-1">
+                  <h4 className="text-xs sm:text-sm font-bold text-ocean-950 dark:text-white leading-tight mb-0.5">
                     {feature.title}
                   </h4>
-                  <p className="text-[10px] sm:text-xs text-slate-600 dark:text-slate-300 leading-snug">
+                  <p className="text-[11px] sm:text-xs text-slate-600 dark:text-slate-300 leading-snug">
                     {feature.description}
                   </p>
                 </div>
