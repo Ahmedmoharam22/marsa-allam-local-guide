@@ -4,6 +4,8 @@ import { tours } from '@/data/tours';
 import type { Language } from '@/types/tour';
 import { ClockIcon, LocationIcon, CheckIcon, CrossIcon, ArrowLeftIcon } from '@/components/ui/Icons';
 import TourGallery from '@/components/tours/TourGallery';
+import { backToToursLabels } from '@/constants/labels';
+import BookingForm from '@/components/tours/TourBookingForm';
 
 interface TourPageProps {
   params: Promise<{
@@ -11,15 +13,6 @@ interface TourPageProps {
     slug: string;
   }>;
 }
-
-const backToToursLabels: Record<Language, string> = {
-  en: 'Back to Tours',
-  de: 'Zurück zu den Touren',
-  it: 'Torna ai Tour',
-  ru: 'Назад к экскурсиям',
-  pl: 'Powrót do wycieczek',
-  cz: 'Zpět na výlety',
-};
 
 export async function generateMetadata({ params }: TourPageProps) {
   const { lang, slug } = await params;
@@ -46,7 +39,7 @@ export default async function TourDetailPage({ params }: TourPageProps) {
     <article className="min-h-screen bg-slate-50 pt-20 pb-16 dark:bg-slate-950 text-slate-800 dark:text-slate-100">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
 
-        {/* Back Button */}
+        {/* Back Button with 9 Languages */}
         <div className="mb-4 sm:mb-6">
           <Link
             href={`/${lang}/#tours`}
@@ -158,6 +151,13 @@ export default async function TourDetailPage({ params }: TourPageProps) {
                 </div>
               )}
             </section>
+
+            {/* 4. Interactive WhatsApp Booking Component */}
+            <BookingForm
+              tourTitle={t.title[lang] || t.title.en}
+              categoryName={t.category[lang]}
+              lang={lang}
+            />
           </div>
 
           <aside className="lg:col-span-1">
@@ -172,14 +172,14 @@ export default async function TourDetailPage({ params }: TourPageProps) {
                 </div>
               </div>
 
-            {t.childrenPolicy && (
-  <div className="mb-6 space-y-2 rounded-xl bg-slate-50 p-3.5 text-xs text-slate-600 dark:bg-slate-800/50 dark:text-slate-300">
-    <span className="font-bold text-slate-900 dark:text-white block mb-1">Children Policy:</span>
-    {t.childrenPolicy.under5?.[lang] && <p>• {t.childrenPolicy.under5[lang]}</p>}
-    {t.childrenPolicy.from5to10?.[lang] && <p>• {t.childrenPolicy.from5to10[lang]}</p>}
-    {t.childrenPolicy.over10?.[lang] && <p>• {t.childrenPolicy.over10[lang]}</p>}
-  </div>
-)}
+              {t.childrenPolicy && (
+                <div className="mb-6 space-y-2 rounded-xl bg-slate-50 p-3.5 text-xs text-slate-600 dark:bg-slate-800/50 dark:text-slate-300">
+                  <span className="font-bold text-slate-900 dark:text-white block mb-1">Children Policy:</span>
+                  {t.childrenPolicy.under5?.[lang] && <p>• {t.childrenPolicy.under5[lang]}</p>}
+                  {t.childrenPolicy.from5to10?.[lang] && <p>• {t.childrenPolicy.from5to10[lang]}</p>}
+                  {t.childrenPolicy.over10?.[lang] && <p>• {t.childrenPolicy.over10[lang]}</p>}
+                </div>
+              )}
 
               <a
                 href={`https://wa.me/201080268114?text=${encodeURIComponent(`Hello, I would like to book: ${t.title[lang] || t.title.en}`)}`}

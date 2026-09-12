@@ -104,5 +104,50 @@ export const getInTouchData: Record<Language, {
     hoursLabel: "Otevírací doba",
     hoursValue: "Denně: 8:00 - 18:00",
     mapBadge: "📍 Marsa Alam, Rudé moře, Egypt"
+  },
+fr: {
+    badge: "Contactez-nous",
+    title: "Entrons en contact",
+    subtitle: "Des questions ou prêt à réserver votre prochaine aventure ? Nous sommes là pour vous aider !",
+    contactInfoTitle: "Coordonnées de contact",
+    whatsappLabel: "WhatsApp",
+    phoneLabel: "Numéro de téléphone",
+    emailLabel: "Adresse e-mail",
+    locationsTitle: "Nos adresses",
+    headOfficeLabel: "Siège principal",
+    headOfficeAddress: "Marsa Alam, Mer Rouge",
+    hoursLabel: "Heures d'ouverture",
+    hoursValue: "Tous les jours : 08h00 - 18h00",
+    mapBadge: "📍 Marsa Alam, Mer Rouge, Égypte"
+  },
+  nl: {
+    badge: "Neem contact op",
+    title: "Contact opnemen",
+    subtitle: "Heb je vragen of ben je klaar om je volgende avontuur te boeken? Wij staan voor je klaar!",
+    contactInfoTitle: "Contactgegevens",
+    whatsappLabel: "WhatsApp",
+    phoneLabel: "Telefoonnummer",
+    emailLabel: "E-mailadres",
+    locationsTitle: "Onze locaties",
+    headOfficeLabel: "Hoofdkantoor",
+    headOfficeAddress: "Marsa Alam, Rode Zee",
+    hoursLabel: "Openingstijden",
+    hoursValue: "Dagelijks: 08:00 - 18:00",
+    mapBadge: "📍 Marsa Alam, Rode Zee, Egypte"
+  },
+  hu: {
+    badge: "Lépj kapcsolatba velünk",
+    title: "Vegyük fel a kapcsolatot",
+    subtitle: "Kérdésed van, vagy készen állsz lefoglalni a következő kalandodat? Azért vagyunk itt, hogy segítsünk!",
+    contactInfoTitle: "Kapcsolati adatok",
+    whatsappLabel: "WhatsApp",
+    phoneLabel: "Telefonszám",
+    emailLabel: "E-mail cím",
+    locationsTitle: "Helyszíneink",
+    headOfficeLabel: "Központi iroda",
+    headOfficeAddress: "Marsa Alam, Vörös-tenger",
+    hoursLabel: "Nyitvatartás",
+    hoursValue: "Minden nap: 08:00 - 18:00",
+    mapBadge: "📍 Marsa Alam, Vörös-tenger, Egyiptom"
   }
 };

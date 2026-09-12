@@ -72,5 +72,41 @@ export const ctaData: Record<Language, { badge: string; title: string; subtitle:
       instagram: "@marsaalamlocalguide",
       email: "info@marsaalamlocalguide.com"
     }
+  },
+fr: {
+    badge: "Planifions votre séjour",
+    title: "Prêt pour votre prochaine aventure ?",
+    subtitle: "Nous sommes là pour rendre votre voyage à Marsa Alam unforgettable. Envoyez-nous un message et dites-nous quand vous arrivez.",
+    buttonText: "Discuter sur WhatsApp",
+    info: {
+      location: "Marsa Alam, Égypte",
+      whatsapp: "+20 10 80268114",
+      instagram: "@marsaalamlocalguide",
+      email: "info@marsaalamlocalguide.com"
+    }
+  },
+  nl: {
+    badge: "Laten we een plan maken",
+    title: "Klaar voor je volgende avontuur?",
+    subtitle: "Wij zijn er om jouw reis naar Marsa Alam onvergetelijk te maken. Stuur een bericht en laat ons weten wanneer je komt.",
+    buttonText: "Chatten via WhatsApp",
+    info: {
+      location: "Marsa Alam, Egypte",
+      whatsapp: "+20 10 80268114",
+      instagram: "@marsaalamlocalguide",
+      email: "info@marsaalamlocalguide.com"
+    }
+  },
+  hu: {
+    badge: "Tervezzük meg az utadat",
+    title: "Készen állsz a következő kalandodra?",
+    subtitle: "Azért vagyunk itt, hogy felejthetetlenné tegyük a Marsa Alam-i utazásodat. Küldj egy üzenetet, és mondd el, mikor érkezel.",
+    buttonText: "Chatelés WhatsApp-on",
+    info: {
+      location: "Marsa Alam, Egyiptom",
+      whatsapp: "+20 10 80268114",
+      instagram: "@marsaalamlocalguide",
+      email: "info@marsaalamlocalguide.com"
+    }
   }
 };

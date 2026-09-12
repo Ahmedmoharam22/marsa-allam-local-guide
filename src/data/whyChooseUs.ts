@@ -84,5 +84,41 @@ export const whyChooseUsData: Record<Language, WhyChooseUsData> = {
       { title: "Přímá místní podpora", description: "Mluvte přímo s místním průvodcem" },
       { title: "Malé skupiny & osobní přístup", description: "Pohodové zážitky v menších skupinách" }
     ]
+  },
+fr: {
+    topBanner: "Payer après la sortie — aucun acompte requis.",
+    title: "Pourquoi nous choisir",
+    subtitle: "Nous transformons vos vacances en souvenirs inoubliables grâce à un service professionnel et une expertise locale.",
+    features: [
+      { title: "Annulation gratuite", description: "Annulez jusqu'à 24 heures à l'avance pour un remboursement complet" },
+      { title: "Paiement après la sortie", description: "Aucun paiement à l'avance" },
+      { title: "La sécurité d'abord", description: "Service professionnel garanti" },
+      { title: "Support local direct", description: "Échangez directement avec un guide local" },
+      { title: "Petits groupes & Suivi personnalisé", description: "Expériences détendues en petits groupes" }
+    ]
+  },
+  nl: {
+    topBanner: "Betaal pas na je excursie — geen vooruitbetaling vereist.",
+    title: "Waarom voor ons kiezen",
+    subtitle: "Wij veranderen jouw vakantie in onvergetelijke herinneringen met professionele service en lokale expertise.",
+    features: [
+      { title: "Gratis annuleren", description: "Annuleer tot 24 uur van tevoren voor een volledige terugbetaling" },
+      { title: "Betaal na je excursie", description: "Geen vooruitbetaling" },
+      { title: "Veiligheid eerst", description: "Professionele service" },
+      { title: "Directe lokale ondersteuning", description: "Spreek rechtstreeks met een lokale gids" },
+      { title: "Klein & Persoonlijk", description: "Ontspannen ervaringen met kleinere groepen" }
+    ]
+  },
+  hu: {
+    topBanner: "Fizetés a program után — nincs szükség előre fizetésre.",
+    title: "Miért válassz minket",
+    subtitle: "Felejthetetlen emlékekké formáljuk a nyaralásodat professzionális szolgáltatással és helyi szakértelemmel.",
+    features: [
+      { title: "Ingyenes lemondás", description: "Lemondás akár 24 órával korábban a teljes visszatérítésért" },
+      { title: "Fizetés a program után", description: "Nincs előre fizetés" },
+      { title: "Első a biztonság", description: "Professzionális szolgáltatás" },
+      { title: "Közvetlen helyi támogatás", description: "Beszélj közvetlenül egy helyi szakemberrel" },
+      { title: "Kis csoportok és személyes élmény", description: "Kellemes élmények kisebb csoportokban" }
+    ]
   }
 };

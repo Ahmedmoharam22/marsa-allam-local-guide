@@ -1,9 +1,12 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { tours } from "@/data/tours";
 import { TourCard } from "../tours/TourCard";
 import { Locale } from "@/lib/i18n-config";
+import { tours } from "@/data/tours";
+import { Tour } from "@/types/tour";
+import { toursFilterUiLabels } from "@/constants/toursFilterUiLabels";
+import { tourCategoryLabels } from "@/constants/tourCategoryLabels";
 
 interface ToursSectionProps {
   lang: Locale;
@@ -15,43 +18,18 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
   const subtitle = dict?.tours?.subtitle || dict?.toursSubtitle || "Discover the best marine adventures and desert safaris, and enjoy the magic of nature with us.";
 
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
-
-  const uiTexts: Record<
-    Locale,
-    {
-      noResults: string;
-      all: string;
-    }
-  > = {
-    en: { noResults: "No tours found.", all: "All Tours" },
-    de: { noResults: "Keine Ausflüge gefunden.", all: "Alle Ausflüge" },
-    it: { noResults: "Nessun tour trovato.", all: "Tutti i Tour" },
-    ru: { noResults: "Экскурсии не найдены.", all: "Все экскурсии" },
-    pl: { noResults: "Nie znaleziono wycieczek.", all: "Wszystkie Wycieczki" },
-    cz: { noResults: "Žádné výlety nenalezeny.", all: "Všechny výlety" },
-  };
-
-  const categoryLabels: Record<string, Record<Locale, string>> = {
-    "scuba-diving": { en: "Scuba Diving", de: "Tauchen", it: "Immersioni", ru: "Дайвинг", pl: "Nurkowanie", cz: "Potápění" },
-    "snorkeling": { en: "Snorkeling Trips", de: "Schnorcheln", it: "Snorkeling", ru: "Сноркелинг", pl: "Snorkeling", cz: "Šnorchlování" },
-    "sea-trips": { en: "Snorkeling Trips", de: "Schnorcheln", it: "Snorkeling", ru: "Сноркелинг", pl: "Snorkeling", cz: "Šnorchlování" },
-    "safari": { en: "Desert Safari", de: "Wüstensafari", it: "Safari nel Deserto", ru: "Сафари", pl: "Safari", cz: "Safari" },
-    "courses": { en: "Diving Courses", de: "Tauchkurse", it: "Corsi Subacquei", ru: "Курсы Дайвинга", pl: "Kursy Nurkowe", cz: "Potápěčské Kurzy" },
-    "city-tours": { en: "City & Sightseeing", de: "Städte & Kultur", it: "Tour della Città", ru: "Экскурсии по Городам", pl: "Wycieczki Miejskie", cz: "Městské Tours" },
-  };
-
-  const t = uiTexts[lang] || uiTexts.en;
+  const { noResults, all } = toursFilterUiLabels[lang] || toursFilterUiLabels.en;
 
   const categories = useMemo(() => {
     const cats = new Set<string>();
-    tours.forEach((tour) => {
+    tours.forEach((tour: Tour) => {
       if (tour.type) cats.add(tour.type);
     });
     return Array.from(cats);
   }, []);
 
   const filteredTours = useMemo(() => {
-    return tours.filter((tour) => {
+    return tours.filter((tour: Tour) => {
       if (selectedCategory === "all") return true;
       return tour.type === selectedCategory;
     });
@@ -76,11 +54,11 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
                 : "bg-card text-muted-foreground hover:bg-accent hover:text-foreground border border-border"
             }`}
           >
-            {t.all}
+            {all}
           </button>
 
           {categories.map((cat) => {
-            const label = categoryLabels[cat]?.[lang] || categoryLabels[cat]?.en || cat;
+            const label = tourCategoryLabels[cat]?.[lang] || tourCategoryLabels[cat]?.en || cat;
 
             return (
               <button
@@ -110,7 +88,7 @@ function ToursSection({ lang, dict }: ToursSectionProps) {
         </div>
       ) : (
         <div className="py-20 text-center rounded-2xl border border-dashed border-border bg-card/50">
-          <p className="text-muted-foreground text-sm">{t.noResults}</p>
+          <p className="text-muted-foreground text-sm">{noResults}</p>
         </div>
       )}
     </section>

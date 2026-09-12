@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Kezdőlap",
+    "tours": "Sznorkel kirándulások",
+    "courses": "PADI tanfolyamok",
+    "about": "Rólunk",
+    "blogs": "Blog",
+    "contact": "Kapcsolat",
+    "scubaDiving": "Búvárkodás",
+    "whatsappCta": "Foglalás WhatsAppon"
+  },
+  "hero": {
+    "welcome": "Üdvözöljük itt:",
+    "title_main": "Marsa Alam",
+    "title_sub": "Local Guide",
+    "tagline": "Reggelek delfinekkel, csendes korallzátonyok, sivatagi égbolt.",
+    "description": "Válassza ki a tökéletes tengeri napot, fedezze fel a legnyugalmasabb zátonyt, és ismerje meg Marsa Alamot egy helyi ritmust jól ismerő idegenvezetővel.",
+    "cta_whatsapp": "Foglalás WhatsAppon",
+    "cta_explore": "Kalandok felfedezése",
+    "features": {
+      "experience_title": "100% helyi élmény",
+      "experience_desc": "Egy igazi helyi idegenvezetőtől",
+      "groups_title": "Kis csoportok",
+      "groups_desc": "& Privát túrák",
+      "safety_title": "Biztonság &",
+      "safety_desc": "Professzionális szolgáltatás",
+      "care_title": "5 csillagos gondoskodás",
+      "care_desc": "A tenger szerelmeseinek"
+    }
+  },
+  "seo": {
+    "site_name": "Marsa Alam Local Guide",
+    "title": "A legjobb búvárkodások és tengeri szafarik Marsa Alamban",
+    "description": "Foglaljon kiváló értékelésű sznorkel túrákat, Sataya delfin szafarikat és PADI búvártanfolyamokat Marsa Alamban."
+  },
+  "tours": {
+    "badge": "Fedezze fel a kalandot",
+    "title": "Fedezze fel Marsa Alam-i túráinkat",
+    "subtitle": "Fedezze fel a legjobb tengeri kalandokat és sivatagi szafarikat, és élvezze velünk a természet varázsát."
+  },
+  "toursTitle": "Fedezze fel Marsa Alam-i túráinkat",
+  "toursSubtitle": "Fedezze fel a legjobb tengeri kalandokat és sivatagi szafarikat, és élvezze velünk a természet varázsát.",
+  "scrollToTop": "Gördítés a tetejére",
+  "whatsappTooltip": "Csevegjen velünk WhatsAppon"
+}

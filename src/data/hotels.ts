@@ -1,0 +1,25 @@
+// data/hotels.ts
+export const marsaAlamHotels = [
+  "Pickalbatros Sea World Marsa Alam",
+  "Pickalbatros Palace Resort",
+  "Steigenberger Coraya Beach",
+  "Jaz Lamaya Resort",
+  "Jaz Samaya Resort",
+  "Jaz Solaya",
+  "Jaz Grand Marsa",
+  "Jaz Maraya Resort",
+  "Hilton Marsa Alam Nubian Resort",
+  "Sataya Resort Marsa Alam",
+  "Gorgonia Beach Resort",
+  "Concorde Moreen Beach Resort",
+  "Brayka Bay Reef Resort",
+  "Royal Brayka Beach Resort",
+  "Albatros Sea World Marsa Alam",
+  "Malikia Resort Abu Dabbab",
+  "Three Corners Fayrouz Plaza",
+  "Three Corners Equinox Beach Resort",
+  "Three Corners Sea Beach Resort",
+  "Mövenpick Resort El Quseir",
+  "Shams Alam Beach Resort",
+  "Other / Not Listed (Write in notes)"
+];

@@ -48,6 +48,24 @@ export const statsData: Record<Language, StatItem[]> = {
     { label: "Max. Skupina", value: "6-8" },
     { label: "Lokální Podpora", value: "24/7" },
   ],
+  fr: [
+    { label: "Available Tours", value: "15+" },
+    { label: "PADI Courses", value: "4" },
+    { label: "Max Group Size", value: "6-8" },
+    { label: "Local Support", value: "24/7" },
+  ],
+  nl: [
+    { label: "Available Tours", value: "15+" },
+    { label: "PADI Courses", value: "4" },
+    { label: "Max Group Size", value: "6-8" },
+    { label: "Local Support", value: "24/7" },
+  ],
+  hu: [
+    { label: "Available Tours", value: "15+" },
+    { label: "PADI Courses", value: "4" },
+    { label: "Max Group Size", value: "6-8" },
+    { label: "Local Support", value: "24/7" },
+  ],
 };
 
 export const ctaTexts: Record<Language, CtaText> = {
@@ -80,5 +98,20 @@ export const ctaTexts: Record<Language, CtaText> = {
     title: "Jste připraveni na další dobrodružství?", 
     subtitle: "Prozkoumejte naše potápěčské a šnorchlovací výlety v Marsa Alam.", 
     button: "Prozkoumat Výlety" 
+  },
+ fr: { 
+    title: "Prêt pour votre prochaine aventure ?", 
+    subtitle: "Découvrez nos excursions de plongée et snorkeling sélectionnées à Marsa Alam.", 
+    button: "Explorer les excursions" 
+  },
+  nl: { 
+    title: "Klaar voor je volgende avontuur?", 
+    subtitle: "Ontdek onze zorgvuldig geselecteerde duik- en snorkeluitstapjes in Marsa Alam.", 
+    button: "Bekijk de tours" 
+  },
+  hu: { 
+    title: "Készen állsz a következő kalandodra?", 
+    subtitle: "Fedezd fel gondosan válogatott búvár- és sznorkeltúráinkat Marsa Alamban.", 
+    button: "Túrák felfedezése" 
   },
 };

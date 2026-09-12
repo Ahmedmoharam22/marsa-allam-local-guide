@@ -68,5 +68,35 @@ export const testimonialsData: Record<Language, { badge: string; title: string; 
       { name: "Marco Rossi", country: "Itálie", text: "Ostrovy Hamata jsou dechberoucí! Křišťálově čistá voda a nádherné korálové útesy. Vše bylo perfektně zorganizováno.", rating: 5, tour: "Hamata Islands" },
       { name: "Anna Nowak", country: "Polsko", text: "Rychlý člun do Abu Dabbab nám dal úžasnou šanci vidět mořské želvy zblízka. Vřele doporučuji!", rating: 5, tour: "Abu Dabbab Speedboat" }
     ]
+  },
+  fr: {
+    badge: "Happy Travelers",
+    title: "What Our Guests Say",
+    subtitle: "Real experiences from travelers who explored the Red Sea with us.",
+    reviews: [
+      { name: "Michael Schmidt", country: "Germany", text: "The Dolphin House trip was an absolute dream! Swimming with wild dolphins and the professional crew made it the highlight of our vacation.", rating: 5, tour: "Dolphin House" },
+      { name: "Marco Rossi", country: "Italy", text: "Hamata Islands are breathtaking! Crystal clear water and wonderful coral reefs. Everything was perfectly organized from hotel pickup to return.", rating: 5, tour: "Hamata Islands" },
+      { name: "Anna Nowak", country: "Poland", text: "Abu Dabbab Speedboat gave us an amazing chance to see sea turtles up close. Friendly guides and top service. Highly recommended!", rating: 5, tour: "Abu Dabbab Speedboat" }
+    ]
+  },
+  nl: {
+    badge: "Happy Travelers",
+    title: "What Our Guests Say",
+    subtitle: "Real experiences from travelers who explored the Red Sea with us.",
+    reviews: [
+      { name: "Michael Schmidt", country: "Germany", text: "The Dolphin House trip was an absolute dream! Swimming with wild dolphins and the professional crew made it the highlight of our vacation.", rating: 5, tour: "Dolphin House" },
+      { name: "Marco Rossi", country: "Italy", text: "Hamata Islands are breathtaking! Crystal clear water and wonderful coral reefs. Everything was perfectly organized from hotel pickup to return.", rating: 5, tour: "Hamata Islands" },
+      { name: "Anna Nowak", country: "Poland", text: "Abu Dabbab Speedboat gave us an amazing chance to see sea turtles up close. Friendly guides and top service. Highly recommended!", rating: 5, tour: "Abu Dabbab Speedboat" }
+    ]
+  },
+  hu: {
+    badge: "Happy Travelers",
+    title: "What Our Guests Say",
+    subtitle: "Real experiences from travelers who explored the Red Sea with us.",
+    reviews: [
+      { name: "Michael Schmidt", country: "Germany", text: "The Dolphin House trip was an absolute dream! Swimming with wild dolphins and the professional crew made it the highlight of our vacation.", rating: 5, tour: "Dolphin House" },
+      { name: "Marco Rossi", country: "Italy", text: "Hamata Islands are breathtaking! Crystal clear water and wonderful coral reefs. Everything was perfectly organized from hotel pickup to return.", rating: 5, tour: "Hamata Islands" },
+      { name: "Anna Nowak", country: "Poland", text: "Abu Dabbab Speedboat gave us an amazing chance to see sea turtles up close. Friendly guides and top service. Highly recommended!", rating: 5, tour: "Abu Dabbab Speedboat" }
+    ]
   }
 };

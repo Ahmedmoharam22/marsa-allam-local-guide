@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "tours": "Excursions Snorkeling",
+    "courses": "Cours PADI",
+    "about": "À Propos",
+    "blogs": "Blog",
+    "contact": "Contact",
+    "scubaDiving": "Plongée Sous-Marine",
+    "whatsappCta": "Réservez sur WhatsApp"
+  },
+  "hero": {
+    "welcome": "Bienvenue à",
+    "title_main": "Marsa Alam",
+    "title_sub": "Guide Local",
+    "tagline": "Matinées avec les dauphins, récifs paisibles, ciels du désert.",
+    "description": "Choisissez la journée en mer idéale, découvrez le récif le plus calme et explorez Marsa Alam avec un guide qui connaît le rythme local.",
+    "cta_whatsapp": "Réserver sur WhatsApp",
+    "cta_explore": "Explorer les Aventures",
+    "features": {
+      "experience_title": "Expérience 100% Locale",
+      "experience_desc": "Avec un authentique guide local",
+      "groups_title": "Petits Groupes",
+      "groups_desc": "& Sorties Privées",
+      "safety_title": "Sécurité &",
+      "safety_desc": "Service Professionnel",
+      "care_title": "Service 5 Étoiles",
+      "care_desc": "Conçu pour les amoureux de la mer"
+    }
+  },
+  "seo": {
+    "site_name": "Marsa Alam Local Guide",
+    "title": "Meilleurs Séjours de Plongée et Safaris Marins à Marsa Alam",
+    "description": "Réservez les meilleures excursions de snorkeling, safaris dauphins à Sataya et cours de plongée PADI à Marsa Alam."
+  },
+  "tours": {
+    "badge": "Découvrez l'Aventure",
+    "title": "Explorez Nos Excursions à Marsa Alam",
+    "subtitle": "Découvrez les meilleures aventures marines et safaris dans le désert, et profitez de la magie de la nature avec nous."
+  },
+  "toursTitle": "Explorez Nos Excursions à Marsa Alam",
+  "toursSubtitle": "Découvrez les meilleures aventures marines et safaris dans le désert, et profitez de la magie de la nature avec nous.",
+  "scrollToTop": "Haut de page",
+  "whatsappTooltip": "Discutez avec nous sur WhatsApp"
+}

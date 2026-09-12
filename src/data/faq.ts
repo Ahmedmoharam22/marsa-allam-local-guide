@@ -311,5 +311,158 @@ export const faqData: Record<Language, { badge: string; title: string; subtitle:
         answer: "Jsme místní odborníci zapálení pro Rudé moře. Od transparentních cen až po nezapomenutelné zážitky se staráme o každý detail."
       }
     ]
+  },
+  fr: {
+    badge: "Questions frequentes?",
+    title: "Foire Aux Questions",
+    subtitle: "Tout ce que vous devez savoir avant de réserver votre aventure en mer Rouge.",
+    items: [
+      {
+        question: "Quels sont les tarifs de nos excursions et sorties?",
+        answer: "Les prix varient en fonction de la sortie, de la destination (comme Dolphin House, Hamata ou Abu Dabbab) et de la taille du groupe. Contactez-nous pour obtenir un devis détaillé sans frais cachés."
+      },
+      {
+        question: "Combien de temps durent les sorties quotidiennes en bateau?",
+        answer: "La plupart de nos sorties en bateau commencent le matin et durent une journée entière. Le départ se fait généralement entre 7h30 et 8h30 avec un retour l'après-midi entre 14h00 et 16h00."
+      },
+      {
+        question: "Dois-je payer en ligne à l'avance?",
+        answer: "Aucun paiement en ligne n'est requis! Vous pouvez réserver en toute sécurité et payer en espèces ou via des moyens approuvés directement pendant ou après l'excursion."
+      },
+      {
+        question: "Puis-je participer si je ne sais pas bien nager?",
+        answer: "Absolument! Nos excursions sont adaptées aux familles et à tous les niveaux. Des gilets de sauvetage et des guides professionnels sont toujours à votre disposition dans l'eau."
+      },
+      {
+        question: "Y a-t-il une chance de voir des dauphins pendant les excursions?",
+        answer: "Oui! Bien que les dauphins soient sauvages, nos itinéraires dédiés (comme Dolphin House / Sataya) sont célèbres pour leurs rencontres fréquentes."
+      },
+      {
+        question: "Est-il possible de voir le célèbre Dugong (vache marine)?",
+        answer: "Oui, Marsa Alam est l'un des meilleurs endroits de la mer Rouge pour observer le rare dugong, notamment dans des baies comme Marsa Mubarak."
+      },
+      {
+        question: "Verrons-nous des tortues marines?",
+        answer: "La probabilité de voir des tortues est extrêmement élevée, en particulier dans les baies protégées d'Abu Dabbab et Marsa Mubarak."
+      },
+      {
+        question: "Le déjeuner et les boissons sont-ils inclus à bord?",
+        answer: "Oui, un déjeuner buffet fraîchement préparé ainsi que de l'eau minérale et des boissons rafraîchissantes sont inclus dans le tarif."
+      },
+      {
+        question: "Puis-je annuler ou modifier ma réservation?",
+        answer: "Oui, vous pouvez annuler ou modifier votre réservation gratuitement jusqu'à 24 heures avant le début de l'excursion."
+      },
+      {
+        question: "Quels modes de paiement acceptez-vous?",
+        answer: "Nous acceptons les paiements en espèces dans plusieurs devises (EUR, USD, GBP, EGP) ainsi que d'autres options sécurisées."
+      },
+      {
+        question: "Pourquoi nous choisir pour vos aventures à Marsa Alam?",
+        answer: "Nous sommes des experts locaux passionnés par la mer Rouge. Des prix transparents à la sécurité, nous gérons chaque détail pour des vacances parfaites."
+      }
+    ]
+  },
+  nl: {
+    badge: "Vragen?",
+    title: "Veelgestelde Vragen",
+    subtitle: "Alles wat u moet weten voordat u uw Rode Zee-avontuur boekt.",
+    items: [
+      {
+        question: "Wat zijn de prijzen voor onze tours en excursies?",
+        answer: "Prijzen variëren afhankelijk van de reis, bestemming (zoals Dolphin House, Hamata of Abu Dabbab) en groepsgrootte. Neem contact op voor een duidelijke offerte zonder verborgen kosten."
+      },
+      {
+        question: "Hoe lang duren de dagelijkse boottochten?",
+        answer: "De meeste boottochten beginnen 's ochtends en duren een hele dag. We vertrekken meestal tussen 07:30 en 08:30 uur en keren 's middags terug tussen 14:00 en 16:00 uur."
+      },
+      {
+        question: "Moet ik vooraf online betalen?",
+        answer: "Geen online betaling vereist! U kunt veilig boeken en contant of via goedgekeurde methoden betalen tijdens of na uw excursie."
+      },
+      {
+        question: "Kan ik mee als ik niet goed kan zwemmen?",
+        answer: "Absoluut! Onze reizen zijn gezinsvriendelijk. Reddingsvesten en professionele gidsen zijn altijd aanwezig in het water om u te begeleiden."
+      },
+      {
+        question: "Is er een kans om dolfijnen te zien?",
+        answer: "Ja! Hoewel dolfijnen in het wild leven, staan onze speciale reizen (zoals Dolphin House / Sataya) bekend om regelmatige ontmoetingen."
+      },
+      {
+        question: "Is het mogelijk om de bekende Doejong (zeekoe) te zien?",
+        answer: "Ja, Marsa Alam is een van de beste plekken in de Rode Zee om de zeldzame Doejong te spotten, zoals bij Marsa Mubarak."
+      },
+      {
+        question: "Zullen we zeeschildpadden zien?",
+        answer: "De kans om zeeschildpadden te zien is zeer groot, vooral in beschermde baaien zoals Abu Dabbab en Marsa Mubarak."
+      },
+      {
+        question: "Zijn lunch en drankjes inbegrepen bij de boottochten?",
+        answer: "Ja, een vers bereide lunch in buffetvorm aan boord, mineraalwater en frisdrank zijn bij de prijs inbegrepen."
+      },
+      {
+        question: "Kan ik mijn boeking annuleren of wijzigen?",
+        answer: "Ja, u kunt uw boeking tot 24 uur voor aanvang van de trip gratis annuleren of wijzigen."
+      },
+      {
+        question: "Welke betalingsmethoden accepteert u?",
+        answer: "Wij accepteren contante betalingen in meerdere valuta's (EUR, USD, GBP, EGP) en veilige alternatieven."
+      },
+      {
+        question: "Waarom voor ons kiezen in Marsa Alam?",
+        answer: "Wij zijn lokale experts met een passie voor de Rode Zee. Van transparante prijzen tot veiligheid, wij verzorgen elk detail."
+      }
+    ]
+  },
+  hu: {
+    badge: "Kérdése van?",
+    title: "Gyakran Ismételt Kérdések",
+    subtitle: "Minden, amit tudnia kell a vörös-tengeri kaland lefoglalása előtt.",
+    items: [
+      {
+        question: "Milyenek az árak a túráinkra és kirándulásainkra?",
+        answer: "Az árak a konkrét túrától, a célállomástól (például Dolphin House, Hamata vagy Abu Dabbab) és a csoport létszámától függenek. Lépjen kapcsolatba velünk a részletes árajánlatért, rejtett költségek nélkül."
+      },
+      {
+        question: "Milyen hosszúak a napi hajóutak?",
+        answer: "A legtöbb napi hajóút reggel kezdődik és egész napig tart. Általában 7:30 és 8:30 között indulunk, és délután 14:00 és 16:00 között érkezünk vissza."
+      },
+      {
+        question: "Kell előre online fizetni?",
+        answer: "Nincs szükség online előrefizetésre! Biztonságosan foglalhat, és fizethet készpénzzel vagy jóváhagyott módokon közvetlenül a túra alatt vagy után."
+      },
+      {
+        question: "Csatlakozhatok akkor is, ha nem tudok jól úszni?",
+        answer: "Abszolút! Túráink családbarátok. Mentőmellények és professzionális guides mindig rendelkezésre állnak a vízben a biztonság érdekében."
+      },
+      {
+        question: "Van esély delfineket látni a túrák során?",
+        answer: "Igen! Bár a vadvilágban a találkozás nem garantálható 100%-ban, a kijelölt túráink (mint a Dolphin House / Sataya) híresek a gyakori találkozásokról."
+      },
+      {
+        question: "Látható a híres Dugong (tengeri tehén)?",
+        answer: "Igen, Marsa Alam az egyik legjobb hely a Vörös-tengeren a ritka Dugong megfigyelésére, például a Marsa Mubarak öbölben."
+      },
+      {
+        question: "Látunk majd tengeri teknősöket?",
+        answer: "A teknősök megpillantásának valószínűsége rendkívül magas, különösen az olyan védett öblökben, mint Abu Dabbab és Marsa Mubarak."
+      },
+      {
+        question: "Az ebéd és az italok benne vannak a hajóutak árában?",
+        answer: "Igen, a frissen készült svédasztalos ebéd a fedélzeten, az ásványvíz és az üdítők benne vannak a napi hajóutak árában."
+      },
+      {
+        question: "Lemonhatom vagy módosíthatom a foglalásomat?",
+        answer: "Igen, a foglalást ingyenesen lemondhatja vagy módosíthatja legkésőbb a túra kezdete előtt 24 órával."
+      },
+      {
+        question: "Milyen fizetési módokat fogadnak el?",
+        answer: "Készpénzes fizetést elfogadunk több pénznemben (EUR, USD, GBP, EGP), valamint egyéb biztonságos fizetési lehetőségeket."
+      },
+      {
+        question: "Miért minket válasszon a Marsa Alam-i kalandokhoz?",
+        answer: "Helyi szakértők vagyunk, akik imádják a Vörös-tengert. A transparent áraktól a biztonságig minden részletre odafigyelünk."
+      }
+    ]
   }
 };

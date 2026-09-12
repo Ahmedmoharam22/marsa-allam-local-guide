@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/data/blogs/posts";
-
+import { blogUiLabels } from "@/constants/blogUiLabels";
 interface BlogDetailProps {
   params: Promise<{ lang: Locale; slug: string }>;
 }
@@ -12,7 +12,7 @@ interface BlogDetailProps {
 export default async function BlogDetailPage({ params }: BlogDetailProps) {
   const { lang, slug } = await params;
   const blog = blogPosts[slug];
-
+  const t = blogUiLabels[lang] || blogUiLabels.en;
   if (!blog) {
     notFound();
   }
@@ -20,16 +20,7 @@ export default async function BlogDetailPage({ params }: BlogDetailProps) {
   const title = blog.title[lang] || blog.title.en;
   const intro = blog.intro[lang] || blog.intro.en;
 
-  const uiTexts: Record<Locale, { back: string; relatedTitle: string; readMore: string }> = {
-    en: { back: "Back to Blogs", relatedTitle: "More Stories & Guides", readMore: "Read Article" },
-    de: { back: "Zurück zu Blogs", relatedTitle: "Weitere Geschichten & Guides", readMore: "Artikel lesen" },
-    it: { back: "Torna ai Blog", relatedTitle: "Altre Storie e Guide", readMore: "Leggi articolo" },
-    ru: { back: "Назад к блогам", relatedTitle: "Другие истории и гиды", readMore: "Читать статью" },
-    pl: { back: "Powrót do blogów", relatedTitle: "Więcej historii i przewodników", readMore: "Czytaj artykuł" },
-    cz: { back: "Zpět na blogy", relatedTitle: "Další příběhy a průvodci", readMore: "Přečíst článek" }
-  };
-
-  const t = uiTexts[lang] || uiTexts.en;
+ 
 
   return (
     <main className="min-h-screen bg-background pb-28 pt-28">

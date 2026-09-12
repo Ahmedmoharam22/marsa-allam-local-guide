@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Home",
+    "tours": "Snorkel-excursies",
+    "courses": "PADI Cursussen",
+    "about": "Over Ons",
+    "blogs": "Blog",
+    "contact": "Contact",
+    "scubaDiving": "Duiken",
+    "whatsappCta": "Boek via WhatsApp"
+  },
+  "hero": {
+    "welcome": "Welkom bij",
+    "title_main": "Marsa Alam",
+    "title_sub": "Local Guide",
+    "tagline": "Dolfijn ochtenden, rustige riffen, woestijnluchten.",
+    "description": "Kies de perfecte dag op zee, vind het rustigste rif en ontdek Marsa Alam met een gids die het lokale ritme kent.",
+    "cta_whatsapp": "Boek via WhatsApp",
+    "cta_explore": "Ontdek Avonturen",
+    "features": {
+      "experience_title": "100% Lokale Ervaring",
+      "experience_desc": "Van een echte lokale gids",
+      "groups_title": "Kleine Groepen",
+      "groups_desc": "& Privétrips",
+      "safety_title": "Veiligheid &",
+      "safety_desc": "Professionele Service",
+      "care_title": "5-Sterren Zorg",
+      "care_desc": "Gemaakt voor zeeliefhebbers"
+    }
+  },
+  "seo": {
+    "site_name": "Marsa Alam Local Guide",
+    "title": "Beste Duik- en Zee-safari's in Marsa Alam",
+    "description": "Boek topklasse snorkeltrips, Sataya dolfijnsafari's en PADI duikcursussen in Marsa Alam."
+  },
+  "tours": {
+    "badge": "Ontdek het Avontuur",
+    "title": "Ontdek Onze Marsa Alam Tours",
+    "subtitle": "Ontdek de beste zee-avonturen en woestijnsafari's, en geniet samen met ons van de magie van de natuur."
+  },
+  "toursTitle": "Ontdek Onze Marsa Alam Tours",
+  "toursSubtitle": "Ontdek de beste zee-avonturen en woestijnsafari's, en geniet samen met ons van de magie van de natuur.",
+  "scrollToTop": "Naar boven",
+  "whatsappTooltip": "Chat met ons op WhatsApp"
+}

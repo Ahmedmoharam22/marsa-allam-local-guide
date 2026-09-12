@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { blogPosts } from "@/data/blogs/posts";
-
+import { blogHeaderLabels } from "@/constants/blogHeaderLabels";
 interface BlogsPageProps {
   params: Promise<{ lang: Locale }>;
 }
@@ -12,18 +12,8 @@ interface BlogsPageProps {
 export default async function BlogsPage({ params }: BlogsPageProps) {
   const { lang } = await params;
 
-  const titles: Record<Locale, { title: string; subtitle: string; readMore: string }> = {
-    en: { title: "Our Travel & Diving Blog", subtitle: "Tips, guides, and stories from the heart of the Red Sea.", readMore: "Read More" },
-    de: { title: "Unser Reise- & Tauchblog", subtitle: "Tipps, Guides und Geschichten aus dem Herzen des Roten Meeres.", readMore: "Weiterlesen" },
-    it: { title: "Il nostro Blog di Viaggi e Immersioni", subtitle: "Consigli, guide e storie dal cuore del Mar Rosso.", readMore: "Leggi di più" },
-    ru: { title: "Наш блог о путешествиях и дайвинге", subtitle: "Советы, гиды и истории из сердца Красного моря.", readMore: "Читать далее" },
-    pl: { title: "Nasz blog podróżniczy i nurkowy", subtitle: "Wskazówki, przewodniki i historie z serca Morza Czerwonego.", readMore: "Czytaj więcej" },
-    cz: { title: "Náš blog o cestování a potápění", subtitle: "Tipy, průvodce a příběhy ze srdce Rudého moře.", readMore: "Číst dále" }
-  };
 
-  const t = titles[lang] || titles.en;
-
-  // تحويل الـ blogPosts Object لمصفوفة عشان نعرض كل المقالات المتاحة
+  const t = blogHeaderLabels[lang] || blogHeaderLabels.en;
   const postsList = Object.values(blogPosts);
 
   return (

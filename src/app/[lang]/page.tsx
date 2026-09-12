@@ -26,7 +26,6 @@ export default async function HomePage({
       <FeaturesBar lang={lang} />
       <ToursSection lang={lang} dict={dict} />
       <AboutGuide lang={lang} />
-      {/* <GallerySection lang={lang} /> */}
       <ReviewSection/>
       <FAQSection lang={lang} />
       <CTASection lang={lang}/>

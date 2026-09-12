@@ -63,11 +63,14 @@ export async function generateMetadata({
         pl: '/pl',
         cs: '/cz',
         it: '/it',
+        nl: '/nl',
+        fr: '/fr',
+        hu: '/hu',
       },
     },
     openGraph: {
       type: 'website',
-      locale: currentLang === 'de' ? 'de_DE' : currentLang === 'ru' ? 'ru_RU' : currentLang === 'pl' ? 'pl_PL' : currentLang === 'it' ? 'it_IT' : 'en_US',
+      locale: currentLang === 'de' ? 'de_DE' : currentLang === 'ru' ? 'ru_RU' : currentLang === 'pl' ? 'pl_PL' : currentLang === 'it' ? 'it_IT' : currentLang === 'nl' ? 'nl_NL' : currentLang === 'fr' ? 'fr_FR' : currentLang === 'hu' ? 'hu_HU' : 'en_US',
       url: `${baseUrl}/${currentLang}`,
       title: dict.seo?.title || 'Marsa Alam Local Guide | Premium Tours & Sea Adventures',
       description:

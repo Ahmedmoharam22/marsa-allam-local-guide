@@ -181,6 +181,90 @@ export const privacyPolicyData: Record<Locale, PolicyPageContent> = {
         text: "Máte právo kdykoliv požádat o vymazání či úpravu svých údajů na emailu info@marsaalamlocalguide.com."
       }
     ]
+  },
+  fr: {
+    back: "Retour à l'accueil",
+    title: "Politique de Confidentialité",
+    subtitle: "Comment nous collectons, protégeons et gérons vos informations personnelles sur Marsa Alam Local Guide.",
+    lastUpdated: "Dernière mise à jour: Septembre 2026",
+    sections: [
+      {
+        title: "1. Informations collectées",
+        text: "Nous collectons uniquement les informations nécessaires pour traiter vos demandes et réservations : nom, numéro téléphone/WhatsApp, e-mail, dates souhaitées et nom de l'hôtel à Marsa Alam."
+      },
+      {
+        title: "2. Utilisation de vos données",
+        text: "Vos données sont strictement utilisées pour organiser les excursions, coordonner les transferts et assurer le service client via WhatsApp ou e-mail."
+      },
+      {
+        title: "3. Protection des données",
+        text: "Nous appliquons des mesures de sécurité rigoureuses pour protéger vos données. Nous ne vendons ni ne partageons jamais vos données personnelles à des tiers."
+      },
+      {
+        title: "4. Communication WhatsApp",
+        text: "Lorsque vous nous contactez via WhatsApp, votre numéro est utilisé uniquement pour la gestion directe de vos excursions avec notre équipe."
+      },
+      {
+        title: "5. Vos droits",
+        text: "Vous pouvez demander la modification ou la suppression complète de vos données à tout moment en écrivant à info@marsaalamlocalguide.com."
+      }
+    ]
+  },
+  nl: {
+    back: "Terug naar Home",
+    title: "Privacybeleid",
+    subtitle: "Hoe wij uw persoonlijke gegevens verzamelen, beschermen en verwerken bij Marsa Alam Local Guide.",
+    lastUpdated: "Laatst bijgewerkt: September 2026",
+    sections: [
+      {
+        title: "1. Informatie die we verzamelen",
+        text: "We verzamelen alleen de minimale gegevens die nodig zijn voor uw boekingen: naam, telefoon/WhatsApp-nummer, e-mailadres, gewenste datum en hotelnaam."
+      },
+      {
+        title: "2. Hoe we uw gegevens gebruiken",
+        text: "Uw gegevens worden uitsluitend gebruikt voor het organiseren van excursies, transfers en ondersteuning via WhatsApp of e-mail."
+      },
+      {
+        title: "3. Gegevensbescherming",
+        text: "Wij hanteren strenge beveiligingsmaatregelen om uw gegevens te beschermen. We verkopen of delen uw gegevens nooit met derden."
+      },
+      {
+        title: "4. WhatsApp-communicatie",
+        text: "Wanneer u contact opneemt via WhatsApp, wordt uw nummer alleen gebruikt voor directe afstemming over uw excursie."
+      },
+      {
+        title: "5. Uw rechten",
+        text: "U heeft altijd het recht om uw gegevens in te zien, te corrigeren of te verwijderen via info@marsaalamlocalguide.com."
+      }
+    ]
+  },
+  hu: {
+    back: "Vissza a főoldalra",
+    title: "Adatvédelmi Irányelvek",
+    subtitle: "Hogyan gyűjtjük, védjük és kezeljük az Ön személyes adatait a Marsa Alam Local Guide-nál.",
+    lastUpdated: "Utoljára frissítve: 2026. Szeptember",
+    sections: [
+      {
+        title: "1. Gyűjtött információk",
+        text: "Csak a foglalásokhoz szükséges minimális adatokat gyűjtjük: név, телефон/WhatsApp szám, e-mail cím, kívánt dátum és a hotel neve."
+      },
+      {
+        title: "2. Az adatok felhasználása",
+        text: "Adatait kizárólag a kirándulások szervezésére, a transzferek lebonyolítására és a WhatsAppon történő kapcsolattartásra használjuk."
+      },
+      {
+        title: "3. Adatvédelem és biztonság",
+        text: "Szigorú biztonsági intézkedéseket alkalmazunk. Adatait soha nem adjuk el és nem osztjuk meg harmadik felekkel."
+      },
+      {
+        title: "4. WhatsApp kommunikáció",
+        text: "Amikor WhatsAppon lép kapcsolatba velünk, telefonszámát csak a kirándulás részleteinek egyeztetésére használjuk."
+      },
+      {
+        title: "5. Az Ön jogai",
+        text: "Bármikor kérheti adatai módosítását vagy teljes törlését az info@marsaalamlocalguide.com e-mail címen."
+      }
+    ]
   }
 };
 
@@ -350,6 +434,90 @@ export const termsOfServiceData: Record<Locale, PolicyPageContent> = {
       {
         title: "5. Odpovědnost za osobní věci",
         text: "Dbáme na maximální bezpečnost, avšak za osobní cennosti (telefony, fotoaparáty) neneseme během výletu odpovědnost."
+      }
+    ]
+  },
+  fr: {
+    back: "Retour à l'accueil",
+    title: "Conditions Générales d'Utilisation",
+    subtitle: "Conditions de réservation, règles de sécurité et consignes pour les excursions à Marsa Alam.",
+    lastUpdated: "Dernière mise à jour: Septembre 2026",
+    sections: [
+      {
+        title: "1. Réservations et Confirmations",
+        text: "Toutes les réservations peuvent être effectuées en ligne ou via WhatsApp. La réservation est confirmée une fois les détails de prise en charge validés."
+      },
+      {
+        title: "2. Paiement Flexible (Réservez maintenant, payez plus tard)",
+        text: "Nous proposons une formule de paiement flexible sur place. Aucun paiement par carte en ligne n'est requis. Le règlement se fait en espèces (EUR, USD, EGP) le jour de la sortie."
+      },
+      {
+        title: "3. Annulation et Report",
+        text: "L'annulation est gratuite jusqu'à 24 heures avant le départ. En cas de mauvaises conditions météo, l'excursion sera reportée sans aucun frais."
+      },
+      {
+        title: "4. Sécurité et Santé",
+        text: "Les participants doivent respecter les consignes de sécurité des capitaines et guides. Tout problème de santé doit être signalé avant le départ."
+      },
+      {
+        title: "5. Responsabilité des Objets Personnels",
+        text: "Nous veillons à votre sécurité, mais déclinons toute responsabilité en cas de perte ou dommage concernant vos objets personnels (appareils photo, téléphones)."
+      }
+    ]
+  },
+  nl: {
+    back: "Terug naar Home",
+    title: "Algemene Voorwaarden",
+    subtitle: "Boekingsvoorwaarden, veiligheidsregels en richtlijnen voor excursies in Marsa Alam.",
+    lastUpdated: "Laatst bijgewerkt: September 2026",
+    sections: [
+      {
+        title: "1. Boekingen & Bevestigingen",
+        text: "Boekingen kunnen online of via WhatsApp worden gemaakt. De boeking is definitief zodra de ophaalgegevens zijn gecontroleerd door ons team."
+      },
+      {
+        title: "2. Flexibele Betaling (Boek nu, betaal later)",
+        text: "Wij bieden flexibele betaling op locatie. Geen online creditcardbetaling vereist. Betaling geschiedt contant (EUR, USD, EGP) op de dag van de tour."
+      },
+      {
+        title: "3. Annulering & Wijziging",
+        text: "Gratis annuleren is mogelijk tot 24 uur voor vertrek. Bij slechte weersomstandigheden wordt de excursie kosteloos verplaatst."
+      },
+      {
+        title: "4. Veiligheid & Gezondheid",
+        text: "Deelnemers dienen de instructies van de kapitein en gidsen op te volgen. Medische condities moeten vooraf worden gemeld."
+      },
+      {
+        title: "5. Aansprakelijkheid Eigendommen",
+        text: "Wij zorgen voor een veilige ervaring, maar zijn niet aansprakelijk voor verlies of beschadiging van persoonlijke eigendommen (camera's, telefoons)."
+      }
+    ]
+  },
+  hu: {
+    back: "Vissza a főoldalra",
+    title: "Általános Szerződési Feltételek",
+    subtitle: "Foglalási feltételek, biztonsági szabályok és útmutatók a Marsa Alam-i kirándulásokhoz.",
+    lastUpdated: "Utoljára frissítve: 2026. Szeptember",
+    sections: [
+      {
+        title: "1. Foglalások és Visszaigazolások",
+        text: "A foglalások kezdeményezhetők online vagy WhatsAppon. A foglalás a transzfer részleteinek ellenőrzése után válik véglegessé."
+      },
+      {
+        title: "2. Rugalmas fizetés (Foglaljon most, fizessen később)",
+        text: "Rugalmas helyszíni fizetést kínálunk, előzetes bankkártyás fizetés nélkül. A fizetés készpénzben (EUR, USD, EGP) történik a túra napján."
+      },
+      {
+        title: "3. Lemondás és Módosítás",
+        text: "Díjmentes lemondás a túra indulása előtt 24 órával lehetséges. Kedvezőtlen időjárás esetén a programot díjmentesen új időpontra helyezzük át."
+      },
+      {
+        title: "4. Biztonság és Egészség",
+        text: "A résztvevők kötelesek követni a kapitány és a túravezetők utasításait. Az egészségügyi problémákat az indulás előtt jelezni kell."
+      },
+      {
+        title: "5. Felelősség a személyes tárgyakért",
+        text: "Mindent megteszünk a biztonságért, azonban a személyes értéktárgyakért (fényképezőgépek, telefonok) nem vállalunk felelősséget."
       }
     ]
   }

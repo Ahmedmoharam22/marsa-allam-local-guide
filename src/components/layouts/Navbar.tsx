@@ -7,6 +7,8 @@ import type { Locale } from '@/lib/i18n-config';
 import LanguageSwitcher from '../LanguageSwitcher';
 import Logo from '../common/Logo';
 import { MessageCircle, Menu, X } from 'lucide-react';
+import { whatsappInquiryMessages } from '@/constants/whatsappInquiryLabels';
+import type { Language } from '@/types/tour';
 
 interface NavbarProps {
   lang: Locale;
@@ -27,15 +29,6 @@ interface NavbarProps {
   };
 }
 
-const whatsappInquiryMessages: Record<Locale, string> = {
-  en: 'Hello! I would like to inquire about tours and bookings in Marsa Alam.',
-  de: 'Hallo! Ich möchte mich über Touren und Buchungen in Marsa Alam informieren.',
-  it: 'Ciao! Vorrei informazioni sui tour e sulle prenotazioni a Marsa Alam.',
-  ru: 'Здравствуйте! Я хотел бы узнать о турах и бронировании в Марса-Аламе.',
-  pl: 'Cześć! Chciałbym zapytać o wycieczki i rezerwacje w Marsa Alam.',
-  cz: 'Dobrý den! Rád bych se zeptal na výlety a rezervace v Marsa Alam.',
-};
-
 export default function Navbar({ lang, dict }: NavbarProps) {
   const [isPastHero, setIsPastHero] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -43,6 +36,15 @@ export default function Navbar({ lang, dict }: NavbarProps) {
   const router = useRouter();
 
   const isHome = pathname === `/${lang}` || pathname === `/${lang}/`;
+
+  // Safe fallback for WhatsApp Message
+  const currentLang = (lang as unknown as Language) || 'en';
+  const message =
+    whatsappInquiryMessages[currentLang] ||
+    whatsappInquiryMessages.en ||
+    'Hello! I would like to inquire about tours and bookings in Marsa Alam.';
+
+  const whatsappUrl = `https://wa.me/201080268114?text=${encodeURIComponent(message)}`;
 
   useEffect(() => {
     if (!isHome) {
@@ -53,7 +55,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
     const checkHeroVisibility = () => {
       const heroElement = document.getElementById('hero');
       if (!heroElement) {
-        setIsPastHero(window.scrollY > 400);
+        setIsPastHero(window.scrollY > 100);
         return;
       }
       const rect = heroElement.getBoundingClientRect();
@@ -63,7 +65,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
     const heroElement = document.getElementById('hero');
     let observer: IntersectionObserver | null = null;
 
-    if (heroElement && typeof IntersectionObserver !== 'undefined') {
+    if (heroElement && typeof window !== 'undefined' && 'IntersectionObserver' in window) {
       observer = new IntersectionObserver(
         (entries) => {
           const entry = entries[0];
@@ -96,7 +98,11 @@ export default function Navbar({ lang, dict }: NavbarProps) {
     setMobileMenuOpen(false);
   }, [pathname]);
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string, isPageRoute: boolean = false) => {
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string,
+    isPageRoute: boolean = false
+  ) => {
     setMobileMenuOpen(false);
 
     if (isPageRoute) return;
@@ -115,9 +121,6 @@ export default function Navbar({ lang, dict }: NavbarProps) {
   };
 
   const whatsappText = dict?.nav?.whatsappCta || 'Book on WhatsApp';
-  const inquiryText = whatsappInquiryMessages[lang] || whatsappInquiryMessages.en;
-  const whatsappUrl = `https://wa.me/201080268114?text=${encodeURIComponent(inquiryText)}`;
-
   const navLinks = [
     { key: 'home', label: dict.nav.home, href: `/${lang}`, target: 'hero', isPage: false },
     { key: 'tours', label: dict.nav.tours, href: `/${lang}/tours`, target: 'tours', isPage: true },
@@ -138,9 +141,8 @@ export default function Navbar({ lang, dict }: NavbarProps) {
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        
         {/* Brand Logo Component */}
-        <div className={isTransparent ? "drop-shadow-md" : ""}>
+        <div className={isTransparent ? 'drop-shadow-md' : ''}>
           <Logo lang={lang} isScrolled={!isTransparent} />
         </div>
 
@@ -153,8 +155,8 @@ export default function Navbar({ lang, dict }: NavbarProps) {
               onClick={(e) => handleNavClick(e, link.target, link.isPage)}
               className={`transition-colors duration-200 ${
                 isTransparent
-                  ? "text-white hover:text-teal-300 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
-                  : "text-slate-700 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400"
+                  ? 'text-white hover:text-teal-300 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'
+                  : 'text-slate-700 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400'
               }`}
             >
               {link.label}
@@ -164,7 +166,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
 
         {/* Language Switcher & WhatsApp CTA (Desktop) */}
         <div className="hidden md:flex items-center gap-4">
-          <div className={isTransparent ? "drop-shadow-md" : ""}>
+          <div className={isTransparent ? 'drop-shadow-md' : ''}>
             <LanguageSwitcher currentLang={lang} isScrolled={!isTransparent} />
           </div>
 
@@ -182,7 +184,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
         {/* Mobile Action Hub */}
         <div className="flex md:hidden items-center gap-2">
           <LanguageSwitcher currentLang={lang} isScrolled={!isTransparent} />
-          
+
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation menu"
@@ -195,7 +197,6 @@ export default function Navbar({ lang, dict }: NavbarProps) {
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
-
       </div>
 
       {/* Mobile Dropdown Menu */}
