@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "check-images": "node scripts/check-image-sizes.mjs"
+    "check-images": "node scripts/check-image-sizes.mjs",
+    "check-translations": "npx tsx scripts/check-translation-completeness.mjs"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
