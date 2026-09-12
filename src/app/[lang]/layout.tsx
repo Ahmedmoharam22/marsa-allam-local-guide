@@ -34,7 +34,7 @@ export async function generateMetadata({
   const { lang } = await params;
   const currentLang = lang as Locale;
   const dict = await getDictionary(currentLang);
-  const baseUrl = 'https://marsa-alam-local-guide-six.vercel.app';
+  const baseUrl = 'https://marsaalam-guide.vercel.app';
 
   return {
     metadataBase: new URL(baseUrl),
