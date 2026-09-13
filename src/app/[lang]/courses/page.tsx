@@ -22,6 +22,7 @@ export default async function CoursesPage({ params }: CoursesPageProps) {
         
         {/* Page Header */}
         <SectionTitle
+          as="h1"
           title={headerContent.title}
           subtitle={headerContent.subtitle}
           align="center"

@@ -251,7 +251,9 @@ export default function TourGallery({ images, title }: TourGalleryProps) {
 
         {/* Expand / Lightbox Button */}
         <button
+          type="button"
           onClick={() => setIsLightboxOpen(true)}
+          aria-label="View Full Image"
           className="absolute top-3 right-3 z-20 p-2 rounded-xl bg-black/50 text-white backdrop-blur-md hover:bg-black/75 transition-all active:scale-95 flex items-center gap-1.5 text-xs font-semibold px-3 border border-white/10"
         >
           <Maximize2 className="h-3.5 w-3.5" />
@@ -269,8 +271,10 @@ export default function TourGallery({ images, title }: TourGalleryProps) {
         <div className="mt-3 flex items-center gap-2.5 overflow-x-auto pb-2 scrollbar-none snap-x">
           {allImages.map((img, idx) => (
             <button
+              type="button"
               key={idx}
               onClick={() => scrollToImage(idx)}
+              aria-label={`View image ${idx + 1}`}
               className={`relative h-16 sm:h-20 w-24 sm:w-28 shrink-0 overflow-hidden rounded-xl border-2 transition-all snap-start bg-slate-900 ${
                 activeIndex === idx
                   ? 'border-cyan-500 ring-2 ring-cyan-500/30 scale-95 opacity-100'
@@ -293,7 +297,9 @@ export default function TourGallery({ images, title }: TourGalleryProps) {
       {isLightboxOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-xl p-4 animate-in fade-in duration-200">
           <button
+            type="button"
             onClick={() => setIsLightboxOpen(false)}
+            aria-label="Close"
             className="absolute top-5 right-5 z-50 p-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all border border-white/10"
           >
             <X className="h-6 w-6" />
@@ -313,13 +319,17 @@ export default function TourGallery({ images, title }: TourGalleryProps) {
           {allImages.length > 1 && (
             <>
               <button
+                type="button"
                 onClick={handlePrevLightbox}
+                aria-label="Previous image"
                 className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all border border-white/10"
               >
                 <ChevronLeft className="h-6 w-6 rtl:rotate-180" />
               </button>
               <button
+                type="button"
                 onClick={handleNextLightbox}
+                aria-label="Next image"
                 className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all border border-white/10"
               >
                 <ChevronRight className="h-6 w-6 rtl:rotate-180" />

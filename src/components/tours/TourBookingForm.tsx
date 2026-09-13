@@ -21,7 +21,7 @@ export default function BookingForm({ tourTitle, categoryName, lang }: BookingFo
 
   const handleWhatsAppRedirect = () => {
     const phoneNumber = "201080268114";
-    const textMessage = `Hello! I want to book: *${tourTitle}*
+    const textMessage = `Hello! I want to book: *${tourTitle}*${categoryName ? ` (${categoryName})` : ""}
 Date: ${date || "Not specified"}
 Guests: ${guests || "Not specified"}
 Hotel: ${hotel || "Not specified"}
@@ -44,10 +44,11 @@ Notes: ${notes || "None"}`;
 
       <div className="space-y-4">
         <div>
-          <label className="mb-1.5 flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
+          <label htmlFor="booking-date" className="mb-1.5 flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
             {l.dateLabel}
           </label>
           <input
+            id="booking-date"
             type="date"
             value={date}
             onChange={(e) => setDate(e.target.value)}
@@ -56,10 +57,11 @@ Notes: ${notes || "None"}`;
         </div>
 
         <div>
-          <label className="mb-1.5 flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
+          <label htmlFor="booking-guests" className="mb-1.5 flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
             {l.guestsLabel}
           </label>
           <select
+            id="booking-guests"
             value={guests}
             onChange={(e) => setGuests(e.target.value)}
             className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-sm text-slate-800 transition-all focus:border-teal-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-500/20 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:focus:border-teal-400"
@@ -79,10 +81,11 @@ Notes: ${notes || "None"}`;
         </div>
 
         <div>
-          <label className="mb-1.5 flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
+          <label htmlFor="booking-hotel" className="mb-1.5 flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
             {l.hotelLabel}
           </label>
           <select
+            id="booking-hotel"
             value={hotel}
             onChange={(e) => setHotel(e.target.value)}
             className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-sm text-slate-800 transition-all focus:border-teal-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-500/20 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:focus:border-teal-400"
@@ -97,10 +100,11 @@ Notes: ${notes || "None"}`;
         </div>
 
         <div>
-          <label className="mb-1.5 flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
+          <label htmlFor="booking-notes" className="mb-1.5 flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300">
             {l.notesLabel}
           </label>
           <textarea
+            id="booking-notes"
             rows={3}
             value={notes}
             onChange={(e) => setNotes(e.target.value)}

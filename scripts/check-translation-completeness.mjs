@@ -9,10 +9,6 @@
  *    or:  npm run check-translations
  */
 
-import { createRequire } from "node:module";
-import { pathToFileURL } from "node:url";
-import path from "node:path";
-
 // ---------- configuration ----------
 
 const LOCALES = ["en", "de", "pl", "it", "cz", "ru", "fr", "nl", "hu"];

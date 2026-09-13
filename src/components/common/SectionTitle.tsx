@@ -5,6 +5,7 @@ interface SectionTitleProps {
   subtitle?: string;
   align?: 'left' | 'center' | 'right';
   className?: string;
+  as?: 'h1' | 'h2';
 }
 
 export default function SectionTitle({
@@ -12,6 +13,7 @@ export default function SectionTitle({
   subtitle,
   align = 'center',
   className = '',
+  as: Component = 'h2',
 }: SectionTitleProps) {
   const alignmentClasses = {
     left: 'text-left items-start',
@@ -25,8 +27,8 @@ export default function SectionTitle({
       {/* توهج خفيف منسجم مع الخلفية الداكنة */}
       <div className="absolute -inset-4 bg-teal-900/20 rounded-2xl blur-2xl pointer-events-none -z-10" />
 
-      {/* Main Heading - بدون أي لون أبيض (text-slate-800 أو لونك المفضل) */}
-      <h2 className="relative text-3xl font-extrabold tracking-tight text-slate-800 dark:text-slate-300 sm:text-4xl lg:text-5xl leading-tight">
+      {/* Main Heading */}
+      <Component className="relative text-3xl font-extrabold tracking-tight text-slate-800 dark:text-slate-300 sm:text-4xl lg:text-5xl leading-tight">
         
         {/* خطوط ديكورية جانبية بلون داكن/teal */}
         <span className="hidden sm:inline-block absolute -left-10 top-1/2 -translate-y-1/2 w-6 h-[2px] bg-teal-600/60" />
@@ -36,7 +38,7 @@ export default function SectionTitle({
         <span className="text-slate-800 dark:text-teal-400 drop-shadow-sm">
           {title}
         </span>
-      </h2>
+      </Component>
 
       {/* فاصل وسطي منسجم - ألوان غامقة/Teal */}
       <div className="relative flex items-center justify-center gap-2 my-4 w-full">

@@ -17,7 +17,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
   return (
     <main className="min-h-screen pt-24 pb-16">
       {/* 1. Main Local Guide & Trust Section */}
-      <AboutGuide lang={lang} />
+      <AboutGuide lang={lang} as="h1" />
 
       {/* 2. Key Highlights / Stats Bar */}
       <section className="py-12 bg-ocean-900 text-white border-y border-ocean-800">

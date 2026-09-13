@@ -13,7 +13,7 @@ interface ScrollToTopProps {
 
 export default function ScrollToTop({ lang, tooltipText }: ScrollToTopProps) {
   const [isVisible, setIsVisible] = useState(false);
-  const label = scrollToTopLabels[lang] || scrollToTopLabels.en;
+  const label = tooltipText || scrollToTopLabels[lang] || scrollToTopLabels.en;
   useEffect(() => {
     let ticking = false;
     const toggleVisibility = () => {

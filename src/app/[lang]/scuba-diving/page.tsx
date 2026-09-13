@@ -24,6 +24,7 @@ export default async function ScubaDivingPage({ params }: ScubaDivingPageProps) 
         
         {/* Page Header */}
         <SectionTitle
+          as="h1"
           title={headerContent.title}
           subtitle={headerContent.subtitle}
           align="center"

@@ -30,12 +30,18 @@ interface NavbarProps {
 }
 
 export default function Navbar({ lang, dict }: NavbarProps) {
-  const [isPastHero, setIsPastHero] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
+  const [isPastHeroScroll, setIsPastHeroScroll] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [prevPathname, setPrevPathname] = useState(pathname);
+  if (prevPathname !== pathname) {
+    setPrevPathname(pathname);
+    setMobileMenuOpen(false);
+  }
 
   const isHome = pathname === `/${lang}` || pathname === `/${lang}/`;
+  const isPastHero = !isHome || isPastHeroScroll;
 
   // Safe fallback for WhatsApp Message
   const currentLang = (lang as unknown as Language) || 'en';
@@ -47,19 +53,16 @@ export default function Navbar({ lang, dict }: NavbarProps) {
   const whatsappUrl = `https://wa.me/201080268114?text=${encodeURIComponent(message)}`;
 
   useEffect(() => {
-    if (!isHome) {
-      setIsPastHero(true);
-      return;
-    }
+    if (!isHome) return;
 
     const checkHeroVisibility = () => {
       const heroElement = document.getElementById('hero');
       if (!heroElement) {
-        setIsPastHero(window.scrollY > 100);
+        setIsPastHeroScroll(window.scrollY > 100);
         return;
       }
       const rect = heroElement.getBoundingClientRect();
-      setIsPastHero(rect.bottom <= 80);
+      setIsPastHeroScroll(rect.bottom <= 80);
     };
 
     const heroElement = document.getElementById('hero');
@@ -71,9 +74,9 @@ export default function Navbar({ lang, dict }: NavbarProps) {
           const entry = entries[0];
           if (entry) {
             if (entry.isIntersecting) {
-              setIsPastHero(false);
+              setIsPastHeroScroll(false);
             } else {
-              setIsPastHero(entry.boundingClientRect.bottom <= 80);
+              setIsPastHeroScroll(entry.boundingClientRect.bottom <= 80);
             }
           }
         },
@@ -92,11 +95,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
       window.removeEventListener('scroll', checkHeroVisibility);
       window.removeEventListener('resize', checkHeroVisibility);
     };
-  }, [isHome, pathname]);
-
-  useEffect(() => {
-    setMobileMenuOpen(false);
-  }, [pathname]);
+  }, [isHome]);
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,

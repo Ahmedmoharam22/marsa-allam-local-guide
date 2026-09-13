@@ -10,6 +10,7 @@ import { ChevronLeft, ChevronRight, ShieldCheck, Award, Users, HeartHandshake, M
 interface AboutGuideProps {
   lang: Language;
   images?: string[];
+  as?: 'h1' | 'h2';
 }
 
 const defaultImages = [
@@ -20,7 +21,7 @@ const defaultImages = [
 
 const trustIcons = [Award, ShieldCheck, Users, HeartHandshake, MapPin];
 
-export default function AboutGuide({ lang, images = defaultImages }: AboutGuideProps) {
+export default function AboutGuide({ lang, images = defaultImages, as }: AboutGuideProps) {
   const t = aboutGuideData[lang] || aboutGuideData.en;
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -34,6 +35,7 @@ export default function AboutGuide({ lang, images = defaultImages }: AboutGuideP
         {/* Section Title */}
         <div className="mb-12">
           <SectionTitle
+            as={as}
             title={t.badge || "Meet Your Local Guide"}
             subtitle={t.subtitle}
             align="center"
@@ -59,6 +61,7 @@ export default function AboutGuide({ lang, images = defaultImages }: AboutGuideP
               {images.length > 1 && (
                 <>
                   <button
+                    type="button"
                     onClick={prevImage}
                     aria-label="Previous image"
                     className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full border border-white/40 text-white flex items-center justify-center hover:bg-white/15 transition-colors"
@@ -66,6 +69,7 @@ export default function AboutGuide({ lang, images = defaultImages }: AboutGuideP
                     <ChevronLeft className="w-5 h-5" />
                   </button>
                   <button
+                    type="button"
                     onClick={nextImage}
                     aria-label="Next image"
                     className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full border border-white/40 text-white flex items-center justify-center hover:bg-white/15 transition-colors"
@@ -83,13 +87,18 @@ export default function AboutGuide({ lang, images = defaultImages }: AboutGuideP
                 <div className="flex gap-1.5">
                   {images.map((_, idx) => (
                     <button
+                      type="button"
                       key={idx}
                       onClick={() => setCurrentImage(idx)}
                       aria-label={`Go to slide ${idx + 1}`}
-                      className={`h-1 rounded-full transition-all ${
-                        currentImage === idx ? "w-6 bg-aqua-500" : "w-3 bg-ocean-900/20 dark:bg-white/20"
-                      }`}
-                    />
+                      className="min-h-[24px] min-w-[24px] flex items-center justify-center focus:outline-none cursor-pointer"
+                    >
+                      <span
+                        className={`h-1 rounded-full transition-all ${
+                          currentImage === idx ? "w-6 bg-aqua-500" : "w-3 bg-ocean-900/20 dark:bg-white/20"
+                        }`}
+                      />
+                    </button>
                   ))}
                 </div>
               </div>

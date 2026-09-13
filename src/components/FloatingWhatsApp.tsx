@@ -6,7 +6,7 @@ interface FloatingWhatsAppProps {
   tooltipText?: string; 
 }
 
-export default function FloatingWhatsApp({ lang, tooltipText }: FloatingWhatsAppProps) {
+export default function FloatingWhatsApp({ tooltipText }: FloatingWhatsAppProps) {
   // رقم الواتساب ورسالة الترحيب الافتراضية
   const phoneNumber = "201080268114";
   const message = encodeURIComponent("Hello, I would like to inquire about tours and services.");

@@ -17,11 +17,12 @@ export default async function ToursPage({ params }: ToursPageProps) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Page Header */}
-     <SectionTitle
-  title={dict.tours.title}
-  subtitle={dict.tours.subtitle}
-  align="center"
-/>
+        <SectionTitle
+          as="h1"
+          title={dict.tours.title}
+          subtitle={dict.tours.subtitle}
+          align="center"
+        />
         {/* Tours Grid */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {tours.map((tour) => (

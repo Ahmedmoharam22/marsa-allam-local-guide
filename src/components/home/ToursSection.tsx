@@ -10,12 +10,13 @@ import { tourCategoryLabels } from "@/constants/tourCategoryLabels";
 
 interface ToursSectionProps {
   lang: Locale;
-  dict: any;
+  dict: Record<string, unknown>;
 }
 
 function ToursSection({ lang, dict }: ToursSectionProps) {
-  const title = dict?.tours?.title || dict?.toursTitle || "Explore Our Marsa Alam Tours";
-  const subtitle = dict?.tours?.subtitle || dict?.toursSubtitle || "Discover the best marine adventures and desert safaris, and enjoy the magic of nature with us.";
+  const toursDict = dict?.tours as Record<string, string> | undefined;
+  const title = toursDict?.title || (dict?.toursTitle as string) || "Explore Our Marsa Alam Tours";
+  const subtitle = toursDict?.subtitle || (dict?.toursSubtitle as string) || "Discover the best marine adventures and desert safaris, and enjoy the magic of nature with us.";
 
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const { noResults, all } = toursFilterUiLabels[lang] || toursFilterUiLabels.en;

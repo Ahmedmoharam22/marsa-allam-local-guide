@@ -59,10 +59,11 @@ export const ReviewSection: React.FC = () => {
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <label htmlFor="review-name" className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
                   {t.labels.name}
                 </label>
                 <input
+                  id="review-name"
                   type="text"
                   name="name"
                   required
@@ -74,10 +75,11 @@ export const ReviewSection: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <label htmlFor="review-email" className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
                   {t.labels.email} <span className="text-slate-400 dark:text-slate-500 font-normal">{t.labels.emailOptional}</span>
                 </label>
                 <input
+                  id="review-email"
                   type="email"
                   name="email"
                   value={formData.email}
@@ -89,10 +91,11 @@ export const ReviewSection: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+              <label htmlFor="review-experience" className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
                 {t.labels.experience}
               </label>
               <select
+                id="review-experience"
                 name="experience"
                 required
                 value={formData.experience}
@@ -117,10 +120,11 @@ export const ReviewSection: React.FC = () => {
                     <button
                       type="button"
                       key={star}
+                      aria-label={`Rate ${star} out of 5`}
                       onClick={() => handleRatingSelect(star)}
                       onMouseEnter={() => setHoverRating(star)}
                       onMouseLeave={() => setHoverRating(0)}
-                      className="p-0.5 focus:outline-none transition-transform hover:scale-110"
+                      className="p-1.5 focus:outline-none transition-transform hover:scale-110"
                     >
                       <Star
                         className={`w-5 h-5 ${
@@ -139,10 +143,11 @@ export const ReviewSection: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+              <label htmlFor="review-text" className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
                 {t.labels.review}
               </label>
               <textarea
+                id="review-text"
                 name="review"
                 required
                 rows={4}
@@ -178,7 +183,9 @@ export const ReviewSection: React.FC = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/50 backdrop-blur-sm animate-fadeIn">
           <div className="relative w-full max-w-md bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-2xl border border-slate-200 dark:border-slate-800 text-center space-y-4 animate-scaleUp">
             <button
+              type="button"
               onClick={closeAlert}
+              aria-label="Close"
               className="absolute top-4 right-4 ltr:right-4 rtl:left-4 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition"
             >
               <X className="w-5 h-5" />

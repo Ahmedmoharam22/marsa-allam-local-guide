@@ -1,6 +1,3 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Language } from "@/types/tour";
 import { footerData } from "@/data/footer";
@@ -25,11 +22,7 @@ interface FooterProps {
 
 export default function Footer({ lang }: FooterProps) {
   const t = footerData[lang] || footerData.en;
-  const [currentYear, setCurrentYear] = useState<number>(2026);
-
-  useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
-  }, []);
+  const currentYear = new Date().getFullYear();
 
   // Localized Href Helper: Handles page links and strips # for pages like about
   const getLocalizedHref = (href: string) => {
@@ -37,7 +30,7 @@ export default function Footer({ lang }: FooterProps) {
     if (href.startsWith(`/${lang}`)) return href;
     
     // Clean up hash if it's meant to be a standalone page route (like about)
-    let cleanHref = href.replace(/^#/, '').replace(/^\/#/, '/');
+    const cleanHref = href.replace(/^#/, '').replace(/^\/#/, '/');
     if (cleanHref === '/' || cleanHref === '') return `/${lang}`;
     
     return `/${lang}${cleanHref.startsWith('/') ? cleanHref : `/${cleanHref}`}`;

@@ -1,7 +1,7 @@
 import ImageNext from 'next/image';
 import Link from 'next/link';
 import type { Locale } from '@/lib/i18n-config';
-import { ArrowRight, MessageCircle, Compass, Users, ShieldCheck, Star } from 'lucide-react';
+import { ArrowRight, MessageCircle } from 'lucide-react';
 
 interface HeroProps {
   lang: Locale;

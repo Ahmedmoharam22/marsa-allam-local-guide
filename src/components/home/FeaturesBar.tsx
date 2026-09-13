@@ -1,5 +1,3 @@
-"use client";
-
 import { Language } from "@/types/tour";
 import { whyChooseUsData } from "@/data/whyChooseUs";
 import { CreditCard, ShieldCheck, MessageCircle, Users, CalendarX } from "lucide-react";
@@ -37,9 +35,9 @@ export function FeaturesBar({ lang }: FeaturesBarProps) {
 
           {/* Simple Title */}
           <div className="text-center mb-4">
-            <h3 className="text-sm sm:text-base md:text-lg font-bold text-ocean-950 dark:text-white leading-tight">
+            <h2 className="text-sm sm:text-base md:text-lg font-bold text-ocean-950 dark:text-white leading-tight">
               {t.title}
-            </h3>
+            </h2>
           </div>
 
           {/* Grid Layout: 1 column on Mobile, 5 equal columns on Desktop */}
@@ -58,9 +56,9 @@ export function FeaturesBar({ lang }: FeaturesBarProps) {
 
                 {/* Text Content */}
                 <div className="min-w-0 flex-1">
-                  <h4 className="text-xs sm:text-sm font-bold text-ocean-950 dark:text-white leading-tight mb-0.5">
+                  <h3 className="text-xs sm:text-sm font-bold text-ocean-950 dark:text-white leading-tight mb-0.5">
                     {feature.title}
-                  </h4>
+                  </h3>
                   <p className="text-[11px] sm:text-xs text-slate-600 dark:text-slate-300 leading-snug">
                     {feature.description}
                   </p>
