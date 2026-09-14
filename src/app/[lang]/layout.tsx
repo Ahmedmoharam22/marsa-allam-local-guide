@@ -122,20 +122,6 @@ export default async function RootLayout({
   const { lang } = await params;
   const currentLang = lang as Locale;
   const dict = await getDictionary(currentLang);
-  // const isMaintenance = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "false";
-  // if (isMaintenance) {
-  //   return (
-  //     <html lang={currentLang} className={cn(
-  //       notoSans.variable,
-  //       playfairDisplay.variable,
-  //       'scroll-smooth'
-  //     )}>
-  //       <body className="font-body bg-background text-foreground flex min-h-screen flex-col antialiased selection:bg-secondary selection:text-white">
-  //         <MaintenancePage lang={currentLang} />
-  //       </body>
-  //     </html>
-  //   );
-  // }
   return (
     <html
       lang={currentLang}
