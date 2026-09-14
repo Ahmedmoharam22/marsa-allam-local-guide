@@ -15,14 +15,6 @@ const maintenanceTexts: Record<string, { badge: string; title: string; descripti
     description: "We're improving your experience on the site. Thanks for your patience — check back in a little while.",
     backBtn: "Try Again",
   },
-  de: {
-    badge: "Geplante Wartung",
-    title: "Wir sind bald wieder da",
-    description: "Wir verbessern gerade Ihre Erfahrung auf der Website. Vielen Dank für Ihre Geduld.",
-    backBtn: "Erneut versuchen",
-  },
-  // ضيف باقي الـ 7 لغات هنا بنفس الشكل (pl, it, cz, ru, fr, nl, hu)
-  // — لسه ناقصين، الموقع فيه 9 لغات مش 2 بس
 };
 
 export default function MaintenancePage({ lang = "en" }: MaintenancePageProps) {
