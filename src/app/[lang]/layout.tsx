@@ -9,6 +9,7 @@ import type { Locale } from '@/lib/i18n-config';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import ScrollToTop from '@/components/ScrollToTop';
 import JsonLd from '@/components/seo/JsonLd';
+import MaintenancePage from './maintenance/page';
 
 // Font Setup with CSS Variables & swap display for 0 CLS
 const notoSans = Noto_Sans({
@@ -35,7 +36,6 @@ export async function generateMetadata({
   const currentLang = lang as Locale;
   const dict = await getDictionary(currentLang);
   const baseUrl = 'https://marsaalam-guide.vercel.app';
-
   return {
     metadataBase: new URL(baseUrl),
     title: {
@@ -123,7 +123,20 @@ export default async function RootLayout({
   const { lang } = await params;
   const currentLang = lang as Locale;
   const dict = await getDictionary(currentLang);
-
+  const isMaintenance = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true";
+  if (isMaintenance) {
+    return (
+      <html lang={currentLang} className={cn(
+        notoSans.variable,
+        playfairDisplay.variable,
+        'scroll-smooth'
+      )}>
+        <body className="font-body bg-background text-foreground flex min-h-screen flex-col antialiased selection:bg-secondary selection:text-white">
+          <MaintenancePage lang={currentLang} />
+        </body>
+      </html>
+    );
+  }
   return (
     <html
       lang={currentLang}
